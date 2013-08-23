@@ -27,10 +27,10 @@ module Gman
         match_government_domain?(domain)
 
       rescue PublicSuffix::DomainInvalid => di
-        return false
+        false
 
       rescue PublicSuffix::DomainNotAllowed => dna
-        return false
+        false
       end
 
     end
@@ -38,13 +38,7 @@ module Gman
     # Checks the TLD (e.g., .gov) or TLD+SLD (e.g., .gov.uk)
     # Against list of known government domains
     def match_government_domain?(domain)
-      if domains.include? domain.tld
-        true
-      elsif domains.include? "#{domain.tld}.#{domain.sld}"
-        true
-      else
-        false
-      end
+      domains.include?(domain.tld) || domains.include?("#{domain.tld}.#{domain.sld}")
     end
 
     # Parses YML domain list into an array
@@ -52,7 +46,7 @@ module Gman
     #
     # Returns an array of TLD and TLD+SLD known government domains
     def domains
-       YAML.load_file File.dirname(__FILE__) + "/domains.yml"
+       YAML.load_file File.expand_path("../domains.yml", __FILE__)
     end
 
     # Get the FQDN name from a URL or email address.
