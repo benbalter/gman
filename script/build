@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+# Propegates an initial list of best-guess government domains
+
+require "public_suffix"
+require "yaml"
+
+# https://gist.github.com/benbalter/6147066
+REGEX = /(\.g[ou]{1,2}(v|b|vt)|\.mil|\.gc|\.fed)(\.[a-z]{2})?$/i
+
+YAML_FILE = File.dirname(__FILE__) + "/../lib/domains.yml"
+domains = YAML.load_file YAML_FILE
+domains = [] unless domains
+
+PublicSuffix::List.default.each do |rule|
+  domain = nil
+
+  if rule.parts.length == 1
+    domain = rule.parts.first if ".#{rule.value}" =~ REGEX
+  else
+    domain = rule.parts.pop(2).join(".") if ".#{rule.value}" =~ REGEX
+  end
+
+  domains.push domain unless domain.nil? or domains.include? domain
+end
+
+domains = domains.sort
+File.open(YAML_FILE, 'w+') {|f| f.write(domains.to_yaml)}
