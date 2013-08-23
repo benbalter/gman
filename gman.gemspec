@@ -12,11 +12,17 @@ Gem::Specification.new do |s|
   s.files = [
     "Gemfile",
     "README.md",
+    "CONTRIBUTING.md",
     "LICENSE",
     "lib/gman.rb",
     "lib/domains.yml",
     "script/build",
-    "gman.gemspec"
+    "script/release",
+    "gman.gemspec",
+    "test/helper.rb",
+    "test/test_gman.rb",
+    "Rakefile",
+    ".gitignore"
   ]
   s.require_paths = ["lib"]
   s.add_dependency( "public_suffix" )
