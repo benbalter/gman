@@ -6,7 +6,7 @@ You could theoretically [use regex](https://gist.github.com/benbalter/6147066), 
 
 The solution? Use Public Suffix to verify that it's a valid public domain, then maintain [a crowd-sourced sub-list of known global government and military domains](https://github.com/benbalter/gman/blob/master/lib/domains.yml). It should cover all US and international, government and military domains for both email and website verification.
 
-See a domains that's missing or one that shouldn't be there? [We'd love you to contribute](contributing.md).
+See a domains that's missing or one that shouldn't be there? [We'd love you to contribute](CONTRIBUTING.md).
 
 ## Installation
 
@@ -37,7 +37,7 @@ Gman::is_government? "foo.biz" #false
 
 ## Contributing
 
-Contributions welcome! Please see [the contribution guidelines](contributing.md) for code contributions or for details on how to add, update, or delete government domains.
+Contributions welcome! Please see [the contribution guidelines](CONTRIBUTING.md) for code contributions or for details on how to add, update, or delete government domains.
 
 ## Credits
 
