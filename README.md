@@ -32,3 +32,7 @@ Gman::is_government? "foo.biz" #false
 ## Contributing
 
 Contributions welcome! Please see [the contribution guidelines](contributing.md) for code contributions or for details on how to add, update, or delete government domains.
+
+## Credits
+
+Heavily inspired by [swot](https://github.com/leereilly/swot). Thanks @leereily!
