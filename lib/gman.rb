@@ -24,7 +24,7 @@ module Gman
         domain = get_domain(text)
         return false if domain.nil?
 
-      match_government_domain?(domain)
+        match_government_domain?(domain)
 
       rescue PublicSuffix::DomainInvalid => di
         return false
