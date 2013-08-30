@@ -23,16 +23,16 @@ Or add this to your `Gemfile` before doing a `bundle install`:
 ### Verify email addresses
 
 ```ruby
-Gman::is_government? "foo@bar.gov" #true
-Gman::is_government? "foo@bar.com" #false
+Gman.valid? "foo@bar.gov" #true
+Gman.valid? "foo@bar.com" #false
 ```
 ### Verify domain
 
 ```ruby
-Gman::is_government? "http://foo.bar.gov" #true
-Gman::is_government? "foo.bar.gov" #true
-Gman::is_government? "foo.gov" #true
-Gman::is_government? "foo.biz" #false
+Gman.valid? "http://foo.bar.gov" #true
+Gman.valid? "foo.bar.gov" #true
+Gman.valid? "foo.gov" #true
+Gman.valid? "foo.biz" #false
 ```
 
 ## Contributing

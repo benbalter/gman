@@ -3,7 +3,7 @@ require 'yaml'
 
 module Gman
 
-  VERSION='0.0.1'
+  VERSION='0.0.2'
 
   class << self
 
@@ -16,7 +16,7 @@ module Gman
     #   "http://foo.bar.gov"
     #
     # Returns boolean true if a government domain
-    def is_government?(text)
+    def valid?(text)
       return false if text.nil?
       text.strip!
 
