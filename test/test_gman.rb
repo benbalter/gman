@@ -1,15 +1,15 @@
 require 'helper'
 
-VALID = ["foo.gov", "http://foo.mil", "foo@bar.gc.ca", "foo.gov.au", "http://www.foo.gouv.fr"]
-INVALID = ["foo.bar.com", "bar@foo.biz", "http://www.foo.biz", "foo.uk", "gov"]
+VALID = ["foo.gov", "http://foo.mil", "foo@bar.gc.ca", "foo.gov.au", "http://www.foo.gouv.fr", "foo@ci.champaign.il.us"]
+INVALID = ["foo.bar.com", "bar@foo.biz", "http://www.foo.biz", "foo.uk", "gov", "foo@k12.champaign.il.us"]
 
 class TestGman < Test::Unit::TestCase
   should "recognize government email addresses and domains" do
     VALID.each do |test|
-      assert_equal Gman::valid?(test), true
+      assert_equal true, Gman::valid?(test), "#{test} should be detected as a valid government domain"
     end
     INVALID.each do |test|
-      assert_equal Gman::valid?(test), false
+      assert_equal false, Gman::valid?(test), "#{test} should be detected as an invalid government domain"
     end
   end
 end
