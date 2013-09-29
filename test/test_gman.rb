@@ -6,10 +6,10 @@ INVALID = ["foo.bar.com", "bar@foo.biz", "http://www.foo.biz", "foo.uk", "gov", 
 class TestGman < Test::Unit::TestCase
   should "recognize government email addresses and domains" do
     VALID.each do |test|
-      assert_equal true, Gman::valid?(test), "#{test} should be detected as a valid government domain"
+      assert Gman::valid?(test), "#{test} should be detected as a valid government domain"
     end
     INVALID.each do |test|
-      assert_equal false, Gman::valid?(test), "#{test} should be detected as an invalid government domain"
+      assert !Gman::valid?(test), "#{test} should be detected as an invalid government domain"
     end
   end
 end
