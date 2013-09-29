@@ -1,6 +1,6 @@
 require 'helper'
 
-VALID = ["foo.gov", "http://foo.mil", "foo@bar.gc.ca", "foo.gov.au", "http://www.foo.gouv.fr", "foo@ci.champaign.il.us"]
+VALID = ["foo.gov", "http://foo.mil", "foo@bar.gc.ca", "foo.gov.au", "http://www.foo.gouv.fr", "foo@ci.champaign.il.us", "foo.bar.baz.gov.au"]
 INVALID = ["foo.bar.com", "bar@foo.biz", "http://www.foo.biz", "foo.uk", "gov", "foo@k12.champaign.il.us"]
 
 class TestGman < Test::Unit::TestCase

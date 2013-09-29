@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
     "CONTRIBUTING.md",
     "LICENSE",
     "lib/gman.rb",
-    "lib/domains.yml",
+    "lib/domains.txt",
     "script/build",
     "script/release",
     "gman.gemspec",
