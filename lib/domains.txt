@@ -188,6 +188,7 @@ mil.vc
 mil.ve
 
 // US State, County, Local
-sfgov.org
 boudercounty.org
 ci.champaign.il.us
+sfgov.org
+state.or.us
