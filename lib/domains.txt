@@ -130,6 +130,7 @@ gov.to
 gov.tt
 gov.tw
 gov.ua
+gov.uk
 gov.vc
 gov.ve
 gov.vn
