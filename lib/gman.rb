@@ -3,7 +3,7 @@ require 'yaml'
 
 module Gman
 
-  VERSION='0.0.2'
+  VERSION='0.0.3'
 
   class << self
 
@@ -18,35 +18,22 @@ module Gman
     # Returns boolean true if a government domain
     def valid?(text)
       return false if text.nil?
-      text.strip!
+      domain = get_domain text
 
-      begin
-        domain = get_domain(text)
-        return false if domain.nil?
+      # check using public suffix's standard logic
+      rule = list.find domain
+      return true if !rule.nil? && rule.allow?(domain)
 
-        match_government_domain?(domain)
-
-      rescue PublicSuffix::DomainInvalid => di
-        false
-
-      rescue PublicSuffix::DomainNotAllowed => dna
-        false
-      end
-
+      # also allow for explicit matches to domain list
+      # but still make sure it's at least a valid domain
+      return false unless PublicSuffix.valid? domain
+      list.rules.any? { |rule| rule.value == domain }
     end
 
-    # Checks the TLD (e.g., .gov) or TLD+SLD (e.g., .gov.uk)
-    # Against list of known government domains
-    def match_government_domain?(domain)
-      domains.include?(domain.tld) || domains.include?("#{domain.tld}.#{domain.sld}")
-    end
-
-    # Parses YML domain list into an array
-    # TODO: Cache this
-    #
-    # Returns an array of TLD and TLD+SLD known government domains
-    def domains
-       YAML.load_file File.expand_path("../domains.yml", __FILE__)
+    # returns an instance of our custom public suffix list
+    # list behaves like PublicSuffix::List but is limited to our whitelisted domains
+    def list
+      @list || PublicSuffix::List::parse( File.new(File.join(File.dirname(__FILE__), "domains.txt"), "r:utf-8"))
     end
 
     # Get the FQDN name from a URL or email address.
@@ -54,7 +41,7 @@ module Gman
     # Returns a string with the FQDN; nil if there's an error.
     # Source: https://github.com/leereilly/swot/blob/master/lib/swot.rb#L190
     def get_domain(text)
-      PublicSuffix.parse text.downcase.match(domain_regex).captures.first
+      text.strip.downcase.match(domain_regex).captures.first
     rescue
       return nil
     end
