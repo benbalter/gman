@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.description = "A ruby gem to check if the owner of a given email address is working for THE MAN."
   s.version = "0.0.3"
   s.authors = ["Ben Balter"]
-  s.date = "2013-08-30"
+  s.date = "2013-09-30"
   s.email = "ben.balter@github.com"
   s.homepage = "https://github.com/benbalter/gman"
   s.licenses = ["MIT"]
