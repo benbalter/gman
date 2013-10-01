@@ -189,7 +189,7 @@ mil.vc
 mil.ve
 
 // US State, County, Local
-boudercounty.org
+bouldercounty.org
 ci.champaign.il.us
 ci.longmont.co.us
 sfgov.org
