@@ -195,3 +195,6 @@ ci.longmont.co.us
 sfgov.org
 state.de.us
 state.or.us
+
+// Non US sub-divisions
+greatersudbury.ca
