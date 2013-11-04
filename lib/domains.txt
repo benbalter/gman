@@ -193,6 +193,7 @@ bouldercounty.org
 ci.champaign.il.us
 ci.longmont.co.us
 sfgov.org
+smgov.net
 state.de.us
 state.or.us
 borough.kenai.ak.us
