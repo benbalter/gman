@@ -193,6 +193,8 @@ bouldercounty.org
 ci.champaign.il.us
 ci.longmont.co.us
 sfgov.org
+sfmta.org
+sfcta.org
 smgov.net
 state.de.us
 state.or.us
