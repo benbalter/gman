@@ -138,6 +138,34 @@ gov.ws
 gub.uy
 ottawa.ca
 
+//canadian-cities
+ottawa.ca
+toronto.ca
+ajax.ca
+hamilton.ca
+guelph.ca
+vancouver.ca
+london.ca
+niagarafalls.ca
+
+//canadian provinces top-level domains
+alberta.ca
+ontario.ca
+novascotia.ca
+gnb.ca
+newfoundlandlabrador.com
+
+//canadian provinces second-level domains
+pe.ca
+mb.ca
+nb.ca
+on.ca
+bc.ca
+qc.ca
+sk.ca
+nl.ca
+ns.ca
+
 //non-US mil
 mil.ac
 mil.ae
