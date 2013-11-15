@@ -136,6 +136,7 @@ gov.ve
 gov.vn
 gov.ws
 gub.uy
+nhs.net
 ottawa.ca
 
 //non-US mil
