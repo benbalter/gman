@@ -4,8 +4,6 @@ require 'swot'
 
 module Gman
 
-  VERSION='0.0.3'
-
   class << self
 
     # Normalizes and checks if a given string represents a governemnt domain
