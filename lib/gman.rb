@@ -1,5 +1,6 @@
 require 'public_suffix'
 require 'yaml'
+require 'swot'
 
 module Gman
 
@@ -19,6 +20,9 @@ module Gman
     def valid?(text)
       return false if text.nil?
       domain = get_domain text
+
+      # Ensure non-edu
+      return false if Swot::is_academic?(domain)
 
       # check using public suffix's standard logic
       rule = list.find domain
