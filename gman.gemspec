@@ -25,4 +25,10 @@ Gem::Specification.new do |s|
   ]
   s.require_paths = ["lib"]
   s.add_dependency( "public_suffix" )
+  s.add_dependency( "swot" )
+
+  s.add_development_dependency( "rake" )
+  s.add_development_dependency( "shoulda" )
+  s.add_development_dependency( "rdoc" )
+  s.add_development_dependency( "bundler" )
 end
