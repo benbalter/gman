@@ -1,14 +1,15 @@
 require 'helper'
-require 'swot'
 
 VALID = [  "foo.gov",
             "http://foo.mil",
             "foo@bar.gc.ca",
             "foo.gov.au",
-            "http://www.foo.gouv.fr",
+            "https://www.foo.gouv.fr",
             "foo@ci.champaign.il.us",
             "foo.bar.baz.gov.au",
-            "foo@bar.gov.uk"
+            "foo@bar.gov.uk",
+            ".gov",
+            "foo.fed.us",
         ]
 
 INVALID = [ "foo.bar.com",
@@ -17,7 +18,10 @@ INVALID = [ "foo.bar.com",
             "foo.uk",
             "gov",
             "foo@k12.champaign.il.us",
-            "foo@kii.gov.by"
+            "foo@kii.gov.by",
+            "foo",
+            "",
+            nil,
           ]
 
 class TestGman < Test::Unit::TestCase
@@ -39,4 +43,48 @@ class TestGman < Test::Unit::TestCase
       assert_equal false, Swot::is_academic?(entry.name), "#{entry.name} is an academic domain"
     end
   end
+
+  should "not contain any invalid domains" do
+    Gman.list.each do |entry|
+      assert_equal true, PublicSuffix.valid?("foo.#{entry.name}"), "#{entry.name} is not a valid domain"
+    end
+  end
+
+  should "not allow educational domains" do
+    assert_equal false, Gman::valid?("foo@gwu.edu")
+  end
+
+  should "properly parse domains from strings" do
+    assert_equal "github.gov", Gman::get_domain("foo@github.gov")
+    assert_equal "foo.github.gov", Gman::get_domain("foo.github.gov")
+    assert_equal "github.gov", Gman::get_domain("http://github.gov")
+    assert_equal "github.gov", Gman::get_domain("https://github.gov")
+    assert_equal ".gov", Gman::get_domain(".gov")
+    assert_equal nil, Gman.get_domain("foo")
+  end
+
+  should "validate mx records when asked" do
+    assert_equal true, Gman.valid?("foo@nasa.gov", true)
+    assert_equal false, Gman.valid?("foo@github.gov", true)
+    assert_equal true, Gman.valid?("foo@github.gov", false)
+  end
+
+  should "pass any url on the list" do
+    Gman.list.each do |entry|
+      assert_equal true, Gman.valid?("http://foo.#{entry.name}/bar"), "http://foo.#{entry.name}/bar is not a valid"
+    end
+  end
+
+  should "pass any email on the list" do
+    Gman.list.each do |entry|
+      assert_equal true, Gman.valid?("foo@bar.#{entry.name}"), "foo@bar.#{entry.name} is not a valid"
+    end
+  end
+
+  should "pass any domain on the list" do
+    Gman.list.each do |entry|
+      assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
+    end
+  end
+
 end

@@ -28,6 +28,15 @@ Or add this to your `Gemfile` before doing a `bundle install`:
 Gman.valid? "foo@bar.gov" #true
 Gman.valid? "foo@bar.com" #false
 ```
+
+### Really verify an email address
+
+(also verifies that the server returns a valid MX record)
+
+```ruby
+Gman.valid? "foo@whitehouse.gov", true #true
+Gman.valid? "foo@bar.gov", true #false
+```
 ### Verify domain
 
 ```ruby
@@ -35,6 +44,17 @@ Gman.valid? "http://foo.bar.gov" #true
 Gman.valid? "foo.bar.gov" #true
 Gman.valid? "foo.gov" #true
 Gman.valid? "foo.biz" #false
+```
+
+### Get a domain name from an arbitrary domainy string
+
+```ruby
+Gman.get_domain "http://foo.bar.gov" # foo.bar.gov
+Gman.get_domain "foo@bar.gov" # bar.gov
+Gman.get_domain "foo.bar.gov" # foo.bar.gov
+Gman.get_domain "asdf@asdf" # nil (no domain within the string)
+Gman.get_domain "foo@bar.gov", true #false (no MX record)
+Gman.get_domain "foo@whitehouse.gov", true # true (valid MX record)
 ```
 
 ## Contributing
