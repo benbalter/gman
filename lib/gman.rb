@@ -1,6 +1,8 @@
 require 'public_suffix'
 require 'yaml'
 require 'swot'
+require "addressable/uri"
+require "email_veracity"
 
 module Gman
 
@@ -14,10 +16,19 @@ module Gman
     #   "foo.gov.uk"
     #   "http://foo.bar.gov"
     #
+    # check_mx - if an email is passed, check the domain for an mx record
+    #
     # Returns boolean true if a government domain
-    def valid?(text)
-      return false if text.nil?
+    def valid?(text, check_mx=false)
+
       domain = get_domain text
+      return false unless PublicSuffix.valid?(domain)
+
+      # validate mx record
+      if check_mx && email?(text)
+        EmailVeracity::Config[:skip_lookup] = false
+        return false unless EmailVeracity::Address.new(text).valid?
+      end
 
       # Ensure non-edu
       return false if Swot::is_academic?(domain)
@@ -27,8 +38,6 @@ module Gman
       return true if !rule.nil? && rule.allow?(domain)
 
       # also allow for explicit matches to domain list
-      # but still make sure it's at least a valid domain
-      return false unless PublicSuffix.valid? domain
       list.rules.any? { |rule| rule.value == domain }
     end
 
@@ -41,18 +50,31 @@ module Gman
     # Get the FQDN name from a URL or email address.
     #
     # Returns a string with the FQDN; nil if there's an error.
-    # Source: https://github.com/leereilly/swot/blob/master/lib/swot.rb#L190
     def get_domain(text)
-      text.strip.downcase.match(domain_regex).captures.first
-    rescue
-      return nil
+
+      return nil if text.to_s.empty?
+
+      text = text.downcase
+      uri = Addressable::URI.parse(text)
+
+      if uri.host # valid https?://* URI
+        uri.host
+      elsif email?(text)
+        EmailVeracity::Address.new(text).domain.to_s
+      else # url sans http://
+        uri = Addressable::URI.parse("http://#{text}")
+        # properly parse http://foo edge cases
+        # see https://github.com/sporkmonger/addressable/issues/145
+        uri.host if uri.host =~ /\./
+      end
     end
 
-    private
-
-    # Source: https://github.com/leereilly/swot/blob/master/lib/swot.rb#L202
-    def domain_regex
-      /([^@\/:]+)[:\d]*$/
+    # Is the given string in the form of a valid email address?
+    #
+    # Returns true if email, otherwise false
+    def email?(text)
+      EmailVeracity::Config[:skip_lookup] = true
+      EmailVeracity::Address.new(text).valid?
     end
   end
 end
