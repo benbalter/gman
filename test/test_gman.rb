@@ -71,19 +71,19 @@ class TestGman < Test::Unit::TestCase
 
   should "pass any url on the list" do
     Gman.list.each do |entry|
-      assert_equal true, Gman.valid?("http://foo.#{entry.name}/bar"), "#{entry.name} is not a valid domain"
+      assert_equal true, Gman.valid?("http://foo.#{entry.name}/bar"), "http://foo.#{entry.name}/bar is not a valid"
     end
   end
 
   should "pass any email on the list" do
     Gman.list.each do |entry|
-      assert_equal true, Gman.valid?("foo@bar.#{entry.name}"), "#{entry.name} is not a valid domain"
+      assert_equal true, Gman.valid?("foo@bar.#{entry.name}"), "foo@bar.#{entry.name} is not a valid"
     end
   end
 
   should "pass any domain on the list" do
     Gman.list.each do |entry|
-      assert_equal true, Gman.valid?("foo.#{entry.name}"), "#{entry.name} is not a valid domain"
+      assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
     end
   end
 
