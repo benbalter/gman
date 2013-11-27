@@ -21,7 +21,7 @@ INVALID = [ "foo.bar.com",
             "foo@kii.gov.by",
             "foo",
             "",
-            nil
+            nil,
           ]
 
 class TestGman < Test::Unit::TestCase
@@ -67,6 +67,24 @@ class TestGman < Test::Unit::TestCase
     assert_equal true, Gman.valid?("foo@nasa.gov", true)
     assert_equal false, Gman.valid?("foo@github.gov", true)
     assert_equal true, Gman.valid?("foo@github.gov", false)
+  end
+
+  should "pass any url on the list" do
+    Gman.list.each do |entry|
+      assert_equal true, Gman.valid?("http://foo.#{entry.name}/bar"), "#{entry.name} is not a valid domain"
+    end
+  end
+
+  should "pass any email on the list" do
+    Gman.list.each do |entry|
+      assert_equal true, Gman.valid?("foo@bar.#{entry.name}"), "#{entry.name} is not a valid domain"
+    end
+  end
+
+  should "pass any domain on the list" do
+    Gman.list.each do |entry|
+      assert_equal true, Gman.valid?("foo.#{entry.name}"), "#{entry.name} is not a valid domain"
+    end
   end
 
 end
