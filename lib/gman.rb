@@ -44,7 +44,7 @@ module Gman
     # returns an instance of our custom public suffix list
     # list behaves like PublicSuffix::List but is limited to our whitelisted domains
     def list
-      @list || PublicSuffix::List::parse( File.new(File.join(File.dirname(__FILE__), "domains.txt"), "r:utf-8"))
+      @list ||= PublicSuffix::List::parse( File.new(File.join(File.dirname(__FILE__), "domains.txt"), "r:utf-8"))
     end
 
     # Get the FQDN name from a URL or email address.
