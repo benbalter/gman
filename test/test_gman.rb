@@ -22,6 +22,7 @@ INVALID = [ "foo.bar.com",
             "foo",
             "",
             nil,
+            " ",
           ]
 
 class TestGman < Test::Unit::TestCase
@@ -87,4 +88,21 @@ class TestGman < Test::Unit::TestCase
     end
   end
 
+  should "not err out on invalid domains" do
+    assert_equal false, Gman.valid?("foo@act.gov.au")
+    assert_equal "act.gov.au", Gman.get_domain("foo@act.gov.au")
+    assert_equal nil, Gman.domain_parts("foo@act.gov.au")
+  end
+
+  should "return public suffix domain" do
+    assert_equal PublicSuffix::Domain, Gman.domain_parts("whitehouse.gov").class
+    assert_equal NilClass, Gman.domain_parts("foo.bar").class
+  end
+
+  should "parse domain parts" do
+    assert_equal "gov", Gman.domain_parts("foo@bar.gov").tld
+    assert_equal "bar", Gman.domain_parts("foo.bar.gov").sld
+    assert_equal "bar", Gman.domain_parts("https://foo.bar.gov").sld
+    assert_equal "bar.gov", Gman.domain_parts("foo@bar.gov").domain
+  end
 end
