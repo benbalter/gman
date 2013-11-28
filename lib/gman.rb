@@ -52,9 +52,9 @@ module Gman
     # Returns a string with the FQDN; nil if there's an error.
     def get_domain(text)
 
-      return nil if text.to_s.empty?
+      return nil if text.to_s.strip.empty?
 
-      text = text.downcase
+      text = text.downcase.strip
       uri = Addressable::URI.parse(text)
 
       if uri.host # valid https?://* URI
@@ -66,6 +66,19 @@ module Gman
         # properly parse http://foo edge cases
         # see https://github.com/sporkmonger/addressable/issues/145
         uri.host if uri.host =~ /\./
+      end
+    end
+
+    # Helper function to return the public suffix domain object
+    #
+    # Supports all domainy strings (URLs, emails)
+    #
+    # Returns the domain object or nil, but no errors, never an error
+    def domain_parts(text)
+      begin
+        PublicSuffix.parse get_domain(text)
+      rescue
+        nil
       end
     end
 
