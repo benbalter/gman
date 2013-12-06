@@ -2,6 +2,7 @@
 fed.us
 gov
 mil
+si.edu
 
 // Non-US gov
 gc.ca
