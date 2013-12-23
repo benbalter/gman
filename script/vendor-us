@@ -17,6 +17,8 @@ require 'rubygems'
 require 'fileutils'
 require 'public_suffix'
 require 'swot'
+require 'net/dns'
+require 'net/dns/resolver'
 
 CURRENT_LIST = File.expand_path("../lib/domains.txt", File.dirname(__FILE__))
 TMP_DIR = File.expand_path("../tmp/govt-urls", File.dirname(__FILE__))
@@ -57,6 +59,13 @@ def array_to_hash(domains)
   domain_hash
 end
 
+def domain_resolves?(domain)
+  res = Net::DNS::Resolver.new
+  res.nameservers = ["8.8.8.8","8.8.4.4", "208.67.222.222", "208.67.220.220"]
+  packet = res.search(domain, Net::DNS::NS)
+  packet.header.anCount > 0
+end
+
 # Clone down the lastest version of the list
 system "git clone --depth 1 #{REPO} #{TMP_DIR}"
 domains = file_to_array(TXT_FILE)
@@ -75,6 +84,7 @@ domain_hash.each do |group, domains|
   domains.reject! { |domain| domain.match /\// }           # Reject URLs
   domains.select! { |domain| PublicSuffix.valid?(domain) } # Validate domain
   domains.reject! { |domain| Swot::is_academic?(domain) }  # Reject academic domains
+  domains.select! { |domain| domain_resolves? domain }     # Domain
 end
 
 # Grab existing list
