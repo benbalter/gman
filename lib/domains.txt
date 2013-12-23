@@ -1,7 +1,3 @@
-// non us sub-divisions
-greatersudbury.ca
-ega.or.th
-
 // non-us gov
 gc.ca
 gob.bo
@@ -188,6 +184,10 @@ mil.uy
 mil.vc
 mil.ve
 
+// non-us sub-divisions
+greatersudbury.ca
+ega.or.th
+
 // US Federal
 fed.us
 gov
@@ -244,6 +244,7 @@ cityofsitka.com
 cityofwasilla.com
 co.fairbanks.ak.us
 co.north-slope.ak.us
+co.sangamon.il.us/
 craigak.com
 denaliborough.govoffice.com
 dillinghamak.us
@@ -272,6 +273,7 @@ yakutatak.govoffice2.com
 // usagovAL
 adph.org
 ahfa.com
+alabama.traveco.sangamon.il.us/l
 alabama.travel
 alabamafilm.org
 alalinc.net
