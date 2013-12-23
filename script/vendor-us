@@ -24,6 +24,7 @@ REPO = "https://github.com/GSA-OCSIT/govt-urls"
 TXT_FILE = "government-urls-hierarchical-list.txt"
 YAML_FILE = "governent-urls.yaml"
 COMMENT_REGEX = /\/\/[\/\s]*(.*)$/i
+BLACKLIST = ["usagovQUASI", "usagovFED", "usagovPW"]
 domain_hash = {}
 
 # set up our working directory
@@ -69,6 +70,7 @@ domains.reject! { |domain| domain.empty? }      # Reject empty strings
 domain_hash = array_to_hash(domains)
 
 # filter
+domain_hash.reject! { |group,domain| BLACKLIST.include?(group) } # Group blacklist
 domain_hash.each do |group, domains|
   domains.reject! { |domain| domain.match /\// }           # Reject URLs
   domains.select! { |domain| PublicSuffix.valid?(domain) } # Validate domain
