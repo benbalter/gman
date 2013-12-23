@@ -1,0 +1,117 @@
+#! /usr/bin/env ruby
+#
+# Vendors the USA.gov-maintained list of US domains into domains.txt
+# Source: https://github.com/GSA-OCSIT/govt-urls
+#
+# Normalizes and cleans inputs, validates domains, rejects academic domains, and
+# sorts, ensures uniqueness, and merges into the existing lib/domains.txt list
+#
+# Usage: script/vendor-us
+#
+# Will automatically fetch latest version of the list and merge
+# You can check for changes and commit via `git status`
+#
+# It's also probably a good idea to run `script/ci-build` for good measure
+
+require 'rubygems'
+require 'fileutils'
+require 'public_suffix'
+require 'swot'
+require 'net/dns'
+require 'net/dns/resolver'
+
+CURRENT_LIST = File.expand_path("../lib/domains.txt", File.dirname(__FILE__))
+TMP_DIR = File.expand_path("../tmp/govt-urls", File.dirname(__FILE__))
+REPO = "https://github.com/GSA-OCSIT/govt-urls"
+TXT_FILE = "government-urls-hierarchical-list.txt"
+YAML_FILE = "governent-urls.yaml"
+COMMENT_REGEX = /\/\/[\/\s]*(.*)$/i
+BLACKLIST = ["usagovQUASI", "usagovFED", "usagovPW"]
+domain_hash = {}
+
+# set up our working directory
+FileUtils.rm_rf TMP_DIR
+FileUtils.mkdir_p TMP_DIR
+Dir.chdir TMP_DIR
+
+# Given a public-suffix list formatted file
+# Convert it into an array of comments and domains representing each line
+def file_to_array(file)
+  domains = File.open(file).read
+  domains.gsub! /\r\n?/, "\n" # Normalize line endings
+  domains = domains.split("\n")
+end
+
+# Given an array of comments/domains in public suffix format
+# Converts to a hash in the form of :group => [domain1, domain2...]
+def array_to_hash(domains)
+  group = ""
+  domain_hash = {}
+  domains.each do |line|
+    next if line.empty?
+    if match = COMMENT_REGEX.match(line)
+      group = match[1]
+    else
+      domain_hash[group] = [] if domain_hash[group].nil?
+      domain_hash[group].push line.downcase
+    end
+  end
+  domain_hash
+end
+
+def domain_resolves?(domain)
+  res = Net::DNS::Resolver.new
+  res.nameservers = ["8.8.8.8","8.8.4.4", "208.67.222.222", "208.67.220.220"]
+  packet = res.search(domain, Net::DNS::NS)
+  packet.header.anCount > 0
+end
+
+# Clone down the lastest version of the list
+system "git clone --depth 1 #{REPO} #{TMP_DIR}"
+domains = file_to_array(TXT_FILE)
+
+# Normalize ALL THE THINGS
+domains.map! { |domain| domain.strip } # Strip trailing slashes
+domains.map! { |domain| domain.gsub /\/$/, "" } # Strip trailing slashes
+domains.reject! { |domain| domain.empty? }      # Reject empty strings
+
+# build our hash
+domain_hash = array_to_hash(domains)
+
+# filter
+domain_hash.reject! { |group,domain| BLACKLIST.include?(group) } # Group blacklist
+domain_hash.each do |group, domains|
+  domains.reject! { |domain| domain.match /\// }           # Reject URLs
+  domains.select! { |domain| PublicSuffix.valid?(domain) } # Validate domain
+  domains.reject! { |domain| Swot::is_academic?(domain) }  # Reject academic domains
+  domains.select! { |domain| domain_resolves? domain }     # Domain
+end
+
+# Grab existing list
+current = file_to_array( CURRENT_LIST )
+current_hash = array_to_hash(current)
+
+# Lazy deep merge
+domain_hash.each do |group,domains|
+  current_hash[group] = [] if current_hash[group].nil?
+  current_hash[group].concat domains
+  current_hash[group].sort! # Alphabetize
+  current_hash[group].uniq! # Ensure uniqueness
+end
+
+# Sort by group
+current_hash = current_hash.sort_by { |group, domains| group.downcase }
+
+# PublicSuffix Formatted Output
+current_group = ""
+output = ""
+current_hash.each do |group, domains|
+  if group != current_group
+    output << "\n\n" unless current_group.empty? # first entry
+    output << "// #{group}\n"
+    current_group = group
+  end
+  output << domains.join("\n")
+end
+
+File.open(CURRENT_LIST, "w") { |file| file.write output }
