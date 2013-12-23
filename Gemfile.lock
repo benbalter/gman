@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gman (0.2.1)
+    gman (1.0.0)
       addressable
       email_veracity
       public_suffix
