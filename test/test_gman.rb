@@ -1,4 +1,4 @@
-require 'helper'
+require File.join(File.dirname(__FILE__), 'helper')
 
 VALID = [  "foo.gov",
             "http://foo.mil",
@@ -97,7 +97,7 @@ class TestGman < Test::Unit::TestCase
 
   should "only contain resolvable domains" do
     Gman.list.each do |entry|
-      assert_equal true, domain_resolves? domain
+      assert_equal true, domain_resolves?(entry.name), entry.name
     end
   end
 
