@@ -1,17 +1,22 @@
 require File.join(File.dirname(__FILE__), 'helper')
 
-class TestRemote < Test::Unit::TestCase
+class TestDomains < Test::Unit::TestCase
 
-  def domain_resolves?(domain)
-    res = Net::DNS::Resolver.new
-    res.nameservers = ["8.8.8.8","8.8.4.4", "208.67.222.222", "208.67.220.220"]
-    packet = res.search(domain, Net::DNS::NS)
-    packet.header.anCount > 0
+  WHITELIST = [ "non-us gov", "non-us mil", "US Federal"]
+  DOMAINS = Gman::Parser.file_to_hash(Gman.list_path)
+
+  def whitelisted?(domain)
+    WHITELIST.each do |group|
+      return true if DOMAINS[group].include? domain
+    end
+    false
   end
 
   should "only contain resolvable domains" do
     Gman.list.each do |entry|
-      assert_equal true, domain_resolves?(entry.name), "Could not resolve #{entry.name}"
+      next if whitelisted? entry.name
+      resolves = Gman::Parser.domain_resolves?(entry.name)
+      assert_equal true, resolves, "Could not resolve #{entry.name}"
     end
   end
 
@@ -44,5 +49,4 @@ class TestRemote < Test::Unit::TestCase
       assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
     end
   end
-
 end
