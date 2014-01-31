@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gman (1.0.0)
+    gman (2.0.0)
       addressable
       public_suffix
       swot
