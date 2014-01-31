@@ -21,9 +21,9 @@ task :console do
   exec "irb -r ./lib/gman.rb"
 end
 
-desc "Run extra tests that hit the Internet"
-Rake::TestTask.new(:remote) do |test|
+desc "Validate the domain list"
+Rake::TestTask.new(:domains) do |test|
   test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_remote*.rb'
+  test.pattern = 'test/**/test_domains*.rb'
   test.verbose = true
 end
