@@ -16,39 +16,37 @@ class TestDomains < Test::Unit::TestCase
     Gman.list.each do |entry|
       next if whitelisted? entry.name
       resolves = Gman::Parser.domain_resolves?(entry.name)
-      puts entry.name unless resolves
-      #assert_equal true, resolves, "Could not resolve #{entry.name}"
+      assert_equal true, resolves, "Could not resolve #{entry.name}"
     end
   end
 
   should "not contain any educational domains" do
     Gman.list.each do |entry|
-    #  assert_equal false, Swot::is_academic?(entry.name), "#{entry.name} is an academic domain"
+      assert_equal false, Swot::is_academic?(entry.name), "#{entry.name} is an academic domain"
     end
   end
 
   should "not contain any invalid domains" do
     Gman.list.each do |entry|
-    #  assert_equal true, PublicSuffix.valid?("foo.#{entry.name}"), "#{entry.name} is not a valid domain"
+      assert_equal true, PublicSuffix.valid?("foo.#{entry.name}"), "#{entry.name} is not a valid domain"
     end
   end
 
   should "pass any url on the list" do
     Gman.list.each do |entry|
-    #  assert_equal true, Gman.valid?("http://foo.#{entry.name}/bar"), "http://foo.#{entry.name}/bar is not a valid"
+      assert_equal true, Gman.valid?("http://foo.#{entry.name}/bar"), "http://foo.#{entry.name}/bar is not a valid"
     end
   end
 
   should "pass any email on the list" do
     Gman.list.each do |entry|
-    #  assert_equal true, Gman.valid?("foo@bar.#{entry.name}"), "foo@bar.#{entry.name} is not a valid"
+      assert_equal true, Gman.valid?("foo@bar.#{entry.name}"), "foo@bar.#{entry.name} is not a valid"
     end
   end
 
   should "pass any domain on the list" do
     Gman.list.each do |entry|
-  #  assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
+      assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
     end
   end
-
 end
