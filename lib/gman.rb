@@ -62,10 +62,14 @@ module Gman
       elsif email?(text)
         EmailVeracity::Address.new(text).domain.to_s
       else # url sans http://
-        uri = Addressable::URI.parse("http://#{text}")
-        # properly parse http://foo edge cases
-        # see https://github.com/sporkmonger/addressable/issues/145
-        uri.host if uri.host =~ /\./
+        begin
+          uri = Addressable::URI.parse("http://#{text}")
+          # properly parse http://foo edge cases
+          # see https://github.com/sporkmonger/addressable/issues/145
+          uri.host if uri.host =~ /\./
+        rescue Addressable::URI::InvalidURIError
+          nil
+        end
       end
     end
 
