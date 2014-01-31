@@ -62,7 +62,7 @@ end
 def domain_resolves?(domain)
   res = Net::DNS::Resolver.new
   res.nameservers = ["8.8.8.8","8.8.4.4", "208.67.222.222", "208.67.220.220"]
-  packet = res.search(domain, Net::DNS::NS)
+  packet = res.search(domain, Net::DNS::MX)
   packet.header.anCount > 0
 end
 
@@ -84,7 +84,7 @@ domain_hash.each do |group, domains|
   domains.reject! { |domain| domain.match /\// }           # Reject URLs
   domains.select! { |domain| PublicSuffix.valid?(domain) } # Validate domain
   domains.reject! { |domain| Swot::is_academic?(domain) }  # Reject academic domains
-  domains.select! { |domain| domain_resolves? domain }     # Domain
+  domains.select! { |domain| domain_resolves?(domain) }    # Domain
 end
 
 # Grab existing list
