@@ -1796,7 +1796,6 @@ peachtree-city.org
 pearson-ga.com
 pembrokega.net
 pinelakega.com
-polkcountygeorgia.us
 pooler-ga.us
 putnamcountyga.us
 rockdalecounty.org
@@ -2451,7 +2450,6 @@ madisoncty.com
 michianashores.com
 middleburyin.org
 morgancounty-il.com
-newburgh.org
 newhavenin.org
 newtoncountyin.com
 nirpc.org
@@ -3196,7 +3194,6 @@ townofdresden.com
 townofgreene.net
 townofguilford.com
 townofhartlandme.com
-townofmadawaska.com
 townofnaples.org
 townofnorridgewock.com
 townofnorthberwick.org
