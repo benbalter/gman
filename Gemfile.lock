@@ -3,7 +3,6 @@ PATH
   specs:
     gman (1.0.0)
       addressable
-      email_veracity
       public_suffix
       swot
 
@@ -18,7 +17,6 @@ GEM
       tzinfo (~> 0.3.37)
     addressable (2.3.5)
     atomic (1.1.14)
-    email_veracity (0.6.0)
     i18n (0.6.9)
     json (1.8.1)
     minitest (4.7.5)

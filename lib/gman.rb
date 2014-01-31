@@ -2,9 +2,47 @@ require 'public_suffix'
 require 'yaml'
 require 'swot'
 require "addressable/uri"
-require "email_veracity"
 
 module Gman
+
+  # Source: http://bit.ly/1n2X9iv
+  EMAIL_REGEX = %r{
+        ^
+        (
+          [\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+
+          \.
+        )
+        *
+        [\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+
+        @
+        (
+          (
+            (
+              (
+                (
+                  [a-z0-9]{1}
+                  [a-z0-9\-]{0,62}
+                  [a-z0-9]{1}
+                )
+                |
+                [a-z]
+              )
+              \.
+            )+
+            [a-z]{2,6}
+          )
+          |
+          (
+            \d{1,3}
+            \.
+          ){3}
+          \d{1,3}
+          (
+            \:\d{1,5}
+          )?
+        )
+        $
+      }xi
 
   class << self
 
@@ -16,19 +54,11 @@ module Gman
     #   "foo.gov.uk"
     #   "http://foo.bar.gov"
     #
-    # check_mx - if an email is passed, check the domain for an mx record
-    #
     # Returns boolean true if a government domain
-    def valid?(text, check_mx=false)
+    def valid?(text)
 
       domain = get_domain text
       return false unless PublicSuffix.valid?(domain)
-
-      # validate mx record
-      if check_mx && email?(text)
-        EmailVeracity::Config[:skip_lookup] = false
-        return false unless EmailVeracity::Address.new(text).valid?
-      end
 
       # Ensure non-edu
       return false if Swot::is_academic?(domain)
@@ -44,7 +74,7 @@ module Gman
     # returns an instance of our custom public suffix list
     # list behaves like PublicSuffix::List but is limited to our whitelisted domains
     def list
-      @list ||= PublicSuffix::List::parse( File.new(File.join(File.dirname(__FILE__), "domains.txt"), "r:utf-8"))
+      @list ||= PublicSuffix::List::parse(File.new(File.join(File.dirname(__FILE__), "domains.txt"), "r:utf-8"))
     end
 
     # Get the FQDN name from a URL or email address.
@@ -60,7 +90,7 @@ module Gman
       if uri.host # valid https?://* URI
         uri.host
       elsif email?(text)
-        EmailVeracity::Address.new(text).domain.to_s
+        text.match(/@([\w\.\-]+)\Z/i)[1]
       else # url sans http://
         begin
           uri = Addressable::URI.parse("http://#{text}")
@@ -90,8 +120,7 @@ module Gman
     #
     # Returns true if email, otherwise false
     def email?(text)
-      EmailVeracity::Config[:skip_lookup] = true
-      EmailVeracity::Address.new(text).valid?
+      text =~ EMAIL_REGEX
     end
   end
 end
