@@ -53,12 +53,6 @@ class TestGman < Test::Unit::TestCase
     assert_equal nil, Gman.get_domain("foo")
   end
 
-  should "validate mx records when asked" do
-    assert_equal true, Gman.valid?("foo@nasa.gov", true)
-    assert_equal false, Gman.valid?("foo@github.gov", true)
-    assert_equal true, Gman.valid?("foo@github.gov", false)
-  end
-
   should "not err out on invalid domains" do
     assert_equal false, Gman.valid?("foo@act.gov.au")
     assert_equal "act.gov.au", Gman.get_domain("foo@act.gov.au")
