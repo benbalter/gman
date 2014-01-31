@@ -12,10 +12,18 @@ require 'rake'
 require 'rake/testtask'
 Rake::TestTask.new(:test) do |test|
   test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_*.rb'
+  test.pattern = 'test/**/test_gman*.rb'
   test.verbose = true
 end
 
+desc "Open console with gman loaded"
 task :console do
   exec "irb -r ./lib/gman.rb"
+end
+
+desc "Run extra tests that hit the Internet"
+Rake::TestTask.new(:remote) do |test|
+  test.libs << 'lib' << 'test'
+  test.pattern = 'test/**/test_remote*.rb'
+  test.verbose = true
 end

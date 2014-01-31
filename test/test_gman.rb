@@ -1,4 +1,4 @@
-require 'helper'
+require File.join(File.dirname(__FILE__), 'helper')
 
 VALID = [  "foo.gov",
             "http://foo.mil",
@@ -27,12 +27,6 @@ INVALID = [ "foo.bar.com",
 
 class TestGman < Test::Unit::TestCase
 
-  def domain_resolves?(domain)
-    res = Net::DNS::Resolver.new
-    res.nameservers = ["8.8.8.8","8.8.4.4", "208.67.222.222", "208.67.220.220"]
-    packet = res.search(domain, Net::DNS::NS)
-    packet.header.anCount > 0
-  end
 
   should "recognize government email addresses and domains" do
     VALID.each do |test|
@@ -94,13 +88,6 @@ class TestGman < Test::Unit::TestCase
       assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
     end
   end
-
-  should "only contain resolvable domains" do
-    Gman.list.each do |entry|
-      assert_equal true, domain_resolves? domain
-    end
-  end
-
 
   should "not err out on invalid domains" do
     assert_equal false, Gman.valid?("foo@act.gov.au")
