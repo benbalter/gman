@@ -6093,7 +6093,6 @@ lloydharbor.org
 lowville.ny.us
 lynbrookvillage.net
 macedontown.net
-madisoncounty.org
 madridny.us
 malonetown.com
 malta-town.org
@@ -7490,7 +7489,6 @@ paehealth.com
 palmertonborough.com
 palmertwp.com
 paradisetownship.com
-parkercity.org
 parkesburg.org
 parksideboro.com
 patientsafetyauthority.org
@@ -7682,7 +7680,6 @@ zelieboro.org
 fajardopr.org
 gobierno.pr
 loteriaelectronicapr.com
-mayaguez.pr
 municipiocarolina.com
 municipiodearecibo.com
 municipiodebayamon.com
