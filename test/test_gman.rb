@@ -106,4 +106,10 @@ class TestGman < Test::Unit::TestCase
     assert_equal "bar", Gman.domain_parts("https://foo.bar.gov").sld
     assert_equal "bar.gov", Gman.domain_parts("foo@bar.gov").domain
   end
+
+  should "not err out on invalid hosts" do
+    assert_nothing_raised do
+      assert_equal nil, Gman.get_domain("</@foo.com")
+    end
+  end
 end
