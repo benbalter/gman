@@ -76,4 +76,8 @@ class TestGman < Test::Unit::TestCase
       assert_equal nil, Gman.get_domain("</@foo.com")
     end
   end
+
+  should "returns the path to domains.txt" do
+    assert_equal true, File.exists?(Gman.list_path)
+  end
 end
