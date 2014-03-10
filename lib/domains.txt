@@ -132,6 +132,7 @@ gov.vn
 gov.ws
 gub.uy
 ottawa.ca
+gov.yk.ca
 
 // non-us mil
 mil.ac
