@@ -46,7 +46,7 @@ module Gman
 
   class << self
 
-    # Normalizes and checks if a given string represents a governemnt domain
+    # Normalizes and checks if a given string represents a government domain
     # Possible strings to test:
     #   ".gov"
     #   "foo.gov"
@@ -105,7 +105,7 @@ module Gman
 
     # Helper function to return the public suffix domain object
     #
-    # Supports all domainy strings (URLs, emails)
+    # Supports all domain strings (URLs, emails)
     #
     # Returns the domain object or nil, but no errors, never an error
     def domain_parts(text)

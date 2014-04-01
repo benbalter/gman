@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# Propegates an initial list of best-guess government domains
+# Propagates an initial list of best-guess government domains
 
 require "public_suffix"
 require "yaml"

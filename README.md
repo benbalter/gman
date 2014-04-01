@@ -38,7 +38,7 @@ Gman.valid? "foo.gov" #true
 Gman.valid? "foo.biz" #false
 ```
 
-### Get a domain name from an arbitrary domainy string
+### Get a domain name from an arbitrary domain string
 
 ```ruby
 Gman.get_domain "http://foo.bar.gov" # foo.bar.gov
