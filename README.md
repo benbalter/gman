@@ -53,4 +53,4 @@ Contributions welcome! Please see [the contribution guidelines](CONTRIBUTING.md)
 
 ## Credits
 
-Heavily inspired by [swot](https://github.com/leereilly/swot). Thanks @leereily!
+Heavily inspired by [swot](https://github.com/leereilly/swot). Thanks @leereilly!
