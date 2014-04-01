@@ -61,7 +61,7 @@ module Gman
       return false unless PublicSuffix.valid?(domain)
 
       # Ensure non-edu
-      return false if Swot::is_academic?(domain)
+      return false if domain_parts(domain).sld && Swot::is_academic?(domain)
 
       # check using public suffix's standard logic
       rule = list.find domain
