@@ -193,6 +193,7 @@ ega.or.th
 fed.us
 gov
 mil
+si.edu
 
 // US State, County, Local
 bouldercounty.org
