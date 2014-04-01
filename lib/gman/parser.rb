@@ -1,4 +1,4 @@
-# Utility functions for parsing and manipulating public-suffix formated domain lists
+# Utility functions for parsing and manipulating public-suffix formatted domain lists
 require 'net/dns'
 require 'net/dns/resolver'
 
