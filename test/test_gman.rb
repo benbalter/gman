@@ -61,7 +61,7 @@ class TestGman < Test::Unit::TestCase
 
   should "return public suffix domain" do
     assert_equal PublicSuffix::Domain, Gman.domain_parts("whitehouse.gov").class
-    assert_equal NilClass, Gman.domain_parts("foo.bar").class
+    assert_equal NilClass, Gman.domain_parts("foo.invalid").class
   end
 
   should "parse domain parts" do

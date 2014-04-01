@@ -24,9 +24,9 @@ Gem::Specification.new do |s|
     ".gitignore"
   ]
   s.require_paths = ["lib"]
-  s.add_dependency( "public_suffix" )
-  s.add_dependency( "swot" )
-  s.add_dependency( "addressable" )
+  s.add_dependency( "public_suffix", '~> 1.4.1')
+  s.add_dependency( "swot", '~> 0.3.0' )
+  s.add_dependency( "addressable", '~> 2.3.6' )
 
   s.add_development_dependency( "rake" )
   s.add_development_dependency( "shoulda" )
