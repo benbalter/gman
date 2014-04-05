@@ -1,4 +1,5 @@
 // non-us gov
+admin.ch
 dep.no
 gc.ca
 gob.bo
@@ -190,6 +191,34 @@ mod.uk
 // non-us sub-divisions
 greatersudbury.ca
 ega.or.th
+
+// Swiss Cantons (Federal States)
+ag.ch
+ai.ch
+ar.ch
+be.ch
+bl.ch
+bs.ch
+fr.ch
+ge.ch
+gl.ch
+ju.ch
+lu.ch
+ne.ch
+nw.ch
+ow.ch
+sg.ch
+sh.ch
+so.ch
+sz.ch
+tg.ch
+ti.ch
+ur.ch
+vd.ch
+vs.ch
+zg.ch
+zh.ch
+
 
 // US Federal
 fed.us
