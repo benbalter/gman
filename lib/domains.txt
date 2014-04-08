@@ -184,6 +184,7 @@ mil.tz
 mil.uy
 mil.vc
 mil.ve
+mod.uk
 
 // non-us sub-divisions
 greatersudbury.ca
