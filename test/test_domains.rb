@@ -13,11 +13,13 @@ class TestDomains < Test::Unit::TestCase
   end
 
   should "only contain resolvable domains" do
+    unresolvables = []
     Gman.list.each do |entry|
       next if whitelisted? entry.name
       resolves = Gman::Parser.domain_resolves?(entry.name)
-      assert_equal true, resolves, "Could not resolve #{entry.name}"
+      unresolvables.push entry.name unless resolves
     end
+    assert_equal [], unresolvables
   end
 
   should "not contain any educational domains" do
