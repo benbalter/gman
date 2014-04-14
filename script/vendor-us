@@ -32,7 +32,7 @@ FileUtils.rm_rf TMP_DIR
 FileUtils.mkdir_p TMP_DIR
 Dir.chdir TMP_DIR
 
-# Clone down the lastest version of the list
+# Clone down the latest version of the list
 system "git clone --depth 1 #{REPO} #{TMP_DIR}"
 domains = Gman::Parser.file_to_array(TXT_FILE)
 puts "Parsing #{domains.size} domains... normalizing"
