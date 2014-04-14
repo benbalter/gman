@@ -1,4 +1,5 @@
 // non-us gov
+dep.no
 gc.ca
 gob.bo
 gob.cl
@@ -184,6 +185,7 @@ mil.tz
 mil.uy
 mil.vc
 mil.ve
+mod.uk
 
 // non-us sub-divisions
 greatersudbury.ca
@@ -662,6 +664,7 @@ ci.marina.ca.us
 ci.mendota.ca.us
 ci.millbrae.ca.us
 ci.modesto.ca.us
+ci.monterey-park.ca.us
 ci.moreno-valley.ca.us
 ci.mt-shasta.ca.us
 ci.mtnview.ca.us
@@ -969,7 +972,6 @@ mccsd.com
 mcfarlandcity.org
 menlopark.org
 modestogov.com
-modoccounty.us
 mojaveindiantribe.com
 monterey.org
 montesereno.org
@@ -1140,7 +1142,6 @@ coloradonocall.com
 coloradoriverrecovery.org
 crgov.com
 cripplecreekgov.com
-deertrailcolorado.org
 deltacounty.com
 denvergov.org
 durangogov.org
@@ -1843,7 +1844,6 @@ guamlegislature.com
 guamsupremecourt.com
 guamtax.com
 investguam.com
-justice.gov.gu
 visitguam.org
 
 // usagovHI
@@ -3196,6 +3196,7 @@ townofdresden.com
 townofgreene.net
 townofguilford.com
 townofhartlandme.com
+townofmadawaska.com
 townofnaples.org
 townofnorridgewock.com
 townofnorthberwick.org
@@ -7679,6 +7680,7 @@ zelieboro.org
 fajardopr.org
 gobierno.pr
 loteriaelectronicapr.com
+mayaguez.pr
 municipiocarolina.com
 municipiodearecibo.com
 municipiodebayamon.com
@@ -7969,7 +7971,6 @@ salemsd.com
 sddot.com
 sdhda.org
 sdonecall.com
-siouxempirecfc.org
 siouxfalls.org
 state.sd.us
 sullycounty.net
@@ -8866,7 +8867,6 @@ townofcoeburn.com
 townofgordonsville.org
 townofhalifax.com
 townofkilmarnockva.com
-townoflacrosse.org
 townofluray.com
 townofmiddleburg.org
 townoforangeva.org
@@ -8985,7 +8985,6 @@ newportvermont.org
 northernnewenglandcfc.org
 northherovt.com
 norwich.vt.us
-onioncity.com
 pantonvt.us
 peacham.net
 pittsfieldvt.org
@@ -9808,7 +9807,6 @@ cheyennecity.org
 ci.gillette.wy.us
 city-of-torrington.org
 city-sheridan-wy.com
-cityofdouglaswy.com
 cityofgreenriver.org
 cityoflaramie.com
 cityofworland.org
@@ -9970,7 +9968,6 @@ ncnhtf.org
 ncoah.com
 nconemap.net
 ncopenbook.gov
-ncpanbranch.com
 ncparks.gov
 ncports.com
 ncpublications.com
