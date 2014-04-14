@@ -17,6 +17,7 @@ require 'rubygems'
 require 'fileutils'
 require 'public_suffix'
 require 'swot'
+require './lib/gman'
 require './lib/gman/parser'
 
 TMP_DIR = File.expand_path("../tmp/govt-urls", File.dirname(__FILE__))
@@ -34,6 +35,7 @@ Dir.chdir TMP_DIR
 # Clone down the latest version of the list
 system "git clone --depth 1 #{REPO} #{TMP_DIR}"
 domains = Gman::Parser.file_to_array(TXT_FILE)
+puts "Parsing #{domains.size} domains... normalizing"
 
 # Normalize ALL THE THINGS
 domains.map! { |domain| domain.strip } # Strip trailing slashes
@@ -42,19 +44,23 @@ domains.reject! { |domain| domain.empty? }      # Reject empty strings
 
 # build our hash
 domain_hash = Gman::Parser.array_to_hash(domains)
+puts "Normalized down to #{domain_hash.size} domains... filtering"
 
 # filter
 domain_hash.reject! { |group,domain| BLACKLIST.include?(group) } # Group blacklist
 domain_hash.each do |group, domains|
+  puts "Filtering #{group}..."
   domains.reject! { |domain| domain.match /\// }           # Reject URLs
   domains.select! { |domain| PublicSuffix.valid?(domain) } # Validate domain
   domains.reject! { |domain| Swot::is_academic?(domain) }  # Reject academic domains
   domains.select! { |domain| Gman::Parser.domain_resolves?(domain) }    # Domain
 end
+puts "Filtered down to #{domain_hash.size} domains"
 
 # Grab existing list
-current = Gman::Parser.file_to_array( Gman.list_path )
+current = Gman::Parser.file_to_array( Gman::list_path )
 current_hash = Gman::Parser.array_to_hash(current)
+puts "Current list contains #{current.size} domains... merging"
 
 # Lazy deep merge
 domain_hash.each do |group,domains|
@@ -79,4 +85,9 @@ current_hash.each do |group, domains|
   output << domains.join("\n")
 end
 
+puts "merged. Writing..."
+
 File.open(Gman.list_path, "w") { |file| file.write output }
+
+result = Gman::Parser.file_to_array( Gman::list_path )
+puts "New list contains #{result.size} domains. Fin."
