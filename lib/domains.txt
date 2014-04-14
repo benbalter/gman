@@ -1842,7 +1842,6 @@ guamlegislature.com
 guamsupremecourt.com
 guamtax.com
 investguam.com
-justice.gov.gu
 visitguam.org
 
 // usagovHI
