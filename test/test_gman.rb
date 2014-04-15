@@ -25,8 +25,7 @@ INVALID = [ "foo.bar.com",
             " ",
           ]
 
-class TestGman < Test::Unit::TestCase
-
+class TestGman < Minitest::Test
 
   should "recognize government email addresses and domains" do
     VALID.each do |test|
@@ -72,9 +71,7 @@ class TestGman < Test::Unit::TestCase
   end
 
   should "not err out on invalid hosts" do
-    assert_nothing_raised do
-      assert_equal nil, Gman.get_domain("</@foo.com")
-    end
+    assert_equal nil, Gman.get_domain("</@foo.com")
   end
 
   should "returns the path to domains.txt" do

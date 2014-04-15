@@ -18,7 +18,7 @@ GEM
     addressable (2.3.6)
     i18n (0.6.9)
     json (1.8.1)
-    minitest (5.3.2)
+    minitest (5.3.3)
     net-dns (0.8.0)
     public_suffix (1.4.2)
     rake (10.2.2)
