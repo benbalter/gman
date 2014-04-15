@@ -1,6 +1,6 @@
 require File.join(File.dirname(__FILE__), 'helper')
 
-class TestDomains < Test::Unit::TestCase
+class TestDomains < Minitest::Test
 
   WHITELIST = [ "non-us gov", "non-us mil", "US Federal"]
   DOMAINS = Gman::Parser.file_to_hash(Gman.list_path)
