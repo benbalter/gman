@@ -132,6 +132,7 @@ gov.vc
 gov.ve
 gov.vn
 gov.ws
+gov.za
 gub.uy
 ottawa.ca
 gov.yk.ca
@@ -186,6 +187,7 @@ mil.tz
 mil.uy
 mil.vc
 mil.ve
+mil.za
 mod.uk
 
 // non-us sub-divisions
