@@ -40,11 +40,19 @@ module Gman
         domain_hash
       end
 
+      def resolver
+        @resolver ||= begin
+          resolver = Net::DNS::Resolver.new
+          resolver.nameservers = ["8.8.8.8","8.8.4.4", "208.67.222.222", "208.67.220.220"]
+          resolver
+        end
+      end
+
       # Verifies that the given domain has an MX record, and thus is valid
       def domain_resolves?(domain)
-        resolver = Net::DNS::Resolver.new
-        resolver.nameservers = ["8.8.8.8","8.8.4.4", "208.67.222.222", "208.67.220.220"]
-        resolver.search(domain, Net::DNS::NS).header.anCount > 0 || resolver.search(domain, Net::DNS::MX).header.anCount > 0
+        resolver.search(domain).header.anCount > 0 ||
+        resolver.search(domain, Net::DNS::NS).header.anCount > 0 ||
+        resolver.search(domain, Net::DNS::MX).header.anCount > 0
       end
     end
   end

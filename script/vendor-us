@@ -34,6 +34,15 @@ Dir.chdir TMP_DIR
 
 # Clone down the latest version of the list
 system "git clone --depth 1 #{REPO} #{TMP_DIR}"
+
+# Convert list to public suffix format
+domains = File.open(TXT_FILE).read
+domains.gsub! /.*_{3,}$/m, "" # strib leading comments
+domains.gsub! /^(?! )(.*)$/, "\n//\\1"
+domains.gsub! /^ \.\s/, ""
+File.open(TXT_FILE, "w") { |file| file.write domains }
+
+# Parse domains
 domains = Gman::Parser.file_to_array(TXT_FILE)
 puts "Parsing #{domains.size} domains... normalizing"
 
@@ -53,7 +62,6 @@ domain_hash.each do |group, domains|
   domains.reject! { |domain| domain.match /\// }           # Reject URLs
   domains.select! { |domain| PublicSuffix.valid?(domain) } # Validate domain
   domains.reject! { |domain| Swot::is_academic?(domain) }  # Reject academic domains
-  domains.select! { |domain| Gman::Parser.domain_resolves?(domain) }    # Domain
 end
 puts "Filtered down to #{domain_hash.size} domains"
 
