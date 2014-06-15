@@ -25,8 +25,7 @@ INVALID = [ "foo.bar.com",
             " ",
           ]
 
-class TestGman < Test::Unit::TestCase
-
+class TestGman < Minitest::Test
 
   should "recognize government email addresses and domains" do
     VALID.each do |test|
@@ -54,9 +53,9 @@ class TestGman < Test::Unit::TestCase
   end
 
   should "not err out on invalid domains" do
-    assert_equal false, Gman.valid?("foo@act.gov.au")
-    assert_equal "act.gov.au", Gman.get_domain("foo@act.gov.au")
-    assert_equal nil, Gman.domain_parts("foo@act.gov.au")
+    assert_equal false, Gman.valid?("foo@gov.invalid")
+    assert_equal "gov.invalid", Gman.get_domain("foo@gov.invalid")
+    assert_equal nil, Gman.domain_parts("foo@gov.invalid")
   end
 
   should "return public suffix domain" do
@@ -72,9 +71,7 @@ class TestGman < Test::Unit::TestCase
   end
 
   should "not err out on invalid hosts" do
-    assert_nothing_raised do
-      assert_equal nil, Gman.get_domain("</@foo.com")
-    end
+    assert_equal nil, Gman.get_domain("</@foo.com")
   end
 
   should "returns the path to domains.txt" do
