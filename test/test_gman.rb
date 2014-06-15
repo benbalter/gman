@@ -53,9 +53,9 @@ class TestGman < Minitest::Test
   end
 
   should "not err out on invalid domains" do
-    assert_equal false, Gman.valid?("foo@act.gov.au")
-    assert_equal "act.gov.au", Gman.get_domain("foo@act.gov.au")
-    assert_equal nil, Gman.domain_parts("foo@act.gov.au")
+    assert_equal false, Gman.valid?("foo@gov.invalid")
+    assert_equal "gov.invalid", Gman.get_domain("foo@gov.invalid")
+    assert_equal nil, Gman.domain_parts("foo@gov.invalid")
   end
 
   should "return public suffix domain" do
