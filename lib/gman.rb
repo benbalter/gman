@@ -2,7 +2,7 @@ require 'public_suffix'
 require 'yaml'
 require 'swot'
 require "addressable/uri"
-require_relative "gman/version"
+require File.expand_path("gman/version", File.dirname(__FILE__))
 
 module Gman
 

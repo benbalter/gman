@@ -1,4 +1,4 @@
-require_relative "lib/gman/version"
+require File.expand_path("lib/gman/version", File.dirname(__FILE__))
 
 Gem::Specification.new do |s|
   s.name = "gman"
