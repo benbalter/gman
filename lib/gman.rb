@@ -2,6 +2,7 @@ require 'public_suffix'
 require 'yaml'
 require 'swot'
 require "addressable/uri"
+require_relative "gman/version"
 
 module Gman
 
