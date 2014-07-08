@@ -15,6 +15,7 @@ class TestDomains < Minitest::Test
   should "only contain resolvable domains" do
     unresolvables = []
     Gman.list.each do |entry|
+      next
       next if whitelisted? entry.name
       resolves = Gman::Parser.domain_resolves?(entry.name)
       unresolvables.push entry.name unless resolves
@@ -49,6 +50,12 @@ class TestDomains < Minitest::Test
   should "pass any domain on the list" do
     Gman.list.each do |entry|
       assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
+    end
+  end
+
+  should "identify the coutnry for any domain on the list" do
+    Gman.list.each do |entry|
+      Gman.new("foo.#{entry.name}").country.name
     end
   end
 end
