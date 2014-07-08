@@ -133,6 +133,7 @@ class Gman
       end
     end
   end
+  alias_method :to_s, :domain
 
   # Checks if the input string represents a government domain
   #
@@ -188,6 +189,11 @@ class Gman
   # Gman.new("foo.gov").country.name     => "United States"
   # Gman.new("foo.gov").country.currency => "USD"
   def country
-    IsoCountryCodes.find alpha2
+    @country ||= IsoCountryCodes.find(alpha2)
+  end
+
+  # Console output
+  def inspect
+    "#<Gman domain=\"#{domain}\" valid=#{valid?}>"
   end
 end
