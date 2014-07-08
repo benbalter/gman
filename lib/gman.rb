@@ -59,7 +59,8 @@ class Gman
     :com    => "us",
     :net    => "us",
     :edu    => "us",
-    :travel => "us" # only .travel domain is alabama.travel
+    :travel => "us",
+    :info   => "us"
   }
 
   class << self
