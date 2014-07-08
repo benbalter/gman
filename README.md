@@ -22,29 +22,33 @@ Or add this to your `Gemfile` before doing a `bundle install`:
 
 ## Usage
 
+### In general
+
 ### Verify email addresses
 
 ```ruby
-Gman.valid? "foo@bar.gov" #true
-Gman.valid? "foo@bar.com" #false
+Gman.valid? "foo@bar.gov" #=> true
+Gman.valid? "foo@bar.com" #=> false
 ```
 
 ### Verify domain
 
 ```ruby
-Gman.valid? "http://foo.bar.gov" #true
-Gman.valid? "foo.bar.gov" #true
-Gman.valid? "foo.gov" #true
-Gman.valid? "foo.biz" #false
+Gman.valid? "http://foo.bar.gov" #=> true
+Gman.valid? "foo.bar.gov"        #=> true
+Gman.valid? "foo.gov"            #=> true
+Gman.valid? "foo.biz"            #=> false
 ```
 
-### Get a domain name from an arbitrary domain string
+### Get the ISO Country Code information represented by a government domain
 
 ```ruby
-Gman.get_domain "http://foo.bar.gov" # foo.bar.gov
-Gman.get_domain "foo@bar.gov" # bar.gov
-Gman.get_domain "foo.bar.gov" # foo.bar.gov
-Gman.get_domain "asdf@asdf" # nil (no domain within the string)
+domain = Gman.new "whitehouse.gov" #=> #<Gman domain="whitehouse.gov" valid=true>
+domain.country.name                #=> "United States"
+domain.country.alpha2              #=> "US"
+domain.country.alpha3              #=> "USA"
+domain.country.currency            #=> "USD"
+domain.conutry.calling_code        #=> "+1"
 ```
 
 ## Contributing

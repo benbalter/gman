@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
   s.add_dependency( "public_suffix", '~> 1.4')
   s.add_dependency( "swot", '~> 0.3.1' )
   s.add_dependency( "addressable", '~> 2.3' )
+  s.add_dependency( "iso_country_codes", "~> 0.4" )
 
   s.add_development_dependency( "rake" )
   s.add_development_dependency( "shoulda" )

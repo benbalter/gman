@@ -2,7 +2,7 @@
 require 'net/dns'
 require 'net/dns/resolver'
 
-module Gman
+class Gman
   class Parser
 
     COMMENT_REGEX = /\/\/[\/\s]*(.*)$/i
