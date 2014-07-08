@@ -1,3 +1,3 @@
-module Gman
-  VERSION = '2.1.3'
+class Gman
+  VERSION = '3.0.0'
 end

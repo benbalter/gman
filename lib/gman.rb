@@ -3,9 +3,9 @@ require 'yaml'
 require 'swot'
 require "addressable/uri"
 require 'iso_country_codes'
-require File.expand_path("gman/version", File.dirname(__FILE__))
+require_relative "gman/version"
 
-module Gman
+class Gman
 
   # Source: http://bit.ly/1n2X9iv
   EMAIL_REGEX = %r{
@@ -61,7 +61,6 @@ module Gman
   }
 
   class << self
-
     # Normalizes and checks if a given string represents a government domain
     # Possible strings to test:
     #   ".gov"
@@ -72,19 +71,14 @@ module Gman
     #
     # Returns boolean true if a government domain
     def valid?(text)
+      Gman.new(text).valid?
+    end
 
-      domain = get_domain text
-      return false unless PublicSuffix.valid?(domain)
-
-      # Ensure non-edu
-      return false if Swot::is_academic?(domain)
-
-      # check using public suffix's standard logic
-      rule = list.find domain
-      return true if !rule.nil? && rule.allow?(domain)
-
-      # also allow for explicit matches to domain list
-      list.rules.any? { |rule| rule.value == domain }
+    # Is the given string in the form of a valid email address?
+    #
+    # Returns true if email, otherwise false
+    def email?(text)
+      Gman.new(text).email?
     end
 
     # returns an instance of our custom public suffix list
@@ -93,23 +87,37 @@ module Gman
       @list ||= PublicSuffix::List::parse(File.new(list_path, "r:utf-8"))
     end
 
-    # Get the FQDN name from a URL or email address.
-    #
-    # Returns a string with the FQDN; nil if there's an error.
-    def get_domain(text)
+    # Returns the absolute path to the domain list
+    def list_path
+      File.join(File.dirname(__FILE__), "domains.txt")
+    end
+  end
 
-      return nil if text.to_s.strip.empty?
+  # Creates a new Gman instance
+  #
+  # text - the input string to check for governmentiness
+  def initialize(text)
+    @text = text.to_s.downcase.strip
+  end
 
-      text = text.downcase.strip
-      uri = Addressable::URI.parse(text)
+  # Parse the domain from the input string
+  #
+  # Can handle urls, domains, or emails
+  #
+  # Returns the domain string
+  def domain
+    @domain ||= begin
+      return nil if @text.empty?
+
+      uri = Addressable::URI.parse(@text)
 
       if uri.host # valid https?://* URI
         uri.host
-      elsif email?(text)
-        text.match(/@([\w\.\-]+)\Z/i)[1]
+      elsif email?
+        @text.match(/@([\w\.\-]+)\Z/i)[1]
       else # url sans http://
         begin
-          uri = Addressable::URI.parse("http://#{text}")
+          uri = Addressable::URI.parse("http://#{@text}")
           # properly parse http://foo edge cases
           # see https://github.com/sporkmonger/addressable/issues/145
           uri.host if uri.host =~ /\./
@@ -118,45 +126,62 @@ module Gman
         end
       end
     end
+  end
 
-    # Helper function to return the public suffix domain object
-    #
-    # Supports all domain strings (URLs, emails)
-    #
-    # Returns the domain object or nil, but no errors, never an error
-    def domain_parts(text)
-      begin
-        PublicSuffix.parse get_domain(text)
-      rescue
-        nil
-      end
-    end
+  # Checks if the input string represents a government domain
+  #
+  # Returns boolean true if a government domain
+  def valid?
+    # Ensure it's a valid domain
+    return false unless PublicSuffix.valid?(domain)
 
-    # Is the given string in the form of a valid email address?
-    #
-    # Returns true if email, otherwise false
-    def email?(text)
-      text =~ EMAIL_REGEX
-    end
+    # Ensure non-edu
+    return false if Swot::is_academic?(domain)
 
-    # Returns the absolute path to the domain list
-    def list_path
-      @list_path ||= File.join(File.dirname(__FILE__), "domains.txt")
-    end
+    # check using public suffix's standard logic
+    rule = Gman.list.find domain
+    return true if !rule.nil? && rule.allow?(domain)
 
-    def alpha2(text)
-      alpha2 = domain_parts(text).tld.split('.').last
-      if ALPHA2_MAP[alpha2.to_sym]
-        ALPHA2_MAP[alpha2.to_sym]
-      else
-        alpha2
-      end
-    end
+    # also allow for explicit matches to domain list
+    Gman.list.rules.any? { |rule| rule.value == domain }
+  end
 
-    def country(text)
-      IsoCountryCodes.find alpha2(text)
-    rescue
-      nil
+  # Is the input text in the form of a valid email address?
+  #
+  # Returns true if email, otherwise false
+  def email?
+    !!(@text =~ EMAIL_REGEX)
+  end
+
+  # Helper function to return the public suffix domain object
+  #
+  # Supports all domain strings (URLs, emails)
+  #
+  # Returns the domain object or nil, but no errors, never an error
+  def domain_parts
+    PublicSuffix.parse domain
+  rescue PublicSuffix::DomainInvalid
+    nil
+  end
+
+  # Returns the two character alpha county code represented by the domain
+  #
+  # e.g., United States = US, United Kingdom = GB
+  def alpha2
+    alpha2 = domain_parts.tld.split('.').last
+    if ALPHA2_MAP[alpha2.to_sym]
+      ALPHA2_MAP[alpha2.to_sym]
+    else
+      alpha2
     end
+  end
+
+  # Returns the ISO Country represented by the domain
+  #
+  # Example Usage:
+  # Gman.new("foo.gov").country.name     => "United States"
+  # Gman.new("foo.gov").country.currency => "USD"
+  def country
+    IsoCountryCodes.find alpha2
   end
 end
