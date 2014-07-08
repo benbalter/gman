@@ -2,6 +2,7 @@ require 'public_suffix'
 require 'yaml'
 require 'swot'
 require "addressable/uri"
+require 'iso_country_codes'
 require File.expand_path("gman/version", File.dirname(__FILE__))
 
 module Gman
@@ -44,6 +45,20 @@ module Gman
         )
         $
       }xi
+
+  # Map last part of TLD to alpha2 country code
+  ALPHA2_MAP = {
+    :ac  => 'sh',
+    :uk  => 'gb',
+    :su  => 'ru',
+    :tp  => 'tl',
+    :yu  => 'rs',
+    :gov => "us",
+    :mil => "us",
+    :org => "us",
+    :com => "us",
+    :net => "us"
+  }
 
   class << self
 
@@ -127,6 +142,21 @@ module Gman
     # Returns the absolute path to the domain list
     def list_path
       @list_path ||= File.join(File.dirname(__FILE__), "domains.txt")
+    end
+
+    def alpha2(text)
+      alpha2 = domain_parts(text).tld.split('.').last
+      if ALPHA2_MAP[alpha2.to_sym]
+        ALPHA2_MAP[alpha2.to_sym]
+      else
+        alpha2
+      end
+    end
+
+    def country(text)
+      IsoCountryCodes.find alpha2(text)
+    rescue
+      nil
     end
   end
 end

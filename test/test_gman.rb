@@ -77,4 +77,18 @@ class TestGman < Minitest::Test
   should "returns the path to domains.txt" do
     assert_equal true, File.exists?(Gman.list_path)
   end
+
+  should "parse the alpha2" do
+    assert_equal "us", Gman.alpha2("whitehouse.gov")
+    assert_equal "us", Gman.alpha2("army.mil")
+    assert_equal "gb", Gman.alpha2("foo.gov.uk")
+    assert_equal "ca", Gman.alpha2("gov.ca")
+  end
+
+  should "determine a domain's country" do
+    assert_equal "United States", Gman.country("whitehouse.gov").name
+    assert_equal "United States", Gman.country("army.mil").name
+    assert_equal "United Kingdom", Gman.country("foo.gov.uk").name
+    assert_equal "Canada", Gman.country("gc.ca").name
+  end
 end
