@@ -22,7 +22,6 @@ require './lib/gman'
 require './lib/gman/parser'
 
 SOURCE = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls.yaml"
-TXT_FILE = "government-urls-hierarchical-list.txt"
 BLACKLIST = ["usagovQUASI", "usagovFED", "usagovPW"]
 domain_hash = {}
 
@@ -33,6 +32,7 @@ puts "found #{domain_hash.map { |group,domains| domains.count }.inject(:+)} doma
 domain_hash.each do |group, domains|
   domains.map! { |domain| domain.strip } # Strip trailing slashes
   domains.map! { |domain| domain.gsub /\/$/, "" } # Strip trailing slashes
+  domains.map! { |domain| domain.downcase } # make lower case
   domains.reject! { |domain| domain.empty? }      # Reject empty strings
 end
 
