@@ -15,7 +15,6 @@ class TestDomains < Minitest::Test
   should "only contain resolvable domains" do
     unresolvables = []
     Gman.list.each do |entry|
-      next
       next if whitelisted? entry.name
       resolves = Gman::Parser.domain_resolves?(entry.name)
       unresolvables.push entry.name unless resolves
