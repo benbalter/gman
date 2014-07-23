@@ -1,0 +1,31 @@
+#! /usr/bin/env ruby
+
+require 'yaml'
+require 'open-uri'
+require './lib/gman'
+require './lib/gman/parser'
+
+
+current = Gman::Parser.file_to_array( Gman::list_path )
+domain_hash = Gman::Parser.array_to_hash(current)
+domain_list = domain_hash.flat_map { |k,v| v }
+puts "Current list contains #{domain_list.count} domains..."
+
+SOURCE = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls.yaml"
+source_hash = YAML.load(open(SOURCE).read)
+source_list = source_hash.flat_map { |k,v| v }
+
+dupes = []
+domain_hash.each do |group,domains|
+  domains.each do |domain|
+    if domain_list.count(domain) > 1 && source_list.count(domain) <= 1
+      dupes.push(domain)
+    end
+  end
+end
+
+dupes.uniq!
+
+puts "Found #{dupes.count} dupes!"
+
+puts dupes.inspect
