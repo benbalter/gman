@@ -14,46 +14,27 @@
 # It's also probably a good idea to run `script/ci-build` for good measure
 
 require 'rubygems'
-require 'fileutils'
 require 'public_suffix'
 require 'swot'
+require 'yaml'
+require 'open-uri'
 require './lib/gman'
 require './lib/gman/parser'
 
-TMP_DIR = File.expand_path("../tmp/govt-urls", File.dirname(__FILE__))
-REPO = "https://github.com/GSA-OCSIT/govt-urls"
+SOURCE = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls.yaml"
 TXT_FILE = "government-urls-hierarchical-list.txt"
-YAML_FILE = "governent-urls.yaml"
 BLACKLIST = ["usagovQUASI", "usagovFED", "usagovPW"]
 domain_hash = {}
 
-# set up our working directory
-FileUtils.rm_rf TMP_DIR
-FileUtils.mkdir_p TMP_DIR
-Dir.chdir TMP_DIR
-
-# Clone down the latest version of the list
-system "git clone --depth 1 #{REPO} #{TMP_DIR}"
-
-# Convert list to public suffix format
-domains = File.open(TXT_FILE).read
-domains.gsub! /.*_{3,}$/m, "" # strib leading comments
-domains.gsub! /^(?! )(.*)$/, "\n//\\1"
-domains.gsub! /^ \.\s/, ""
-File.open(TXT_FILE, "w") { |file| file.write domains }
-
-# Parse domains
-domains = Gman::Parser.file_to_array(TXT_FILE)
-puts "Parsing #{domains.size} domains... normalizing"
+domain_hash = YAML.load(open(SOURCE).read)
+puts "found #{domain_hash.map { |group,domains| domains.count }.inject(:+)} domains..."
 
 # Normalize ALL THE THINGS
-domains.map! { |domain| domain.strip } # Strip trailing slashes
-domains.map! { |domain| domain.gsub /\/$/, "" } # Strip trailing slashes
-domains.reject! { |domain| domain.empty? }      # Reject empty strings
-
-# build our hash
-domain_hash = Gman::Parser.array_to_hash(domains)
-puts "Normalized down to #{domain_hash.size} domains... filtering"
+domain_hash.each do |group, domains|
+  domains.map! { |domain| domain.strip } # Strip trailing slashes
+  domains.map! { |domain| domain.gsub /\/$/, "" } # Strip trailing slashes
+  domains.reject! { |domain| domain.empty? }      # Reject empty strings
+end
 
 # filter
 domain_hash.reject! { |group,domain| BLACKLIST.include?(group) } # Group blacklist
@@ -63,7 +44,7 @@ domain_hash.each do |group, domains|
   domains.select! { |domain| PublicSuffix.valid?(domain) } # Validate domain
   domains.reject! { |domain| Swot::is_academic?(domain) }  # Reject academic domains
 end
-puts "Filtered down to #{domain_hash.size} domains"
+puts "Filtered down to #{domain_hash.map { |group,domains| domains.count }.inject(:+)} domains"
 
 # Grab existing list
 current = Gman::Parser.file_to_array( Gman::list_path )
