@@ -20,12 +20,16 @@ Gem::Specification.new do |s|
     "lib/gman/version.rb",
     "script/build",
     "script/release",
+    "bin/gman_filter",
     "gman.gemspec",
     "test/helper.rb",
     "test/test_gman.rb",
     "Rakefile",
     ".gitignore"
   ]
+
+  s.executables << "gman_filter"
+
   s.require_paths = ["lib"]
   s.add_dependency( "public_suffix", '~> 1.4')
   s.add_dependency( "swot", '~> 0.3.1' )
