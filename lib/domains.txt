@@ -366,7 +366,7 @@ saskatchewan.ca
 alberta.ca
 britishcolumbia.ca
 
-// Canada municipalities
+// Canada municipal
 100milehouse.com
 abbotsford.ca
 aberdeen.ca
