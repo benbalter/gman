@@ -338,6 +338,7 @@ gov.ve
 gov.vn
 gov.ws
 gov.za
+government.bg
 govt.nz
 gub.uy
 ottawa.ca
