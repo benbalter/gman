@@ -674,8 +674,7 @@ eriksdale.com
 erin.ca
 esquimalt.ca
 estevan.ca
-esthzy.sasktelwebhosting.com
-eston.ca
+`eston.ca
 explorelunenburg.ca
 exploremccreary.com
 fairview.ca
@@ -722,7 +721,6 @@ glovertown.net
 gochetwynd.com
 golden.ca
 gov.cornwallis.mb.ca
-gov.lacsteanne.ab.ca
 gracefield.ca
 grahamdale.ca
 grandecache.ca
@@ -965,7 +963,6 @@ munargyle.com
 mundenholm.com
 muneastman.ca
 municipalite.austin.qc.ca
-municipalite.baie-james.qc.ca
 municipalite.duhamel.qc.ca
 municipalite.eastfarnham.qc.ca
 municipalite.laminerve.qc.ca
@@ -999,7 +996,6 @@ nackawic.com
 nakusp.com
 nalgonawil.com
 nampa.ca
-namur.ca
 nanaimo.ca
 nationmun.ca
 ndbonsecours.com
@@ -1059,7 +1055,6 @@ ottawa.ca
 ourhomeyourhome.ca
 oxbow.ca
 papineauville.ca
-paquetville.cipanb.ca
 paradisehill.ca
 parklandcounty.com
 parksville.ca
@@ -1155,14 +1150,12 @@ rmeldon.ca
 rmfranklin.com
 rmfrenchmanbutte.ca
 rmloonlake.com
-rmmeadowlake.com
 rmofarmstrong.com
 rmofbeaverriver622.ca
 rmofblanshard.ca
 rmofdufferin.com
 rmofelton.ca
 rmoffisher.com
-rmofgrandview.ca
 rmofgrey.ca
 rmofharrison.com
 rmofheadingley.ca
@@ -1406,7 +1399,6 @@ town.bonnyville.ab.ca
 town.botwood.nl.ca
 town.bowden.ab.ca
 town.bracebridge.on.ca
-town.bradfordwestgwillimbury.on.ca
 town.bridgetown.ns.ca
 town.caledon.on.ca
 town.cochrane.on.ca
@@ -1441,7 +1433,6 @@ town.redcliff.ab.ca
 town.renfrew.on.ca
 town.richmond-hill.on.ca
 town.shelburne.ns.ca
-town.southgate.on.ca
 town.springhill.ns.ca
 town.stanthony.nf.ca
 town.sterosedulac.mb.ca
@@ -1480,7 +1471,6 @@ townofcwt.com
 townofdavidson.com
 townofdelisle.com
 townofdundurn.ca
-townofeatonia.com
 townofemerson.com
 townoferickson.jigsy.com
 townofessex.on.ca
@@ -1499,7 +1489,6 @@ townofkearney.com
 townofkinistino.ca
 townofkipling.ca
 townoflakeshore.on.ca
-townoflawn.com
 townofleafrapids.ca
 townofmaidstone.com
 townofmanitou.ca
@@ -1638,7 +1627,6 @@ villageofhillsborough.ca
 villageoflipton.com
 villageoflougheed.com
 villageoflove.ca
-villageofmacgregor.com
 villageofminto.ca
 villageofpennant.com
 villageofperdue.com
@@ -1649,7 +1637,6 @@ villageofstrome.com
 villageoftahsis.com
 villageoftogo.com
 villageoftompkins.ca
-villageofwarburg.ab.ca
 villagesenneville.qc.ca
 ville-marie.ca
 ville.alma.qc.ca
@@ -1772,7 +1759,6 @@ wasagabeach.com
 waskada.ca
 waterloo.ca
 watsonlake.ca
-wawa.ca
 wawanesa.ca
 wawota.com
 wellington-north.com
@@ -2177,7 +2163,6 @@ northlr.org
 rogersarkansas.com
 russellvillearkansas.org
 salinecounty.org
-sebastiancountyonline.com
 seviercountyar.com
 siloamsprings.com
 state.ar.us
@@ -3598,7 +3583,6 @@ guamlegislature.com
 guamsupremecourt.com
 guamtax.com
 investguam.com
-justice.gov.gu
 visitguam.org
 
 // usagovHI
@@ -4725,7 +4709,6 @@ townofsharon.net
 townofsomerset.org
 townofsunderland.us
 townofwinchendon.com
-tyngsboroughmass.com
 virtualnorfolk.org
 wellfleetma.org
 wendellmass.us
@@ -4909,7 +4892,6 @@ eliotmaine.org
 fairfieldme.com
 farmingdalemaine.com
 farmington-maine.org
-fayettemaine.com
 fortfairfield.org
 fortkent.org
 franklinmaine.net
@@ -6134,7 +6116,6 @@ visitmississippi.org
 visitnewalbany.com
 volunteermississippi.org
 walnut.ms
-wavelandcity.com
 waynecounty.ms
 wessonms.org
 wpnet.org
@@ -9418,7 +9399,6 @@ mtlebanon.org
 munhallpa.us
 murrysville.com
 narberthborough.com
-nazarethborough.com
 newbritaintownship.org
 newcastlepa.org
 newfreedomboro.org
@@ -9631,7 +9611,6 @@ wilsonborough.org
 windsortwp.com
 woboro.com
 worcestertwp.com
-wormleysburgpa.org
 wrightsvilleborough.com
 wwhiteland.org
 yeadonborough.com
@@ -11843,7 +11822,6 @@ ci.gillette.wy.us
 ci.laramie.wy.us
 city-of-torrington.org
 city-sheridan-wy.com
-cityofdouglaswy.com
 cityofgreenriver.org
 cityoflaramie.com
 cityofworland.org
