@@ -4,7 +4,7 @@
 
 A ruby gem to check if the owner of a given email address or website is working for THE MAN (a.k.a verifies government domains). It does this by leveraging the power of the [Public Suffix List](http://publicsuffix.org/), and the associated [Ruby Gem](https://github.com/weppos/publicsuffix-ruby).
 
-You could theoretically [use regex](https://gist.github.com/benbalter/6147066), but either you'll a bunch of false positives, or your regex will be insanely complicated. `gov.uk`, may be valid, for example, but `gov.fr` is not (it's `gouv.fr`, for what it's worth).
+You could theoretically [use regex](https://gist.github.com/benbalter/6147066), but either you'll get a bunch of false positives, or your regex will be insanely complicated. `gov.uk`, may be valid, for example, but `gov.fr` is not (it's `gouv.fr`, for what it's worth).
 
 The solution? Use Public Suffix to verify that it's a valid public domain, then maintain [a crowd-sourced sub-list of known global government and military domains](https://github.com/benbalter/gman/blob/master/lib/domains.txt). It should cover all US and international, government and military domains for both email and website verification.
 
