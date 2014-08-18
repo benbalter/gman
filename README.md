@@ -51,6 +51,14 @@ domain.country.currency            #=> "USD"
 domain.conutry.calling_code        #=> "+1"
 ```
 
+### Command line
+
+Filters newline-separated email addresses from stdin. Example usage:
+
+```
+$ gman_filter < path/to/list/of/addresses.txt
+```
+
 ## Contributing
 
 Contributions welcome! Please see [the contribution guidelines](CONTRIBUTING.md) for code contributions or for details on how to add, update, or delete government domains.
