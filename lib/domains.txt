@@ -342,6 +342,7 @@ govt.nz
 gub.uy
 ottawa.ca
 gov.yk.ca
+gov.bc.ca
 
 // non-us mil
 mil.ac
