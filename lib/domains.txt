@@ -1896,6 +1896,7 @@ fed.us
 gov
 mil
 si.edu
+usuhs.edu
 
 // US State, County, Local
 sfmta.org
