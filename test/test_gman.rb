@@ -91,4 +91,15 @@ class TestGman < Minitest::Test
     assert_equal "United Kingdom", Gman.new("foo.gov.uk").country.name
     assert_equal "Canada", Gman.new("foo.gc.ca").country.name
   end
+
+  should "recognize research domains" do
+    assert_equal true, Gman.research?("foo@lanl.gov")
+    assert_equal true, Gman.research?("bar@jpl.nasa.gov")
+  end
+
+  should "not recognize non-research domains as research" do
+    assert_equal false, Gman.research?("foo@bar.gov.uk")
+    assert_equal false, Gman.research?("asdf")
+    assert_equal false, Gman.research?("foo@github.com")
+  end
 end
