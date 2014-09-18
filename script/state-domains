@@ -1,0 +1,40 @@
+#! /usr/bin/env ruby
+# Strips domains in the form of e.g., city.<locality>.<state>.us from the domain list
+
+require './lib/gman'
+require './lib/gman/parser'
+
+current = Gman::Parser.file_to_array( Gman::list_path )
+domain_hash = Gman::Parser.array_to_hash(current)
+
+puts "Starting with #{current.size} domains..."
+
+domain_hash.each do |group, domains|
+  next unless group =~ /usagov(#{Gman::STATES.join("|")})/
+  state = group[-2,2].downcase
+  puts "\nState: #{state}"
+  puts "Starting: #{domains.count} domains"
+
+  domain_hash[group].reject! { |d| d =~ /\.#{state}\.us$/}
+  domain_hash[group].uniq!
+  domain_hash[group].sort!
+
+  puts "Ending: #{domain_hash[group].count}"
+end
+
+# PublicSuffix Formatted Output
+current_group = ""
+output = ""
+domain_hash.each do |group, domains|
+  if group != current_group
+    output << "\n\n" unless current_group.empty? # first entry
+    output << "// #{group}\n"
+    current_group = group
+  end
+  output << domains.join("\n")
+end
+
+File.open(Gman.list_path, "w") { |file| file.write output }
+
+result = Gman::Parser.file_to_array( Gman::list_path )
+puts "New list contains #{result.size} domains. Fin."

@@ -10,6 +10,8 @@ VALID = [  "foo.gov",
             "foo@bar.gov.uk",
             ".gov",
             "foo.fed.us",
+            "foo.state.il.us",
+            "state.il.us"
         ]
 
 INVALID = [ "foo.bar.com",
@@ -23,6 +25,9 @@ INVALID = [ "foo.bar.com",
             "",
             nil,
             " ",
+            "foo.city.il.us",
+            "foo.ci.il.us",
+            "foo.zx.us"
           ]
 
 class TestGman < Minitest::Test
