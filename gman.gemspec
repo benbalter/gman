@@ -18,14 +18,7 @@ Gem::Specification.new do |s|
     "lib/gman.rb",
     "lib/domains.txt",
     "lib/gman/version.rb",
-    "script/build",
-    "script/release",
-    "bin/gman_filter",
-    "gman.gemspec",
-    "test/helper.rb",
-    "test/test_gman.rb",
-    "Rakefile",
-    ".gitignore"
+    "bin/gman_filter"
   ]
 
   s.executables << "gman_filter"
