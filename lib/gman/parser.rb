@@ -2,7 +2,7 @@
 require 'net/dns'
 require 'net/dns/resolver'
 
-class Gman
+class Gman < NaughtyOrNice
   class Parser
 
     COMMENT_REGEX = /\/\/[\/\s]*(.*)$/i

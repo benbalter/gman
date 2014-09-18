@@ -1,114 +1,11 @@
-require 'public_suffix'
-require 'yaml'
+require 'naughty_or_nice'
 require 'swot'
-require "addressable/uri"
 require 'iso_country_codes'
-require_relative "gman/version"
+require_relative 'gman/country_codes'
+require_relative 'gman/locality'
 
-class Gman
-
-  # Source: http://bit.ly/1n2X9iv
-  EMAIL_REGEX = %r{
-        ^
-        (
-          [\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+
-          \.
-        )
-        *
-        [\w\!\#\$\%\&\'\*\+\-\/\=\?\^\`\{\|\}\~]+
-        @
-        (
-          (
-            (
-              (
-                (
-                  [a-z0-9]{1}
-                  [a-z0-9\-]{0,62}
-                  [a-z0-9]{1}
-                )
-                |
-                [a-z]
-              )
-              \.
-            )+
-            [a-z]{2,6}
-          )
-          |
-          (
-            \d{1,3}
-            \.
-          ){3}
-          \d{1,3}
-          (
-            \:\d{1,5}
-          )?
-        )
-        $
-      }xi
-
-  # Second level .us domains for states and locality
-  # See http://en.wikipedia.org/wiki/.us
-  #
-  # Examples:
-  #  * foo.state.il.us
-  #  * ci.foo.il.us
-  #
-  # Not:
-  #  * state.foo.il.us
-  #  * foo.ci.il.us
-  #  * k12.il.us
-  #  * ci.foo.zx.us
-  LOCALITY_REGEX = %r{
-    (
-      (state|dst|cog)
-    |
-      (ci|town|vil|co)\.[a-z-]+
-    )
-    \.(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|ri|sc|sd|tn|tx|um|ut|va|vt|wa|wi|wv|wy)
-    \.us
-     }x
-
-  # Map last part of TLD to alpha2 country code
-  ALPHA2_MAP = {
-    :ac     => 'sh',
-    :uk     => 'gb',
-    :su     => 'ru',
-    :tp     => 'tl',
-    :yu     => 'rs',
-    :gov    => "us",
-    :mil    => "us",
-    :org    => "us",
-    :com    => "us",
-    :net    => "us",
-    :edu    => "us",
-    :travel => "us",
-    :info   => "us"
-  }
-
+class Gman < NaughtyOrNice
   class << self
-
-    attr_writer :list
-
-    # Normalizes and checks if a given string represents a government domain
-    # Possible strings to test:
-    #   ".gov"
-    #   "foo.gov"
-    #   "foo@bar.gov"
-    #   "foo.gov.uk"
-    #   "http://foo.bar.gov"
-    #
-    # Returns boolean true if a government domain
-    def valid?(text)
-      Gman.new(text).valid?
-    end
-
-    # Is the given string in the form of a valid email address?
-    #
-    # Returns true if email, otherwise false
-    def email?(text)
-      Gman.new(text).email?
-    end
-
     # returns an instance of our custom public suffix list
     # list behaves like PublicSuffix::List but is limited to our whitelisted domains
     def list
@@ -120,42 +17,6 @@ class Gman
       File.join(File.dirname(__FILE__), "domains.txt")
     end
   end
-
-  # Creates a new Gman instance
-  #
-  # text - the input string to check for governmentiness
-  def initialize(text)
-    @text = text.to_s.downcase.strip
-  end
-
-  # Parse the domain from the input string
-  #
-  # Can handle urls, domains, or emails
-  #
-  # Returns the domain string
-  def domain
-    @domain ||= begin
-      return nil if @text.empty?
-
-      uri = Addressable::URI.parse(@text)
-
-      if uri.host # valid https?://* URI
-        uri.host
-      elsif email?
-        @text.match(/@([\w\.\-]+)\Z/i)[1]
-      else # url sans http://
-        begin
-          uri = Addressable::URI.parse("http://#{@text}")
-          # properly parse http://foo edge cases
-          # see https://github.com/sporkmonger/addressable/issues/145
-          uri.host if uri.host =~ /\./
-        rescue Addressable::URI::InvalidURIError
-          nil
-        end
-      end
-    end
-  end
-  alias_method :to_s, :domain
 
   # Checks if the input string represents a government domain
   #
@@ -177,54 +38,4 @@ class Gman
     # also allow for explicit matches to domain list
     Gman.list.rules.any? { |rule| rule.value == domain }
   end
-
-  # Is the input text in the form of a valid email address?
-  #
-  # Returns true if email, otherwise false
-  def email?
-    !!(@text =~ EMAIL_REGEX)
-  end
-
-  # Is this domain a .us state or locality?
-  def locality?
-    !!(domain =~ LOCALITY_REGEX)
-  end
-
-  # Helper function to return the public suffix domain object
-  #
-  # Supports all domain strings (URLs, emails)
-  #
-  # Returns the domain object or nil, but no errors, never an error
-  def domain_parts
-    PublicSuffix.parse domain
-  rescue PublicSuffix::DomainInvalid
-    nil
-  end
-
-  # Returns the two character alpha county code represented by the domain
-  #
-  # e.g., United States = US, United Kingdom = GB
-  def alpha2
-    alpha2 = domain_parts.tld.split('.').last
-    if ALPHA2_MAP[alpha2.to_sym]
-      ALPHA2_MAP[alpha2.to_sym]
-    else
-      alpha2
-    end
-  end
-
-  # Returns the ISO Country represented by the domain
-  #
-  # Example Usage:
-  # Gman.new("foo.gov").country.name     => "United States"
-  # Gman.new("foo.gov").country.currency => "USD"
-  def country
-    @country ||= IsoCountryCodes.find(alpha2)
-  end
-
-  # Console output
-  def inspect
-    "#<Gman domain=\"#{domain}\" valid=#{valid?}>"
-  end
-
 end

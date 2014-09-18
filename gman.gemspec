@@ -1,23 +1,19 @@
-require File.expand_path("lib/gman/version", File.dirname(__FILE__))
-
 Gem::Specification.new do |s|
   s.name = "gman"
   s.summary = "Check if a given domain or email address belong to a governemnt entity"
   s.description = "A ruby gem to check if the owner of a given email address is working for THE MAN."
-  s.version = Gman::VERSION
+  s.version = '4.0.0'
   s.authors = ["Ben Balter"]
   s.email = "ben.balter@github.com"
   s.homepage = "https://github.com/benbalter/gman"
   s.licenses = ["MIT"]
 
   s.files = [
-    "Gemfile",
-    "README.md",
-    "CONTRIBUTING.md",
     "LICENSE",
     "lib/gman.rb",
     "lib/domains.txt",
-    "lib/gman/version.rb",
+    "lib/gman/country_codes.rb",
+    "lib/gman/locality.rb",
     "bin/gman_filter"
   ]
 
