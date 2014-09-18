@@ -22,10 +22,12 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
   s.add_dependency( "swot", '~> 0.3.1' )
   s.add_dependency( "iso_country_codes", "~> 0.4" )
-  s.add_dependency( "naughty_or_nice", "~> 0.0" )
+  s.add_dependency( "naughty_or_nice", "~> 0.0.2" )
 
   s.add_development_dependency( "rake" )
   s.add_development_dependency( "shoulda" )
   s.add_development_dependency( "rdoc" )
   s.add_development_dependency( "bundler" )
+  s.add_development_dependency( "pry" )
+
 end
