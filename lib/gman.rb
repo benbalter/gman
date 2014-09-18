@@ -14,7 +14,7 @@ class Gman < NaughtyOrNice
 
     # Returns the absolute path to the domain list
     def list_path
-      File.join(File.dirname(__FILE__), "domains.txt")
+      File.join(File.dirname(__FILE__), "../config/domains.txt")
     end
   end
 
