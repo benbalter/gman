@@ -80,6 +80,13 @@ class Gman
       Gman.new(text).valid?
     end
 
+    # Normalizes and checks if a given string represents a research domain
+    #
+    # Returns boolean true if domain is a government funded research institution
+    def research?(text)
+      Gman.new(text).research?
+    end
+
     # Is the given string in the form of a valid email address?
     #
     # Returns true if email, otherwise false
@@ -87,15 +94,29 @@ class Gman
       Gman.new(text).email?
     end
 
-    # returns an instance of our custom public suffix list
-    # list behaves like PublicSuffix::List but is limited to our whitelisted domains
+    # Resturns PublicSuffix::List limited to our whitelisted domains
     def list
-      @list ||= PublicSuffix::List::parse(File.new(list_path, "r:utf-8"))
+      @list ||= load_list(list_path)
     end
 
-    # Returns the absolute path to the domain list
-    def list_path
-      File.join(File.dirname(__FILE__), "domains.txt")
+    # Returns PublicSuffix::List limited to research domains
+    def research_list
+      @research_list ||= load_list list_path("research")
+    end
+
+    # Returns an instance of our custom public suffix list
+    def load_list(list_path)
+      PublicSuffix::List::parse(File.new(list_path, "r:utf-8"))
+    end
+
+    # Returns the absolute path to the domain list directory
+    def list_base
+      File.join(File.dirname(__FILE__), "../config/")
+    end
+
+    # Returns the absolute path to the domain list file
+    def list_path(file="domains")
+      File.join(list_base, "#{file}.txt")
     end
   end
 
@@ -151,6 +172,20 @@ class Gman
 
     # also allow for explicit matches to domain list
     Gman.list.rules.any? { |rule| rule.value == domain }
+  end
+
+  # Checks if the input string represents a government research domain
+  #
+  # Returns boolean true if a government research domain
+  def research?
+    return false unless valid?
+
+    # check using public suffix's standard logic
+    rule = Gman.research_list.find domain
+    return true if !rule.nil? && rule.allow?(domain)
+
+    # also allow for explicit matches to domain list
+    Gman.research_list.rules.any? { |rule| rule.value == domain }
   end
 
   # Is the input text in the form of a valid email address?

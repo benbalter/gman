@@ -51,6 +51,13 @@ domain.country.currency            #=> "USD"
 domain.conutry.calling_code        #=> "+1"
 ```
 
+### Check if a government domain is a research institution
+
+```ruby
+Gman.research? "foo@sandia.gov"     #=> true
+Gman.research? "foo@whitehouse.gov" #=> false
+```
+
 ### Command line
 
 Filters newline-separated email addresses from stdin. Example usage:

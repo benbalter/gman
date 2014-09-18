@@ -1,0 +1,15 @@
+//US National Labs
+anl.gov
+bnl.gov
+inl.gov
+lanl.gov
+lbl.gov
+llnl.gov
+ornl.gov
+pnnl.gov
+sandia.gov
+
+//US Research Agencies
+jpl.nasa.gov
+nifa.usda.gov
+nih.gov
