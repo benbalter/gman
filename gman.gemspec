@@ -17,6 +17,7 @@ Gem::Specification.new do |s|
     "LICENSE",
     "lib/gman.rb",
     "config/domains.txt",
+    "config/research.txt",
     "lib/gman/version.rb",
     "script/build",
     "script/release",
