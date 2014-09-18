@@ -46,6 +46,28 @@ class Gman
         $
       }xi
 
+  # Second level .us domains for states and locality
+  # See http://en.wikipedia.org/wiki/.us
+  #
+  # Examples:
+  #  * foo.state.il.us
+  #  * ci.foo.il.us
+  #
+  # Not:
+  #  * state.foo.il.us
+  #  * foo.ci.il.us
+  #  * k12.il.us
+  #  * ci.foo.zx.us
+  LOCALITY_REGEX = %r{
+    (
+      (state|dst|cog)
+    |
+      (ci|town|vil|co)\.[a-z-]+
+    )
+    \.(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|ri|sc|sd|tn|tx|um|ut|va|vt|wa|wi|wv|wy)
+    \.us
+     }x
+
   # Map last part of TLD to alpha2 country code
   ALPHA2_MAP = {
     :ac     => 'sh',
@@ -145,6 +167,9 @@ class Gman
     # Ensure non-edu
     return false if Swot::is_academic?(domain)
 
+    # Check for locality by regex
+    return true if locality?
+
     # check using public suffix's standard logic
     rule = Gman.list.find domain
     return true if !rule.nil? && rule.allow?(domain)
@@ -158,6 +183,11 @@ class Gman
   # Returns true if email, otherwise false
   def email?
     !!(@text =~ EMAIL_REGEX)
+  end
+
+  # Is this domain a .us state or locality?
+  def locality?
+    !!(domain =~ LOCALITY_REGEX)
   end
 
   # Helper function to return the public suffix domain object
@@ -196,4 +226,5 @@ class Gman
   def inspect
     "#<Gman domain=\"#{domain}\" valid=#{valid?}>"
   end
+
 end
