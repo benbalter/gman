@@ -80,6 +80,9 @@ class Gman
       Gman.new(text).valid?
     end
 
+    # Normalizes and checks if a given string represents a research domain
+    #
+    # Returns boolean true if domain is a government funded research institution
     def research?(text)
       Gman.new(text).research?
     end
