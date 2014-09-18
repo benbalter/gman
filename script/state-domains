@@ -10,12 +10,12 @@ domain_hash = Gman::Parser.array_to_hash(current)
 puts "Starting with #{current.size} domains..."
 
 domain_hash.each do |group, domains|
-  next unless group =~ /usagov(#{Gman::STATES.join("|")})/
+  next unless group =~ /usagov[A-Z]{2}/
   state = group[-2,2].downcase
   puts "\nState: #{state}"
   puts "Starting: #{domains.count} domains"
 
-  domain_hash[group].reject! { |d| d =~ /\.#{state}\.us$/}
+  domain_hash[group].reject! { |d| d =~ Gman::LOCALITY_REGEX }
   domain_hash[group].uniq!
   domain_hash[group].sort!
 
