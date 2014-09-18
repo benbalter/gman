@@ -1,10 +1,13 @@
 //US National Labs
 anl.gov
 bnl.gov
+fnal.gov
 inl.gov
 lanl.gov
 lbl.gov
 llnl.gov
+nist.gov
+nrel.gov
 ornl.gov
 pnnl.gov
 sandia.gov
@@ -13,3 +16,27 @@ sandia.gov
 jpl.nasa.gov
 nifa.usda.gov
 nih.gov
+
+// CSIRO (Australia)
+csiro.au
+
+// Candada's Perimeter Institute for Theoretical Physics
+perimeterinstitute.ca
+
+// CERN
+cern.ch
+
+// UK Laboratories
+ebi.ac.uk
+npl.co.uk
+sanger.ac.uk
+
+// UK funding agencies
+ahrc.ac.uk
+bbsrc.ac.uk
+epsrc.ac.uk
+esrc.ac.uk
+mrc.ac.uk
+nerc.ac.uk
+stfc.ac.uk
+wellcome.ac.uk
