@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.files = [
     "LICENSE",
     "lib/gman.rb",
-    "lib/domains.txt",
+    "config/domains.txt",
     "lib/gman/country_codes.rb",
     "lib/gman/locality.rb",
     "bin/gman_filter"
