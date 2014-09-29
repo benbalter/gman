@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'bundler'
 require 'minitest/autorun'
+require 'parallel'
 
 begin
   Bundler.setup(:default, :development)
@@ -18,4 +19,3 @@ require 'gman'
 require 'net/dns'
 require 'net/dns/resolver'
 require './lib/gman/parser'
-

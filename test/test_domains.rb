@@ -14,7 +14,7 @@ class TestDomains < Minitest::Test
 
   should "only contain resolvable domains" do
     unresolvables = []
-    Gman.list.each do |entry|
+    Parallel.each(Gman.list, :in_threads => 2) do |entry|
       next if whitelisted? entry.name
       resolves = Gman::Parser.domain_resolves?(entry.name)
       unresolvables.push entry.name unless resolves
@@ -23,37 +23,37 @@ class TestDomains < Minitest::Test
   end
 
   should "not contain any educational domains" do
-    Gman.list.each do |entry|
+    Parallel.each(Gman.list, :in_threads => 2) do |entry|
       assert_equal false, Swot::is_academic?(entry.name), "#{entry.name} is an academic domain"
     end
   end
 
   should "not contain any invalid domains" do
-    Gman.list.each do |entry|
+    Parallel.each(Gman.list, :in_threads => 2) do |entry|
       assert_equal true, PublicSuffix.valid?("foo.#{entry.name}"), "#{entry.name} is not a valid domain"
     end
   end
 
   should "pass any url on the list" do
-    Gman.list.each do |entry|
+    Parallel.each(Gman.list, :in_threads => 2) do |entry|
       assert_equal true, Gman.valid?("http://foo.#{entry.name}/bar"), "http://foo.#{entry.name}/bar is not a valid"
     end
   end
 
   should "pass any email on the list" do
-    Gman.list.each do |entry|
+    Parallel.each(Gman.list, :in_threads => 2) do |entry|
       assert_equal true, Gman.valid?("foo@bar.#{entry.name}"), "foo@bar.#{entry.name} is not a valid"
     end
   end
 
   should "pass any domain on the list" do
-    Gman.list.each do |entry|
+    Parallel.each(Gman.list, :in_threads => 2) do |entry|
       assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
     end
   end
 
   should "identify the coutnry for any domain on the list" do
-    Gman.list.each do |entry|
+    Parallel.each(Gman.list, :in_threads => 2) do |entry|
       Gman.new("foo.#{entry.name}").country.name
     end
   end

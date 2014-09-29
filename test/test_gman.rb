@@ -33,13 +33,13 @@ INVALID = [ "foo.bar.com",
 class TestGman < Minitest::Test
 
   should "recognize government email addresses and domains" do
-    VALID.each do |test|
+    Parallel.each(VALID, :in_threads => 2) do |test|
       assert_equal true, Gman::valid?(test), "#{test} should be detected as a valid government domain"
     end
   end
 
   should "not recognize non-government email addresses and domains" do
-    INVALID.each do |test|
+    Parallel.each(INVALID, :in_threads => 2) do |test|
       assert_equal false, Gman::valid?(test), "#{test} should be detected as an invalid government domain"
     end
   end
