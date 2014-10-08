@@ -1,0 +1,17 @@
+#! /usr/bin/env ruby
+# Given an array of domains, removes them from the list
+# Example usage: script/prune foo.invalid, bar.invalid, foo.bar.invalid
+
+domains = ARGV
+domains = domains.clone.map { |d| d.gsub ",", "" }
+
+list = File.open("./config/domains.txt").read
+puts "Starting list: #{list.size} lines"
+
+domains.each do |domain|
+  list.gsub! /^#{domain}$\n/, ""
+end
+
+puts "Ending list: #{list.size} lines"
+
+File.write "./config/domains.txt", list
