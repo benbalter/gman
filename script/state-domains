@@ -7,19 +7,15 @@ require './lib/gman/parser'
 current = Gman::Parser.file_to_array( Gman::list_path )
 domain_hash = Gman::Parser.array_to_hash(current)
 
+puts "Checking for state gov regex'd domains in the list..."
 puts "Starting with #{current.size} domains..."
 
 domain_hash.each do |group, domains|
   next unless group =~ /usagov[A-Z]{2}/
   state = group[-2,2].downcase
-  puts "\nState: #{state}"
-  puts "Starting: #{domains.count} domains"
-
   domain_hash[group].reject! { |d| d =~ Gman::LOCALITY_REGEX }
   domain_hash[group].uniq!
   domain_hash[group].sort!
-
-  puts "Ending: #{domain_hash[group].count}"
 end
 
 # PublicSuffix Formatted Output
@@ -38,3 +34,5 @@ File.open(Gman.list_path, "w") { |file| file.write output }
 
 result = Gman::Parser.file_to_array( Gman::list_path )
 puts "New list contains #{result.size} domains. Fin."
+
+exit 1 if current.size != result.size

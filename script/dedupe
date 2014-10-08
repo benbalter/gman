@@ -9,6 +9,8 @@ require './lib/gman/parser'
 current = Gman::Parser.file_to_array( Gman::list_path )
 domain_hash = Gman::Parser.array_to_hash(current)
 domain_list = domain_hash.flat_map { |k,v| v }
+
+puts "Checking for duplicate domains in the domain list..."
 puts "Current list contains #{domain_list.count} domains..."
 
 SOURCE = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls.yaml"
@@ -28,4 +30,9 @@ dupes.uniq!
 
 puts "Found #{dupes.count} dupes!"
 
-puts dupes.inspect
+if dupes.count > 0
+  puts dupes.inspect
+  exit 1
+else
+  exit 0
+end
