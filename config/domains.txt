@@ -116,7 +116,6 @@ ncdhhs.gov
 ncdiabetes.org
 ncdjjdp.org
 ncdmf.net
-ncdmfstore.net
 ncdnpe.org
 ncdoi.com
 ncdoj.gov
@@ -457,7 +456,6 @@ brockville.com
 bromont.com
 brooks.ca
 brownsburgchatham.ca
-bruderheim.ca
 buchananvillage.zxq.net
 buffalonarrows.net
 burksfalls.net
@@ -605,7 +603,6 @@ crowsnestpass.com
 crystalcitymb.ca
 cumberland.ca
 cypress.ab.ca
-dalhousienb.com
 dalmeny.ca
 dauphin.ca
 dawsoncreek.ca
@@ -689,11 +686,9 @@ fort-frances.com
 fortmacleod.com
 fortquappelle.com
 fortsask.ca
-fortsimpson.com
 fortsmith.ca
 fortstjames.com
 fortstjohn.ca
-fortune1000.ca
 fortymile.ab.ca
 foxcreek.ca
 fraserlake.ca
@@ -725,7 +720,6 @@ gracefield.ca
 grahamdale.ca
 grandecache.ca
 grandremous.ca
-grandviewmanitoba.net
 granum.ca
 gravelbourg.ca
 greaternapanee.com
@@ -2775,7 +2769,6 @@ plainvillect.com
 plymouthct.us
 pomfretct.org
 portlandct.org
-putnamct.us
 ridgefieldct.org
 roxburyct.com
 salisburyct.us
@@ -3350,7 +3343,6 @@ oahumpo.org
 oha.org
 
 // usagovIA
-adeliowa.org
 aftoniowa.com
 akronia.org
 altoona-iowa.com
@@ -3428,7 +3420,6 @@ heartofthemidlandscfc.org
 hubbardiowa.com
 huxleyiowa.org
 ialottery.com
-icgov.org
 illowacfc.org
 independenceia.com
 iowaeconomicdevelopment.com
@@ -4686,7 +4677,6 @@ townofnaples.org
 townofnorridgewock.com
 townofnorthberwick.org
 townofogunquit.org
-townofotis.com
 townofsebago.org
 townofsouthport.org
 turnermaine.com
@@ -5117,7 +5107,6 @@ edenprairie.org
 edenvalley.govoffice.com
 ednatownship.org
 egf.mn
-ellsburgtownship.org
 embarrass.org
 eminnetonka.com
 eurekatownship-mn.us
@@ -5253,7 +5242,6 @@ region7erdc.org
 richardsontownship.govoffice2.com
 rndc.org
 rochester-township.com
-rockfordtownship.com
 rockvillecity.org
 roosevelttownship.govoffice.com
 royaltontownship.com
@@ -6780,7 +6768,6 @@ plainfield.com
 plainsboronj.com
 pleasantville-nj.org
 plumsted.org
-pohatcong.com
 pointpleasantbeach.org
 pomptonlakesgov.com
 princetonboro.org
@@ -7005,7 +6992,6 @@ chilkatindianvillage.org
 choctaw.org
 choctawnation.com
 chukchansi.net
-cied.org
 citci.org
 cityoflapwai.com
 cocopah.com
@@ -7105,7 +7091,6 @@ nveyak.com
 nwifc.org
 oneidanation.org
 onondaganation.org
-osagetribe.com
 ottawatribe.org
 palatribe.com
 pawneenation.org
@@ -8698,7 +8683,6 @@ north-fayette.com
 northamptoncounty.org
 northamptontownship.com
 northcoastcfc.org
-northfranklintownship.com
 northumberlandborough.com
 northumberlandco.org
 nvtpa.com
