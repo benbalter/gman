@@ -1,6 +1,6 @@
 // Canada federal
-gc.ca
 canada.ca
+gc.ca
 
 // Canada municipal
 100milehouse.com
@@ -1439,26 +1439,26 @@ zeballos.com
 zenonpark.com
 
 // Canada provincial and territorial
-gov.nl.ca
-gov.pe.ca
-gov.ns.ca
-gov.nb.ca
-gouv.qc.ca
-gov.on.ca
-gov.mb.ca
-gov.sk.ca
-gov.ab.ca
-gov.bc.ca
-gov.yk.ca
-gov.nt.ca
-gov.nu.ca
-novascotia.ca
-newbrunswick.ca
-ontario.ca
-manitoba.ca
-saskatchewan.ca
 alberta.ca
 britishcolumbia.ca
+gouv.qc.ca
+gov.ab.ca
+gov.bc.ca
+gov.mb.ca
+gov.nb.ca
+gov.nl.ca
+gov.ns.ca
+gov.nt.ca
+gov.nu.ca
+gov.on.ca
+gov.pe.ca
+gov.sk.ca
+gov.yk.ca
+manitoba.ca
+newbrunswick.ca
+novascotia.ca
+ontario.ca
+saskatchewan.ca
 
 // LAgov
 angolamuseum.org
@@ -1892,9 +1892,9 @@ mil
 si.edu
 
 // US State, County, Local
-sfmta.org
-sfcta.org
 clevelandmetroparks.com
+sfcta.org
+sfmta.org
 
 // usagovAK
 afognak.org

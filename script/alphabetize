@@ -1,0 +1,42 @@
+#! /usr/bin/env ruby
+#
+# Alphabetizes entries in the domains.txt file
+#
+# usage: script/alphabetize
+
+require_relative "../lib/gman"
+
+# Read in existing list
+domains = File.open(Gman.list_path).read
+domains = domains.gsub /\r\n?/, "\n" #normalize line endings
+domains = domains.split("\n")
+
+# Split list into grouped hash
+group = ""
+domain_hash = {}
+domains.each do |line|
+  next if line.empty?
+  if match = /\/\/[\/\s]*(.*)$/i.match(line)
+    group = match[1]
+  else
+    domain_hash[group] = [] if domain_hash[group].nil?
+    domain_hash[group].push line.downcase
+  end
+end
+
+# Sort by groups
+domain_hash = domain_hash.sort_by { |k,v| k.downcase }.to_h
+
+# Sort within groups
+domain_hash.each do |group, domains|
+  domain_hash[group].sort!
+end
+
+output = ""
+domain_hash.each do |group, domains|
+  output << "// #{group}\n"
+  output << domains.join("\n")
+  output << "\n\n"
+end
+
+File.write Gman.list_path, output.strip
