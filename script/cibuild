@@ -1,5 +1,5 @@
 #!/bin/sh
 
 bundle exec rake test
-script/dedupe
-script/state-domains
+bundle exec script/dedupe
+bundle exec script/state-domains
