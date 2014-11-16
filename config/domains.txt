@@ -718,7 +718,6 @@ portal.burnslake.ca
 portalberni.ca
 portalice.ca
 portauxbasques.ca
-portclements.ca
 portcolborne.ca
 portcoquitlam.ca
 portedward.ca
@@ -770,7 +769,6 @@ rm-stfrancois.mb.ca
 rm.shellriver.mb.ca
 rm171fv.com
 rm343.com
-rmalbert.ca
 rmalexander.com
 rmbifrost.com
 rmbuckland.ca
@@ -804,7 +802,6 @@ rmofrhineland.com
 rmofrosser.com
 rmofshellbrook.com
 rmofsherwood.ca
-rmofsouthnorfolk.com
 rmofspringfield.ca
 rmofstandrews.com
 rmofstanley.ca
@@ -865,7 +862,6 @@ salisburynb.ca
 salmo.ca
 salmonarm.ca
 sarnia.ca
-saskatchewanbeach.com
 saskatoon.ca
 sayward.ca
 schreiber.ca
@@ -1237,7 +1233,6 @@ villagecoutts.ab.ca
 villagedeclair.com
 villageofalix.ca
 villageofalliance.ca
-villageofbenito.ca
 villageofbitternlake.ca
 villageofbriercrest.ca
 villageofcentreville.ca
@@ -2285,7 +2280,6 @@ mccsd.com
 mcfarlandcity.org
 menlopark.org
 modestogov.com
-modoccounty.us
 mojaveindiantribe.com
 monterey.org
 montesereno.org
@@ -3139,7 +3133,6 @@ guamlegislature.com
 guamsupremecourt.com
 guamtax.com
 investguam.com
-justice.gov.gu
 visitguam.org
 
 // usagovHI
@@ -3985,7 +3978,6 @@ kheaa.com
 kltprc.info
 kyagr.com
 kyconvention.org
-kyehealth.org
 kyepsb.net
 kyfairexpo.org
 kyheritage.org
@@ -4307,7 +4299,6 @@ eastnewmarket.us
 elkton.org
 federalsburg.org
 frostburgcity.com
-galenamd.com
 garrettcounty.org
 glenecho.org
 gov.allconet.org
@@ -4356,7 +4347,6 @@ salisburyfd.com
 sharpsburgmd.com
 snowhillmd.com
 srbc.net
-stmaryscountycfc.org
 sudlersville.org
 sykesville.net
 taneytown.org
@@ -4397,7 +4387,6 @@ alfredme.us
 aroostook.me.us
 arrowsic.org
 arundelmaine.org
-atkinson-me.org
 berwickmaine.org
 bethelmaine.org
 biddefordmaine.org
@@ -4424,13 +4413,11 @@ cumberlandmaine.com
 dextermaine.org
 dixfield.org
 dover-foxcroft.org
-easton.me.us
 edgecomb.org
 eliotmaine.org
 fairfieldme.com
 farmingdalemaine.com
 farmington-maine.org
-fayettemaine.com
 fortfairfield.org
 fortkent.org
 franklinmaine.net
@@ -4963,7 +4950,6 @@ edenprairie.org
 edenvalley.govoffice.com
 ednatownship.org
 egf.mn
-ellsburgtownship.org
 embarrass.org
 eminnetonka.com
 eurekatownship-mn.us
@@ -5079,7 +5065,6 @@ northmankato.com
 nwrdc.org
 oronoco.com
 oronocotownship.com
-ortonville.net
 oxfordtownship.us
 parkersprairie.net
 paynesvillemn.com
@@ -6194,7 +6179,6 @@ heartofthemidlandscfc.org
 imperial-ne.com
 mindennebraska.org
 ne-ethanol.org
-neagrelations.org
 neatp.org
 nebraskaartscouncil.org
 nebraskacorn.org
@@ -6676,7 +6660,6 @@ northarlington.org
 northbergen.org
 northbrunswickonline.com
 northcaldwell.org
-northhanover.us
 northplainfield.org
 northwildwood.com
 norwoodboro.org
@@ -6941,7 +6924,6 @@ chickaloon.org
 chilkatindianvillage.org
 choctaw.org
 choctawnation.com
-choctawnationflorida.org
 chukchansi.net
 cied.org
 citci.org
@@ -7044,7 +7026,6 @@ nveyak.com
 nwifc.org
 oneidanation.org
 onondaganation.org
-osagetribe.com
 ottawatribe.org
 palatribe.com
 pawneenation.org
@@ -7323,7 +7304,6 @@ hartfordny.com
 hastingsgov.org
 henrietta.org
 herkimercounty.org
-heuveltonny.us
 hewlettharbor.org
 hillburn.org
 hillsdaleny.com
@@ -7389,7 +7369,6 @@ newyorkfed.org
 niagaracounty.com
 niagarafallsusa.org
 niskayuna.org
-norfolkny.us
 northcastleny.com
 northelba.org
 northhempstead.com
@@ -7825,7 +7804,6 @@ villageofmayfield.com
 villageofmenands.com
 villageofminoa.com
 villageofmontebello.com
-villageofmontgomery.org
 villageofmontourfalls.com
 villageofmountmorris.com
 villageofmuttontown.com
@@ -7865,10 +7843,8 @@ voh-ny.com
 vsvny.org
 waddingtonny.us
 waterford-ny.com
-waterfordny.org
 waterloony.com
 watervliet.com
-waverlybarton.com
 wellsvilleny.com
 wesleyhills.org
 westchestergov.com
@@ -8035,7 +8011,6 @@ loraincounty.us
 louisvilleohio.com
 lovelandoh.com
 madeiracity.com
-madisontownship.org
 madisonvillage.org
 mapleheights.cuyahogacounty.us
 marionohio.us
@@ -8101,7 +8076,6 @@ perrytwp.com
 piercetownship.org
 piquaoh.org
 pleasanttownship.org
-pleasantvilleoh.com
 portageco.com
 readingohio.org
 reminderville.com
@@ -8651,7 +8625,6 @@ north-fayette.com
 northamptoncounty.org
 northamptontownship.com
 northcoastcfc.org
-northfranklintownship.com
 northumberlandborough.com
 northumberlandco.org
 nvtpa.com
@@ -9044,7 +9017,6 @@ scgssm.org
 scguard.com
 scilconline.org
 scpcf.com
-scrdc.org
 scsdb.org
 scsos.com
 scstatehouse.net
@@ -9868,7 +9840,6 @@ yesvirginia.org
 gov.vi
 governordejongh.com
 legvi.org
-nationalarchives.gov.vg
 usviber.org
 usvieda.org
 vide.vi
@@ -10347,7 +10318,6 @@ iowacounty.org
 jeffersonwis.com
 johnsoncreek-wi.us
 kenosha.org
-kewaskumsausage.com
 kewauneeco.org
 kildaretownship.com
 kohlervillage.org
