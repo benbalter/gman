@@ -39,10 +39,6 @@ class Gman < NaughtyOrNice
     dotgov_listing["Agency"] if federal?
   end
 
-  def dotgov_listing
-    @dotgov_listing ||= Gman.dotgov_list.find { |d| d["Domain Name"].downcase == "#{domain_parts.sld}.gov" } if dotgov?
-  end
-
   def dotgov?
     domain_parts.tld == "gov"
   end
@@ -105,5 +101,9 @@ class Gman < NaughtyOrNice
 
   def self.dotgov_list
     @dotgov_list ||= CSV.read(dotgov_list_path, :headers => true)
+  end
+
+  def dotgov_listing
+    @dotgov_listing ||= Gman.dotgov_list.find { |d| d["Domain Name"].downcase == "#{domain_parts.sld}.gov" } if dotgov?
   end
 end
