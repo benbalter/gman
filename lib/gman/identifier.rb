@@ -21,8 +21,10 @@ class Gman < NaughtyOrNice
       :federal
     elsif county?
       :county
-    else
+    elsif list_category.include?("usagov")
       :unknown
+    else
+      list_category.to_sym
     end
   end
 
@@ -31,6 +33,9 @@ class Gman < NaughtyOrNice
       matches[4].upcase
     elsif dotgov_listing
       dotgov_listing["State"]
+    elsif list_category
+      matches = list_category.match(/usagov([A-Z]{2})/)
+      matches[1] if matches
     end
   end
 
@@ -87,6 +92,16 @@ class Gman < NaughtyOrNice
   end
 
   private
+
+  def list_category
+    @list_category ||= begin
+      if match = Gman.list.find(domain)
+        regex = Regexp.new "\/\/ ([^\\n]+)\\n?[^\/\/]*\\n#{Regexp.escape(match.name)}\\n", "im"
+        matches = Gman.list_contents.match(regex)
+        matches[1] if matches
+      end
+    end
+  end
 
   def matches
     @matches ||= domain.match(LOCALITY_REGEX)

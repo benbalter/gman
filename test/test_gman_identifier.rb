@@ -79,5 +79,28 @@ class TestGmanIdentifier < Minitest::Test
       assert_equal "PA", domain.state
       assert_equal "Pittsburgh", domain.city
     end
+
+    should "detect the list category" do
+      assert_equal "US Federal", Gman.new("whitehouse.gov").send("list_category")
+    end
+  end
+
+  context "non-dotgov domains" do
+    should "determine a domain's group" do
+      assert_equal "usagovIN", Gman.new("cityofperu.org").send("list_category")
+      assert_equal :unknown, Gman.new("cityofperu.org").type
+
+      assert_equal "Canada municipal", Gman.new("acme.ca").send("list_category")
+      assert_equal :"Canada municipal", Gman.new("acme.ca").type
+
+      assert_equal "Canada federal", Gman.new("canada.ca").send("list_category")
+      assert_equal :"Canada federal", Gman.new("canada.ca").type
+    end
+
+    should "detect the state" do
+      assert_equal "PR", Gman.new("sanjuan.pr").state
+      assert_equal "OR", Gman.new("ashland.or.us").state
+      refute Gman.new("canada.ca").state
+    end
   end
 end
