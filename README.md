@@ -40,6 +40,32 @@ Gman.valid? "foo.gov"            #=> true
 Gman.valid? "foo.biz"            #=> false
 ```
 
+### Determine the type of domain
+
+```ruby
+domain = Gman.new "whitehouse.gov"
+domain.type     #=> :federal
+domain.federal? #=> true
+domain.state?   #=> false
+domain.city?    #=> false
+domain.county?  #=> false
+```
+
+### Get information about the domain's geographic location (.gov and .us only)
+
+```ruby
+domain = Gman.new "illinois.gov"
+domain.state #=> "IL"
+domain.city  #=> "springfield"
+```
+
+### Get information about a .gov domain's owner
+
+```ruby
+domain = Gman.new "whitehouse.gov"
+domain.agency   #=> "Executive Office of the President"
+```
+
 ### Get the ISO Country Code information represented by a government domain
 
 ```ruby

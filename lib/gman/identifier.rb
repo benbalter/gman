@@ -1,13 +1,5 @@
 class Gman < NaughtyOrNice
 
-  def self.dotgov_list_path
-    File.join Gman.config_path, "vendor/dotgovs.csv"
-  end
-
-  def self.dotgov_list
-    @dotgov_list ||= CSV.read(dotgov_list_path, :headers => true)
-  end
-
   def type
     if state?
       :state
@@ -105,5 +97,13 @@ class Gman < NaughtyOrNice
 
   def matches
     @matches ||= domain.match(LOCALITY_REGEX)
+  end
+
+  def self.dotgov_list_path
+    File.join Gman.config_path, "vendor/dotgovs.csv"
+  end
+
+  def self.dotgov_list
+    @dotgov_list ||= CSV.read(dotgov_list_path, :headers => true)
   end
 end
