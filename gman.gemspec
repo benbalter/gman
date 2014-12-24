@@ -12,8 +12,10 @@ Gem::Specification.new do |s|
     "LICENSE",
     "lib/gman.rb",
     "config/domains.txt",
+    "config/vendor/dotgovs.csv",
     "lib/gman/country_codes.rb",
     "lib/gman/locality.rb",
+    "lib/gman/identifier.rb",
     "bin/gman_filter"
   ]
 
