@@ -34,15 +34,15 @@ INVALID = [ "foo.bar.com",
 
 class TestGman < Minitest::Test
 
-  should "recognize government email addresses and domains" do
-    Parallel.each(VALID, :in_threads => 2) do |test|
-      assert_equal true, Gman::valid?(test), "#{test} should be detected as a valid government domain"
+  Parallel.each(VALID, :in_threads => 2) do |domain|
+    should "recognize #{domain} as a government domain" do
+      assert Gman::valid?(domain)
     end
   end
 
-  should "not recognize non-government email addresses and domains" do
-    Parallel.each(INVALID, :in_threads => 2) do |test|
-      assert_equal false, Gman::valid?(test), "#{test} should be detected as an invalid government domain"
+  Parallel.each(INVALID, :in_threads => 2) do |domain|
+    should "recognize #{domain} as a non-government domain" do
+      refute Gman::valid?(domain)
     end
   end
 
@@ -53,5 +53,4 @@ class TestGman < Minitest::Test
   should "returns the path to domains.txt" do
     assert_equal true, File.exists?(Gman.list_path)
   end
-
 end
