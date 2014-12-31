@@ -329,7 +329,6 @@ fortymile.ab.ca
 foxcreek.ca
 fraserlake.ca
 fredericton.ca
-frederictonjunction.ca
 frenchriver.ca
 frontofyonge.com
 galwaycavendishharvey.ca
@@ -420,7 +419,6 @@ inuvik.ca
 invermere.net
 iroquoisfalls.com
 irricana.com
-isle-aux-allumettes.com
 isle-aux-grues.com
 itaska.ca
 jansen.ca
@@ -880,7 +878,6 @@ shuniah.org
 sicamous.ca
 sidney.ca
 silverbeach.ca
-silvercreek.ca
 silverton.ca
 siouxlookout.ca
 sjdl.qc.ca
@@ -1253,7 +1250,6 @@ villageoflipton.com
 villageoflougheed.com
 villageoflove.ca
 villageofminto.ca
-villageofpennant.com
 villageofperdue.com
 villageofpointedward.com
 villageofportelgin.com
@@ -1826,7 +1822,6 @@ guntersvilleal.org
 hamiltoncityal.org
 hartselle.org
 headlandalabama.org
-heartofalabamacfc.org
 henrycountyal.com
 hooveral.org
 houstoncounty.org
@@ -1910,7 +1905,6 @@ cherokeevillage.org
 cityofbryant.com
 cityofconway.org
 cityofdequeen.com
-cityofeurekasprings.us
 cityofjacksonville.net
 cityofmcgehee.com
 cityofpinebluff.com
@@ -2440,7 +2434,6 @@ coloradonocall.com
 coloradoriverrecovery.org
 crgov.com
 cripplecreekgov.com
-deertrailcolorado.org
 deltacounty.com
 denvergov.org
 durangogov.org
@@ -3744,7 +3737,6 @@ porterco.org
 portertownship.com
 poseycountygov.org
 ripleycounty.com
-seymourcity.com
 shipshewana.org
 stjohnin.com
 stjosephcountyindiana.com
@@ -3981,7 +3973,6 @@ kyagr.com
 kyconvention.org
 kyepsb.net
 kyfairexpo.org
-kyheritage.org
 kylottery.com
 kytreasury.com
 laruecounty.org
@@ -4136,7 +4127,6 @@ townofberwick.org
 townofblanchard.us
 townofchatham.org
 townoffranklinton.com
-townofgoldenmeadow.com
 townofhornbeck.com
 townoflivingston.com
 townoflockport.com
@@ -4564,7 +4554,6 @@ barrycounty.org
 baycitymi.org
 baymills.org
 bearlakemichigan.org
-beavertonmi.org
 bedfordmi.org
 bellairemichigan.com
 berkleymich.org
@@ -4997,7 +4986,6 @@ independence.govoffice.com
 ivanhoe-mn.com
 janesville.govoffice.com
 jordan.govoffice.com
-kabetogamatownship.org
 kalmar.govoffice.com
 kanabeccounty.org
 keewatin.govoffice.com
@@ -5430,7 +5418,6 @@ cityoflongbeachms.com
 cityoflucedale.com
 cityofmacon.org
 cityofmagee.com
-cityofmagnoliams.com
 cityofpascagoula.com
 cityofpearl.com
 cityofsenatobia.com
@@ -5501,7 +5488,6 @@ townofedwards.com
 townofheidelberg.com
 townofprentiss.com
 townofshannon.org
-townofshuqualak.com
 townoftaylorsville.com
 townofwalls.com
 tunicacounty.com
@@ -5537,7 +5523,6 @@ dillonmt.org
 easthelenamt.us
 ennismontana.org
 falloncounty.net
-froidmt.com
 greatfallsmt.net
 hardinmt.com
 hillcounty.us
@@ -6502,7 +6487,6 @@ freeholdboro.org
 frelinghuysen-nj.us
 garfieldnj.org
 garwood.org
-gibbsboro.com
 gibbsborotownhall.com
 glassboroonline.com
 glengardnernj.org
@@ -6776,7 +6760,6 @@ totowanj.org
 townofhammonton.org
 townofharrison.com
 townofmorristown.org
-township.clinton.nj.us
 townshipofhillside.org
 townshipoflower.org
 townshipofocean.org
@@ -6873,7 +6856,6 @@ isletapueblo.com
 jemezsprings.org
 las-cruces.org
 leacounty.net
-lincolncountynm.net
 losalamosnm.us
 lovington.org
 newmexico.org
@@ -8003,7 +7985,6 @@ jeffersoncountyoh.com
 kentohio.org
 ketteringoh.org
 kirtlandohio.com
-knoxcountyohio.org
 lakecountyohio.org
 lcounty.com
 libertytwp.com
@@ -8187,7 +8168,6 @@ courthouse.kay.ok.us
 creekcountyonline.com
 custer.okcounties.org
 davisokla.com
-delawareclerk.org
 durant.org
 edmondok.com
 elkcity.com
@@ -9045,7 +9025,6 @@ townofbriarcliffe.us
 townofcampobello.com
 townofedistobeach.com
 townofgraycourt.net
-townofheathsprings.org
 townofhollywood.org
 townofhoneapath.com
 townofirmosc.com
@@ -10117,7 +10096,6 @@ kingcountycfc.org
 kitsapgov.com
 klickitatcounty.org
 laconner.net
-lacrossewa.us
 langleywa.org
 lyndenwa.org
 medical-lake.org
