@@ -1518,6 +1518,7 @@ gov.hk
 gov.ie
 gov.im
 gov.in
+nic.in
 gov.iq
 gov.ir
 gov.is
