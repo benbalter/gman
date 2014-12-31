@@ -34,13 +34,13 @@ INVALID = [ "foo.bar.com",
 
 class TestGman < Minitest::Test
 
-  Parallel.each(VALID, :in_threads => 2) do |domain|
+  VALID.each do |domain|
     should "recognize #{domain} as a government domain" do
       assert Gman::valid?(domain)
     end
   end
 
-  Parallel.each(INVALID, :in_threads => 2) do |domain|
+  INVALID.each do |domain|
     should "recognize #{domain} as a non-government domain" do
       refute Gman::valid?(domain)
     end
