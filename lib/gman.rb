@@ -34,7 +34,7 @@ class Gman < NaughtyOrNice
   # Returns boolean true if a government domain
   def valid?
     # Ensure it's a valid domain
-    return false unless PublicSuffix.valid?(domain)
+    return false unless PublicSuffix.valid?(".#{domain}")
 
     # Ensure non-edu
     return false if Swot::is_academic?(domain)

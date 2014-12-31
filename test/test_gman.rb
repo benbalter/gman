@@ -12,7 +12,8 @@ VALID = [  "foo.gov",
             "foo.fed.us",
             "foo.state.il.us",
             "state.il.us",
-            "foo@af.mil"
+            "foo@af.mil",
+            "gov.in"
         ]
 
 INVALID = [ "foo.bar.com",
