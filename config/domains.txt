@@ -1452,6 +1452,7 @@ ontario.ca
 saskatchewan.ca
 
 // non-us gov
+!mail.gov.ua
 admin.ch
 dep.no
 gob.bo
