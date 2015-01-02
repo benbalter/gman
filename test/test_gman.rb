@@ -29,7 +29,8 @@ INVALID = [ "foo.bar.com",
             " ",
             "foo.city.il.us",
             "foo.ci.il.us",
-            "foo.zx.us"
+            "foo.zx.us",
+            "foo@mail.gov.ua"
           ]
 
 class TestGman < Minitest::Test

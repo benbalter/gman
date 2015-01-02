@@ -44,9 +44,10 @@ class Gman < NaughtyOrNice
 
     # check using public suffix's standard logic
     rule = Gman.list.find domain
-    return true if !rule.nil? && rule.allow?(domain)
 
-    # also allow for explicit matches to domain list
-    Gman.list.rules.any? { |rule| rule.value == domain }
+    # domain is on the domain list and
+    # domain is not explicitly blacklisted and
+    # domain matches a standard public suffix list rule
+    !rule.nil? && rule.type != :exception && rule.allow?(".#{domain}")
   end
 end
