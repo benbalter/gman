@@ -1,0 +1,44 @@
+#! /usr/bin/env ruby
+
+require 'csv'
+require 'open-uri'
+require './lib/gman'
+require './lib/gman/parser'
+
+source = "http://www.mik.nrw.de/nc/themen-aufgaben/kommunales/kommunale-adressen.html?tx_szkommunaldb_pi1%5Bexport%5D=csv"
+
+csv = open(source).read.force_encoding("iso-8859-1").encode("UTF-8")
+
+# For some reason, the header row is actually the last row
+# Pop the last line off the file and prepend it at the begining
+# So that when we pass it to CSV it detects the headers properly
+lines = csv.split("\n")
+lines.unshift lines.pop
+csv = lines.join("\n")
+
+data = CSV.parse(csv, :headers => true, :col_sep => ";")
+domains = data.map { |row| row["Internet"].to_s.downcase.strip.gsub /^www./, "" }
+
+domains.reject! { |domain| domain.empty? }
+domains.select! { |domain| PublicSuffix.valid?(".#{domain}") } # Validate domain
+domains.reject! { |domain| Swot::is_academic?(domain) }  # Reject academic domains
+
+current = Gman::Parser.file_to_array( Gman::list_path )
+current_hash = Gman::Parser.array_to_hash(current)
+
+current_hash["German Municipalities"] = domains
+current_hash = current_hash.sort_by { |group, domains| group.downcase }
+
+# PublicSuffix Formatted Output
+current_group = ""
+output = ""
+current_hash.each do |group, domains|
+  if group != current_group
+    output << "\n\n" unless current_group.empty? # first entry
+    output << "// #{group}\n"
+    current_group = group
+  end
+  output << domains.join("\n")
+end
+
+File.open(Gman.list_path, "w") { |file| file.write output }
