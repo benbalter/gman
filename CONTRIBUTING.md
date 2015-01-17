@@ -13,7 +13,7 @@ Open an issue, or submit a pull request
 
 ## Domains
 
-Domains live in `./lib/domains.txt` as a list of TLDs and SLD+TLDs.
+Domains live in `./config/domains.txt` as a list of TLDs and SLD+TLDs.
 
 Right now, the only valid government top level domains (TLDs), represent the US government and are `.gov`, and `.mil`.
 
