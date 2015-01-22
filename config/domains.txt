@@ -1883,6 +1883,7 @@ xanten.de
 !mail.gov.ua
 admin.ch
 dep.no
+go.jp
 gob.bo
 gob.cl
 gob.do
