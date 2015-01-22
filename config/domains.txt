@@ -2018,6 +2018,7 @@ gov.za
 government.bg
 govt.nz
 gub.uy
+lg.jp
 nic.in
 
 // non-us mil
