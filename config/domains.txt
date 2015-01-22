@@ -1883,6 +1883,7 @@ xanten.de
 !mail.gov.ua
 admin.ch
 dep.no
+go.jp
 gob.bo
 gob.cl
 gob.do
@@ -2017,6 +2018,7 @@ gov.za
 government.bg
 govt.nz
 gub.uy
+lg.jp
 nic.in
 
 // non-us mil
