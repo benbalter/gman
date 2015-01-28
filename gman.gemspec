@@ -8,18 +8,10 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/benbalter/gman"
   s.licenses = ["MIT"]
 
-  s.files = [
-    "LICENSE",
-    "lib/gman.rb",
-    "config/domains.txt",
-    "config/vendor/dotgovs.csv",
-    "lib/gman/country_codes.rb",
-    "lib/gman/locality.rb",
-    "lib/gman/identifier.rb",
-    "bin/gman_filter"
-  ]
-
-  s.executables << "gman_filter"
+  s.files                 = `git ls-files`.split("\n")
+  s.test_files            = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables           = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths         = ["lib"]
 
   s.require_paths = ["lib"]
   s.add_dependency( "swot", '~> 0.4.2' )
