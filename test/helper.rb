@@ -2,6 +2,7 @@ require 'rubygems'
 require 'bundler'
 require 'minitest/autorun'
 require 'parallel'
+require 'open3'
 
 begin
   Bundler.setup(:default, :development)
@@ -19,3 +20,7 @@ require 'gman'
 require 'net/dns'
 require 'net/dns/resolver'
 require './lib/gman/parser'
+
+def test_bin(*args)
+  output, status = Open3.capture2e("bundle", "exec", "gman", *args)
+end
