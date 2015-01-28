@@ -62,4 +62,15 @@ class TestGmanBin < Minitest::Test
   should "color by default" do
     assert_match /\[0;32;49m/, @output
   end
+
+  should "show help text" do
+    output, status = test_bin
+    assert_match /Usage/i, output
+
+    output, status = test_bin("")
+    assert_match /Usage/i, output
+
+    output, status = test_bin("--no-color")
+    assert_match /Usage/i, output
+  end
 end
