@@ -3,7 +3,15 @@
 
 require 'colorize'
 require_relative "../lib/gman"
-require_relative "../lib/iso_country_codes/code"
+
+# Convenience method to simplify the command-line logic
+class IsoCountryCodes
+  class Code
+    def to_s
+      name
+    end
+  end
+end
 
 domain = ARGV[0]
 
