@@ -77,6 +77,33 @@ domain.conutry.calling_code        #=> "+1"
 
 ### Command line
 
+#### Getting information about a given domain
+
+```
+$ gman whitehouse.gov
+Domain  : whitehouse.gov
+Valid government domain
+Type    : federal
+Country : United States
+State   : DC
+City    : Washington
+Agency  : Executive Office of the President
+```
+
+The command line tool will accept any domain-like string (email, url, etc.)
+
+```
+$ gman foo@illinois.gov
+Domain  : illinois.gov
+Valid government domain
+Type    : state
+Country : United States
+State   : IL
+City    : Springfield
+```
+
+#### Filter
+
 Filters newline-separated email addresses from stdin. Example usage:
 
 ```

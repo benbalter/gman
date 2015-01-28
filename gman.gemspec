@@ -8,23 +8,16 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/benbalter/gman"
   s.licenses = ["MIT"]
 
-  s.files = [
-    "LICENSE",
-    "lib/gman.rb",
-    "config/domains.txt",
-    "config/vendor/dotgovs.csv",
-    "lib/gman/country_codes.rb",
-    "lib/gman/locality.rb",
-    "lib/gman/identifier.rb",
-    "bin/gman_filter"
-  ]
-
-  s.executables << "gman_filter"
+  s.files                 = `git ls-files`.split("\n")
+  s.test_files            = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables           = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
+  s.require_paths         = ["lib"]
 
   s.require_paths = ["lib"]
   s.add_dependency( "swot", '~> 0.4.2' )
-  s.add_dependency( "iso_country_codes", "~> 0.4" )
+  s.add_dependency( "iso_country_codes", "~> 0.6" )
   s.add_dependency( "naughty_or_nice", "~> 0.0.2" )
+  s.add_dependency( "colorize", "~> 0.7" )
 
   s.add_development_dependency( "rake" )
   s.add_development_dependency( "shoulda" )

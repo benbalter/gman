@@ -13,6 +13,8 @@ class Gman < NaughtyOrNice
       :federal
     elsif county?
       :county
+    elsif list_category.nil?
+      nil
     elsif list_category.include?("usagov")
       :unknown
     else
