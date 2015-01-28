@@ -1,0 +1,34 @@
+#! /usr/bin/env ruby
+# Given a domain-link string, returns information about the domain
+
+require 'colorize'
+require_relative "../lib/gman"
+require_relative "../lib/iso_country_codes/code"
+
+domain = ARGV[0]
+
+if domain.nil?
+  puts "USAGE: gman <domain or email address>".red
+  exit 1
+end
+
+gman = Gman.new(domain)
+
+puts "Domain  : #{gman.domain}"
+
+if gman.domain_parts.nil?
+  puts "Invalid domain".red
+  exit 1
+end
+
+if !gman.valid?
+  puts "Not a government domain".red
+  exit 1
+end
+
+puts "Valid government domain".green
+
+["type", "country", "state", "city", "agency"].each do |key|
+  value = gman.send(key)
+  puts "#{key.capitalize.ljust(8)}: #{value}" if value
+end
