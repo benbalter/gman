@@ -25,16 +25,16 @@ gman = Gman.new(domain)
 puts "Domain  : #{gman.domain}"
 
 if gman.domain_parts.nil?
-  puts "Invalid domain".red
+  puts "Status  : " + "Invalid domain".red
   exit 1
 end
 
 if !gman.valid?
-  puts "Not a government domain".red
+  puts "Status  : " + "Not a government domain".red
   exit 1
 end
 
-puts "Valid government domain".green
+puts "Status  : " + "Valid government domain".green
 
 ["type", "country", "state", "city", "agency"].each do |key|
   value = gman.send(key)
