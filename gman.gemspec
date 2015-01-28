@@ -2,7 +2,7 @@ Gem::Specification.new do |s|
   s.name = "gman"
   s.summary = "Check if a given domain or email address belong to a governemnt entity"
   s.description = "A ruby gem to check if the owner of a given email address is working for THE MAN."
-  s.version = '4.4.2'
+  s.version = '4.4.3'
   s.authors = ["Ben Balter"]
   s.email = "ben.balter@github.com"
   s.homepage = "https://github.com/benbalter/gman"
