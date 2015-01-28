@@ -14,7 +14,7 @@ class IsoCountryCodes
 end
 
 domain = ARGV[0]
-String.disable_colorization = true if ARGV[1] == "--no-color"
+String.disable_colorization = true if ARGV.last == "--no-color"
 
 if domain.nil?
   puts "USAGE: gman <domain or email address> [--no-color]".red
