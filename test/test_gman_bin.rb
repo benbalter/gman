@@ -73,4 +73,9 @@ class TestGmanBin < Minitest::Test
     output, status = test_bin("--no-color")
     assert_match /Usage/i, output
   end
+
+  should "know if a country is sanctioned" do
+    output, status = test_bin "kim@pyongyang.gov.kp"
+    assert_match /SANCTIONED/, output
+  end
 end

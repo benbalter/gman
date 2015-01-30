@@ -41,3 +41,5 @@ puts "Status  : " + "Valid government domain".green
   value = gman.send(key)
   puts "#{key.capitalize.ljust(8)}: #{value}" if value
 end
+
+puts "SANCTIONED NATION".red if gman.sanctioned?
