@@ -21,6 +21,7 @@ class Gman < NaughtyOrNice
   #
   # e.g., United States = US, United Kingdom = GB
   def alpha2
+    return unless domain_parts
     alpha2 = domain_parts.tld.split('.').last
     if ALPHA2_MAP[alpha2.to_sym]
       ALPHA2_MAP[alpha2.to_sym]
@@ -35,6 +36,6 @@ class Gman < NaughtyOrNice
   # Gman.new("foo.gov").country.name     => "United States"
   # Gman.new("foo.gov").country.currency => "USD"
   def country
-    @country ||= IsoCountryCodes.find(alpha2)
+    @country ||= IsoCountryCodes.find(alpha2) if alpha2
   end
 end

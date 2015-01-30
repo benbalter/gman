@@ -5,6 +5,7 @@ require 'csv'
 require_relative 'gman/country_codes'
 require_relative 'gman/locality'
 require_relative 'gman/identifier'
+require_relative 'gman/sanctions'
 
 class Gman < NaughtyOrNice
   class << self
