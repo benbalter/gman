@@ -2087,6 +2087,7 @@ bs.ch
 fr.ch
 ge.ch
 gl.ch
+gr.ch
 ju.ch
 lu.ch
 ne.ch
