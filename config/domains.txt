@@ -1995,6 +1995,7 @@ gov.sa
 gov.sb
 gov.sc
 gov.sd
+gov.se
 gov.sg
 gov.sh
 gov.sl
@@ -2016,8 +2017,10 @@ gov.vn
 gov.ws
 gov.za
 government.bg
+government.se
 govt.nz
 gub.uy
+kb.se
 lg.jp
 nic.in
 
