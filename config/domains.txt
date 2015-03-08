@@ -2020,7 +2020,6 @@ government.bg
 government.se
 govt.nz
 gub.uy
-kb.se
 lg.jp
 nic.in
 
