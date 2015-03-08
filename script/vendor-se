@@ -1,0 +1,54 @@
+#! /usr/bin/env ruby
+
+require 'mechanize'
+require 'csv'
+require 'gman'
+require 'swot'
+require './lib/gman'
+require './lib/gman/parser'
+
+url = "http://www.myndighetsregistret.scb.se/Myndighet.aspx"
+agent = Mechanize.new
+page = agent.get(url)
+form = page.form("form1")
+form.radiobuttons.find { |r| r.value = "Textfil" }.check
+submit_button = form.buttons.find { |b| b.type == "submit" }
+response = agent.submit(form, submit_button)
+
+domains = []
+rows = CSV.parse(response.content, :headers => true, :col_sep => "\t")
+
+puts "Starting with #{rows.count} domains..."
+
+rows.each do |row|
+  next if Swot.valid?(row["Webbadress"]) # Filter out Swot'd domains
+  next if row["Namn"] =~ /UNIVERSITET/ # Filter out domains that are clearly edu
+  domains.push Gman.new(row["Webbadress"]).domain.to_s.gsub(/^www\./,"")
+end
+
+domains.reject! { |domain| domain.empty? }
+domains.compact!
+domains.uniq!
+domains.select! { |domain| PublicSuffix.valid?(".#{domain}") }
+
+puts "Ended up with #{domains.count} domains."
+
+current = Gman::Parser.file_to_array( Gman::list_path )
+current_hash = Gman::Parser.array_to_hash(current)
+
+current_hash["Swedish Administrative Authorities"] = domains
+current_hash = current_hash.sort_by { |group, domains| group.downcase }
+
+# PublicSuffix Formatted Output
+current_group = ""
+output = ""
+current_hash.each do |group, domains|
+  if group != current_group
+    output << "\n\n" unless current_group.empty? # first entry
+    output << "// #{group}\n"
+    current_group = group
+  end
+  output << domains.join("\n")
+end
+
+File.open(Gman.list_path, "w") { |file| file.write output }
