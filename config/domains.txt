@@ -93,7 +93,6 @@ bromont.com
 brooks.ca
 brownsburgchatham.ca
 buchananvillage.zxq.net
-buffalonarrows.net
 burksfalls.net
 burnaby.ca
 burnsticklakesummervillage.ca
@@ -164,7 +163,6 @@ city.kawarthalakes.on.ca
 city.kenora.on.ca
 city.kimberley.bc.ca
 city.langley.bc.ca
-city.melville.sk.ca
 city.mississauga.on.ca
 city.owen-sound.on.ca
 city.peterborough.on.ca
@@ -259,7 +257,6 @@ dinosaurvalley.com
 discoverkl.ca
 discovermiddleton.ca
 discoverminnedosa.com
-discoverstlawrence.com
 discoverwinnipegosis.com
 district.kent.bc.ca
 district.mackenzie.bc.ca
@@ -584,7 +581,6 @@ morinville.ca
 morristurnberry.ca
 mountainviewcounty.com
 mountpearl.ca
-mountstewartpei.ca
 mrcabitibi.qc.ca
 msjb.qc.ca
 munargyle.com
@@ -610,7 +606,6 @@ municipalitehopetown.ca
 municipaliteremigny.qc.ca
 municipalitesaintsulpice.com
 municipality.frontenacislands.on.ca
-municipality.killarney.on.ca
 municipalityofmcdougall.com
 municipalityofshelburne.ca
 muniles.ca
@@ -1048,7 +1043,6 @@ town.newmarket.on.ca
 town.outlook.sk.ca
 town.oxford.ns.ca
 town.parrsboro.ns.ca
-town.penetanguishene.on.ca
 town.perth.on.ca
 town.petrolia.on.ca
 town.portmcneill.bc.ca
@@ -1183,7 +1177,6 @@ tudorandcashel.com
 tumblerridge.ca
 turnervalley.ca
 twp.beckwith.on.ca
-twp.puslinch.on.ca
 twp.seguin.on.ca
 twp.southwold.on.ca
 twp.stclair.on.ca
@@ -1816,7 +1809,6 @@ stadt-werther.de
 stadt-wetter.de
 stadt-willich.de
 stadt-zuelpich.de
-stadt.sundern.de
 stadtlohn.de
 stadtverwaltung-bornheim.de
 staedteregion-aachen.de
@@ -2155,11 +2147,6 @@ slv.se
 lotteriinspektionen.se
 lakemedelsverket.se
 lansstyrelsen.se
-w.lst.se
-bd.lst.se
-ab.lst.se
-d.lst.se
-ac.lst.se
 y.lst.se
 mi.se
 migrationsverket.se
@@ -3169,7 +3156,6 @@ norfolkct.org
 norwalkct.org
 norwichct.org
 oldsaybrookct.org
-oxford-ct.com
 plainfieldct.org
 plainvillect.com
 plymouthct.us
@@ -3674,7 +3660,6 @@ libertycountyga.com
 lowndescounty.com
 madisonco.us
 madisonga.com
-manchester-ga.com
 metter-candler.com
 middlegacfc.com
 milledgevillega.us
@@ -4740,7 +4725,6 @@ townofberwick.org
 townofblanchard.us
 townofchatham.org
 townoffranklinton.com
-townofhornbeck.com
 townoflivingston.com
 townoflockport.com
 townofwelsh.com
@@ -5301,10 +5285,8 @@ harrison-township.org
 hartlandtwp.com
 hazelpark.org
 hollytownship.org
-homermich.org
 homertownship.org
 houghtoncounty.net
-howardtownship.net
 howardtwp.org
 hsofmich.org
 hudsonville.org
@@ -5775,7 +5757,6 @@ boonslick.org
 boonville-mo.org
 brentwoodmo.org
 bridgetonmo.com
-buffalomissouri.us
 byrnesmill.org
 cabool.org
 camdentoncity.com
@@ -6466,7 +6447,6 @@ ncsecc.org
 ncsicklecellprogram.org
 ncsip.org
 ncsitesearch.com
-ncstars.org
 ncstatefair.org
 ncstatesurplus.com
 ncstormwater.org
@@ -6676,7 +6656,6 @@ lidgerwoodnd.com
 lintonnd.org
 lisbonnd.com
 maddocknd.com
-makotind.com
 mapletonnd.com
 marmarth.org
 maxnd.com
@@ -6862,7 +6841,6 @@ hillsboroughcountynh.org
 hinsdale.govoffice.com
 hollis.nh.us
 hooksett.org
-jacksonvillage.net
 kingstonnh.org
 lancasternh.org
 landaffnh.org
@@ -7415,7 +7393,6 @@ wanaqueborough.com
 wantagetwp.com
 warrennj.org
 washington-twp-warren.org
-washington-twp.org
 washingtonboro-nj.org
 washtwpmorris.org
 watchungnj.com
@@ -7580,7 +7557,6 @@ keetoowahcherokee.org
 kictribe.org
 klamathtribes.org
 kniktribalcouncil.org
-koasekabenaki.org
 kootenai.org
 kotzebueira.org
 kumeyaay.info
@@ -7615,7 +7591,6 @@ nc-cherokee.com
 nezperce.org
 nihb.org
 nooksackindiantribe.org
-northernarapaho.com
 northforkrancheria.com
 npaihb.org
 nveyak.com
@@ -7643,7 +7618,6 @@ quileutenation.org
 quinaultindiannation.com
 redding-rancheria.com
 robinsonrancheria.org
-rumseyrancheria.org
 sagchip.org
 santaynezchumash.org
 santeedakota.org
@@ -7789,7 +7763,6 @@ cattco.org
 cayuga-heights.ny.us
 cayugacounty.us
 cdrpc.org
-cfc-nyc.org
 chathamnewyork.us
 chautauqua-ny.com
 chemungcounty.com
@@ -8337,7 +8310,6 @@ victorny.org
 village.boonville.ny.us
 village.clinton.ny.us
 village.croton-on-hudson.ny.us
-village.fairport.ny.us
 village.herkimer.ny.us
 village.holland-patent.ny.us
 village.mamaroneck.ny.us
@@ -8714,7 +8686,6 @@ vanwert.org
 vanwertcounty.org
 versaillesohio.cc
 villageofcoldwater.com
-villageofjohnstown.org
 villageofnewalbany.org
 villageofottoville.org
 villageofseville.org
@@ -9502,7 +9473,6 @@ cfcofthecsra.org
 chapinsc.com
 charlestoncounty.org
 cheraw.com
-chesnee.net
 chesterfield-sc.com
 chestersc.org
 cityofandersonsc.com
@@ -10508,7 +10478,6 @@ lincolnvermont.org
 londonderryvt.org
 ludlow.vt.us
 lyndonvt.org
-marlboro.vt.us
 mendonvt.org
 middlesexvermont.org
 milton.govoffice2.com
@@ -10746,7 +10715,6 @@ republicwa.org
 royalcitywa.org
 rustonwa.org
 sanjuanco.com
-sirti.org
 skagitcounty.net
 skamaniacounty.org
 skokomish.org
@@ -11040,7 +11008,6 @@ townofmerton.com
 townofminong.us
 townofmorrison.org
 townofmtpleasantwi.com
-townofmukwonago.com
 townofmukwonago.us
 townofnavarino.com
 townofnorway.org
@@ -11108,7 +11075,6 @@ villageofmazomanie.com
 villageofmerton.com
 villageofmukwonago.com
 villageofneosho.org
-villageofpewaukeewi.cbo2.com
 villageofpewaukeewi.us
 villageofpulaski.org
 villageofsharon.com
