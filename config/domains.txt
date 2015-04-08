@@ -1005,7 +1005,6 @@ tofino.ca
 tol.ca
 torbay.ca
 toronto.ca
-town.athabasca.ab.ca
 town.aurora.on.ca
 town.bancroft.on.ca
 town.beaumont.ab.ca
@@ -1043,7 +1042,6 @@ town.newmarket.on.ca
 town.outlook.sk.ca
 town.oxford.ns.ca
 town.parrsboro.ns.ca
-town.perth.on.ca
 town.petrolia.on.ca
 town.portmcneill.bc.ca
 town.redcliff.ab.ca
@@ -2534,7 +2532,6 @@ tnregionalcfc.org
 whitecountyar.org
 
 // usagovAS
-amsamoatourism.com
 asgteo.com
 cfc-hawaii.org
 doe.as
@@ -5506,7 +5503,6 @@ cityofwells.net
 cityofwheaton.com
 cityofwinnebago.com
 cityofwinona.com
-cityofwoodlandmn.org
 clarkfield.org
 clearlaketownship.org
 clearwatercity.com
@@ -5996,7 +5992,6 @@ cfcmidsouth.org
 chickasawcoms.com
 city.jackson.ms.us
 cityofamoryms.com
-cityofbaldwyn.com
 cityofbatesvillems.com
 cityofbaysprings.com
 cityofboonevillems.com
@@ -6439,7 +6434,6 @@ ncradon.org
 ncrb.org
 ncrcb.org
 ncrea.net
-ncrecovery.gov
 ncrehs.com
 ncreportcards.org
 ncscienceandtechnology.com
@@ -6896,7 +6890,6 @@ seabrooknh.org
 sharonnh.org
 shelburnenh.com
 somersworth.com
-springfieldnh.net
 stoddardnh.org
 stratfordnh.org
 sugarhillnh.org
@@ -7794,7 +7787,6 @@ clintoncountygov.com
 clydeny.com
 cmvny.com
 coeymans.org
-cohoctonny.com
 cohoes.com
 colonie.org
 colonievillage.org
@@ -8756,7 +8748,6 @@ davisokla.com
 durant.org
 edmondok.com
 elkcity.com
-elreno.org
 enid.org
 fairviewok.org
 fivecivilizedtribes.org
@@ -9808,7 +9799,6 @@ tnvacation.com
 townofarlington.org
 townoffarragut.org
 townofsmyrna.org
-troy.troytn.com
 troytn.com
 washingtoncountytn.com
 washingtoncountytn.org
@@ -9840,7 +9830,6 @@ burkburnett.org
 burlesontx.com
 burnetcountytexas.org
 calhouncotx.org
-canyon-tx.com
 canyontx.com
 carthagetexas.com
 cctexas.com
@@ -10139,7 +10128,6 @@ genola.org
 grandcountyutah.net
 greenriverutah.com
 gunnisoncity.org
-hanksville.us
 helpercity.net
 heneferutah.org
 herriman.org

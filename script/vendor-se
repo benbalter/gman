@@ -2,7 +2,6 @@
 
 require 'mechanize'
 require 'csv'
-require 'gman'
 require 'swot'
 require './lib/gman'
 require './lib/gman/parser'
