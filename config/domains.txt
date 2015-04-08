@@ -2012,7 +2012,7 @@ govt.nz
 gub.uy
 lg.jp
 nic.in
-nov.no
+nav.no
 
 // non-us mil
 mil.ac
