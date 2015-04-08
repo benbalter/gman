@@ -14,6 +14,8 @@ Gem::Specification.new do |s|
   s.require_paths         = ["lib"]
 
   s.require_paths = ["lib"]
+  s.required_ruby_version = '~> 2.0'
+
   s.add_dependency( "swot", '~> 0.4.2' )
   s.add_dependency( "iso_country_codes", "~> 0.6" )
   s.add_dependency( "naughty_or_nice", "~> 0.0.2" )
