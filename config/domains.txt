@@ -1809,6 +1809,7 @@ stadt-werther.de
 stadt-wetter.de
 stadt-willich.de
 stadt-zuelpich.de
+stadt.sundern.de
 stadtlohn.de
 stadtverwaltung-bornheim.de
 staedteregion-aachen.de
@@ -2073,6 +2074,8 @@ mod.uk
 ega.or.th
 
 // Swedish Administrative Authorities
+ab.lst.se
+ac.lst.se
 aklagare.se
 arbetsformedlingen.se
 arbetsgivarverket.se
@@ -2080,6 +2083,7 @@ arkitekturmuseet.se
 arn.se
 arvsfonden.se
 av.se
+bd.lst.se
 bfn.se
 bo.se
 bolagsverket.se
@@ -2087,6 +2091,7 @@ boverket.se
 bra.se
 brottsoffermyndigheten.se
 csn.se
+d.lst.se
 datainspektionen.se
 do.se
 domstol.se
@@ -2243,6 +2248,7 @@ vardanalys.se
 vinnova.se
 vr.se
 vti.se
+w.lst.se
 y.lst.se
 yhmyndigheten.se
 
