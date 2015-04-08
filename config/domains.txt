@@ -2011,8 +2011,8 @@ government.se
 govt.nz
 gub.uy
 lg.jp
-nic.in
 nav.no
+nic.in
 
 // non-us mil
 mil.ac
