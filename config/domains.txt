@@ -1978,6 +1978,7 @@ gov.ps
 gov.pt
 gov.py
 gov.qa
+gov.ro
 gov.rs
 gov.ru
 gov.rw
