@@ -11187,3 +11187,26 @@ uintacounty.com
 wrightwyoming.com
 wyomingbusiness.org
 wyomingtourism.org
+
+
+// Estonia
+president.ee
+valitus.ee
+riigikogu.ee
+riigikantselei.ee
+hm.ee
+just.ee
+kaitseministeerium.ee
+envir.ee
+kul.ee
+mkm.ee
+agri.ee
+rahandusministeerium.ee
+siseministeerium.ee
+sm.ee
+vm.ee
+ria.ee
+eestipank.ee
+fi.ee
+tja.ee
+
