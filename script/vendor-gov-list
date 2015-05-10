@@ -1,5 +1,5 @@
 #!/bin/sh
 
-DATE=2014-12-01
+DATE=2015-03-15
 
 wget "https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/$DATE-full.csv" -O config/vendor/dotgovs.csv
