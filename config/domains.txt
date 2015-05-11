@@ -2089,6 +2089,7 @@ csn.se
 datainspektionen.se
 do.se
 domstol.se
+dom.se
 ehalsomyndigheten.se
 ekn.se
 ekobrottsmyndigheten.se
