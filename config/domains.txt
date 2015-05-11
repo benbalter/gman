@@ -11210,3 +11210,9 @@ eestipank.ee
 fi.ee
 tja.ee
 
+// Lithuania
+vpt.lt
+
+// Lithuania municipal
+vilnius.lt
+kaunas.lt
