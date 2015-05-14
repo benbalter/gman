@@ -2032,7 +2032,6 @@ fryslan.nl
 fumo.nl
 gbtwente.nl
 gdi.minvenj.nl
-gdi.minvenj.nl
 geertruidenberg.nl
 gelderland.nl
 geldermalsen.nl
@@ -2166,7 +2165,6 @@ lingewaard.nl
 lisse.nl
 littenseradiel.nl
 lochem.nl
-logius.nl
 logius.nl
 loonopzand.nl
 lopik.nl
