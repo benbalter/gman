@@ -1442,6 +1442,27 @@ novascotia.ca
 ontario.ca
 saskatchewan.ca
 
+// Estonia
+agri.ee
+eestipank.ee
+envir.ee
+fi.ee
+hm.ee
+just.ee
+kaitseministeerium.ee
+kul.ee
+mkm.ee
+president.ee
+rahandusministeerium.ee
+ria.ee
+riigikantselei.ee
+riigikogu.ee
+siseministeerium.ee
+sm.ee
+tja.ee
+valitus.ee
+vm.ee
+
 // German Municipalities
 aachen.de
 ahaus.de
@@ -2014,6 +2035,7 @@ gub.uy
 lg.jp
 nav.no
 nic.in
+overheid.nl
 
 // non-us mil
 mil.ac
@@ -2088,8 +2110,8 @@ brottsoffermyndigheten.se
 csn.se
 datainspektionen.se
 do.se
-domstol.se
 dom.se
+domstol.se
 ehalsomyndigheten.se
 ekn.se
 ekobrottsmyndigheten.se
@@ -11188,24 +11210,3 @@ uintacounty.com
 wrightwyoming.com
 wyomingbusiness.org
 wyomingtourism.org
-
-// Estonia
-president.ee
-valitus.ee
-riigikogu.ee
-riigikantselei.ee
-hm.ee
-just.ee
-kaitseministeerium.ee
-envir.ee
-kul.ee
-mkm.ee
-agri.ee
-rahandusministeerium.ee
-siseministeerium.ee
-sm.ee
-vm.ee
-ria.ee
-eestipank.ee
-fi.ee
-tja.ee
