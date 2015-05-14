@@ -1423,6 +1423,7 @@ zenonpark.com
 // Canada provincial and territorial
 alberta.ca
 britishcolumbia.ca
+dgeq.qc.ca
 gouv.qc.ca
 gov.ab.ca
 gov.bc.ca
@@ -1462,6 +1463,10 @@ sm.ee
 tja.ee
 valitus.ee
 vm.ee
+
+// Finland
+hel.fi
+lounaispaikka.fi
 
 // German Municipalities
 aachen.de
@@ -1564,6 +1569,7 @@ finnentrop.de
 freudenberg-stadt.de
 froendenberg.de
 gangelt.de
+gbv.de
 geilenkirchen.de
 geldern.de
 gelsenkirchen.de
@@ -1594,6 +1600,7 @@ hamminkeln.de
 harsewinkel.de
 hattingen.de
 havixbeck.de
+hbz-nrw.de
 heek.de
 heiden.de
 heiligenhaus.de
@@ -1890,10 +1897,24 @@ wuerselen.de
 wuppertal.de
 xanten.de
 
+// Italian municipalities
+comune.bologna.it
+formez.it
+plonegov.it
+regione.emilia-romagna.it
+
+// Netherlands
+dlg.nl
+geonovum.nl
+hergebruikoverheid.nl
+overheid.nl
+pleio.nl
+zaanstad.nl
+
 // non-us gov
 !mail.gov.ua
 admin.ch
-dep.no
+belgium.be
 go.jp
 gob.bo
 gob.cl
@@ -2032,10 +2053,10 @@ government.bg
 government.se
 govt.nz
 gub.uy
+leg.br
 lg.jp
-nav.no
 nic.in
-overheid.nl
+onroerenderfgoed.be
 
 // non-us mil
 mil.ac
@@ -2068,7 +2089,6 @@ mil.lv
 mil.mg
 mil.mv
 mil.my
-mil.no
 mil.pe
 mil.ph
 mil.pl
@@ -2092,6 +2112,14 @@ mod.uk
 
 // non-us sub-divisions
 ega.or.th
+
+// Norway
+dep.no
+difi.no
+kartverket.no
+met.no
+mil.no
+nav.no
 
 // Swedish Administrative Authorities
 aklagare.se
@@ -2237,6 +2265,7 @@ sofi.se
 spsm.se
 spv.se
 sst.a.se
+staffanstorp.se
 stat-inst.se
 statensansvarsnamnd.se
 statenskonstrad.se
@@ -2925,6 +2954,7 @@ pismobeach.org
 placentia.org
 pleasanthillrec.com
 plumascounty.us
+portofsandiego.org
 portolavalley.net
 poway.org
 prcity.com
@@ -3070,6 +3100,7 @@ fremontco.com
 friscogov.com
 fruita.org
 garfield-county.com
+greeleygov.com
 greenwoodvillage.com
 gunnisoncounty.org
 hinsdalecountycolorado.us
@@ -3554,6 +3585,7 @@ fsmgov.org
 acworth.org
 alpharetta.ga.us
 athensclarkecounty.com
+atlantaregional.com
 avondaleestates.org
 bainbridgecity.com
 bainbridgega.com
