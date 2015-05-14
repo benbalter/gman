@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# https://github.com/github/government.github.com/pull/367#issuecomment-102108763
+wget -r -np https://almanak.overheid.nl/
+grep @ -rI almanak.overheid.nl/|cut -f 2 -d @|cut -f 1 -d '"'|grep \\.nl$|sort|uniq
