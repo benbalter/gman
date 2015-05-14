@@ -803,7 +803,6 @@ rmofsteanne.com
 rmofstlaurent.ca
 rmofswanriver.com
 rmofvictoria.com
-rmriverside.ca
 rmrudy.ca
 rmsaltcoats.ca
 rmstrathcona.com
@@ -1461,7 +1460,6 @@ riigikogu.ee
 siseministeerium.ee
 sm.ee
 tja.ee
-valitus.ee
 vm.ee
 
 // Finland
@@ -2184,8 +2182,6 @@ meppel.nl
 middelburg.nl
 middendelfland.nl
 middendrenthe.nl
-midnef.nl
-miinvws.nl
 milieudienst-ijmond.nl
 minaz.nl
 minbuza.nl
@@ -2258,8 +2254,6 @@ pekela.nl
 pijnacker-nootdorp.nl
 pleio.nl
 postbus51.nl
-proinciegroningen.nl
-provicniegroningen.nl
 provincie-utrecht.nl
 provinciegroningen.nl
 prvlimburg.nl
@@ -3320,7 +3314,6 @@ cityofpasadena.net
 cityofperris.org
 cityofpetaluma.net
 cityofplacerville.org
-cityofpointarena.com
 cityofranchocordova.org
 cityofrc.us
 cityofredlands.org
@@ -3934,7 +3927,6 @@ flalottery.com
 flarecovery.com
 flclerks.com
 flcourts.org
-fldisabilityinfo.com
 fldoe.org
 flgisa.org
 flgov.com
@@ -5160,7 +5152,6 @@ kentuckystatepolice.org
 kentuckytourism.com
 kfcyumcenter.com
 kheaa.com
-kltprc.info
 kyagr.com
 kyconvention.org
 kyepsb.net
@@ -6405,7 +6396,6 @@ cityofstjohn.org
 cityofversailles.org
 cityofwildwood.com
 cityofwillard.org
-clarencemo.com
 clarksonvalley.org
 clarksvillemo.us
 claycogov.com
@@ -7776,7 +7766,6 @@ mendhamnj.org
 mendhamtownship.org
 merchantville.com
 metuchennj.org
-middletownems.org
 middletownnj.org
 middletownship.com
 milfordnj.org
@@ -8600,7 +8589,6 @@ redhook.org
 redhooknyvillage.org
 rensco.com
 rensselaerville.com
-riverheadli.com
 rocklandgov.com
 romenewyork.com
 romulustown.com
@@ -9345,7 +9333,6 @@ durant.org
 edmondok.com
 elkcity.com
 enid.org
-fairviewok.org
 fivecivilizedtribes.org
 gradycountyok.com
 greencountrycfc.org
@@ -9998,7 +9985,6 @@ mayaguez.pr
 municipiocarolina.com
 municipiodearecibo.com
 municipiodebayamon.com
-sanjuan.pr
 sanjuanciudadpatria.com
 seepuertorico.com
 uctp.org
