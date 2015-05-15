@@ -51,10 +51,4 @@ class TestDomains < Minitest::Test
       assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
     end
   end
-
-  should "identify the coutnry for any domain on the list" do
-    Parallel.each(Gman.list, :in_threads => 2) do |entry|
-      Gman.new("foo.#{entry.name}").country.name
-    end
-  end
 end
