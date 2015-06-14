@@ -1567,7 +1567,6 @@ finnentrop.de
 freudenberg-stadt.de
 froendenberg.de
 gangelt.de
-gbv.de
 geilenkirchen.de
 geldern.de
 gelsenkirchen.de
@@ -1598,7 +1597,6 @@ hamminkeln.de
 harsewinkel.de
 hattingen.de
 havixbeck.de
-hbz-nrw.de
 heek.de
 heiden.de
 heiligenhaus.de
@@ -1833,6 +1831,7 @@ stadt-werther.de
 stadt-wetter.de
 stadt-willich.de
 stadt-zuelpich.de
+stadt.sundern.de
 stadtlohn.de
 stadtverwaltung-bornheim.de
 staedteregion-aachen.de
