@@ -61,6 +61,7 @@ class Gman < NaughtyOrNice
       return reject(domain, "weebly")       if domain =~ /weebly\.com$/
       return reject(domain, "govoffice")    if domain =~ /govoffice\d?\.com$/
       return reject(domain, "homestead")    if domain =~ /homestead\.com$/
+      return reject(domain, "wix.com")      if domain =~ /wix\.com$/
       return reject(domain, "locality")     if domain =~ Gman::LOCALITY_REGEX
       return reject(domain, "blacklist")    if BLACKLIST.include?(domain)
       return reject(domain, "duplicate")    if !options[:skip_dupe] && current.domains.include?(domain)
