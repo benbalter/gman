@@ -3,36 +3,19 @@
 require 'yaml'
 require 'open-uri'
 require './lib/gman'
-require './lib/gman/parser'
+require './lib/gman/importer'
 
-
-current = Gman::Parser.file_to_array( Gman::list_path )
-domain_hash = Gman::Parser.array_to_hash(current)
-domain_list = domain_hash.flat_map { |k,v| v }
+current = Gman::DomainList.current
 
 puts "Checking for duplicate domains in the domain list..."
-puts "Current list contains #{domain_list.count} domains..."
+puts "Current list contains #{current.count} domains..."
 
-SOURCE = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls.yaml"
-source_hash = YAML.load(open(SOURCE).read)
-source_list = source_hash.flat_map { |k,v| v }
+dupe = current.count - current.domains.uniq.count
+puts "Found #{dupe} duplicate domains"
+exit 0 if dupe == 0
 
-dupes = []
-domain_hash.each do |group,domains|
-  domains.each do |domain|
-    if domain_list.count(domain) > 1 && source_list.count(domain) <= 1
-      dupes.push(domain)
-    end
-  end
-end
+dupes = current.domains.select { |domain| current.domains.count(domain) > 1 }
 
-dupes.uniq!
-
-puts "Found #{dupes.count} dupes!"
-
-if dupes.count > 0
-  puts dupes.inspect
-  exit 1
-else
-  exit 0
-end
+puts "Duplicate domains:"
+puts dupes
+exit 1
