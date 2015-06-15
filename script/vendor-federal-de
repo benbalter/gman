@@ -1,0 +1,14 @@
+#! /usr/bin/env ruby
+
+require 'csv'
+require 'open-uri'
+require './lib/gman'
+require './lib/gman/importer'
+
+url = "https://raw.githubusercontent.com/robbi5/german-gov-domains/master/data/domains.csv"
+
+domains = open(url).read.force_encoding("iso-8859-1").encode("UTF-8")
+domains = CSV.parse(domains, :headers => true)
+domains = domains.map { |row| row["Domain Name"] }
+
+Gman.import("German Federal" => domains)
