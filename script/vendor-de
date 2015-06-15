@@ -5,9 +5,11 @@ require 'open-uri'
 require './lib/gman'
 require './lib/gman/parser'
 
-source = "http://www.mik.nrw.de/nc/themen-aufgaben/kommunales/kommunale-adressen.html?tx_szkommunaldb_pi1%5Bexport%5D=csv"
+municipal = "http://www.mik.nrw.de/nc/themen-aufgaben/kommunales/kommunale-adressen.html?tx_szkommunaldb_pi1%5Bexport%5D=csv"
 
-csv = open(source).read.force_encoding("iso-8859-1").encode("UTF-8")
+federal = "https://raw.githubusercontent.com/robbi5/german-gov-domains/master/data/domains.csv"
+
+csv = open(municipal).read.force_encoding("iso-8859-1").encode("UTF-8")
 
 # For some reason, the header row is actually the last row
 # Pop the last line off the file and prepend it at the begining
@@ -16,8 +18,17 @@ lines = csv.split("\n")
 lines.unshift lines.pop
 csv = lines.join("\n")
 
+# Load municipal domains
 data = CSV.parse(csv, :headers => true, :col_sep => ";")
 domains = data.map { |row| row["Internet"].to_s.downcase.strip.gsub /^www./, "" }
+
+# Load federal domains
+federal = open(federal).read.force_encoding("iso-8859-1").encode("UTF-8")
+federal = CSV.parse(federal, :headers => true)
+federal = federal.map { |row| row["Domain Name"].to_s.downcase.strip.gsub /^www./, "" }
+
+# Combine both lists for processing
+domains = domains + federal
 
 domains.reject! { |domain| domain.empty? }
 domains.select! { |domain| PublicSuffix.valid?(".#{domain}") } # Validate domain
