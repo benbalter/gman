@@ -3,21 +3,18 @@ require File.join(File.dirname(__FILE__), 'helper')
 class TestDomains < Minitest::Test
 
   WHITELIST = [ "non-us gov", "non-us mil", "US Federal"]
-  DOMAINS = Gman::Parser.file_to_hash(Gman.list_path)
+  DOMAINS = Gman::DomainList.current
 
   def whitelisted?(domain)
-    WHITELIST.each do |group|
-      return true if DOMAINS[group].include? domain
-    end
-    false
+    WHITELIST.any? { |group| DOMAINS[group].include?(domain) }
   end
 
   should "only contain resolvable domains" do
     unresolvables = []
+    importer = Gman::Importer.new({})
     Parallel.each(Gman.list, :in_threads => 2) do |entry|
       next if whitelisted? entry.name
-      resolves = Gman::Parser.domain_resolves?(entry.name)
-      unresolvables.push entry.name unless resolves
+      unresolvables.push entry.name unless importer.domain_resolves?(entry.name)
     end
     assert_equal [], unresolvables
   end
@@ -50,5 +47,13 @@ class TestDomains < Minitest::Test
     Parallel.each(Gman.list, :in_threads => 2) do |entry|
       assert_equal true, Gman.valid?("foo.#{entry.name}"), "foo.#{entry.name} is not a valid domain"
     end
+  end
+
+  should "not contain locality domains" do
+    localities = []
+    Parallel.each(Gman.list, :in_threads => 2) do |entry|
+      localities.push entry.name if entry.name =~ Gman::LOCALITY_REGEX
+    end
+    assert_equal [], localities
   end
 end

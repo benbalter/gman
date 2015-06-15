@@ -98,7 +98,6 @@ class TestGmanIdentifier < Minitest::Test
     end
 
     should "detect the state" do
-      assert_equal "PR", Gman.new("sanjuan.pr").state
       assert_equal "OR", Gman.new("ashland.or.us").state
       refute Gman.new("canada.ca").state
     end

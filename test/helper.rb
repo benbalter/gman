@@ -19,7 +19,7 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'gman'
 require 'net/dns'
 require 'net/dns/resolver'
-require './lib/gman/parser'
+require './lib/gman/importer'
 
 def test_bin(*args)
   output, status = Open3.capture2e("bundle", "exec", "gman", *args)
