@@ -2,16 +2,19 @@
 # Given an array of domains, removes them from the list
 # Example usage: script/prune foo.invalid, bar.invalid, foo.bar.invalid
 
+require_relative "../lib/gman"
+require_relative "../lib/gman/domain_list"
+
 domains = ARGV
 domains = domains.clone.map { |d| d.gsub ",", "" }
 
 list = File.open("./config/domains.txt").read
-puts "Starting list: #{list.size} lines"
+puts "Starting list: #{Gman::DomainList.current.count} domains"
 
 domains.each do |domain|
   list.gsub! /^#{domain}$\n/, ""
 end
 
-puts "Ending list: #{list.size} lines"
+puts "Ending list: #{Gman::DomainList.current.count} domains"
 
 File.write "./config/domains.txt", list
