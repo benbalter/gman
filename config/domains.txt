@@ -2690,9 +2690,6 @@ govt.nz
 gub.uy
 leg.br
 lg.jp
-mil.ar
-mil.ng
-mil.nz
 nic.in
 onroerenderfgoed.be
 
@@ -2700,6 +2697,7 @@ onroerenderfgoed.be
 mil.ac
 mil.ae
 mil.al
+mil.ar
 mil.az
 mil.ba
 mil.bo
@@ -2727,6 +2725,8 @@ mil.lv
 mil.mg
 mil.mv
 mil.my
+mil.ng
+mil.nz
 mil.pe
 mil.ph
 mil.pl
