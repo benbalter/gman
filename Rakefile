@@ -20,10 +20,3 @@ desc "Open console with gman loaded"
 task :console do
   exec "irb -r ./lib/gman.rb"
 end
-
-desc "Validate the domain list"
-Rake::TestTask.new(:domains) do |test|
-  test.libs << 'lib' << 'test'
-  test.pattern = 'test/**/test_domains*.rb'
-  test.verbose = true
-end
