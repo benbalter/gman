@@ -12,6 +12,8 @@ class Gman < NaughtyOrNice
 
     attr_accessor :domains
 
+    BLACKLIST = %w[sites.google.com]
+
     def initialize(domains)
       @domains = DomainList.new(domains)
     end
@@ -26,6 +28,7 @@ class Gman < NaughtyOrNice
 
     def valid_domain?(domain)
       return false if domain.empty?
+      return reject(domain, "blacklist")    if BLACKLIST.include?(domain)
       return reject(domain, "duplicate")    if current.domains.include?(domain)
       return reject(domain, "locality")     if domain =~ Gman::LOCALITY_REGEX
       return reject(domain, "invalid")      unless PublicSuffix.valid?(".#{domain}")
