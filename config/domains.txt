@@ -2545,6 +2545,7 @@ zwolle.nl
 admin.ch
 belgium.be
 go.jp
+gob.ar
 gob.bo
 gob.cl
 gob.do
@@ -2568,6 +2569,7 @@ gov.ac
 gov.ae
 gov.af
 gov.al
+gov.ar
 gov.as
 gov.au
 gov.az
@@ -2595,6 +2597,7 @@ gov.dz
 gov.ec
 gov.ee
 gov.eg
+gov.et
 gov.ge
 gov.gg
 gov.gh
@@ -2634,12 +2637,14 @@ gov.ml
 gov.mn
 gov.mo
 gov.mr
+gov.ms
 gov.mu
 gov.mv
 gov.mw
 gov.my
 gov.ng
 gov.nr
+gov.om
 gov.ph
 gov.pk
 gov.pl
@@ -2669,6 +2674,7 @@ gov.tl
 gov.tm
 gov.tn
 gov.to
+gov.tr
 gov.tt
 gov.tw
 gov.ua
@@ -2684,6 +2690,9 @@ govt.nz
 gub.uy
 leg.br
 lg.jp
+mil.ar
+mil.ng
+mil.nz
 nic.in
 onroerenderfgoed.be
 

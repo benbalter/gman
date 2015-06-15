@@ -3,14 +3,13 @@
 
 require "public_suffix"
 require "yaml"
+require_relative "../lib/gman"
+require_relative "../lib/gman/importer"
 
 # https://gist.github.com/benbalter/6147066
 REGEX = /(\.g[ou]{1,2}(v|b|vt)|\.mil|\.gc|\.fed)(\.[a-z]{2})?$/i
 
-YAML_FILE = File.dirname(__FILE__) + "/../lib/domains.yml"
-domains = YAML.load_file YAML_FILE
-domains = [] unless domains
-
+domains = []
 PublicSuffix::List.default.each do |rule|
   domain = nil
 
@@ -23,5 +22,4 @@ PublicSuffix::List.default.each do |rule|
   domains.push domain unless domain.nil? or domains.include? domain
 end
 
-domains = domains.sort
-File.open(YAML_FILE, 'w+') {|f| f.write(domains.to_yaml)}
+Gman.import("non-us gov" => domains)

@@ -1,7 +1,7 @@
 class Gman < NaughtyOrNice
   class DomainList
 
-    attr_reader :list
+    attr_accessor :list
     alias_method :to_h, :list
 
     COMMENT_REGEX = /\/\/[\/\s]*(.*)$/i
