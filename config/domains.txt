@@ -2959,11 +2959,102 @@ vs.ch
 zg.ch
 zh.ch
 
+// US Combined Federal Campaigns
+3riverscfc.org
+cbacfc.org
+cfc-hawaii.org
+cfcaz.org
+cfcgreaternc.org
+cfclouisville.org
+cfcmidsouth.org
+cfcnca.org
+cfcnorthtexas.org
+cfcofthecsra.org
+cfcredrivervalley.org
+cfcshr.org
+cfcsnj.org
+chattanoogacfc.org
+cowvcfc.org
+ctandwmacfc.org
+ftcampbellareacfc.org
+gatewaycfc.org
+heartlandcfc.org
+heartofthemidlandscfc.org
+illowacfc.org
+intermountaincfc.org
+inwcfc.org
+nefl-sega-cfc.org
+northcoastcfc.org
+northernlightscfc.org
+northernnewenglandcfc.org
+orvcfc.org
+pacificnwcfc.org
+riandsemacfc.org
+smokymountaincfc.org
+tnregionalcfc.org
+
 // US Federal
 fed.us
 gov
 mil
 si.edu
+
+// US Regional
+afognak.org
+amtrakcascades.com
+ashiwi.org
+auburnrancheria.com
+avcp.org
+baymills.org
+bbna.com
+big-valley.net
+bigsandyrancheria.com
+blackfeetnation.com
+brothertownindians.org
+buenavistatribe.com
+catawbaindian.net
+chemehuevi.net
+chesapeakebay.net
+chickaloon.org
+citci.org
+cityoflapwai.com
+coloradoriverrecovery.org
+ctclusi.org
+d11nuscgaux.info
+fivecivilizedtribes.org
+fmyn.org
+glitc.org
+gulfofmexicoalliance.org
+havasupaifalls.net
+incog.org
+indianwatertrails.com
+ionemiwok.org
+iowanation.org
+isletapueblo.com
+itcaonline.com
+itcmi.org
+mendotadakota.com
+millelacsband.com
+mojaveindiantribe.com
+nativefederation.org
+nooksackindiantribe.org
+nwifc.org
+quapawtribe.com
+quileutenation.org
+quinaultindiannation.com
+saulttribe.com
+sctca.net
+shoshonebannocktribes.com
+sitkatribe.org
+skokomish.org
+srbc.net
+swotero.org
+tananachiefs.org
+timbisha.com
+tunicabiloxi.org
+uctp.org
+ysletadelsurpueblo.org
+yuroktribe.org
 
 // US State, County, Local
 clevelandmetroparks.com
@@ -2971,7 +3062,6 @@ sfcta.org
 sfmta.org
 
 // usagovAK
-afognak.org
 ahfc.us
 aidea.org
 ak-prepared.com
@@ -2985,13 +3075,9 @@ alaskarrt.org
 alaskaseafood.org
 aleutianseast.org
 apfc.org
-avcp.org
-bbna.com
 borough.kenai.ak.us
 borough.ketchikan.ak.us
 bristolbayboroughak.us
-chickaloon.org
-citci.org
 city.ketchikan.ak.us
 city.kodiak.ak.us
 cityofbarrow.org
@@ -3014,15 +3100,12 @@ matsugov.us
 mhtrust.org
 mhtrustland.org
 muni.org
-nativefederation.org
 nenana.org
 nomealaska.org
 north-slope.org
 northpolealaska.com
 nwabor.org
-sitkatribe.org
 skagway.org
-tananachiefs.org
 travelalaska.com
 unalaska-ak.us
 uscgalaska.com
@@ -3046,7 +3129,6 @@ brookwoodalabama.com
 brundidge.org
 calhouncounty.org
 cedarbluff-al.org
-chattanoogacfc.org
 childersburg.org
 chiltoncounty.org
 cityofabbeville.org
@@ -3092,7 +3174,6 @@ daphneal.com
 decaturalabamausa.com
 dekalbcountyal.us
 dothan.org
-echotacherokeetribe.homestead.com
 elmoreco.org
 etowahcounty.org
 eufaulaalabama.com
@@ -3100,7 +3181,6 @@ florenceal.org
 fortpayne.org
 fultondale.com
 guinal.org
-gulfofmexicoalliance.org
 guntersvilleal.org
 hamiltoncityal.org
 hartselle.org
@@ -3148,7 +3228,6 @@ sylacauga.net
 talladega.com
 theshoalscfc.org
 thomasvilleal.com
-tnregionalcfc.org
 townofbrantley.com
 townofdauphinisland.org
 trussville.org
@@ -3185,7 +3264,6 @@ baxtercounty.org
 bentonvillear.com
 carlislear.org
 cfcgreaterarkansas.org
-cfcmidsouth.org
 cherokeevillage.org
 cityofbryant.com
 cityofconway.org
@@ -3215,13 +3293,11 @@ russellvillearkansas.org
 salinecounty.org
 seviercountyar.com
 siloamsprings.com
-tnregionalcfc.org
 whitecountyar.org
 
 // usagovAS
 amsamoatourism.com
 asgteo.com
-cfc-hawaii.org
 doe.as
 
 // usagovAZ
@@ -3237,7 +3313,6 @@ azstateparks.com
 bullheadcity.com
 carefree.org
 cavecreek.org
-cfcaz.org
 chinoaz.net
 cityofbenson.com
 cityofbisbee.com
@@ -3250,12 +3325,9 @@ cityoftombstone.com
 cityofwillcox.org
 coolidgeaz.com
 eloyaz.org
-fmyn.org
 gilabendaz.org
 glendaleaz.com
 guadalupeaz.org
-havasupaifalls.net
-itcaonline.com
 litchfield-park.org
 marana.com
 maricopacfc.org
@@ -3286,21 +3358,17 @@ arvin.org
 asmdc.org
 atascadero.org
 atwater.org
-auburnrancheria.com
 bakersfieldcity.us
 baldwinpark.com
 barstowca.org
 bellflower.org
 bellgardens.org
 beverlyhills.org
-big-valley.net
 bigfun.org
 biggs.org
-bigsandyrancheria.com
 bmoa.org
 borregowd.org
 brawleyhigh.org
-buenavistatribe.com
 burlingame.org
 buttecounty.net
 ca-bishop.us
@@ -3326,11 +3394,9 @@ carpinteria.ca.us
 cehtp.org
 centralcaliforniacfc.org
 cerritos.us
-cfcaz.org
 cfcgoldcoast.org
 cfcmontereysantacruz.org
 cfcofgreatersocal.org
-chemehuevi.net
 chico.ca.us
 chicorec.com
 chinohills.org
@@ -3479,7 +3545,6 @@ csssa.org
 culvercity.org
 cupertino.org
 cvand29palmscfc.org
-d11nuscgaux.info
 dalycity.org
 danapoint.org
 delmar.ca.us
@@ -3525,7 +3590,6 @@ huntingtonpark.org
 indio.org
 inyocounty.us
 ione-ca.com
-ionemiwok.org
 kingcity.com
 ktcfc.org
 la-habra-heights.org
@@ -3562,7 +3626,6 @@ mccsd.com
 mcfarlandcity.org
 menlopark.org
 modestogov.com
-mojaveindiantribe.com
 monterey.org
 montesereno.org
 moraga.ca.us
@@ -3632,7 +3695,6 @@ sbcity.org
 sbdairport.com
 sccgov.org
 scottsvalley.org
-sctca.net
 sesd.org
 sfgov.org
 sgch.org
@@ -3660,7 +3722,6 @@ suttercreek.org
 teachcalifornia.org
 templecity.us
 thecityofwillits.com
-timbisha.com
 toaks.org
 town-of-fairfax.org
 townofparadise.com
@@ -3691,7 +3752,6 @@ woodsidetown.org
 yolocounty.org
 yubacity.net
 yucaipa.org
-yuroktribe.org
 
 // usagovCO
 4thjudicialda.com
@@ -3718,7 +3778,6 @@ cityofmontrose.org
 colorado.com
 coloradolottery.com
 coloradonocall.com
-coloradoriverrecovery.org
 crgov.com
 cripplecreekgov.com
 deertrailcolorado.org
@@ -3742,7 +3801,6 @@ hinsdalecountycolorado.us
 historictrinidad.com
 hudsoncolorado.org
 idahospringsco.com
-intermountaincfc.org
 jeffco.us
 kitcarsoncounty.org
 lakewood.org
@@ -3810,7 +3868,6 @@ connquest.com
 cornwallct.org
 coventryct.org
 cromwellct.com
-ctandwmacfc.org
 ctbiglist.com
 ctlottery.org
 ctsprague.org
@@ -3900,8 +3957,6 @@ anc1c.org
 anc2e.com
 anc2f.org
 anc3e.org
-cfcnca.org
-chesapeakebay.net
 dccouncil.us
 dclottery.com
 rubberrevolutiondc.com
@@ -3909,7 +3964,6 @@ washington.org
 wmata.com
 
 // usagovDE
-cbacfc.org
 cityofdover.com
 cityofmilford.com
 cityofnewarkde.us
@@ -4051,7 +4105,6 @@ fwb.org
 gadsdengov.net
 gilchrist.fl.us
 greencovesprings.com
-gulfofmexicoalliance.org
 hallandalebeach.org
 hamiltoncountyflorida.com
 hardeecounty.net
@@ -4126,7 +4179,6 @@ nassaucountyfl.com
 nbvillage.com
 ncflepc.org
 ncfrpc.org
-nefl-sega-cfc.org
 nefrpc.org
 nlauderdale.org
 northwestfloridacfc.org
@@ -4247,10 +4299,8 @@ celebratedouglascounty.com
 centervillega.org
 cfcaaga.org
 cfccoastalga.org
-cfcofthecsra.org
 chambleega.com
 chathamcounty.org
-chattanoogacfc.org
 cherokeega.com
 cityofauburn-ga.org
 cityofbarnesville.com
@@ -4357,7 +4407,6 @@ montezuma-ga.org
 morganga.org
 moultriega.com
 murraycountyga.org
-nefl-sega-cfc.org
 norcrossga.net
 oconeecounty.com
 odumgeorgia.com
@@ -4388,8 +4437,6 @@ thomascountyboc.org
 thomasville.org
 tiftcounty.org
 tifton.net
-tnregionalcfc.org
-townofbyromville.homestead.com
 troupcountyga.org
 twiggscounty.us
 tyrone.org
@@ -4407,7 +4454,6 @@ willacoochee.com
 woodbinegeorgia.net
 
 // usagovGU
-cfc-hawaii.org
 guamag.org
 guamlegislature.com
 guamsupremecourt.com
@@ -4417,7 +4463,6 @@ justice.gov.gu
 visitguam.org
 
 // usagovHI
-cfc-hawaii.org
 gohawaii.com
 hawaii.sdp.sirsi.net
 hawaiipublicschools.org
@@ -4500,12 +4545,10 @@ hancockcountyia.org
 harpersferryiowa.com
 harrisoncountyia.org
 hartleyiowa.com
-heartofthemidlandscfc.org
 hubbardiowa.com
 huxleyiowa.org
 ialottery.com
 icgov.org
-illowacfc.org
 independenceia.com
 iowaeconomicdevelopment.com
 iowanationalguard.com
@@ -4537,7 +4580,6 @@ millscoia.us
 mitchellville.org
 morningsun.info
 newtongov.org
-northernlightscfc.org
 northlibertyiowa.org
 northwoodia.org
 odebolt.net
@@ -4614,7 +4656,6 @@ cityofhaydenid.us
 cityofhaydenlake.us
 cityofhomedale.com
 cityofkimberly.org
-cityoflapwai.com
 cityoflewiston.org
 cityofmelba.org
 cityofnampa.us
@@ -4639,8 +4680,6 @@ idahoarmyguard.org
 idahocounty.org
 idaholottery.com
 idsaves.org
-intermountaincfc.org
-inwcfc.org
 jeromecountyid.us
 ketchumidaho.org
 latah.id.us
@@ -4661,7 +4700,6 @@ postfallsidaho.org
 rathdrum.org
 rexburg.org
 rupert-idaho.com
-shoshonebannocktribes.com
 sodaspringsid.com
 staridaho.org
 tfid.org
@@ -4756,7 +4794,6 @@ forestpark.net
 foxlake.org
 foxrivergrove-il.org
 freeburg.com
-gatewaycfc.org
 germantownhillsillinois.org
 glen-carbon.il.us
 glendaleheights.org
@@ -4778,7 +4815,6 @@ il-bradley.civicplus.com
 il-vernonhills.civicplus.com
 illinoisepay.com
 illinoislottery.com
-illowacfc.org
 invillapark.com
 itasca.com
 jacksonvilleil.com
@@ -4962,7 +4998,6 @@ brownsburg.org
 burnsharbor.org
 centertownshiptrustee.com
 cfcindiana.org
-cfclouisville.org
 chestertonin.org
 churubusco.net
 cityofanderson.com
@@ -5012,7 +5047,6 @@ newtoncountyin.com
 nirpc.org
 nmanchester.org
 nobleco.squarespace.com
-orvcfc.org
 perrycountyil.org
 porterco.org
 portertownship.com
@@ -5107,7 +5141,6 @@ harveycounty.com
 haskellcounty.org
 haysusa.com
 haysville-ks.com
-heartlandcfc.org
 hesstonks.org
 hortonkansas.net
 hutchgov.com
@@ -5208,7 +5241,6 @@ bullittcounty.org
 campbellcountyky.org
 campbellsville.com
 carrolltonky.net
-cfclouisville.org
 cityofbardstown.org
 cityofflorenceky.com
 cityofglasgow.org
@@ -5233,7 +5265,6 @@ fortwright.com
 frankfortconventioncenter.com
 franklinky.org
 friendshipcity.com
-ftcampbellareacfc.org
 ftthomas.org
 guthrieky.com
 hancockky.us
@@ -5267,7 +5298,6 @@ masoncounty-ky.com
 mccrearycounty.com
 nelsoncountyky.com
 oldhamcounty.net
-orvcfc.org
 owensboro.org
 owsleycountykentucky.org
 pcgovt.com
@@ -5275,11 +5305,9 @@ prospectky.com
 radcliff.org
 shelbycountykentucky.com
 shelbyvillekentucky.com
-smokymountaincfc.org
 springfieldky.org
 stregispark.net
 thinkkentucky.com
-tnregionalcfc.org
 versaillesky.com
 winchesterky.com
 
@@ -5328,7 +5356,6 @@ getagameplan.org
 gonzalesla.com
 gretnala.com
 groupbenefits.org
-gulfofmexicoalliance.org
 hammond.org
 iberiaparishgovernment.com
 iowala.org
@@ -5417,7 +5444,6 @@ townoflockport.com
 townofwelsh.com
 tpcg.org
 trsl.org
-tunicabiloxi.org
 volunteerlouisiana.gov
 washington-la.org
 wbrcouncil.org
@@ -5446,7 +5472,6 @@ cityofwestfield.org
 cityofwoburn.com
 comm-pass.com
 concordnet.org
-ctandwmacfc.org
 douglasma.org
 doverma.org
 dukescounty.org
@@ -5491,7 +5516,6 @@ northbrookfield.net
 nortonma.org
 randolphtownclerk.com
 revere.org
-riandsemacfc.org
 salem.com
 sandwichmass.org
 sherbornma.org
@@ -5551,13 +5575,10 @@ bism.org
 capitolheightsmd.com
 carolinemd.org
 carr.org
-cbacfc.org
 ccgov.org
 ccvillage.org
-cfcnca.org
 charlestownmd.org
 chesapeake-beach.md.us
-chesapeakebay.net
 chestertown.com
 chevychaseview.org
 choosemaryland.org
@@ -5584,7 +5605,6 @@ hagerstownmd.org
 havredegracemd.com
 highlandbeachmd.org
 hyattsville.org
-indianwatertrails.com
 keedysvillemd.com
 kentcounty.com
 laytonsville.md.us
@@ -5621,7 +5641,6 @@ riverdaleparkmd.info
 salisburyfd.com
 sharpsburgmd.com
 snowhillmd.com
-srbc.net
 sudlersville.org
 sykesville.net
 taneytown.org
@@ -5736,7 +5755,6 @@ mtvernonme.org
 newcastlemaine.us
 newgloucester.com
 newportmaine.net
-northernnewenglandcfc.org
 northyarmouth.org
 oakfieldme.org
 oaklandmaine.us
@@ -5826,7 +5844,6 @@ baldwintownship.net
 baragacounty.org
 barrycounty.org
 baycitymi.org
-baymills.org
 bearlakemichigan.org
 beavertonmi.org
 bedfordmi.org
@@ -5971,7 +5988,6 @@ hudsonville.org
 ingham.org
 iosco.m33access.com
 isabellacounty.org
-itcmi.org
 jonesville.org
 kalamazootownship.org
 kalcounty.com
@@ -6048,7 +6064,6 @@ saginawtownship.org
 salem-mi.org
 sanilaccounty.net
 saugatuckcity.com
-saulttribe.com
 seekingmichigan.org
 shelbytwp.org
 shiawassee.net
@@ -6129,7 +6144,6 @@ canosiatownship.qwestoffice.net
 carlostownship.org
 castlerocktownship.com
 centervillemn.com
-cfcredrivervalley.org
 city.mankato.mn.us
 cityofalbertlea.org
 cityofardenhills.org
@@ -6266,11 +6280,9 @@ mapleplain.com
 mapletonmn.com
 medfordminnesota.com
 mendota-heights.com
-mendotadakota.com
 metrocouncil.org
 metrotransit.org
 milanmn.com
-millelacsband.com
 milton-township.com
 miltonatownship.org
 minneapolisfed.org
@@ -6289,7 +6301,6 @@ newdoseytownship.com
 newlondontownship.com
 newmarkettownship.com
 normanna.org
-northernlightscfc.org
 northerntownship.com
 northmankato.com
 nwrdc.org
@@ -6466,7 +6477,6 @@ fergusoncity.com
 florissantmo.com
 franklinmo.org
 fultonmo.org
-gatewaycfc.org
 gladstone.mo.us
 glasgowmo.com
 glendalemo.org
@@ -6476,7 +6486,6 @@ grandview.org
 greenecountymo.org
 hallsvillemissouri.wordpress.com
 hazelwoodmo.org
-heartlandcfc.org
 hermannmo.com
 higginsville.org
 highlandville.net
@@ -6605,7 +6614,6 @@ willowspringsmo.com
 wrightcity.org
 
 // usagovMP
-cfc-hawaii.org
 gov.mp
 mymarianas.com
 
@@ -6616,7 +6624,6 @@ biloxi.ms.us
 brookhavenms.com
 burnsvillems.com
 byram-ms.us
-cfcmidsouth.org
 chickasawcoms.com
 city.jackson.ms.us
 cityofamoryms.com
@@ -6656,7 +6663,6 @@ governorbryant.com
 greatermscfc.org
 greenvillems.org
 greenwoodms.com
-gulfofmexicoalliance.org
 hattiesburgms.com
 hindscountyms.com
 hornlake.org
@@ -6701,7 +6707,6 @@ southaven.org
 terryms.org
 thecityofcolumbusms.org
 tishomingo.ms
-tnregionalcfc.org
 townofcrosby.com
 townofedwards.com
 townofheidelberg.com
@@ -6722,7 +6727,6 @@ wpnet.org
 
 // usagovMT
 beaverheadcounty.org
-blackfeetnation.com
 bozeman.net
 browningmontana.com
 cartercountymt.info
@@ -6789,7 +6793,6 @@ berrytownecrafts.com
 bessemercity.com
 bikesafenc.com
 biltmoreforest.org
-biltmoreforesttownhall.homestead.com
 bmbt.org
 bmcnc.org
 boilingspringlakes.com
@@ -6805,13 +6808,10 @@ carteretcountygov.org
 caswellbeach.org
 caswellcenter.org
 centralina.org
-cfcgreaternc.org
-cfcshr.org
 cfcwnc.com
 cfnc.org
 charmeck.org
 chathamnc.org
-chattanoogacfc.org
 cityofbelmont.org
 cityofbrevard.com
 cityofcherryville.com
@@ -7132,7 +7132,6 @@ selma-nc.com
 senccfc.org
 shpnc.org
 smithfield-nc.com
-smokymountaincfc.org
 sosnc.com
 southernpines.net
 southernshores.org
@@ -7211,7 +7210,6 @@ ashley-nd.com
 beulahnd.org
 bismarck.org
 bismarckairport.com
-botco.homestead.com
 bowdonnd.com
 bowmannd.com
 burkecountynd.com
@@ -7223,7 +7221,6 @@ casselton.com
 cavaliercounty.us
 cavaliernd.com
 centernd.net
-cfcredrivervalley.org
 cityofargusville.com
 cityofharwood.com
 cityoflangdon.com
@@ -7302,7 +7299,6 @@ ndtourism.com
 nelsonco.org
 newleipzig.com
 newsalem-nd.com
-northernlightscfc.org
 oakesnd.com
 pagend.com
 parshallnd.com
@@ -7378,7 +7374,6 @@ gering.org
 grand-island.com
 grantnebraska.com
 gretnane.org
-heartofthemidlandscfc.org
 imperial-ne.com
 mindennebraska.org
 ne-ethanol.org
@@ -7496,7 +7491,6 @@ nhlgc.org
 nhlottery.org
 nhstateparks.org
 nl-nh.com
-northernnewenglandcfc.org
 northfieldnh.org
 northwoodnh.org
 orfordnh.us
@@ -7621,7 +7615,6 @@ capemaycity.com
 carlstadtnj.us
 cedargrovenj.org
 cfcnnj.org
-cfcsnj.org
 chathamborough.org
 chathamtownship.org
 cherryhill-nj.com
@@ -8054,7 +8047,6 @@ wvfas.org
 wyckoff-nj.com
 
 // usagovNM
-ashiwi.org
 bloomfieldnm.com
 catroncounty.us
 cityofcarlsbadnm.com
@@ -8069,7 +8061,6 @@ fmtn.org
 grantcountynm.com
 hobbsnm.org
 hsnm.org
-isletapueblo.com
 jemezsprings.org
 las-cruces.org
 leacounty.net
@@ -8102,34 +8093,18 @@ villageoftularosa.com
 vtsv.org
 
 // usagovNSN
-afognak.org
 arctic.net
-ashiwi.org
-auburnrancheria.com
-avcp.org
-baymills.org
-bbna.com
-big-valley.net
-bigsandyrancheria.com
-blackfeetnation.com
-brothertownindians.org
-buenavistatribe.com
 c-a-tribes.org
 cahto.org
-catawbaindian.net
 ccthita.org
 chehalistribe.org
-chemehuevi.net
 cherokee.org
 cheyennenation.com
-chickaloon.org
 chilkatindianvillage.org
 choctaw.org
 choctawnation.com
 chukchansi.net
 cied.org
-citci.org
-cityoflapwai.com
 cocopah.com
 comanchenation.com
 coquilletribe.org
@@ -8139,40 +8114,27 @@ cowasuckabenaki.org
 cowcreek.com
 cowlitz.org
 cskt.org
-ctclusi.org
 curyungtribe.com
 delawarenation.com
 drycreekrancheria.com
-echotacherokeetribe.homestead.com
 elemnation.org
 elk-valley.com
 elwha.org
 fcpotawatomi.com
-fivecivilizedtribes.org
-fmyn.org
 fortpecktribes.org
 fortyukon.org
 fpst.org
 fsst.org
 georgetowntc.com
 gilariver.org
-glitc.org
 gratonrancheria.com
 greenvillerancheria.com
 gtbindians.org
 gulkanacouncil.org
 hanksville.org
 hannahville.net
-havasupaifalls.net
 ho-chunknation.com
 hoplandtribe.com
-incog.org
-indianwatertrails.com
-ionemiwok.org
-iowanation.org
-isletapueblo.com
-itcaonline.com
-itcmi.org
 jamestowntribe.org
 jamulindianvillage.com
 jemezpueblo.org
@@ -8202,30 +8164,24 @@ makah.com
 maliseets.com
 mashpeewampanoagtribe.com
 mbpi.org
-mendotadakota.com
 meskwaki.org
 mhanation.com
 miamination.com
 miccosukeeseminolenation.com
-millelacsband.com
 mnchippewatribe.org
-mojaveindiantribe.com
 monacannation.com
 morongonation.org
 nansemond.org
 napaimute.org
 narragansett-tribe.org
-nativefederation.org
 navajo.org
 nc-cherokee.com
 nezperce.org
 nihb.org
-nooksackindiantribe.org
 northernarapaho.com
 northforkrancheria.com
 npaihb.org
 nveyak.com
-nwifc.org
 oneidanation.org
 onondaganation.org
 ottawatribe.org
@@ -8244,17 +8200,12 @@ powhatan.org
 prairieisland.org
 pueblodecochiti.org
 puyallup-tribe.com
-quapawtribe.com
-quileutenation.org
-quinaultindiannation.com
 redding-rancheria.com
 robinsonrancheria.org
 sagchip.org
 santaynezchumash.org
 santeedakota.org
 sauk-suiattle.com
-saulttribe.com
-sctca.net
 sctribe.com
 sdtribalrelations.com
 seminolenation.com
@@ -8262,9 +8213,6 @@ seminoletribe.com
 shawnee-tribe.com
 shinglespringsrancheria.com
 shopaitribes.org
-shoshonebannocktribes.com
-sitkatribe.org
-skokomish.org
 sni.org
 snoqualmienation.com
 sokaogonchippewa.com
@@ -8277,16 +8225,11 @@ standingrock.org
 stillaguamish.com
 summitlaketribe.org
 svt.org
-swotero.org
 tachi-yokut.com
 taino-tribe.org
-tananachiefs.org
 temoaktribe.com
-timbisha.com
 tonkawatribe.com
 trinidad-rancheria.org
-tunicabiloxi.org
-uctp.org
 upperlakepomo.com
 utemountainute.com
 utetribe.com
@@ -8300,8 +8243,6 @@ wmat.us
 woodyisland.com
 wrpt.us
 wyandotte-nation.org
-ysletadelsurpueblo.org
-yuroktribe.org
 
 // usagovNV
 accessesmeralda.com
@@ -8313,7 +8254,6 @@ cityoffernley.org
 cityofhenderson.com
 cityofnorthlasvegas.com
 cityofsparks.us
-d11nuscgaux.info
 dmvnv.com
 elkocity.com
 elkocountynv.net
@@ -8687,7 +8627,6 @@ somersny.com
 southamptonvillage.org
 southbristol.org
 southbristolny.org
-srbc.net
 stamfordny.com
 statenislandusa.com
 steubencony.org
@@ -8931,7 +8870,6 @@ tullyny.org
 tupperlakeny.us
 tusten.org
 tuxedogov.org
-uctp.org
 ulysses.ny.us
 unionvilleny.org
 upperbrookville.org
@@ -9070,7 +9008,6 @@ yorktownny.org
 youngstownnewyork.us
 
 // usagovOH
-3riverscfc.org
 andersontownship.org
 archbold.com
 ashland-ohio.com
@@ -9145,7 +9082,6 @@ columbianacounty.org
 columbiatwp.org
 coshoctoncounty.net
 courtclerk.org
-cowvcfc.org
 coz.org
 crestlineoh.com
 crooksville.com
@@ -9249,7 +9185,6 @@ newlexington.org
 newlondonohio.com
 newphilaoh.com
 north-olmsted.com
-northcoastcfc.org
 northcollegehill.org
 northfieldcenter.com
 northperry.org
@@ -9269,7 +9204,6 @@ omlohio.org
 onelakewood.com
 ontarioohio.org
 orangevillage.com
-orvcfc.org
 ottawaohio.us
 painesville.com
 painesvilletwp.com
@@ -9357,7 +9291,6 @@ buffalooklahoma.com
 canadiancounty.org
 ccok.us
 cfc-centralok.org
-cfcnorthtexas.org
 chandlerok.com
 chickasha.org
 cityof.lawton.ok.us
@@ -9398,13 +9331,10 @@ elkcity.com
 elreno.org
 enid.org
 fairviewok.org
-fivecivilizedtribes.org
 gradycountyok.com
 greencountrycfc.org
 greer.okcounties.org
 guymonok.org
-incog.org
-iowanation.org
 jackson.okcounties.org
 jenks.com
 logancountyok.com
@@ -9427,7 +9357,6 @@ pittsburg.okcounties.org
 poncacity.com
 poteau-ok.com
 pryorok.org
-quapawtribe.com
 rogerscounty.org
 sallisawok.org
 sandspringsok.org
@@ -9446,7 +9375,6 @@ wildlifedepartment.com
 woodwardcounty.org
 
 // usagovOR
-amtrakcascades.com
 ashland.or.us
 astoria.or.us
 aumsville.us
@@ -9487,7 +9415,6 @@ coburgoregon.org
 columbia-city.org
 coosbay.org
 cottagegrove.org
-ctclusi.org
 deschutes.org
 drainoregon.org
 dundeecity.org
@@ -9501,7 +9428,6 @@ gduway.org
 getcollegefunds.org
 hermiston.or.us
 historicsumpter.com
-intermountaincfc.org
 jacksonvilleor.us
 keizer.org
 klamathcounty.org
@@ -9525,7 +9451,6 @@ oregongeology.com
 oregonlottery.org
 oregonstatefair.org
 osbar.org
-pacificnwcfc.org
 pendleton.or.us
 phoenixoregon.net
 portlandonline.com
@@ -9542,7 +9467,6 @@ union-county.org
 waldport.org
 
 // usagovPA
-3riverscfc.org
 abington.org
 abingtontownship.us
 adamscounty.us
@@ -9613,10 +9537,8 @@ carrollvalley.org
 ccpa.net
 centertwp.netfirms.com
 centralpacfc.org
-cfcsnj.org
 chalfontborough.com
 cheltenhamtownship.org
-chesapeakebay.net
 chesco.org
 chestercity.com
 chipcoverspakids.com
@@ -9827,7 +9749,6 @@ norristown.org
 north-fayette.com
 northamptoncounty.org
 northamptontownship.com
-northcoastcfc.org
 northumberlandborough.com
 northumberlandco.org
 nvtpa.com
@@ -9930,7 +9851,6 @@ springfieldmontco.org
 springgardentwp.org
 springgroveboro.com
 spsba.org
-srbc.net
 statecollegepa.us
 steeltonpa.com
 strabantownship.com
@@ -10051,7 +9971,6 @@ municipiodearecibo.com
 municipiodebayamon.com
 sanjuanciudadpatria.com
 seepuertorico.com
-uctp.org
 
 // usagovRI
 bristolri.us
@@ -10077,7 +9996,6 @@ pawtucketri.com
 portsmouthri.com
 providenceri.com
 rhodeislandhousing.org
-riandsemacfc.org
 richmondri.com
 ricwfa.com
 riinspection.org
@@ -10103,10 +10021,7 @@ batesburg-leesville.org
 bennettsvillesc.com
 bonneausc.com
 burnettown.com
-catawbaindian.net
 centralmidlands.org
-cfcgreaternc.org
-cfcofthecsra.org
 chapinsc.com
 charlestoncounty.org
 cheraw.com
@@ -10319,7 +10234,6 @@ ethansd.com
 faulktoncity.org
 garysd.com
 hartfordsd.us
-heartofthemidlandscfc.org
 herreidsd.com
 hs-sd.org
 huronsd.com
@@ -10332,7 +10246,6 @@ mennosd.org
 minnehahacounty.org
 mtvernonsd.com
 newunderwood.com
-northernlightscfc.org
 parkswildlifefoundation.org
 rcgov.org
 redfield-sd.com
@@ -10342,7 +10255,6 @@ sdhda.org
 sdonecall.com
 siouxfalls.org
 sullycounty.net
-swotero.org
 teasd.com
 travelsd.com
 vermillion.us
@@ -10356,8 +10268,6 @@ berryhilltn.org
 bradleyco.net
 brentwood-tn.org
 bristoltn.org
-cfcmidsouth.org
-chattanoogacfc.org
 cityofathenstn.com
 cityofbartlett.org
 cityofclarksville.com
@@ -10389,7 +10299,6 @@ fayettetn.us
 fayettevilletn.com
 franklin-gov.com
 franklincotn.us
-ftcampbellareacfc.org
 gilescounty-tn.us
 hendersoncountytn.com
 henryco.com
@@ -10418,7 +10327,6 @@ seviercountytn.org
 seviervilletn.org
 shelbyvilletn.org
 smithvillecityhall.com
-smokymountaincfc.org
 soddy-daisy.org
 springhilltn.org
 stewartcogov.com
@@ -10433,7 +10341,6 @@ tndagc.org
 tnema.org
 tnlottery.com
 tnmilitary.org
-tnregionalcfc.org
 tnvacation.com
 townofarlington.org
 townoffarragut.org
@@ -10477,7 +10384,6 @@ cedarhilltxgov.org
 cedarparktx.us
 centraltexascfc.org
 cfcforthood.org
-cfcnorthtexas.org
 cfcsanantonio.org
 cfctexasgulfcoast.org
 chandlertx.com
@@ -10592,7 +10498,6 @@ glenrosetexas.org
 gptx.org
 granbury.org
 graniteshoals.org
-gulfofmexicoalliance.org
 gunbarrelcity.net
 haltomcitytx.com
 hamiltoncountytx.org
@@ -10728,7 +10633,6 @@ williamson-county.org
 willowpark.org
 woodway-texas.com
 wstx.us
-ysletadelsurpueblo.org
 
 // usagovUT
 afcity.org
@@ -10748,8 +10652,6 @@ cityofholladay.com
 cityofhurricane.com
 clearfieldcity.org
 clintoncity.net
-coloradoriverrecovery.org
-d11nuscgaux.info
 daggettcounty.org
 draper.ut.us
 duchesnecity.com
@@ -10775,7 +10677,6 @@ highlandcity.org
 honeyvillecity.com
 huntsvilletown.com
 hyrumcity.org
-intermountaincfc.org
 ironcounty.net
 ivins.com
 kamascity.net
@@ -10880,14 +10781,10 @@ buckinghamcountyva.org
 buenavistavirginia.org
 capecharles.org
 carrollcountyva.org
-cbacfc.org
-cfcnca.org
 cfcofcva.org
-cfcshr.org
 cfcvp.org
 charlottesville.org
 charlotteva.com
-chesapeakebay.net
 christiansburg.org
 cityofchesapeake.net
 cityofmanassaspark.us
@@ -10968,7 +10865,6 @@ saltville.org
 scottcountyva.com
 scottsville.org
 shenandoahcountyva.us
-smokymountaincfc.org
 smv.org
 smythcounty.org
 southamptoncounty.org
@@ -10979,7 +10875,6 @@ staunton.va.us
 suffolkva.us
 tazewellcounty.org
 tjpdc.org
-tnregionalcfc.org
 townofappalachiava.us
 townofblackstoneva.com
 townofcoeburn.com
@@ -11115,7 +11010,6 @@ morristownvt.org
 mounthollyvt.org
 newfanevt.com
 newportvermont.org
-northernnewenglandcfc.org
 northherovt.com
 norwich.vt.us
 pantonvt.us
@@ -11193,7 +11087,6 @@ worcestervt.org
 // usagovWA
 aberdeeninfo.com
 aberdeenwa.gov
-amtrakcascades.com
 bingenwashington.org
 bridgeportwashington.net
 bucoda.us
@@ -11255,7 +11148,6 @@ cityofraymond.com
 cityofroywa.us
 cityofshoreline.com
 cityofsumas.com
-cityofsumas.homestead.com
 cityoftacoma.org
 cityoftieton.com
 cityoftoppenish.us
@@ -11290,7 +11182,6 @@ grandview.wa.us
 harringtonbiz.com
 havemilk.com
 innovatewashington.org
-inwcfc.org
 islandcounty.net
 kettle-falls.com
 kingcountycfc.org
@@ -11306,11 +11197,9 @@ midcolumbiacfc.com
 montesano.us
 mylongview.com
 newport-wa.org
-nooksackindiantribe.org
 northbonneville.net
 northwestmuseum.org
 nwguardian.com
-nwifc.org
 oakesdale.org
 oakharbor.org
 oakvillecityhall.com
@@ -11320,15 +11209,12 @@ omakcity.com
 oroville-wa.com
 osgov.com
 othellowashington.us
-pacificnwcfc.org
 pateros.com
 pendoreilleco.org
 potatoes.com
 pscleanair.org
 psrc.org
 pugetsoundfresh.org
-quileutenation.org
-quinaultindiannation.com
 quincywashington.us
 red-raspberry.org
 republicwa.org
@@ -11337,7 +11223,6 @@ rustonwa.org
 sanjuanco.com
 skagitcounty.net
 skamaniacounty.org
-skokomish.org
 soaplakecity.org
 spokanecity.org
 spokanecounty.org
@@ -11408,7 +11293,6 @@ blmgrove.com
 bluemoundsvillage.com
 boscobelwisconsin.com
 brightonwi.com
-brothertownindians.org
 browndeerwi.org
 brule-wi.org
 buffalocounty.com
@@ -11476,7 +11360,6 @@ florencecountywi.com
 franciscreek.org
 freemantownship.com
 glendale-wi.org
-glitc.org
 grandchute.net
 grantcounty.org
 grantsburgwi.com
@@ -11526,7 +11409,6 @@ newglarusvillage.com
 newlisbon.net
 newlondonwi.org
 nfdl.org
-northernlightscfc.org
 northhudsonvillage.org
 northprairie.net
 oakcreekwi.org
@@ -11717,13 +11599,11 @@ wisspd.org
 wrdaonline.org
 
 // usagovWV
-3riverscfc.org
 beckley.org
 berkeleycountycomm.org
 bridgeportwv.com
 buckhannonwv.org
 cabellcounty.org
-cbacfc.org
 cityofbluefield.com
 cityofcharleston.org
 cityofclarksburgwv.com
@@ -11732,7 +11612,6 @@ cityofhuntington.com
 cityofripley.org
 cityofspencer.com
 cityofweirton.com
-cowvcfc.org
 epcfc.org
 fairmontwv.gov
 harrisoncountywv.com
@@ -11780,13 +11659,11 @@ cityofdouglaswy.com
 cityofgreenriver.org
 cityoflaramie.com
 cityofworland.org
-coloradoriverrecovery.org
 conversecounty.org
 evanstonwy.org
 fremontcountywy.org
 house.mn
 hscounty.com
-intermountaincfc.org
 johnsoncountywyoming.org
 kemmerer.org
 laramiecounty.com
