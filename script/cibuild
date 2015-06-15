@@ -4,4 +4,3 @@ set -e
 
 bundle exec rake test
 bundle exec script/dedupe
-bundle exec script/state-domains
