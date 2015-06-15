@@ -12,7 +12,34 @@ class Gman < NaughtyOrNice
 
     attr_accessor :domains
 
-    BLACKLIST = %w[sites.google.com]
+    # Known false positives from vendored lists
+    BLACKLIST = %w[
+      business.centurytel.net
+      chesnee.net
+      citlink.net
+      egovlink.com
+      emainehosting.com
+      fantasyspringsresort.com
+      frontiernet.net
+      hartford-hwp.com
+      homepages.sover.net
+      htc.net
+      koasekabenaki.org
+      kstrom.net
+      laworkforce.net
+      mississippistateparks.reserveamerica.com
+      mylocalgov.com
+      myweb.cebridge.net
+      ncstars.org
+      neagrelations.org
+      qis.net
+      rootsweb.com
+      showcase.netins.net
+      valuworld.com
+      wctc.net
+      webconnections.net
+      webpages.charter.net
+    ]
 
     def initialize(domains)
       @domains = DomainList.new(domains)
@@ -26,19 +53,25 @@ class Gman < NaughtyOrNice
       domain.to_s.downcase.strip.gsub(/^www./, "").gsub(/\/$/, "")
     end
 
-    def valid_domain?(domain)
+    def valid_domain?(domain, options={})
       return false if domain.empty?
-      return reject(domain, "blacklist")    if BLACKLIST.include?(domain)
-      return reject(domain, "duplicate")    if current.domains.include?(domain)
+      return reject(domain, "home. regex")  if domain =~ /^home\./
+      return reject(domain, "user. regex")  if domain =~ /^users?\./
+      return reject(domain, "sites. regex") if domain =~ /^sites?\./
+      return reject(domain, "weebly")       if domain =~ /weebly\.com$/
+      return reject(domain, "govoffice")    if domain =~ /govoffice\d?\.com$/
+      return reject(domain, "homestead")    if domain =~ /homestead\.com$/
       return reject(domain, "locality")     if domain =~ Gman::LOCALITY_REGEX
+      return reject(domain, "blacklist")    if BLACKLIST.include?(domain)
+      return reject(domain, "duplicate")    if !options[:skip_dupe] && current.domains.include?(domain)
       return reject(domain, "invalid")      unless PublicSuffix.valid?(".#{domain}")
       return reject(domain, "academic")     if Swot::is_academic?(domain)
-      return reject(domain, "unresolvable") unless domain_resolves?(domain)
+      return reject(domain, "unresolvable") if !options[:skip_resolve] && !domain_resolves?(domain)
       true
     end
 
     def reject(domain, reason)
-      logger.info "Rejecting `#{domain}`. Reason: #{reason}"
+      logger.info "👎 `#{domain}`: #{reason}"
       false
     end
 

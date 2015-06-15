@@ -24,7 +24,7 @@ class Gman < NaughtyOrNice
 
     def alphabetize
       @list = @list.sort_by { |k,v| k.downcase }.to_h
-      @list.each { |group, domains| @list[group].sort! }
+      @list.each { |group, domains| domains.sort!.uniq! }
     end
 
     def write

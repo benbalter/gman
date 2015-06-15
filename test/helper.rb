@@ -16,7 +16,9 @@ require 'shoulda'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'gman'
+require_relative "../lib/gman"
+require_relative "../lib/gman/domain_list"
+
 require 'net/dns'
 require 'net/dns/resolver'
 require './lib/gman/importer'
