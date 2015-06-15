@@ -22,6 +22,15 @@ class Gman < NaughtyOrNice
       domains.count
     end
 
+    def alphabetize
+      @list = @list.sort_by { |k,v| k.downcase }.to_h
+      @list.each { |group, domains| @list[group].sort! }
+    end
+
+    def write
+      File.write(Gman.list_path, to_public_suffix)
+    end
+
     def to_public_suffix
       current_group = ""
       output = ""

@@ -70,7 +70,7 @@ class Gman < NaughtyOrNice
       logger.info "New: #{current.count} domains"
 
       logger.info "Writing to disk..."
-      File.write(Gman.list_path, current.to_public_suffix)
+      current.write
       logger.info "Fin."
     end
 
