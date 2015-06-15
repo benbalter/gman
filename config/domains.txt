@@ -297,7 +297,6 @@ elkford.ca
 elkhorn.mb.ca
 elkpoint.ca
 emo.ca
-engleenl.ca
 enniskillen.ca
 enterprise.lgant.ca
 eriksdale.com
@@ -509,7 +508,6 @@ malahide.ca
 mameobeach.ca
 manitoubeach.ca
 manitouwadge.ca
-manning.govoffice.com
 mannville.ca
 maplecreek.ca
 mapleridge.ca
@@ -805,7 +803,6 @@ rmofswanriver.com
 rmofvictoria.com
 rmrudy.ca
 rmsaltcoats.ca
-rmstrathcona.com
 rmtache.ca
 rmwhitemouth.com
 rmwoodlands.info
@@ -1186,7 +1183,6 @@ val-des-bois.ca
 val-des-monts.net
 valemount.ca
 valharty.ca
-valleyview.govoffice.com
 valst-gilles.ao.ca
 vancouver.ca
 vanderhoof.ca
@@ -1927,7 +1923,6 @@ stadt-werther.de
 stadt-wetter.de
 stadt-willich.de
 stadt-zuelpich.de
-stadt.sundern.de
 stadtlohn.de
 stadtverwaltung-bornheim.de
 staedteregion-aachen.de
@@ -2989,7 +2984,6 @@ alaskarailroad.com
 alaskarrt.org
 alaskaseafood.org
 aleutianseast.org
-anderson.govoffice.com
 apfc.org
 avcp.org
 bbna.com
@@ -3012,7 +3006,6 @@ cityofsherwood.net
 cityofsitka.com
 cityofwasilla.com
 craigak.com
-denaliborough.govoffice.com
 dillinghamak.us
 juneau.org
 kodiakak.us
@@ -3034,7 +3027,6 @@ travelalaska.com
 unalaska-ak.us
 uscgalaska.com
 wrangell.com
-yakutatak.govoffice2.com
 
 // usagovAL
 adph.org
@@ -3657,7 +3649,6 @@ solvangusa.com
 sonoma-county.org
 sonomacity.org
 sonoraca.com
-sor.govoffice3.com
 srcs.org
 ssf.net
 statefundca.com
@@ -3691,7 +3682,6 @@ villapark.org
 visitcalifornia.com
 walnut-creek.org
 walnutcreeksd.org
-webconnections.net
 weho.org
 westcovina.org
 wheatlandsd.com
@@ -3701,7 +3691,6 @@ woodsidetown.org
 yolocounty.org
 yubacity.net
 yucaipa.org
-yucca-valley.org
 yuroktribe.org
 
 // usagovCO
@@ -3737,7 +3726,6 @@ deltacounty.com
 denvergov.org
 durangogov.org
 eatonco.org
-edgewaterco.govoffice3.com
 englewoodgov.org
 fcgov.com
 flaglercolorado.com
@@ -3782,8 +3770,6 @@ silverthorne.org
 springsgov.com
 steamboatsprings.net
 sterlingcolo.com
-strattoncolorado.com
-timnathco.govoffice2.com
 tosv.com
 townofbreckenridge.com
 townofeagle.org
@@ -3805,7 +3791,6 @@ wrayco.net
 andoverct.org
 ashfordtownhall.org
 bloomfieldct.org
-bolton.govoffice.com
 burlingtonct.us
 buyctbonds.com
 ccrpa.org
@@ -4154,7 +4139,6 @@ orangecountyfl.net
 ormondbeach.org
 osceola.org
 palmbayflorida.org
-palmbeach.govoffice.com
 palmcoastgov.com
 palmettofl.org
 pascocountyfl.net
@@ -4222,7 +4206,6 @@ westmelbourne.org
 westonfl.org
 wfrpc.org
 wiltonmanors.com
-wiltonmanors.govoffice2.com
 winterspringsfl.org
 workforceflorida.com
 wpb.org
@@ -4343,7 +4326,6 @@ georgiamedicalcenterauthority.org
 georgiatrust.org
 glynncounty.org
 gnfa.com
-godr.org
 gordoncounty.org
 gsfc.org
 gwinnettcounty.com
@@ -4493,7 +4475,6 @@ clarkecountyia.org
 clarksvilleiowa.com
 clermontia.org
 colo-iowa.org
-conrad.govoffice.com
 coralville.org
 crawfordcounty.org
 danvilleiowa.com
@@ -4507,14 +4488,12 @@ elginiowa.org
 elyiowa.com
 emmetcountyia.com
 emmetsburg.com
-evansdale.govoffice.com
 fhlbdm.com
 floydcoia.org
 flysux.com
 fortdodgeiowa.org
 fortmadison-ia.com
 grangeriowa.org
-griswoldia.govoffice2.com
 grundycounty.org
 hamiltoncounty.org
 hancockcountyia.org
@@ -4522,7 +4501,6 @@ harpersferryiowa.com
 harrisoncountyia.org
 hartleyiowa.com
 heartofthemidlandscfc.org
-home.windstream.net
 hubbardiowa.com
 huxleyiowa.org
 ialottery.com
@@ -4584,7 +4562,6 @@ shco.org
 shelbyia.com
 sheldoniowa.com
 shellrockiowa.org
-showcase.netins.net
 sioux-city.org
 siouxcenter.org
 siouxcounty.org
@@ -4593,16 +4570,13 @@ solon-iowa.com
 spenceriowacity.com
 stacyville.com
 stormlake.org
-tamacity.govoffice2.com
 tamacounty.org
 tiptoniowa.org
 traveliowa.com
 underwoodia.com
 university-heights.org
 urbandale.org
-vanmeter.govoffice2.com
 vediccity.net
-wahpetonia.govoffice.com
 wapellocounty.org
 waukee.org
 webstercity.com
@@ -4652,7 +4626,6 @@ cityofstanthony.org
 cityofweiser.net
 clearwatercounty.org
 dietrichidaho.com
-driggs.govoffice.com
 elmorecounty.org
 franklinidaho.org
 fruitland.org
@@ -4691,7 +4664,6 @@ rupert-idaho.com
 shoshonebannocktribes.com
 sodaspringsid.com
 staridaho.org
-sunvalley.govoffice.com
 tfid.org
 twinfallscounty.org
 visitidaho.org
@@ -4714,7 +4686,6 @@ breese.org
 camptontownship.com
 carolstream.org
 caryillinois.com
-centralillinoiscfc.org
 channahon.org
 charlestonillinois.org
 chathamil.net
@@ -4803,7 +4774,6 @@ hillside-il.org
 historyillinois.org
 hoffmanestates.com
 homerglenil.org
-htc.net
 il-bradley.civicplus.com
 il-vernonhills.civicplus.com
 illinoisepay.com
@@ -5328,7 +5298,6 @@ bossiercity.org
 brgov.com
 broussardla.com
 bruslyla.com
-business.centurytel.net
 caddo.org
 carencro.org
 cfcgno.org
@@ -5382,7 +5351,6 @@ laptboard.org
 lasc.org
 laspc.com
 lastbdarchs.com
-laworkforce.net
 laworks.net
 lbedn.org
 lbespa.org
@@ -5427,7 +5395,6 @@ plaquemine.org
 portallen.org
 portgbr.com
 rayne.org
-rootsweb.com
 rppj.com
 ruston.org
 sbpg.net
@@ -5439,7 +5406,6 @@ stjamesla.com
 stmartinparish-la.org
 stpgov.org
 sulphur.org
-sunset.govoffice2.com
 tangipahoa.org
 townofberwick.org
 townofblanchard.us
@@ -5452,7 +5418,6 @@ townofwelsh.com
 tpcg.org
 trsl.org
 tunicabiloxi.org
-user.camtel.net
 volunteerlouisiana.gov
 washington-la.org
 wbrcouncil.org
@@ -5568,7 +5533,6 @@ virtualnorfolk.org
 wellfleetma.org
 wendellmass.us
 westboylston.com
-weston.govoffice.com
 williamstown.ws
 winchester.us
 worthington-ma.us
@@ -5638,8 +5602,6 @@ mountairymd.org
 mountrainiermd.org
 msccsp.org
 mtnlakepark.us
-myersvillemd.govoffice2.com
-myweb.cebridge.net
 newwindsormd.org
 northbrentwood.com
 northchevychase.org
@@ -5652,7 +5614,6 @@ portdeposit.org
 prestonmaryland.us
 qac.org
 qactv.com
-qis.net
 queenstown-md.com
 ridgelymd.org
 risingsunmd.org
@@ -5716,12 +5677,10 @@ cariboumaine.org
 carrabassettvalley.org
 cascomaine.org
 cfcmaine.org
-china.govoffice.com
 cityofbath.com
 cityofbelfast.org
 cityofellsworthme.org
 clinton-me.us
-corinna.govoffice.com
 cumberlandcounty.org
 cumberlandmaine.com
 dextermaine.org
@@ -5729,7 +5688,6 @@ dixfield.org
 dover-foxcroft.org
 edgecomb.org
 eliotmaine.org
-emainehosting.com
 fairfieldme.com
 farmingdalemaine.com
 farmington-maine.org
@@ -5745,13 +5703,11 @@ gorham-me.org
 gouldsborotown.com
 graymaine.org
 greenvilleme.com
-hallowell.govoffice.com
 hancockmaine.org
 harrisonmaine.org
 hermon.net
 holdenmaine.com
 hollismaine.org
-home.myfairpoint.net
 houlton-maine.com
 hudsonmaine.wordpress.com
 jay-maine.org
@@ -5765,19 +5721,15 @@ limington.net
 lincolnmaine.org
 lisbonme.org
 litchfieldmaine.com
-lubecme.govoffice2.com
 madisonmaine.com
 mainehistory.org
 mainehousing.org
 mainelottery.com
 maineturnpike.com
-manchester.govoffice2.com
 mdf.org
-mechanicfalls.govoffice.com
 medwaymaine.org
 mexicomaine.net
 millinocket.org
-monmouthme.govoffice2.com
 monsonmaine.org
 montvillemaine.org
 mtvernonme.org
@@ -5792,7 +5744,6 @@ oobmaine.com
 orlandme.org
 orono.org
 oxfordcounty.org
-palmyra.govoffice.com
 perrymaine.org
 phillipsmaine.com
 phippsburg.com
@@ -5800,19 +5751,16 @@ pittsfield.org
 polandtownoffice.org
 prospectmaine.org
 raymondmaine.org
-readfield.govoffice.com
 richmondmaine.com
 rumfordmaine.net
 sacomaine.org
 sagcounty.com
 sanfordmaine.org
-sangervillemaine.org
 scarborough.me.us
 scarboroughmaine.org
 searsmont.com
 shapleigh.net
 skowhegan.org
-solon.govoffice.com
 somersetcounty-me.org
 southberwickmaine.org
 southportland.org
@@ -5849,7 +5797,6 @@ waldoboromaine.org
 waterboro-me.net
 waynemaine.org
 wellstown.org
-westbath.govoffice.com
 westbrookmaine.com
 westportisland.us
 wiltonmaine.org
@@ -5957,7 +5904,6 @@ cityofwestland.com
 cityofypsilanti.com
 clareco.net
 clinton-county.org
-clio.govoffice.com
 coetownship.com
 coldwater.org
 columbiatwp.com
@@ -6039,7 +5985,6 @@ lathrupvillage.org
 laurium.net
 leelanau.cc
 lenoxtwp.org
-lincolnpark.govoffice.com
 lindenmi.us
 longlaketownship.com
 ludington.mi.us
@@ -6067,7 +6012,6 @@ missaukee.org
 mqtcty.org
 mt-pleasant.org
 munrotownship.com
-mylocalgov.com
 newbuffalotownship.org
 northvillemich.com
 nortonshores.org
@@ -6161,14 +6105,12 @@ athenstownship.com
 avontownship.org
 babbitt-mn.com
 backusmn.com
-baldwintownship.govoffice.com
 balkantownship.com
 barnesvillemn.com
 belleplainemn.com
 belview.org
 bemidjitownship.com
 bensonmn.org
-bigfalls.govoffice.com
 biglakemn.org
 biglaketownship.com
 bigstonecounty.org
@@ -6179,14 +6121,10 @@ boreal.org
 braham.com
 brandontownship.org
 bridgewatertwp.org
-brockwaytownship.govoffice.com
 brooklynpark.org
-brooten.govoffice.com
-browerville.govoffice.com
 burnsville.org
 byronmn.com
 camdentownshipmn.com
-canby.govoffice.com
 canosiatownship.qwestoffice.net
 carlostownship.org
 castlerocktownship.com
@@ -6245,13 +6183,11 @@ clearwatercity.com
 clearwatertownship.org
 clitheralltownship.com
 cohasset-mn.com
-coldspring.govoffice.com
 collegevilletownship.com
 comfreymn.com
 cormoranttownship.org
 cottage-grove.org
 cottontownship.org
-crookedlake.govoffice2.com
 crowwing.us
 crowwingtownship.org
 dahlgrentownship.com
@@ -6264,9 +6200,7 @@ dunntownship.com
 eaglebendmn.com
 eaglelakemn.com
 eaglesnestmn.com
-eastgulllake.govoffice.com
 edenprairie.org
-edenvalley.govoffice.com
 ednatownship.org
 egf.mn
 embarrass.org
@@ -6275,7 +6209,6 @@ eurekatownship-mn.us
 evelethmn.com
 exploregaylord.org
 exploreminnesota.com
-eyota.govoffice.com
 fairmont.org
 fairviewtwpmn.com
 fayaltwp.org
@@ -6285,7 +6218,6 @@ fosston.com
 frazeecity.com
 gemlakemn.org
 gilbertmn.org
-goodview.govoffice.com
 grantvalleytownship.com
 greenvaletwp.org
 greenwoodmn.com
@@ -6295,53 +6227,36 @@ hancockmn.org
 hanovermn.org
 harristownshipmn.org
 haventwp.org
-hawley.govoffice.com
 hayfieldmn.com
-hector.govoffice.com
 helena-township.com
 helgatownship.com
 hennepin.us
-henriettatownship.govoffice2.com
 hermantownmn.com
 heronlakecity.org
 hobarttownship.com
-home.mchsi.com
 hopkinsmn.com
-houston.govoffice.com
 hoytlakes.com
 hrdc.org
 idatownship.com
 idealtownship.com
-independence.govoffice.com
 ivanhoe-mn.com
-janesville.govoffice.com
-jordan.govoffice.com
 kabetogamatownship.org
-kalmar.govoffice.com
 kanabeccounty.org
-keewatin.govoffice.com
-kelliher.govoffice.com
 lagrandtownship.com
 lakebentonminnesota.com
 lakeelmo.org
 lakefieldmn.com
 lakelandmn.com
-lakelandshores.govoffice.com
-lakelillian.govoffice.com
 laketowntownship.info
 lakewoodmn.com
 lenttownship.com
-lilydale.govoffice.com
 lindstrom.mn.org
 linwoodtownship.org
-lismore.govoffice2.com
 livoniatownship.org
 lmc.org
 longprairie.net
-lonsdale.govoffice.com
 louisvilletownship.com
 lqpco.com
-lscb.govoffice.com
 lyndentownship.org
 lyonco.org
 madeliamn.com
@@ -6349,13 +6264,11 @@ mantorville.com
 maplelakemn.org
 mapleplain.com
 mapletonmn.com
-marine.govoffice.com
 medfordminnesota.com
 mendota-heights.com
 mendotadakota.com
 metrocouncil.org
 metrotransit.org
-midwaytwpmn.govoffice2.com
 milanmn.com
 millelacsband.com
 milton-township.com
@@ -6371,13 +6284,10 @@ mountainlakemn.com
 mtniron.com
 murray-countymn.com
 mywabana.com
-nashwauk.govoffice.com
 nesseltownship.com
-nevis.govoffice.com
 newdoseytownship.com
 newlondontownship.com
 newmarkettownship.com
-newyorkmills.govoffice2.com
 normanna.org
 northernlightscfc.org
 northerntownship.com
@@ -6391,7 +6301,6 @@ paulbunyan.net
 paynesvillemn.com
 pelicanrapids.com
 pelicantownship.us
-pinecity.govoffice.com
 pineislandmn.com
 pipestone-county.com
 plainviewmn.com
@@ -6400,28 +6309,19 @@ prebletownship.com
 prestonmn.org
 princetonmn.org
 progressivepipestone.com
-randall.govoffice2.com
-ravennatwpmn.govoffice2.com
 red-wing.org
 region7erdc.org
-richardsontownship.govoffice2.com
 rndc.org
 rochester-township.com
 rockfordtownship.com
 rockvillecity.org
-roosevelttownship.govoffice.com
 royaltontownship.com
-rushford.govoffice.com
-rushfordvillage.govoffice.com
-sandstone.govoffice.com
 sanfranciscotownship.com
 sartellmn.com
-sherburn.govoffice.com
 sidelake.org
 silverbay.com
 silverbrooktownship.org
 silvercreektwp.com
-slayton.govoffice.com
 sleepyeye-mn.com
 southsidetownship.com
 southstpaul.org
@@ -6432,48 +6332,36 @@ stacymn.org
 stanfordtownship.com
 staugustamn.com
 stcharlesmn.org
-stclair.govoffice2.com
 stewartvillemn.com
 stfrancismn.org
-stjames.govoffice.com
-stjoseph.govoffice.com
 stlouispark.org
 stmaryspoint.org
-stpaulpark.govoffice.com
 sunfishlake.org
 sunrisetownship.com
 swiftcounty.com
 swrdc.org
-thomson.govoffice.com
 threeriversparkdistrict.org
 townofhassan.com
 townofshamrock.org
 township.empire.mn.us
 township.guthrie.mn.us
 tracymn.org
-trimont.govoffice.com
 troutlaketwp.com
 trumanmn.us
 ttosc.org
-twinvalley.govoffice.com
-tyler.govoffice.com
 virginia-mn.com
 wabasha.org
-wabedo.govoffice.com
 waconia.org
 wadena.org
 wakefieldtownship.net
 watabtownship.com
 waterfordtownship.wikifoundry.com
 wayzata.org
-westlakeland.govoffice2.com
 wilmatownship.com
 windemeretownship.com
 windom-mn.com
 winthropminnesota.com
-woodrowtwpmn.govoffice2.com
 wyomingmn.org
-zimmerman.govoffice.com
 
 // usagovMO
 albanymo.net
@@ -6597,7 +6485,6 @@ holdenmo.org
 holtssummit.org
 houstonmo.org
 huntleigh.org
-huntsdalemo.com
 jacksonmo.org
 jeffcitymo.org
 jeffcomo.org
@@ -6785,7 +6672,6 @@ mdwfp.com
 meadvillems.com
 meridianms.org
 mississippi.org
-mississippistateparks.reserveamerica.com
 mmlonline.com
 monroecountyms.org
 msblind.org
@@ -6904,7 +6790,6 @@ bessemercity.com
 bikesafenc.com
 biltmoreforest.org
 biltmoreforesttownhall.homestead.com
-bladennc.govoffice3.com
 bmbt.org
 bmcnc.org
 boilingspringlakes.com
@@ -6980,14 +6865,12 @@ franklincountync.us
 franklinnc.com
 fuquay-varina.org
 gastongov.com
-gatescounty.govoffice2.com
 gibsonville.net
 gorockingham.com
 gottobenc.com
 gottobencfestival.com
 governormorehead.net
 granitefallsnc.com
-granvillenc.govoffice2.com
 grifton.com
 halifaxnc.com
 hamletnc.us
@@ -7190,7 +7073,6 @@ ncsecc.org
 ncsicklecellprogram.org
 ncsip.org
 ncsitesearch.com
-ncstars.org
 ncstatefair.org
 ncstatesurplus.com
 ncstormwater.org
@@ -7260,10 +7142,8 @@ sprucepineonline.com
 startsquad.org
 startwithyourheart.com
 summerfieldgov.com
-surfcity.govoffice.com
 surpluspropertydivision.com
 sustainablenc.org
-sylvanc.govoffice3.com
 tarboro-nc.com
 taylorsvillenc.com
 teach4nc.com
@@ -7332,7 +7212,6 @@ beulahnd.org
 bismarck.org
 bismarckairport.com
 botco.homestead.com
-bottineau.govoffice.com
 bowdonnd.com
 bowmannd.com
 burkecountynd.com
@@ -7365,11 +7244,9 @@ edinburgnd.com
 ellendalend.com
 emmonscounty.tripod.com
 enderlinnd.com
-epping.govoffice.com
 fessendennd.com
 finleynd.com
 flaxtonnd.com
-fordvillecitynd.govoffice2.com
 formannd.com
 fostercounty.com
 garrisondiv.org
@@ -7428,10 +7305,8 @@ newsalem-nd.com
 northernlightscfc.org
 oakesnd.com
 pagend.com
-parkrivernd.govoffice2.com
 parshallnd.com
 pekinnd.com
-pembina.govoffice.com
 pickcitynd.com
 powerslakend.com
 ransomcountynd.com
@@ -7507,7 +7382,6 @@ heartofthemidlandscfc.org
 imperial-ne.com
 mindennebraska.org
 ne-ethanol.org
-neagrelations.org
 neatp.org
 nebraskaartscouncil.org
 nebraskacorn.org
@@ -7585,14 +7459,10 @@ hanovernh.org
 harrisvillenh.org
 hartslocation.com
 haverhill-nh.com
-haverhillnh.govoffice3.com
 hebronnh.org
 henniker.org
 hillsboroughcountynh.org
-hinsdale.govoffice.com
 hollis.nh.us
-home.webryders.net
-homepages.sover.net
 hooksett.org
 kingstonnh.org
 lancasternh.org
@@ -7857,7 +7727,6 @@ hardingnj.org
 hardwick-nj.us
 hardyston.com
 harrisontwp.us
-hartford-hwp.com
 harveycedars.org
 hasbrouck-heights.nj.us
 haworthnj.org
@@ -7921,7 +7790,6 @@ lodi-nj.org
 logan-twp.org
 longbeachtownship.com
 longhillnj.org
-longport-nj.us
 lopatcongtwp.com
 lumbertontwp.com
 lyndhurstnj.org
@@ -7945,7 +7813,6 @@ merchantville.com
 metuchennj.org
 middletownnj.org
 middletownship.com
-milfordnj.org
 millstone.nj.us
 millstoneboro.org
 milltownnj.org
@@ -8262,7 +8129,6 @@ choctawnation.com
 chukchansi.net
 cied.org
 citci.org
-citlink.net
 cityoflapwai.com
 cocopah.com
 comanchenation.com
@@ -8281,7 +8147,6 @@ echotacherokeetribe.homestead.com
 elemnation.org
 elk-valley.com
 elwha.org
-fantasyspringsresort.com
 fcpotawatomi.com
 fivecivilizedtribes.org
 fmyn.org
@@ -8298,7 +8163,6 @@ gtbindians.org
 gulkanacouncil.org
 hanksville.org
 hannahville.net
-hartford-hwp.com
 havasupaifalls.net
 ho-chunknation.com
 hoplandtribe.com
@@ -8323,10 +8187,8 @@ keetoowahcherokee.org
 kictribe.org
 klamathtribes.org
 kniktribalcouncil.org
-koasekabenaki.org
 kootenai.org
 kotzebueira.org
-kstrom.net
 kumeyaay.info
 lagunapueblo.org
 lajollaindians.com
@@ -8617,7 +8479,6 @@ franklincony.org
 franklinvilleny.org
 freeportny.com
 fremontnewyork.us
-frontiernet.net
 fultonville.org
 gallatin-ny.org
 gardencityny.net
@@ -8730,7 +8591,6 @@ nysfair.org
 nyshcr.org
 nyslgitda.org
 nytrooper.com
-oakfield.govoffice.com
 ocgov.net
 ogdenny.com
 ogdensburg.org
@@ -9076,7 +8936,6 @@ ulysses.ny.us
 unionvilleny.org
 upperbrookville.org
 uppernyack-ny.us
-users.bestweb.net
 valatievillage.com
 vchamplain.com
 vestalny.com
@@ -9227,7 +9086,6 @@ baltimoreohio.org
 bathtownship.org
 beachwoodohio.com
 beavercreektownship.org
-belmontcountyohio.org
 berkshiretwp.org
 betheltownship.org
 bexley.org
@@ -9300,7 +9158,6 @@ discoverohio.com
 doverohio.com
 eastlakeohio.com
 eastliverpool.com
-egovlink.com
 erie-county-ohio.net
 fairfaxohio.org
 fairfield-city.org
@@ -9776,7 +9633,6 @@ clarkssummitboro.org
 clearfieldco.org
 clintoncountypa.com
 coatesville.org
-collegetownship.govoffice.com
 colliertownship.net
 columbiapa.org
 conewagotwpadamsco.us
@@ -9957,7 +9813,6 @@ mtlebanon.org
 munhallpa.us
 murrysville.com
 narberthborough.com
-nazarethborough.com
 nazarethboroughpa.com
 newbritaintownship.org
 newcastlepa.org
@@ -10146,7 +10001,6 @@ watsontwp.org
 waynesboropa.org
 wbrandywine.org
 wcaln.org
-webpages.charter.net
 wellsboroborough.com
 wesleyvilleborough.com
 west-chester.com
@@ -10236,7 +10090,6 @@ southkingstownri.com
 townoffoster.com
 townofjohnstonri.com
 visitrhodeisland.com
-westerly.govoffice.com
 westwarwickri.org
 wgtownri.org
 
@@ -10257,7 +10110,6 @@ cfcofthecsra.org
 chapinsc.com
 charlestoncounty.org
 cheraw.com
-chesnee.net
 chesterfield-sc.com
 chestersc.org
 cityofandersonsc.com
@@ -10364,7 +10216,6 @@ scemd.org
 scfirststeps.org
 scgovernorsmansion.org
 scgssm.org
-scguard.com
 scilconline.org
 scpcf.com
 scsdb.org
@@ -10395,7 +10246,6 @@ townofbriarcliffe.us
 townofcampobello.com
 townofedistobeach.com
 townofgraycourt.net
-townofheathsprings.org
 townofhollywood.org
 townofhoneapath.com
 townofirmosc.com
@@ -10435,12 +10285,10 @@ yorkcountygov.com
 // usagovSD
 aberdeen.sd.us
 artesiansd.com
-baltic.govoffice.com
 beadle.sdcounties.org
 beadlecounty.org
 beresfordsd.com
 boxelder.us
-brandon.govoffice.com
 bridgewatersd.com
 bristolsd.com
 butte.sdcounties.org
@@ -10465,25 +10313,18 @@ claycountysd.org
 clearlakesd.com
 codington.org
 colmansd.com
-custer.govoffice.com
 davisoncounty.org
-desmet.govoffice2.com
 elkpoint.org
 ethansd.com
-faith.govoffice.com
 faulktoncity.org
 garysd.com
-harrisburg.govoffice.com
 hartfordsd.us
 heartofthemidlandscfc.org
 herreidsd.com
-highmoresd.govoffice3.com
 hs-sd.org
-humboldt.govoffice.com
 huronsd.com
 kadokasd.com
 kimballsd.org
-lakenorden.govoffice.com
 letchersd.com
 marionsd.com
 meadecounty.org
@@ -10507,7 +10348,6 @@ travelsd.com
 vermillion.us
 volgacity.com
 watertownsd.us
-whitewood.govoffice.com
 winnersd.org
 woonsocketsd.com
 
@@ -11021,7 +10861,6 @@ westpointcity.org
 wfrc.org
 wjordan.com
 woodscross.com
-wt.govoffice.com
 
 // usagovVA
 211.getcare.com
@@ -11222,7 +11061,6 @@ castletonvermont.org
 charlestonvt.org
 charlottevt.org
 chelseavt.org
-chester.govoffice.com
 clarendonvt.org
 concordvt.us
 corinthvt.org
@@ -11245,7 +11083,6 @@ ferrisburghvt.org
 franklinvermont.com
 goshenvt.org
 grandislevt.org
-granvillevermont.org
 greensborovt.org
 grotonvt.com
 guilfordvt.net
@@ -11253,8 +11090,6 @@ guilfordvt.org
 halifaxvermont.com
 hardwickvt.org
 hartford-vt.org
-hartland.govoffice.com
-highgate.weebly.com
 highgatevt.org
 hinesburg.org
 huntingtonvt.org
@@ -11271,7 +11106,6 @@ ludlow.vt.us
 lyndonvt.org
 mendonvt.org
 middlesexvermont.org
-milton.govoffice2.com
 miltonvt.org
 monktonvt.com
 montgomeryvt.us
@@ -11293,14 +11127,11 @@ plymouthvt.org
 pomfretvt.us
 proctorvermont.com
 putneyvt.org
-randolphvt.govoffice2.com
-readingvt.govoffice.com
 richfordvt.com
 richmondvt.com
 riptonvt.org
 rochestervermont.org
 rockbf.org
-roxbury.govoffice2.com
 royaltonvt.com
 rutlandcity.com
 rutlandcity.org
@@ -11312,7 +11143,6 @@ sharonvt.net
 shelburnevt.org
 shorehamvt.org
 shrewsburyvt.org
-springfieldvt.govoffice2.com
 stalbanstown.com
 stalbansvt.com
 stgeorgevt.com
@@ -11353,8 +11183,6 @@ westminstervt.org
 westmoreonline.org
 westonvt.org
 westrutlandtown.com
-westwindsorvt.govoffice2.com
-weybridge.govoffice.com
 williamstownvt.org
 wilmingtonvermont.us
 windsorvt.org
@@ -11552,7 +11380,6 @@ westrichland.org
 whefa.org
 whitmancounty.org
 wilburwa.com
-winlockwa.govoffice2.com
 wscpr.org
 wsctc.com
 wshfc.org
@@ -11561,7 +11388,6 @@ yakimacounty.us
 
 // usagovWI
 addisonwi.org
-adellwi.govoffice2.com
 algomacity.org
 almawisconsin.com
 amerywisconsin.org
@@ -11588,8 +11414,6 @@ brule-wi.org
 buffalocounty.com
 burnettcounty.com
 caledoniawi.com
-campbellsport.govoffice.com
-chilton.govoffice.com
 chip-howard-wi.org
 city.fitchburg.wi.us
 cityhoriconwi.us
@@ -11638,7 +11462,6 @@ denmark-wi.org
 dickeyville.com
 douglascountywi.org
 drugcontrolprogram.org
-dunncountywi.govoffice2.com
 easttroy-wi.com
 ecb.org
 elk-mound.org
@@ -11684,7 +11507,6 @@ lwm-info.org
 manitowoc.org
 marinette.wi.us
 marinettecounty.com
-marion.govoffice2.com
 marshall-wi.com
 mauston.com
 mayvillecity.com
@@ -11713,7 +11535,6 @@ omro-wi.com
 oostburg.org
 orfordville.org
 outagamie.org
-plainwi.govoffice2.com
 pleasantprairieonline.com
 pleasantsprings.org
 plymouthgov.com
@@ -11751,7 +11572,6 @@ suamico.org
 sugarcamp.org
 summitvillage.org
 tigertonwis.com
-towncenterville.weebly.com
 towngenesee.org
 townofalden.com
 townofalgoma.org
@@ -11839,7 +11659,6 @@ travelwisconsin.com
 tremplocounty.com
 two-rivers.org
 valders.org
-valuworld.com
 vi.deforest.wi.us
 vi.hewitt.wi.us
 vienna-wis.com
@@ -11882,7 +11701,6 @@ visitsiren.com
 vokimberly.org
 waterloowi.us
 wauwatosa.net
-wctc.net
 wdfi.org
 websterwisconsin.com
 westonwisconsin.org
@@ -11979,7 +11797,6 @@ newcastlewyoming.org
 parkcounty.us
 rawlins-wyoming.com
 rswy.net
-saratoga.govoffice2.com
 senate.mn
 sheridancounty.com
 sublettewyo.com
