@@ -5811,7 +5811,6 @@ scarborough.me.us
 scarboroughmaine.org
 searsmont.com
 shapleigh.net
-sites.google.com
 skowhegan.org
 solon.govoffice.com
 somersetcounty-me.org
@@ -11313,7 +11312,6 @@ sharonvt.net
 shelburnevt.org
 shorehamvt.org
 shrewsburyvt.org
-sites.google.com
 springfieldvt.govoffice2.com
 stalbanstown.com
 stalbansvt.com
@@ -11742,7 +11740,6 @@ sheridantownship.org
 shorewood-hills.org
 shullsburgwisconsin.org
 sisterbay.com
-sites.google.com
 smwi.org
 spartawisconsin.org
 stephensonwisc.com
