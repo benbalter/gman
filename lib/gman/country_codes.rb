@@ -37,5 +37,7 @@ class Gman < NaughtyOrNice
   # Gman.new("foo.gov").country.currency => "USD"
   def country
     @country ||= IsoCountryCodes.find(alpha2) if alpha2
+  rescue IsoCountryCodes::UnknownCodeError
+    nil
   end
 end

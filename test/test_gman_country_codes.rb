@@ -7,4 +7,8 @@ class TestGmanCountryCodes < Minitest::Test
     assert_equal "United Kingdom of Great Britain and Northern Ireland", Gman.new("foo.gov.uk").country.name
     assert_equal "Canada", Gman.new("foo.gc.ca").country.name
   end
+
+  should "not err out on an unknown country code" do
+    assert_equal nil, Gman.new("foo.eu").country
+  end
 end
