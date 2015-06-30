@@ -8,12 +8,12 @@ VALID = [  "foo.gov",
             "foo@ci.champaign.il.us",
             "foo.bar.baz.gov.au",
             "foo@bar.gov.uk",
-            ".gov",
+            "foo.gov",
             "foo.fed.us",
             "foo.state.il.us",
             "state.il.us",
             "foo@af.mil",
-            "gov.in"
+            "foo.gov.in"
         ]
 
 INVALID = [ "foo.bar.com",

@@ -1,4 +1,4 @@
-class Gman < NaughtyOrNice
+class Gman 
 
   # Map last part of TLD to alpha2 country code
   ALPHA2_MAP = {

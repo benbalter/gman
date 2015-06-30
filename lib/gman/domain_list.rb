@@ -1,4 +1,4 @@
-class Gman < NaughtyOrNice
+class Gman
   class DomainList
 
     attr_accessor :list
