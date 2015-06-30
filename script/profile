@@ -1,0 +1,17 @@
+#! /usr/bin/env ruby
+
+require 'ruby-prof'
+require './lib/gman'
+
+# Pick N random domains directly, without pre-loading the Gman list for an accurate benchmark
+count = (ARGV[0] || 100).to_i
+domains = File.readlines("./config/domains.txt").select { |l| l =~ /^[a-z0-9]/i }.sample(count)
+
+RubyProf.start
+domains.each do |domain|
+  Gman.new("foo@bar.#{domain}").valid?
+end
+
+result = RubyProf.stop
+printer = RubyProf::FlatPrinter.new(result)
+printer.print(STDOUT)
