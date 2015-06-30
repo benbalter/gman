@@ -1,5 +1,5 @@
 require 'naughty_or_nice'
-#require 'swot'
+require 'swot'
 require 'iso_country_codes'
 require 'csv'
 require_relative 'gman/country_codes'
@@ -40,7 +40,7 @@ class Gman
     return false unless domain_parts && domain_parts.valid?
 
     # Ensure non-edu
-    #return false if Swot::is_academic?(domain_parts)
+    return false if Swot::is_academic?(domain_parts)
 
     # Check for locality by regex
     return true if locality?
