@@ -2,14 +2,17 @@ require 'naughty_or_nice'
 require 'swot'
 require 'iso_country_codes'
 require 'csv'
+require_relative 'gman/version'
 require_relative 'gman/country_codes'
 require_relative 'gman/locality'
 require_relative 'gman/identifier'
 require_relative 'gman/sanctions'
 
-class Gman < NaughtyOrNice
-  class << self
+class Gman
 
+  include NaughtyOrNice
+
+  class << self
     # returns an instance of our custom public suffix list
     # list behaves like PublicSuffix::List but is limited to our whitelisted domains
     def list
@@ -35,10 +38,10 @@ class Gman < NaughtyOrNice
   # Returns boolean true if a government domain
   def valid?
     # Ensure it's a valid domain
-    return false unless PublicSuffix.valid?(".#{domain}")
+    return false unless domain_parts && domain_parts.valid?
 
     # Ensure non-edu
-    return false if Swot::is_academic?(domain)
+    return false if Swot::is_academic?(domain_parts)
 
     # Check for locality by regex
     return true if locality?

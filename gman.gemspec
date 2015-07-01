@@ -1,8 +1,10 @@
+require File.expand_path "./lib/gman/version", File.dirname(__FILE__)
+
 Gem::Specification.new do |s|
   s.name = "gman"
   s.summary = "Check if a given domain or email address belong to a governemnt entity"
   s.description = "A ruby gem to check if the owner of a given email address is working for THE MAN."
-  s.version = '4.7.1'
+  s.version = Gman::VERSION
   s.authors = ["Ben Balter"]
   s.email = "ben.balter@github.com"
   s.homepage = "https://github.com/benbalter/gman"
@@ -18,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency( "swot", '~> 0.4.2' )
   s.add_dependency( "iso_country_codes", "~> 0.6" )
-  s.add_dependency( "naughty_or_nice", "~> 0.0.2" )
+  s.add_dependency( "naughty_or_nice", "~> 1.0" )
   s.add_dependency( "colorize", "~> 0.7" )
 
   s.add_development_dependency( "rake" )

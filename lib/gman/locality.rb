@@ -1,4 +1,4 @@
-class Gman < NaughtyOrNice
+class Gman
 
   LOCALITY_REGEX = %r{
     (

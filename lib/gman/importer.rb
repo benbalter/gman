@@ -7,7 +7,7 @@ require 'net/dns/resolver'
 require_relative '../gman'
 require_relative './domain_list'
 
-class Gman < NaughtyOrNice
+class Gman
   class Importer
 
     attr_accessor :domains
@@ -128,7 +128,7 @@ class Gman < NaughtyOrNice
   end
 end
 
-class Gman < NaughtyOrNice
+class Gman
   def self.import(hash)
     Gman::Importer.new(hash).import
   end
