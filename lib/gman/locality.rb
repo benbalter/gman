@@ -23,6 +23,6 @@ class Gman
   #  * k12.il.us
   #  * ci.foo.zx.us
   def locality?
-    !!(domain =~ LOCALITY_REGEX)
+    !!(domain.to_s =~ LOCALITY_REGEX)
   end
 end

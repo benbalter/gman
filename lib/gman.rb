@@ -38,16 +38,16 @@ class Gman
   # Returns boolean true if a government domain
   def valid?
     # Ensure it's a valid domain
-    return false unless domain_parts && domain_parts.valid?
+    return false unless domain && domain.valid?
 
     # Ensure non-edu
-    return false if Swot::is_academic?(domain_parts)
+    return false if Swot::is_academic?(domain)
 
     # Check for locality by regex
     return true if locality?
 
     # check using public suffix's standard logic
-    rule = Gman.list.find domain
+    rule = Gman.list.find(to_s)
 
     # domain is on the domain list and
     # domain is not explicitly blacklisted and

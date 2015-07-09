@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency( "swot", '~> 0.4.2' )
   s.add_dependency( "iso_country_codes", "~> 0.6" )
-  s.add_dependency( "naughty_or_nice", "~> 1.0" )
+  s.add_dependency( "naughty_or_nice", "~> 2.0" )
   s.add_dependency( "colorize", "~> 0.7" )
 
   s.add_development_dependency( "rake" )
