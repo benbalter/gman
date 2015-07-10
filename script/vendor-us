@@ -13,7 +13,7 @@
 require './lib/gman/importer'
 
 source = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls.yaml"
-blacklist = ["usagovQUASI", "usagovFED", "usagovPW"]
+blacklist = ["usagovQUASI"]
 
 data = open(source).read
 domains = YAML.load(data)

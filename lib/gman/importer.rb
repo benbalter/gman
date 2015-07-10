@@ -59,14 +59,21 @@ class Gman
       return reject(domain, "user. regex")  if domain =~ /^users?\./
       return reject(domain, "sites. regex") if domain =~ /^sites?\./
       return reject(domain, "weebly")       if domain =~ /weebly\.com$/
+      return reject(domain, "wordpress")    if domain =~ /wordpress\.com$/
       return reject(domain, "govoffice")    if domain =~ /govoffice\d?\.com$/
       return reject(domain, "homestead")    if domain =~ /homestead\.com$/
       return reject(domain, "wix.com")      if domain =~ /wix\.com$/
+      return reject(domain, "blogspot.com") if domain =~ /blogspot\.com$/
       return reject(domain, "locality")     if domain =~ Gman::LOCALITY_REGEX
       return reject(domain, "blacklist")    if BLACKLIST.include?(domain)
       return reject(domain, "duplicate")    if !options[:skip_dupe] && current.domains.include?(domain)
       return reject(domain, "invalid")      unless PublicSuffix.valid?(".#{domain}")
       return reject(domain, "academic")     if Swot::is_academic?(domain)
+
+      if !options[:skip_dupe] && subdomain = current.domains.any? { |c| domain =~ /\.#{Regexp.escape(c)}$/}
+        return reject(domain, "subdomain of #{subdomain}")
+      end
+
       return reject(domain, "unresolvable") if !options[:skip_resolve] && !domain_resolves?(domain)
       true
     end
