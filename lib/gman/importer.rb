@@ -70,7 +70,7 @@ class Gman
       return reject(domain, "invalid")      unless PublicSuffix.valid?(".#{domain}")
       return reject(domain, "academic")     if Swot::is_academic?(domain)
 
-      if !options[:skip_dupe] && subdomain = current.domains.any? { |c| domain =~ /\.#{Regexp.escape(c)}$/}
+      if !options[:skip_dupe] && subdomain = current.domains.find { |c| domain =~ /\.#{Regexp.escape(c)}$/}
         return reject(domain, "subdomain of #{subdomain}")
       end
 
