@@ -25,7 +25,7 @@ gman = Gman.new(domain)
 
 puts "Domain  : #{gman.domain}"
 
-if gman.domain_parts.nil?
+if gman.domain.nil?
   puts "Status  : " + "Invalid domain".red
   exit 1
 end

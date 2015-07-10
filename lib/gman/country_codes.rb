@@ -1,4 +1,4 @@
-class Gman 
+class Gman
 
   # Map last part of TLD to alpha2 country code
   ALPHA2_MAP = {
@@ -21,8 +21,8 @@ class Gman
   #
   # e.g., United States = US, United Kingdom = GB
   def alpha2
-    return unless domain_parts
-    alpha2 = domain_parts.tld.split('.').last
+    return unless domain
+    alpha2 = domain.tld.split('.').last
     if ALPHA2_MAP[alpha2.to_sym]
       ALPHA2_MAP[alpha2.to_sym]
     else

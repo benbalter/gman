@@ -42,7 +42,7 @@ class Gman
   end
 
   def dotgov?
-    domain_parts.tld == "gov"
+    domain.tld == "gov"
   end
 
   def federal?
@@ -85,7 +85,7 @@ class Gman
 
   def list_category
     @list_category ||= begin
-      if match = Gman.list.find(domain)
+      if match = Gman.list.find(domain.to_s)
         regex = Regexp.new "\/\/ ([^\\n]+)\\n?[^\/\/]*\\n#{Regexp.escape(match.name)}\\n", "im"
         matches = Gman.list_contents.match(regex)
         matches[1] if matches
@@ -94,7 +94,7 @@ class Gman
   end
 
   def matches
-    @matches ||= domain.match(LOCALITY_REGEX)
+    @matches ||= domain.to_s.match(LOCALITY_REGEX)
   end
 
   def self.dotgov_list_path
@@ -106,6 +106,6 @@ class Gman
   end
 
   def dotgov_listing
-    @dotgov_listing ||= Gman.dotgov_list.find { |d| d["Domain Name"].downcase == "#{domain_parts.sld}.gov" } if dotgov?
+    @dotgov_listing ||= Gman.dotgov_list.find { |d| d["Domain Name"].downcase == "#{domain.sld}.gov" } if dotgov?
   end
 end
