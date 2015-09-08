@@ -12,11 +12,24 @@
 
 require './lib/gman/importer'
 
-source = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls.yaml"
 blacklist = ["usagovQUASI"]
+source = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt"
 
 data = open(source).read
-domains = YAML.load(data)
-domains.reject! { |group,domain| blacklist.include?(group) }
+data = data.split("__________________________________________________________________________")
+data = data.last.strip
+data = data.split(/\r?\n/).reject { |r| r.empty? }
 
+domains = {}
+group = ""
+data.each do |row|
+  if row =~ /^\w/
+    group = row
+    domains[group] = []
+  else
+    domains[group].push row.sub("\.\t", "").strip
+  end
+end
+
+domains.reject! { |group,domain| blacklist.include?(group) }
 Gman.import(domains)

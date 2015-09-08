@@ -7,7 +7,7 @@ class Gman
     COMMENT_REGEX = /\/\/[\/\s]*(.*)$/i
 
     def initialize(list)
-      @list = list
+      @list = list.reject { |group, domains| domains.compact.empty? }
     end
 
     def groups
