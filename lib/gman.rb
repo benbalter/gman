@@ -16,7 +16,7 @@ class Gman
     # returns an instance of our custom public suffix list
     # list behaves like PublicSuffix::List but is limited to our whitelisted domains
     def list
-      @list ||= PublicSuffix::List::parse(list_contents)
+      @@list ||= PublicSuffix::List::parse(list_contents)
     end
 
     def config_path
@@ -29,7 +29,7 @@ class Gman
     end
 
     def list_contents
-      @list_contents ||= File.new(list_path, "r:utf-8").read
+      @@list_contents ||= File.new(list_path, "r:utf-8").read
     end
   end
 
@@ -37,21 +37,25 @@ class Gman
   #
   # Returns boolean true if a government domain
   def valid?
-    # Ensure it's a valid domain
-    return false unless domain && domain.valid?
+    return @valid if defined? @valid
 
-    # Ensure non-edu
-    return false if Swot::is_academic?(domain)
+    @valid = begin
+      # Ensure it's a valid domain
+      return false unless domain && domain.valid?
 
-    # Check for locality by regex
-    return true if locality?
+      # Ensure non-edu
+      return false if Swot::is_academic?(domain)
 
-    # check using public suffix's standard logic
-    rule = Gman.list.find(to_s)
+      # Check for locality by regex
+      return true if locality?
 
-    # domain is on the domain list and
-    # domain is not explicitly blacklisted and
-    # domain matches a standard public suffix list rule
-    !rule.nil? && rule.type != :exception && rule.allow?(".#{domain}")
+      # check using public suffix's standard logic
+      rule = Gman.list.find(to_s)
+
+      # domain is on the domain list and
+      # domain is not explicitly blacklisted and
+      # domain matches a standard public suffix list rule
+      !rule.nil? && rule.type != :exception && rule.allow?(".#{domain}")
+    end
   end
 end

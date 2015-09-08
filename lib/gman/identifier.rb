@@ -94,7 +94,8 @@ class Gman
   end
 
   def matches
-    @matches ||= domain.to_s.match(LOCALITY_REGEX)
+    return @matches if defined? @matches
+    @matches = domain.to_s.match(LOCALITY_REGEX)
   end
 
   def self.dotgov_list_path
@@ -102,10 +103,11 @@ class Gman
   end
 
   def self.dotgov_list
-    @dotgov_list ||= CSV.read(dotgov_list_path, :headers => true)
+    @@dotgov_list ||= CSV.read(dotgov_list_path, :headers => true)
   end
 
   def dotgov_listing
-    @dotgov_listing ||= Gman.dotgov_list.find { |d| d["Domain Name"].downcase == "#{domain.sld}.gov" } if dotgov?
+    return @dotgov_listing if defined? @dotgov_listing
+    @dotgov_listing = Gman.dotgov_list.find { |d| d["Domain Name"].downcase == "#{domain.sld}.gov" } if dotgov?
   end
 end
