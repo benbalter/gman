@@ -206,8 +206,6 @@ cochrane.ca
 coldlake.com
 colemantownship.ca
 colwood.ca
-communityofmillertown.ca
-communityofoleary.com
 comox.ca
 conceptionbaysouth.ca
 consort.ca
@@ -596,7 +594,6 @@ municipalite.saint-armand.qc.ca
 municipalite.saint-isidore.qc.ca
 municipalite.saint-philippe.qc.ca
 municipalite.saint-valerien.qc.ca
-municipalite.sainte-angele-de-monnoir.qc.ca
 municipalite.sainte-martine.qc.ca
 municipaliteboileau.ca
 municipalitedeboltonouest.com
@@ -608,7 +605,6 @@ municipalityofmcdougall.com
 municipalityofshelburne.ca
 muniles.ca
 munmilan.qc.ca
-munpontiac.com
 munstdenis.com
 munstratford.qc.ca
 mycallander.ca
@@ -883,7 +879,6 @@ snowlake.com
 sooke.ca
 sourismanitoba.com
 sourispei.com
-southbrook.tripod.com
 southey.ca
 southhuron.ca
 southwestmiddlesex.ca
@@ -1092,7 +1087,6 @@ townofgrandbank.com
 townofhague.com
 townofhampton.ca
 townofhighprairie.com
-townofhmcclv.com
 townofhudsonbay.com
 townofindianhead.com
 townofkearney.com
@@ -1218,7 +1212,6 @@ villageofalliance.ca
 villageofbitternlake.ca
 villageofbriercrest.ca
 villageofcentreville.ca
-villageofchauvin.ca
 villageofconquest.ca
 villageofdorintosh.sasktelwebsite.net
 villageofduchess.com
@@ -3255,7 +3248,6 @@ vardanalys.se
 vinnova.se
 vr.se
 vti.se
-y.lst.se
 yhmyndigheten.se
 
 // Swiss Cantons (Federal States)
@@ -4128,7 +4120,6 @@ jeffco.us
 kitcarsoncounty.org
 lakewood.org
 littletongov.org
-metrodenvercfc.org
 metromayors.org
 minturn.org
 mountain-village.co.us
@@ -4268,7 +4259,6 @@ waterfordct.org
 watertownct.org
 west-hartford.com
 westbrookct.us
-weston-ct.com
 wethersfieldct.com
 willingtonct.org
 wiltonct.org
@@ -4450,7 +4440,6 @@ pbgc.org
 pcaobus.org
 pepfar.net
 predict.org
-project-open-data.github.io
 psctool.us
 r3coastal.com
 radiosawa.com
@@ -4926,7 +4915,6 @@ odumgeorgia.com
 oxfordgeorgia.org
 peachcounty.net
 peachtree-city.org
-pearson-ga.com
 pembrokega.net
 pinelakega.com
 polkcountygeorgia.us
@@ -5555,7 +5543,6 @@ newhavenin.org
 newtoncountyin.com
 nirpc.org
 nmanchester.org
-nobleco.squarespace.com
 perrycountyil.org
 porterco.org
 portertownship.com
@@ -5937,7 +5924,6 @@ rppj.com
 ruston.org
 sbpg.net
 sjbparish.com
-springhillla.com
 state.lib.la.us
 stfrancisville.net
 stjamesla.com
@@ -7637,10 +7623,8 @@ shpnc.org
 smithfield-nc.com
 sosnc.com
 southernpines.net
-southernshores.org
 spindalenc.net
 spring-lake.org
-sprucepineonline.com
 startsquad.org
 startwithyourheart.com
 summerfieldgov.com
@@ -7742,7 +7726,6 @@ dvlnd.com
 edgeley.com
 edinburgnd.com
 ellendalend.com
-emmonscounty.tripod.com
 enderlinnd.com
 fessendennd.com
 finleynd.com
@@ -7843,7 +7826,6 @@ westfargo.org
 williamsnd.com
 willistonnd.com
 wiltonnd.org
-wingnd.com
 wishek-nd.com
 wrtc.com
 
@@ -8688,7 +8670,6 @@ poncatribe-ne.org
 portlions.net
 potawatomi.org
 powhatan.org
-prairieisland.org
 pueblodecochiti.org
 puyallup-tribe.com
 redding-rancheria.com
@@ -8792,7 +8773,6 @@ attica.org
 auroranewyork.us
 austerlitzny.com
 avon-ny.org
-b-ville.com
 bainbridgeny.org
 baldwinsville.org
 batavianewyork.com
@@ -9328,7 +9308,6 @@ townofstonypoint.org
 townofsweden.org
 townofthompson.com
 townofthurston.com
-townofticonderoga.com
 townoftully.org
 townofulster.org
 townofunion.com
@@ -10151,7 +10130,6 @@ lehighcounty.org
 lehmantownship.com
 libertytwp-adamscounty.com
 limerickpa.org
-lincolnboro.tripod.com
 littlebritain.org
 littlestownboro.org
 liverpoolpa.us
@@ -10176,7 +10154,6 @@ manortwp.org
 mantwp.com
 marpletwp.com
 marysvilleboro.com
-mckeesport.org
 mckeesrocks.com
 mechanicsburgborough.org
 mediaborough.com
@@ -10384,7 +10361,6 @@ wesleyvilleborough.com
 west-chester.com
 westbradford.org
 westcaln.org
-westconshohockenboro.com
 westdeertownship.com
 westeastonborough.org
 westgroveborough.org
@@ -10542,7 +10518,6 @@ fortmillsc.org
 fountaininn.org
 gastonsc.org
 georgetowncountysc.org
-greatfallssc.net
 greenvillecounty.org
 hamptoncountysc.org
 hamptonsc.net
@@ -10561,7 +10536,6 @@ libertysc.com
 lincolnvillesc.com
 littlemountainsc.info
 llronline.com
-mayesvillesc.com
 midlandsareacfc.org
 mtcroghan.com
 mullinssc.us
@@ -11361,7 +11335,6 @@ vaao.org
 vaboard.org
 vadrs.org
 vadsa.org
-vafamilyconnections.com
 vafire.com
 valottery.com
 vaports.com
@@ -11513,7 +11486,6 @@ stjvt.com
 swcrpc.org
 thetfordvermont.us
 tinmouthvt.org
-town-of-orwell.org
 townofbrandon.com
 townofcraftsbury.com
 townofgeorgia.com
