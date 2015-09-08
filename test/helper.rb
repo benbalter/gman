@@ -19,8 +19,6 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative "../lib/gman"
 require_relative "../lib/gman/domain_list"
 
-require 'net/dns'
-require 'net/dns/resolver'
 require './lib/gman/importer'
 
 def test_bin(*args)
