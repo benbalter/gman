@@ -2,8 +2,8 @@
 # Only used in development and not loaded by default
 require 'yaml'
 require 'open-uri'
-require 'net/dns'
-require 'net/dns/resolver'
+require 'resolv'
+require 'logger'
 require_relative '../gman'
 require_relative './domain_list'
 
@@ -119,18 +119,16 @@ class Gman
     end
 
     def resolver
-      @resolver ||= begin
-        resolver = Net::DNS::Resolver.new
-        resolver.nameservers = ["8.8.8.8","8.8.4.4"]
-        resolver
-      end
+      @resolver ||= Resolv::DNS.new(:nameserver => ["8.8.8.8","8.8.4.4"])
     end
 
     # Verifies that the given domain has an MX record, and thus is valid
     def domain_resolves?(domain)
-      resolver.search(domain).header.anCount > 0 ||
-      resolver.search(domain, Net::DNS::NS).header.anCount > 0 ||
-      resolver.search(domain, Net::DNS::MX).header.anCount > 0
+      domain = Addressable::URI.new(:host => domain).normalize.host
+      resolver.getresource(domain, Resolv::DNS::Resource::IN::NS) ||
+      resolver.getresource(domain, Resolv::DNS::Resource::IN::MX)
+    rescue Resolv::ResolvError
+      false
     end
   end
 end
