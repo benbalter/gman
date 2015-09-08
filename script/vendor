@@ -1,0 +1,11 @@
+#!/bin/bash
+#Runs all vendor scripts except script/vendor-nl
+
+for file in script/vendor-*; do
+  if [ "$file" != "script/vendor-nl" ]; then
+    echo "*************************************"
+    echo "Vendoring $file"
+    echo "*************************************"
+    "$file"
+  fi
+done
