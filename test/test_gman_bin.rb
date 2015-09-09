@@ -56,11 +56,11 @@ class TestGmanBin < Minitest::Test
 
   should "allow you to disable colorization" do
     output, status = test_bin("whitehouse.gov", "--no-color")
-    refute_match /\[0;32;49m/, output
+    refute_match /\e\[32m/, output
   end
 
   should "color by default" do
-    assert_match /\[0;32;49m/, @output
+    assert_match /\e\[32m/, @output
   end
 
   should "show help text" do
