@@ -54,13 +54,9 @@ class TestGmanBin < Minitest::Test
     assert_equal 0, @status.exitstatus
   end
 
-  should "allow you to disable colorization" do
+  should "ignores old colorization option" do
     output, status = test_bin("whitehouse.gov", "--no-color")
     refute_match /\[0;32;49m/, output
-  end
-
-  should "color by default" do
-    assert_match /\[0;32;49m/, @output
   end
 
   should "show help text" do
@@ -68,9 +64,6 @@ class TestGmanBin < Minitest::Test
     assert_match /Usage/i, output
 
     output, status = test_bin("")
-    assert_match /Usage/i, output
-
-    output, status = test_bin("--no-color")
     assert_match /Usage/i, output
   end
 
