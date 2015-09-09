@@ -1,7 +1,6 @@
 #! /usr/bin/env ruby
 # Given a domain-link string, returns information about the domain
 
-require 'colorize'
 require_relative "../lib/gman"
 
 # Convenience method to simplify the command-line logic
@@ -14,7 +13,19 @@ class IsoCountryCodes
 end
 
 domain = ARGV[0]
-String.disable_colorization = true if ARGV.last == "--no-color"
+
+if ARGV.last == "--no-color"
+  class String
+    def red
+      self
+    end
+    def green
+      self
+    end
+  end
+else
+  require 'colored'
+end
 
 if domain.to_s.empty? || domain == "--no-color"
   puts "USAGE: gman <domain or email address> [--no-color]".red
