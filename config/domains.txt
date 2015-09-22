@@ -1430,7 +1430,6 @@ novascotia.ca
 ontario.ca
 saskatchewan.ca
 
-
 // Catalonia
 gencat.cat
 
