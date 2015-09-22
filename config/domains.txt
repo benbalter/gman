@@ -1430,6 +1430,10 @@ novascotia.ca
 ontario.ca
 saskatchewan.ca
 
+
+// Catalonia
+gencat.cat
+
 // Estonia
 agri.ee
 eestipank.ee
