@@ -11216,3 +11216,8 @@ vpt.lt
 // Lithuania municipal
 vilnius.lt
 kaunas.lt
+alytus.lt
+klaipeda.lt
+siauliai.lt
+panevezys.lt
+utena.lt
