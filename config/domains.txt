@@ -12116,3 +12116,37 @@ uintacounty.com
 wrightwyoming.com
 wyomingbusiness.org
 wyomingtourism.org
+wyomingtourism.org
+
+// Estonia
+president.ee
+valitus.ee
+riigikogu.ee
+riigikantselei.ee
+hm.ee
+just.ee
+kaitseministeerium.ee
+envir.ee
+kul.ee
+mkm.ee
+agri.ee
+rahandusministeerium.ee
+siseministeerium.ee
+sm.ee
+vm.ee
+ria.ee
+eestipank.ee
+fi.ee
+tja.ee
+
+// Lithuania
+vpt.lt
+
+// Lithuania municipal
+vilnius.lt
+kaunas.lt
+alytus.lt
+klaipeda.lt
+siauliai.lt
+panevezys.lt
+utena.lt
