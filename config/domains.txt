@@ -1451,6 +1451,7 @@ riigikogu.ee
 siseministeerium.ee
 sm.ee
 tja.ee
+valitus.ee
 vm.ee
 
 // Finland
@@ -2329,6 +2330,18 @@ comune.bologna.it
 formez.it
 plonegov.it
 regione.emilia-romagna.it
+
+// Lithuania
+vpt.lt
+
+// Lithuania municipal
+alytus.lt
+kaunas.lt
+klaipeda.lt
+panevezys.lt
+siauliai.lt
+utena.lt
+vilnius.lt
 
 // Netherlands
 aaenhunze.nl
