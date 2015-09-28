@@ -1477,6 +1477,7 @@ altersvorsorgemachtschule.de
 altersvorsorgemachtschule.info
 altersvorsorgemachtschule.net
 altersvorsorgemachtschule.org
+anticorruption.help
 arb-5.de
 arbeit-4-null.de
 arbeit-4-punkt-null.de
@@ -1494,12 +1495,21 @@ arbeitsministerium.eu
 arbeitsschutz-forschung.de
 arbeitvierpunktnull.de
 armutsbericht.de
+ausbildungsportal.org
+auslandschulwesen.de
+auslandsschulportal.de
+auslandsschulwesen.de
+auslandsschulwesen.eu
+auslandsschulwesen.net
 auswaertiges-amt.de
+auswanderungswesen.de
 aviation-weather.eu
 ba-reform.de
 badv.bund.de
 bafa.de
 bafg.de
+bafoeg-rueckzahlung.de
+bafoeg.online
 bafza.de
 bag.bund.de
 ballonwetter.de
@@ -1523,6 +1533,8 @@ bfb-bund.de
 bfn.de
 bfs.de
 bfu-web.de
+bildungskredit.de
+bildungskredit.online
 bildungspaket-bmas.de
 bitvlotse.de
 bka.de
@@ -1561,6 +1573,8 @@ bsh.de
 bsi.bund.de
 bstu.bund.de
 bsu-bund.de
+bund.online
+bund.services
 bundesarbeitsgericht.de
 bundesarbeitsministerium.de
 bundesarbeitsministerium.eu
@@ -1597,6 +1611,7 @@ bundessozialgericht.de
 bundessozialministerium.de
 bundessozialministerium.eu
 bundessprachenamt.de
+bundesstelle-fuer-informationstechnik.de
 bundestag.de
 bundesverfassungsgericht.de
 bundesverkehrsminister.com
@@ -1608,13 +1623,18 @@ bundesverkehrsministerium.de
 bundesverkehrsministerium.net
 bundesverkehrsministerium.org
 bundesversicherungsamt.de
+bundesverwaltungsamt.de
 bundesverwaltungsgericht.de
 bundeswehr-karriere.de
+bva-dienstleistungszentrum.de
 bva.bund.de
+bva.services
+bva.website
 bvl.bund.de
 bvwp2015.de
 bzga.de
 bzst.bund.de
+caf-netzwerk.de
 chancen-mit-erfahrung.de
 climatemonitoring.de
 climatemonitoring.eu
@@ -1655,12 +1675,19 @@ die-rente.com
 die-rente.info
 die-rente.net
 die-rente.org
+dienstleistungszentrum.de
+dienstreisezentrum.de
 digitaleautobahn.de
 digitales-testfeld-autobahn.de
 digitalestestfeld.de
 dimdi.de
+doi-de.net
+doi-sec-de.net
 dpma.de
+dsd-weltweit.de
+dsd.online
 dta9.de
+dvdv.de
 dwd-shop.de
 dwd-shop.eu
 dwd.bund.de
@@ -1689,6 +1716,7 @@ fachkraeftewoche.de
 fachkräfte-allianz.de
 fachkräfteoffensive.de
 fachkräftewoche.de
+favorit.de
 fli.bund.de
 flugmet.de
 flugmet.eu
@@ -1697,6 +1725,7 @@ flugwetter.de
 flugwetter.eu
 foerdern-und-fordern.info
 fondsheimkinder.de
+fons-civitatis.de
 fuereinlebenswertesland.de
 fördern-und-fordern.info
 füreinlebenswertesland.de
@@ -1709,6 +1738,7 @@ generationpraktikum.de
 gesundheitswetter.eu
 gisc-offenbach.eu
 globalisierungsfonds.de
+government-site-builder.de
 gruan.org
 gsnmc.eu
 gute-arbeit-alleinerziehende.de
@@ -1734,6 +1764,8 @@ inqa-pflege.de
 inqa-produktion.de
 inqa-stress.de
 inqa.de
+isyfact-standards.de
+isyfact.de
 iud.bundeswehr.de
 jki.bund.de
 job-drei-null.de
@@ -1810,10 +1842,12 @@ ombudsrat.de
 ombudsrat.info
 ombudsrat.net
 ombudsrat.org
+orghandbuch.de
 pc-met.eu
 pcmet.com
 pcmet.de
 pei.de
+personalausweisportal.de
 pollenflugvorhersage.eu
 projekt-persoenliches-budget.de
 psyga-check.de
@@ -1822,6 +1856,7 @@ punktereform.de
 radwegdeutscheeinheit.de
 raps-benchmark.de
 rccra6.org
+registerfactory.de
 rentenpaket.de
 rentenreformpaket.de
 rki.de
@@ -1857,12 +1892,14 @@ sozialwahl2011.de
 tagderjobcenter.de
 technisches-referendariat.de
 teilzeit-info.de
+testa-de.net
 the-unseen.org
 tln-mobility.eu
 trivis.de
 umweltbundesamt.de
 un-behindertenrechtskonvention.de
 un-koordinierungsstelle.de
+und.de
 uniohneabi.de
 unsere-rente.com
 unsere-rente.info
@@ -1872,12 +1909,15 @@ unternehmensservice-demographie.de
 usd-portal.de
 uv-index.de
 uv-index.eu
+v-modell-xt.de
 vereint-fuer-gemeinsame-bildung.de
 vereint-für-gemeinsame-bildung.de
 vereintaktiv.de
 verfassungsschutz.de
 verkehrsminister.de
 verkehrsministerium.de
+verwaltungsmodernisierung.de
+verwaltungsservicezentrum.de
 vier-punkt-null.de
 vti.bund.de
 was-ist-gute-arbeit.de
@@ -1897,6 +1937,7 @@ zielvereinbarungsregister.de
 zivit.de
 zoll.de
 zukunftbreitband.de
+zuwes.de
 
 // German Municipalities
 aachen.de
@@ -3258,12 +3299,14 @@ tullverket.se
 undom.se
 ungdomsstyrelsen.se
 uniarts.se
+upphandlingsmyndigheten.se
 va-namnden.se
 val.se
 vardanalys.se
 vinnova.se
 vr.se
 vti.se
+y.lst.se
 yhmyndigheten.se
 
 // Swiss Cantons (Federal States)
@@ -4931,6 +4974,7 @@ odumgeorgia.com
 oxfordgeorgia.org
 peachcounty.net
 peachtree-city.org
+pearson-ga.com
 pembrokega.net
 pinelakega.com
 polkcountygeorgia.us
@@ -5940,6 +5984,7 @@ rppj.com
 ruston.org
 sbpg.net
 sjbparish.com
+springhillla.com
 state.lib.la.us
 stfrancisville.net
 stjamesla.com
@@ -7639,6 +7684,7 @@ shpnc.org
 smithfield-nc.com
 sosnc.com
 southernpines.net
+southernshores.org
 spindalenc.net
 spring-lake.org
 startsquad.org
@@ -8686,6 +8732,7 @@ poncatribe-ne.org
 portlions.net
 potawatomi.org
 powhatan.org
+prairieisland.org
 pueblodecochiti.org
 puyallup-tribe.com
 redding-rancheria.com
@@ -10377,6 +10424,7 @@ wesleyvilleborough.com
 west-chester.com
 westbradford.org
 westcaln.org
+westconshohockenboro.com
 westdeertownship.com
 westeastonborough.org
 westgroveborough.org
@@ -10534,6 +10582,7 @@ fortmillsc.org
 fountaininn.org
 gastonsc.org
 georgetowncountysc.org
+greatfallssc.net
 greenvillecounty.org
 hamptoncountysc.org
 hamptonsc.net
