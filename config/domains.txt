@@ -3131,6 +3131,9 @@ met.no
 mil.no
 nav.no
 
+// Spain Municipal
+madrid.es
+
 // Swedish Administrative Authorities
 aklagare.se
 arbetsformedlingen.se
