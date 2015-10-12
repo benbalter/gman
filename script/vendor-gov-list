@@ -2,4 +2,12 @@
 
 DATE=2015-03-15
 
-wget "https://raw.githubusercontent.com/GSA/data/gh-pages/dotgov-domains/$DATE-full.csv" -O config/vendor/dotgovs.csv
+mkdir tmp
+rm -Rf tmp/gsa-data
+
+git clone https://github.com/GSA/data tmp/gsa-data
+pattern="tmp/gsa-data/dotgov-domains/*-full.csv"
+files=( $pattern )
+cp "${files[@]:(-1)}" config/vendor/dotgovs.csv
+
+rm -Rf tmp/gsa-data
