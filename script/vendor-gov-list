@@ -11,7 +11,7 @@ rm -Rf tmp/gsa-data
 git clone https://github.com/GSA/data tmp/gsa-data
 pattern="tmp/gsa-data/dotgov-domains/*-full.csv"
 files=( $pattern )
-cp "${files[@]:(-1)}" config/vendor/dotgovs.csv
+cp -f "${files[@]:(-1)}" config/vendor/dotgovs.csv
 
 # Clean up
 rm -Rf tmp/gsa-data
