@@ -22,4 +22,6 @@ PublicSuffix::List.default.each do |rule|
   domains.push domain unless domain.nil? or domains.include? domain
 end
 
-Gman.import("non-us gov" => domains)
+# Note: We want to skip resolution here, because a domain like `gov.sv` may be
+# a valid TLD, not have any top-level sites, and we'd still want it listed
+Gman.import({"non-us gov" => domains}, :skip_resolve => true)

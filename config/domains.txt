@@ -2929,6 +2929,8 @@ gob.mx
 gob.pa
 gob.pe
 gob.pk
+gob.sv
+gob.ve
 gouv.bj
 gouv.ci
 gouv.fr
@@ -3062,6 +3064,7 @@ govt.nz
 gub.uy
 leg.br
 lg.jp
+mil.tr
 nic.in
 onroerenderfgoed.be
 
@@ -4183,6 +4186,7 @@ jeffco.us
 kitcarsoncounty.org
 lakewood.org
 littletongov.org
+metrodenvercfc.org
 metromayors.org
 minturn.org
 mountain-village.co.us
@@ -4322,6 +4326,7 @@ waterfordct.org
 watertownct.org
 west-hartford.com
 westbrookct.us
+weston-ct.com
 wethersfieldct.com
 willingtonct.org
 wiltonct.org

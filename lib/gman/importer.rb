@@ -90,14 +90,14 @@ class Gman
       @current ||= DomainList.current
     end
 
-    def import
+    def import(options={})
       logger.info "Current: #{Gman::DomainList.current.count} domains"
       logger.info "Adding: #{domains.count} domains"
 
       domains.list.each do |group, domains|
         domains.map!    { |domain| Gman.new(domain).to_s }
         domains.map!    { |domain| normalize_domain(domain) }
-        domains.select! { |domain| valid_domain?(domain) }
+        domains.select! { |domain| valid_domain?(domain, options) }
       end
 
       logger.info "Filtered to: #{domains.count} domains"
@@ -142,7 +142,7 @@ class Gman
 end
 
 class Gman
-  def self.import(hash)
-    Gman::Importer.new(hash).import
+  def self.import(hash, options={})
+    Gman::Importer.new(hash).import(options)
   end
 end
