@@ -1201,7 +1201,6 @@ village.hazelton.bc.ca
 village.longview.ab.ca
 village.memramcook.com
 village.merrickville-wolford.on.ca
-village.nobleford.ab.ca
 village.stantoine.nb.ca
 village.westport.on.ca
 villagecharlo.com
@@ -1451,7 +1450,6 @@ riigikogu.ee
 siseministeerium.ee
 sm.ee
 tja.ee
-valitus.ee
 vm.ee
 
 // Finland
@@ -2929,6 +2927,8 @@ gob.mx
 gob.pa
 gob.pe
 gob.pk
+gob.sv
+gob.ve
 gouv.bj
 gouv.ci
 gouv.fr
@@ -3062,6 +3062,7 @@ govt.nz
 gub.uy
 leg.br
 lg.jp
+mil.tr
 nic.in
 onroerenderfgoed.be
 
@@ -4183,6 +4184,7 @@ jeffco.us
 kitcarsoncounty.org
 lakewood.org
 littletongov.org
+metrodenvercfc.org
 metromayors.org
 minturn.org
 mountain-village.co.us
@@ -4192,7 +4194,6 @@ orchardcityco.org
 parachutecolorado.com
 parkco.us
 parkeronline.org
-peakcfc.com
 plattevillegov.org
 prowerscounty.net
 pueblo.org
@@ -4322,6 +4323,7 @@ waterfordct.org
 watertownct.org
 west-hartford.com
 westbrookct.us
+weston-ct.com
 wethersfieldct.com
 willingtonct.org
 wiltonct.org
@@ -5041,7 +5043,6 @@ adeliowa.org
 aftoniowa.com
 akronia.org
 altoona-iowa.com
-anitaiowa.com
 aplingtonia.com
 arnoldsparkcity.com
 baxter-iowa.com
@@ -7759,7 +7760,6 @@ wrightschool.org
 yadkinville.org
 
 // usagovND
-ashley-nd.com
 beulahnd.org
 bismarck.org
 bismarckairport.com
@@ -7839,7 +7839,6 @@ mcville.com
 medorand.com
 mercercountynd.com
 michigannd.com
-milnornd.com
 minnewaukan.com
 minotnd.org
 mohallndak.com
@@ -7869,7 +7868,6 @@ rutlandnd.com
 sargentnd.com
 sheridan.nd.us
 sherwoodnd.com
-sourisnd.com
 stanleynd.com
 stantonnd.com
 steelend.com
@@ -8154,7 +8152,6 @@ brigantinebeachnj.com
 brooklawn-nj.com
 brooklawn.us
 buenaboro.org
-buenavistatownship.org
 burlingtonnj.us
 butlerborough.com
 bwhnj.com
@@ -8736,7 +8733,6 @@ poncatribe-ne.org
 portlions.net
 potawatomi.org
 powhatan.org
-prairieisland.org
 pueblodecochiti.org
 puyallup-tribe.com
 redding-rancheria.com
@@ -8788,7 +8784,6 @@ accessesmeralda.com
 bcnv.org
 carson.org
 churchillcounty.org
-cityoffallon.org
 cityoffernley.org
 cityofhenderson.com
 cityofnorthlasvegas.com
@@ -9175,7 +9170,6 @@ suffernvillage.com
 sylvanbeachny.com
 syrgov.net
 taghkanic.org
-tannersvilleny.org
 tarrytowngov.com
 thurman-ny.com
 tiogacountyny.com
@@ -9396,7 +9390,6 @@ townofwheatland.org
 townofwillsboro.com
 townofwilmington.org
 townofwilton.com
-townofwindham.com
 townofwoodbury.com
 townverona.org
 townwalworthny.com
@@ -9425,7 +9418,6 @@ villageofbarneveld.org
 villageofbath.org
 villageofbergen.com
 villageofbridgewater.org
-villageofbrocton.com
 villageofbronxville.com
 villageofbuchanan.com
 villageofcapevincent.org
@@ -10277,7 +10269,6 @@ paehealth.com
 palmertonborough.com
 palmertwp.com
 paradisetownship.com
-parkercity.org
 parkesburg.org
 parksideboro.com
 patientsafetyauthority.org
@@ -10590,7 +10581,6 @@ greatfallssc.net
 greenvillecounty.org
 hamptoncountysc.org
 hamptonsc.net
-hartsvillesc.com
 horrycounty.org
 iop.net
 jamesislandsc.us
@@ -10622,7 +10612,6 @@ patriotspoint.org
 port-of-charleston.com
 portroyal.org
 prosperitysc.com
-richburgsc.net
 richlandonline.com
 ridgespringsc.com
 santeecooper.com
@@ -10666,12 +10655,10 @@ townofbriarcliffe.us
 townofcampobello.com
 townofedistobeach.com
 townofgraycourt.net
-townofheathsprings.org
 townofhollywood.org
 townofhoneapath.com
 townofirmosc.com
 townofiva.com
-townofjamesislandsc.org
 townofkershaw.net
 townofmcclellanville-sc.net
 townofmccormicksc.org
@@ -11433,7 +11420,6 @@ yesvirginia.org
 
 // usagovVI
 gov.vi
-governordejongh.com
 legvi.org
 nationalarchives.gov.vg
 usviber.org
