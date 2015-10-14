@@ -15,7 +15,7 @@ class Gman
     end
 
     def domains
-      list.values.flatten
+      list.values.flatten.sort.uniq
     end
 
     def count

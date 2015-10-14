@@ -81,7 +81,9 @@ class Gman
       true
     end
 
+    # if RECONCILING=true, return the reason, rather than a bool and silence log output
     def reject(domain, reason)
+      return reason if ENV["RECONCILING"]
       logger.info "👎 `#{domain}`: #{reason}"
       false
     end
