@@ -3066,6 +3066,7 @@ govt.nz
 gub.uy
 leg.br
 lg.jp
+mairie-nanterre.fr
 mil.tr
 nic.in
 onroerenderfgoed.be
