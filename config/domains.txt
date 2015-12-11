@@ -176,7 +176,6 @@ cityofdawson.ca
 cityofenderby.com
 cityofflinflon.ca
 cityofgp.com
-cityofhumboldt.ca
 cityofkingston.ca
 cityoflangford.ca
 cityofmelfort.ca
@@ -296,7 +295,6 @@ elkhorn.mb.ca
 elkpoint.ca
 emo.ca
 enniskillen.ca
-enterprise.lgant.ca
 eriksdale.com
 erin.ca
 esquimalt.ca
@@ -608,7 +606,6 @@ munmilan.qc.ca
 munstdenis.com
 munstratford.qc.ca
 mycallander.ca
-myrnam.info
 nackawic.com
 nakusp.com
 nalgonawil.com
@@ -1161,7 +1158,6 @@ trinitybaynorth.com
 truro.ca
 tsawwassenfirstnation.com
 tudorandcashel.com
-tumblerridge.ca
 turnervalley.ca
 twp.beckwith.on.ca
 twp.seguin.on.ca
@@ -1215,7 +1211,6 @@ villageofconquest.ca
 villageofdorintosh.sasktelwebsite.net
 villageofduchess.com
 villageofedberg.com
-villageoffrontier.com
 villageofgagetown.ca
 villageofgoldriver.ca
 villageofgrandmanan.com
@@ -1726,7 +1721,6 @@ flugwetter-beratung.de
 flugwetter.de
 flugwetter.eu
 foerdern-und-fordern.info
-fondsheimkinder.de
 fons-civitatis.de
 fuereinlebenswertesland.de
 fördern-und-fordern.info
@@ -3320,7 +3314,6 @@ vardanalys.se
 vinnova.se
 vr.se
 vti.se
-y.lst.se
 yhmyndigheten.se
 
 // Swiss Cantons (Federal States)
@@ -3360,7 +3353,6 @@ cfcgreaternc.org
 cfclouisville.org
 cfcmidsouth.org
 cfcnca.org
-cfcnorthtexas.org
 cfcofthecsra.org
 cfcredrivervalley.org
 cfcshr.org
@@ -4297,7 +4289,6 @@ norfolkct.org
 norwalkct.org
 norwichct.org
 oldsaybrookct.org
-oxford-ct.com
 plainfieldct.org
 plainvillect.com
 plymouthct.us
@@ -4392,7 +4383,6 @@ afreserve.com
 afthunderbirds.com
 agfirst.com
 agribank.com
-airdefenseartillery.com
 airforce.com
 airspacemag.com
 ajb.org
@@ -5488,7 +5478,6 @@ rigov.org
 riverwoods-il.net
 roanokeil.org
 rochesteril.org
-rockdale-il.com
 rockfalls61071.com
 rockislandcounty.org
 rocktonvillage.com
@@ -5780,7 +5769,6 @@ olatheks.org
 opkansas.org
 osagecity.com
 osageco.org
-osawatomieks.org
 osbckansas.org
 osbornecounty.org
 ottawacounty.org
@@ -5947,7 +5935,6 @@ hammond.org
 iberiaparishgovernment.com
 iowala.org
 jeffparish.net
-la-kidmed.com
 labenfa.com
 labmt.org
 labp.com
@@ -6198,7 +6185,6 @@ hyattsville.org
 keedysvillemd.com
 kentcounty.com
 laytonsville.md.us
-manchestermd.org
 martinsadditions.org
 marylandtaxes.com
 md511.org
@@ -6239,7 +6225,6 @@ thurmont.com
 town-eastonmd.com
 townofbetterton.com
 townofbladensburg.com
-townofbrentwood-md.us
 townofbrookevillemd.org
 townofcentreville.org
 townofchevychase.org
@@ -6905,7 +6890,6 @@ northerntownship.com
 northmankato.com
 nwrdc.org
 oronoco.com
-oronocotownship.com
 oxfordtownship.us
 parkersprairie.net
 paulbunyan.net
@@ -7696,7 +7680,6 @@ ncwise.org
 ncwiseowl.org
 nczoo.org
 newbern-nc.org
-newhirereporting.com
 nhcgov.com
 north-wilkesboro.com
 northamptonnc.com
@@ -7939,7 +7922,6 @@ wellscountynd.com
 westfargo.org
 williamsnd.com
 willistonnd.com
-wiltonnd.org
 wingnd.com
 wishek-nd.com
 wrtc.com
@@ -8411,7 +8393,6 @@ metuchennj.org
 middletownnj.org
 middletownship.com
 milford-nj.us
-milfordnj.org
 millstone.nj.us
 millstoneboro.org
 milltownnj.org
@@ -8436,7 +8417,6 @@ mountephraim-nj.com
 mountholly.info
 mountlaurel.com
 mountolivetownship.com
-mpnj.com
 mtnj.org
 mtnlakes.org
 mtolivetwp.org
@@ -9113,7 +9093,6 @@ northelba.org
 northhempstead.com
 northhornell.com
 northsalemny.org
-northsyracuse.org
 northtonawanda.org
 norwichnewyork.net
 norwoodny.org
@@ -10144,7 +10123,6 @@ clintoncountypa.com
 coatesville.org
 colliertownship.net
 columbiapa.org
-conewagotwpadamsco.us
 conshohockenpa.org
 coolbaughtwp.org
 coplayborough.org
@@ -10346,7 +10324,6 @@ pacast.com
 pacouncilonthearts.org
 pacourts.us
 padmv.org
-paehealth.com
 pafirstnet.com
 palmertonborough.com
 palmertwp.com
@@ -10513,7 +10490,6 @@ westmanchestertownship.com
 westnorritontwp.org
 westpikeland.com
 westtownpa.org
-westviewborough.com
 westviewborough.org
 westvincenttwp.org
 wgoshen.org
