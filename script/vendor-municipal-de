@@ -5,9 +5,9 @@ require 'open-uri'
 require './lib/gman'
 require './lib/gman/importer'
 
-url = "http://www.mik.nrw.de/nc/themen-aufgaben/kommunales/kommunale-adressen.html?tx_szkommunaldb_pi1%5Bexport%5D=csv"
+url = 'http://www.mik.nrw.de/nc/themen-aufgaben/kommunales/kommunale-adressen.html?tx_szkommunaldb_pi1%5Bexport%5D=csv'
 
-csv = open(url).read.force_encoding("iso-8859-1").encode("UTF-8")
+csv = open(url).read.force_encoding('iso-8859-1').encode('UTF-8')
 
 # For some reason, the header row is actually the last row
 # Pop the last line off the file and prepend it at the begining
@@ -17,7 +17,7 @@ lines.unshift lines.pop
 csv = lines.join("\n")
 
 # Load municipal domains
-data = CSV.parse(csv, :headers => true, :col_sep => ";")
-domains = data.map { |row| row["Internet"] }
+data = CSV.parse(csv, headers: true, col_sep: ';')
+domains = data.map { |row| row['Internet'] }
 
-Gman.import("German Municipalities" => domains)
+Gman.import('German Municipalities' => domains)

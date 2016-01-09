@@ -3,8 +3,8 @@
 
 require 'fileutils'
 
-FileUtils.rm_rf("almanak.overheid.nl")
+FileUtils.rm_rf('almanak.overheid.nl')
 domains = `wget -q -r -nc -np https://almanak.overheid.nl/
 grep @ -rI almanak.overheid.nl/|cut -f 2 -d @|cut -f 1 -d '"'|grep \\.nl$|sort|uniq`
 
-Gman.import("Netherlands" => domains.split("\n"))
+Gman.import('Netherlands' => domains.split("\n"))

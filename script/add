@@ -7,11 +7,11 @@
 require './lib/gman/importer'
 
 if ARGV.length < 2
-  puts "Usage: script/add [GROUP] [DOMAIN(S)]"
+  puts 'Usage: script/add [GROUP] [DOMAIN(S)]'
   exit 1
 end
 
 group = ARGV[0]
 domains = ARGV.drop(1)
 
-Gman.import({ group => domains })
+Gman.import(group => domains)

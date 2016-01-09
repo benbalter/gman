@@ -7,7 +7,7 @@ require './lib/gman/importer'
 
 current = Gman::DomainList.current
 
-puts "Checking for duplicate domains in the domain list..."
+puts 'Checking for duplicate domains in the domain list...'
 puts "Current list contains #{current.count} domains..."
 
 dupe = current.count - current.domains.uniq.count
@@ -16,6 +16,6 @@ exit 0 if dupe == 0
 
 dupes = current.domains.select { |domain| current.domains.count(domain) > 1 }
 
-puts "Duplicate domains:"
+puts 'Duplicate domains:'
 puts dupes
 exit 1

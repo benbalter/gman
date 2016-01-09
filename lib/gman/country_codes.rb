@@ -1,21 +1,20 @@
 class Gman
-
   # Map last part of TLD to alpha2 country code
   ALPHA2_MAP = {
-    :ac     => 'sh',
-    :uk     => 'gb',
-    :su     => 'ru',
-    :tp     => 'tl',
-    :yu     => 'rs',
-    :gov    => "us",
-    :mil    => "us",
-    :org    => "us",
-    :com    => "us",
-    :net    => "us",
-    :edu    => "us",
-    :travel => "us",
-    :info   => "us"
-  }
+    ac: 'sh',
+    uk: 'gb',
+    su: 'ru',
+    tp: 'tl',
+    yu: 'rs',
+    gov: 'us',
+    mil: 'us',
+    org: 'us',
+    com: 'us',
+    net: 'us',
+    edu: 'us',
+    travel: 'us',
+    info: 'us'
+  }.freeze
 
   # Returns the two character alpha county code represented by the domain
   #

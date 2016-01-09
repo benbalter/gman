@@ -8,32 +8,32 @@
 require './lib/gman/importer'
 require 'yaml'
 
-ENV["RECONCILING"] = "true"
-blacklist = ["usagovQUASI"]
-source = "https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt"
+ENV['RECONCILING'] = 'true'
+blacklist = ['usagovQUASI']
+source = 'https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt'
 
 data = open(source).read
-data = data.split("__________________________________________________________________________")
+data = data.split('__________________________________________________________________________')
 data = data.last.strip
-data = data.split(/\r?\n/).reject { |r| r.empty? }
+data = data.split(/\r?\n/).reject(&:empty?)
 
 domains = {}
-group = ""
+group = ''
 data.each do |row|
   if row =~ /^\w/
     group = row
     domains[group] = []
   else
-    domains[group].push row.sub("\.\t", "").strip
+    domains[group].push row.sub("\.\t", '').strip
   end
 end
 
-domains.reject! { |group,domain| blacklist.include?(group) }
+domains.reject! { |group, _domain| blacklist.include?(group) }
 importer = Gman::Importer.new(domains)
 
 importer.logger.info "Starting with #{importer.domains.count} domains"
 
-importer.domains.list.each do |group, domains|
+importer.domains.list.each do |_group, domains|
   domains.map! { |domain| Gman.new(domain).to_s }
   domains.map! { |domain| importer.normalize_domain(domain) }
 end
@@ -46,19 +46,19 @@ importer.domains.list.each do |group, usagovdomains|
   missing[group] = importer.current.list[group] - usagovdomains
 end
 
-missing.reject! { |key, value| value.empty? }
+missing.reject! { |_key, value| value.empty? }
 
 importer.logger.info "Found #{missing.values.count} domains not on the USA.gov list"
 puts "Here's the list of missing domains:"
 puts YAML.dump(missing)
 
 domains = importer.domains.domains
-domains = domains.group_by { |domain| importer.valid_domain?(domain, :skip_dupe => true) }
+domains = domains.group_by { |domain| importer.valid_domain?(domain, skip_dupe: true) }
 domains.delete(true)
 domains.delete(false)
-domains.delete("locality")
+domains.delete('locality')
 
 importer.logger.info "Calling out #{domains.values.flatten.count} rejected domains"
 
-puts "Here are the rejected domains and why they were rejected (excluding locality regexs):"
+puts 'Here are the rejected domains and why they were rejected (excluding locality regexs):'
 puts YAML.dump(domains)

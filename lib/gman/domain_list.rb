@@ -1,13 +1,12 @@
 class Gman
   class DomainList
-
     attr_accessor :list
-    alias_method :to_h, :list
+    alias to_h list
 
     COMMENT_REGEX = /\/\/[\/\s]*(.*)$/i
 
     def initialize(list)
-      @list = list.reject { |group, domains| domains.compact.empty? }
+      @list = list.reject { |_group, domains| domains.compact.empty? }
     end
 
     def groups
@@ -23,8 +22,8 @@ class Gman
     end
 
     def alphabetize
-      @list = @list.sort_by { |k,v| k.downcase }.to_h
-      @list.each { |group, domains| domains.sort!.uniq! }
+      @list = @list.sort_by { |k, _v| k.downcase }.to_h
+      @list.each { |_group, domains| domains.sort!.uniq! }
     end
 
     def write
@@ -32,9 +31,9 @@ class Gman
     end
 
     def to_public_suffix
-      current_group = ""
-      output = ""
-      list.sort_by { |group, domains| group.downcase }.each do |group, domains|
+      current_group = ''
+      output = ''
+      list.sort_by { |group, _domains| group.downcase }.each do |group, domains|
         if group != current_group
           output << "\n\n" unless current_group.empty? # first entry
           output << "// #{group}\n"
@@ -46,7 +45,7 @@ class Gman
     end
 
     def self.current
-      current = File.open(Gman::list_path).read
+      current = File.open(Gman.list_path).read
       DomainList.from_public_suffix(current)
     end
 
@@ -61,7 +60,7 @@ class Gman
     # Given an array of comments/domains in public suffix format
     # Converts to a hash in the form of :group => [domain1, domain2...]
     def self.array_to_hash(domains)
-      group = ""
+      group = ''
       domain_hash = {}
       domains.each do |line|
         next if line.empty?

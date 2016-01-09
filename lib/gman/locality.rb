@@ -1,6 +1,5 @@
 class Gman
-
-  LOCALITY_REGEX = %r{
+  LOCALITY_REGEX = /
     (
       (state|dst|cog)
     |
@@ -8,7 +7,7 @@ class Gman
     )
     \.(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|ri|sc|sd|tn|tx|um|ut|va|vt|wa|wi|wv|wy)
     \.us
-     }x
+     /x
 
   # Second level .us domains for states and locality
   # See http://en.wikipedia.org/wiki/.us

@@ -4,8 +4,8 @@
 #
 # usage: script/alphabetize
 
-require_relative "../lib/gman"
-require_relative "../lib/gman/importer"
+require_relative '../lib/gman'
+require_relative '../lib/gman/importer'
 
 current = Gman::DomainList.current
 current.alphabetize

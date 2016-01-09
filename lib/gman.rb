@@ -9,27 +9,26 @@ require_relative 'gman/identifier'
 require_relative 'gman/sanctions'
 
 class Gman
-
   include NaughtyOrNice
 
   class << self
     # returns an instance of our custom public suffix list
     # list behaves like PublicSuffix::List but is limited to our whitelisted domains
     def list
-      @@list ||= PublicSuffix::List::parse(list_contents)
+      @@list ||= PublicSuffix::List.parse(list_contents)
     end
 
     def config_path
-      File.join(File.dirname(__FILE__), "../config")
+      File.join(File.dirname(__FILE__), '../config')
     end
 
     # Returns the absolute path to the domain list
     def list_path
-      File.join(config_path,"domains.txt")
+      File.join(config_path, 'domains.txt')
     end
 
     def list_contents
-      @@list_contents ||= File.new(list_path, "r:utf-8").read
+      @@list_contents ||= File.new(list_path, 'r:utf-8').read
     end
   end
 
@@ -44,7 +43,7 @@ class Gman
       return false unless domain && domain.valid?
 
       # Ensure non-edu
-      return false if Swot::is_academic?(domain)
+      return false if Swot.is_academic?(domain)
 
       # Check for locality by regex
       return true if locality?

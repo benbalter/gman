@@ -1,7 +1,7 @@
 #! /usr/bin/env ruby
 # Given a domain-link string, returns information about the domain
 
-require_relative "../lib/gman"
+require_relative '../lib/gman'
 
 # Convenience method to simplify the command-line logic
 class IsoCountryCodes
@@ -14,11 +14,12 @@ end
 
 domain = ARGV[0]
 
-if ARGV.last == "--no-color"
+if ARGV.last == '--no-color'
   class String
     def red
       self
     end
+
     def green
       self
     end
@@ -27,8 +28,8 @@ else
   require 'colored'
 end
 
-if domain.to_s.empty? || domain == "--no-color"
-  puts "USAGE: gman <domain or email address> [--no-color]".red
+if domain.to_s.empty? || domain == '--no-color'
+  puts 'USAGE: gman <domain or email address> [--no-color]'.red
   exit 1
 end
 
@@ -37,20 +38,20 @@ gman = Gman.new(domain)
 puts "Domain  : #{gman.domain}"
 
 if gman.domain.nil?
-  puts "Status  : " + "Invalid domain".red
+  puts 'Status  : ' + 'Invalid domain'.red
   exit 1
 end
 
-if !gman.valid?
-  puts "Status  : " + "Not a government domain".red
+unless gman.valid?
+  puts 'Status  : ' + 'Not a government domain'.red
   exit 1
 end
 
-puts "Status  : " + "Valid government domain".green
+puts 'Status  : ' + 'Valid government domain'.green
 
-["type", "country", "state", "city", "agency"].each do |key|
+%w(type country state city agency).each do |key|
   value = gman.send(key)
   puts "#{key.capitalize.ljust(8)}: #{value}" if value
 end
 
-puts "SANCTIONED NATION".red if gman.sanctioned?
+puts 'SANCTIONED NATION'.red if gman.sanctioned?
