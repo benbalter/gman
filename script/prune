@@ -1,4 +1,4 @@
-#! /usr/bin/env ruby
+#!/usr/bin/env ruby
 # Given an array of domains, removes them from the list
 # Example usage: script/prune foo.invalid, bar.invalid, foo.bar.invalid
 
@@ -12,7 +12,7 @@ list = File.open('./config/domains.txt').read
 puts "Starting list: #{Gman::DomainList.current.count} domains"
 
 domains.each do |domain|
-  list.gsub! /^#{domain}$\n/, ''
+  list.gsub!(/^#{domain}$\n/, '')
 end
 
 puts "Ending list: #{Gman::DomainList.current.count} domains"

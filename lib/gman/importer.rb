@@ -1,4 +1,4 @@
-# Utility functions for parsing and manipulating public-suffix formatted domain lists
+# Utility functions for parsing and manipulating public-suffix domain lists
 # Only used in development and not loaded by default
 require 'yaml'
 require 'open-uri'
@@ -49,6 +49,7 @@ class Gman
     end
 
     def normalize_domain(domain)
+      domain = Gman.new(domain).to_s
       domain.to_s.downcase.strip.gsub(/^www./, '').gsub(/\/$/, '')
     end
 
@@ -66,7 +67,7 @@ class Gman
       return reject(domain, 'tripod.com')      if domain =~ /tripod\.com$/
       return reject(domain, 'squarespace.com') if domain =~ /squarespace\.com$/
       return reject(domain, 'github.io')       if domain =~ /github\.io$/
-      return reject(domain, 'locality')        if domain =~ Gman::LOCALITY_REGEX
+      return reject(domain, 'locality')        if domain =~ Gman::Locality::REGEX
       return reject(domain, 'blacklist')       if BLACKLIST.include?(domain)
       return reject(domain, 'duplicate')       if !options[:skip_dupe] && current.domains.include?(domain)
       return reject(domain, 'invalid')         unless PublicSuffix.valid?(".#{domain}")
@@ -80,7 +81,8 @@ class Gman
       true
     end
 
-    # if RECONCILING=true, return the reason, rather than a bool and silence log output
+    # if RECONCILING=true, return the reason,
+    # rather than a bool and silence log output
     def reject(domain, reason)
       return reason if ENV['RECONCILING']
       logger.info "👎 `#{domain}`: #{reason}"
@@ -91,53 +93,65 @@ class Gman
       @current ||= DomainList.current
     end
 
-    def import(options = {})
+    def import(options)
       logger.info "Current: #{Gman::DomainList.current.count} domains"
       logger.info "Adding: #{domains.count} domains"
 
-      domains.list.each do |_group, domains|
-        domains.map!    { |domain| Gman.new(domain).to_s }
-        domains.map!    { |domain| normalize_domain(domain) }
-        domains.select! { |domain| valid_domain?(domain, options) }
-      end
-
-      logger.info "Filtered to: #{domains.count} domains"
+      normalize_domains!
+      ensure_validity!(options)
 
       if domains.count == 0
         logger.info 'Nothing to add. Aborting'
         exit 0
       end
 
-      domains.list.each do |group, domains|
-        current.list[group] = [] if current.list[group].nil?
-        current.list[group].concat domains
-        current.list[group].sort! # Alphabetize
-        current.list[group].uniq! # Ensure uniqueness
-      end
-
+      add_to_current
       logger.info "New: #{current.count} domains"
-
-      logger.info 'Writing to disk...'
-      current.write
-      logger.info 'Fin.'
     end
 
     def resolver
       @resolver ||= Resolv::DNS.new(nameserver: ['8.8.8.8', '8.8.4.4'])
     end
 
-    def resolve_without_errors
-      yield
+    # Verifies that the given domain has an MX record, and thus is valid
+    def domain_resolves?(domain)
+      domain = Addressable::URI.new(host: domain).normalize.host
+      ip? || returns_record?(domain, 'NS') || returns_record?(domain, 'MX')
+    end
+
+    private
+
+    def normalize_domains!
+      domains.list.each do |_group, domains|
+        domains.map! { |domain| normalize_domain(domain) }
+      end
+    end
+
+    def ensure_validity!(options = {})
+      domains.list.each do |_group, domains|
+        domains.select! { |domain| valid_domain?(domain, options) }
+      end
+    end
+
+    def add_to_current
+      domains.list.each do |group, domains|
+        current.list[group] ||= []
+        current.list[group].concat domains
+      end
+      current.write
+    end
+
+    def ip?(domain)
+      resolver.getaddress(domain)
     rescue Resolv::ResolvError
       false
     end
 
-    # Verifies that the given domain has an MX record, and thus is valid
-    def domain_resolves?(domain)
-      domain = Addressable::URI.new(host: domain).normalize.host
-      resolve_without_errors { resolver.getaddress(domain) } ||
-        resolve_without_errors { resolver.getresource(domain, Resolv::DNS::Resource::IN::NS) } ||
-        resolve_without_errors { resolver.getresource(domain, Resolv::DNS::Resource::IN::MX) }
+    def returns_record?(domain, type)
+      type = Object.const_get "Resolv::DNS::Resource::IN::#{type}"
+      resolver.getresource(domain, type)
+    rescue Resolv::ResolvError
+      false
     end
   end
 end

@@ -2,18 +2,25 @@ require File.expand_path './lib/gman/version', File.dirname(__FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'gman'
-  s.summary = 'Check if a given domain or email address belong to a governemnt entity'
-  s.description = 'A ruby gem to check if the owner of a given email address is working for THE MAN.'
+  s.summary = <<-EOF
+    Check if a given domain or email address belong to a governemnt entity
+  EOF
+  s.description = <<-EOF
+    A ruby gem to check if the owner of a given email address is working for
+    THE MAN.
+  EOF
   s.version = Gman::VERSION
   s.authors = ['Ben Balter']
   s.email = 'ben.balter@github.com'
   s.homepage = 'https://github.com/benbalter/gman'
   s.licenses = ['MIT']
 
-  s.files                 = `git ls-files`.split("\n")
-  s.test_files            = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.executables           = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
-  s.require_paths         = ['lib']
+  s.files         = `git ls-files`.split("\n")
+  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
+  s.executables   = `git ls-files -- bin/*`.split("\n").map do |f|
+    File.basename(f)
+  end
+  s.require_paths = ['lib']
 
   s.require_paths = ['lib']
   s.required_ruby_version = '~> 2.0'

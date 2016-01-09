@@ -94,7 +94,7 @@ class Gman
 
   def matches
     return @matches if defined? @matches
-    @matches = domain.to_s.match(LOCALITY_REGEX)
+    @matches = domain.to_s.match(Locality::REGEX)
   end
 
   def self.dotgov_list_path
@@ -107,6 +107,9 @@ class Gman
 
   def dotgov_listing
     return @dotgov_listing if defined? @dotgov_listing
-    @dotgov_listing = Gman.dotgov_list.find { |d| d['Domain Name'].casecmp("#{domain.sld}.gov") } if dotgov?
+    return unless dotgov?
+    @dotgov_listing = Gman.dotgov_list.find do |listing|
+      listing['Domain Name'].casecmp("#{domain.sld}.gov") == 0
+    end
   end
 end

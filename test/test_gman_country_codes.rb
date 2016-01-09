@@ -2,9 +2,13 @@ require File.join(File.dirname(__FILE__), 'helper')
 
 class TestGmanCountryCodes < Minitest::Test
   should "determine a domain's country" do
-    assert_equal 'United States of America', Gman.new('whitehouse.gov').country.name
+    name = Gman.new('whitehouse.gov').country.name
+    assert_equal 'United States of America', name
+
+    name = Gman.new('foo.gov.uk').country.name
+    assert_equal 'United Kingdom of Great Britain and Northern Ireland', name
+
     assert_equal 'United States of America', Gman.new('army.mil').country.name
-    assert_equal 'United Kingdom of Great Britain and Northern Ireland', Gman.new('foo.gov.uk').country.name
     assert_equal 'Canada', Gman.new('foo.gc.ca').country.name
   end
 

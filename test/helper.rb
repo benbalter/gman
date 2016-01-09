@@ -22,5 +22,5 @@ require_relative '../lib/gman/domain_list'
 require './lib/gman/importer'
 
 def test_bin(*args)
-  output, status = Open3.capture2e('bundle', 'exec', 'gman', *args)
+  Open3.capture2e('bundle', 'exec', 'gman', *args)
 end

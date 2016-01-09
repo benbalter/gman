@@ -16,7 +16,7 @@ blacklist = ['usagovQUASI']
 source = 'https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt'
 
 data = open(source).read
-data = data.split('__________________________________________________________________________')
+data = data.split('_' * 74)
 data = data.last.strip
 data = data.split(/\r?\n/).reject(&:empty?)
 
@@ -31,5 +31,5 @@ data.each do |row|
   end
 end
 
-domains.reject! { |group, _domain| blacklist.include?(group) }
+domains.reject! { |g, _| blacklist.include?(g) }
 Gman.import(domains)

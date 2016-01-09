@@ -27,6 +27,7 @@ class Gman
     end
 
     def write
+      sort!
       File.write(Gman.list_path, to_public_suffix)
     end
 
@@ -53,6 +54,14 @@ class Gman
       string = string.gsub(/\r\n?/, "\n").split("\n")
       hash = array_to_hash(string)
       DomainList.new(hash)
+    end
+
+    def sort!
+      list.each do |group, _domains|
+        list[group].sort!
+        list[group].uniq!
+      end
+      list.sort!
     end
 
     private

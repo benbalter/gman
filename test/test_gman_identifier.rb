@@ -81,7 +81,8 @@ class TestGmanIdentifier < Minitest::Test
     end
 
     should 'detect the list category' do
-      assert_equal 'US Federal', Gman.new('whitehouse.gov').send('list_category')
+      category = Gman.new('whitehouse.gov').send('list_category')
+      assert_equal 'US Federal', category
     end
   end
 

@@ -14,6 +14,8 @@ submit_button = form.buttons.find { |b| b.type == 'submit' }
 response = agent.submit(form, submit_button)
 
 rows = CSV.parse(response.content, headers: true, col_sep: "\t")
-domains = rows.map { |row| row['Webbadress'] unless row['Namn'] =~ /UNIVERSITET/ }
+domains = rows.map do |row|
+  row['Webbadress'] unless row['Namn'] =~ /UNIVERSITET/
+end
 
 Gman.import('Swedish Administrative Authorities' => domains)

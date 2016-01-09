@@ -15,8 +15,8 @@ PublicSuffix::List.default.each do |rule|
 
   if rule.parts.length == 1
     domain = rule.parts.first if ".#{rule.value}" =~ REGEX
-  else
-    domain = rule.parts.pop(2).join('.') if ".#{rule.value}" =~ REGEX
+  elsif ".#{rule.value}" =~ REGEX
+    domain = rule.parts.pop(2).join('.')
   end
 
   domains.push domain unless domain.nil? || domains.include?(domain)

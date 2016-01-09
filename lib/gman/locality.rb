@@ -1,13 +1,26 @@
 class Gman
-  LOCALITY_REGEX = /
-    (
-      (state|dst|cog)
-    |
-      (ci|co|borough|boro|city|county|parish|town|twp|vi|vil|village)\.[a-z-]+
-    )
-    \.(ak|al|ar|az|ca|co|ct|dc|de|fl|ga|hi|ia|id|il|in|ks|ky|la|ma|md|me|mi|mn|mo|ms|mt|nc|nd|ne|nh|nj|nm|nv|ny|oh|ok|or|pa|ri|sc|sd|tn|tx|um|ut|va|vt|wa|wi|wv|wy)
-    \.us
-     /x
+  class Locality
+    AFFINITY_NAMESPACES = %w(state dst cog).freeze
+
+    STATES = %w(
+      ak al ar az ca co ct dc de fl ga hi ia id il in ks ky
+      la ma md me mi mn mo ms mt nc nd ne nh nj nm nv ny oh
+      ok or pa ri sc sd tn tx um ut va vt wa wi wv wy
+    ).freeze
+
+    LOCALITY_DOMAINS = %w(
+      ci co borough boro city county
+      parish town twp vi vil village
+    ).freeze
+
+    REGEX = /
+      (
+        (#{Regexp.union(AFFINITY_NAMESPACES)})
+      |
+        (#{Regexp.union(LOCALITY_DOMAINS)})\.[a-z-]+
+      )\.(#{Regexp.union(STATES)})\.us
+    /x
+  end
 
   # Second level .us domains for states and locality
   # See http://en.wikipedia.org/wiki/.us
@@ -22,6 +35,6 @@ class Gman
   #  * k12.il.us
   #  * ci.foo.zx.us
   def locality?
-    !!(domain.to_s =~ LOCALITY_REGEX)
+    !domain.to_s.match(Locality::REGEX).nil?
   end
 end
