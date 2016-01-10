@@ -40,6 +40,22 @@ class Gman
       webpages.charter.net
     ).freeze
 
+    REGEX_CHECKS = {
+      'home. regex'     => /^home\./,
+      'user. regex'     => /^users?\./,
+      'sites. regex'    => /^sites?\./,
+      'weebly'          => /weebly\.com$/,
+      'wordpress'       => /wordpress\.com$/,
+      'govoffice'       => /govoffice\d?\.com$/,
+      'homestead'       => /homestead\.com$/,
+      'wix.com'         => /wix\.com$/,
+      'blogspot.com'    => /blogspot\.com$/,
+      'tripod.com'      => /tripod\.com$/,
+      'squarespace.com' => /squarespace\.com$/,
+      'github.io'       => /github\.io$/,
+      'locality'        => Gman::Locality::REGEX
+    }.freeze
+
     def initialize(domains)
       @domains = DomainList.new(domains)
     end
@@ -50,34 +66,13 @@ class Gman
 
     def normalize_domain(domain)
       domain = Gman.new(domain).to_s
-      domain.to_s.downcase.strip.gsub(/^www./, '').gsub(/\/$/, '')
+      domain.to_s.downcase.strip.gsub(/^www./, '').gsub(%r{/$}, '')
     end
 
     def valid_domain?(domain, options = {})
-      return false if domain.empty?
-      return reject(domain, 'home. regex')     if domain =~ /^home\./
-      return reject(domain, 'user. regex')     if domain =~ /^users?\./
-      return reject(domain, 'sites. regex')    if domain =~ /^sites?\./
-      return reject(domain, 'weebly')          if domain =~ /weebly\.com$/
-      return reject(domain, 'wordpress')       if domain =~ /wordpress\.com$/
-      return reject(domain, 'govoffice')       if domain =~ /govoffice\d?\.com$/
-      return reject(domain, 'homestead')       if domain =~ /homestead\.com$/
-      return reject(domain, 'wix.com')         if domain =~ /wix\.com$/
-      return reject(domain, 'blogspot.com')    if domain =~ /blogspot\.com$/
-      return reject(domain, 'tripod.com')      if domain =~ /tripod\.com$/
-      return reject(domain, 'squarespace.com') if domain =~ /squarespace\.com$/
-      return reject(domain, 'github.io')       if domain =~ /github\.io$/
-      return reject(domain, 'locality')        if domain =~ Gman::Locality::REGEX
-      return reject(domain, 'blacklist')       if BLACKLIST.include?(domain)
-      return reject(domain, 'duplicate')       if !options[:skip_dupe] && current.domains.include?(domain)
-      return reject(domain, 'invalid')         unless PublicSuffix.valid?(".#{domain}")
-      return reject(domain, 'academic')        if Swot.is_academic?(domain)
-
-      if !options[:skip_dupe] && subdomain = current.domains.find { |c| domain =~ /\.#{Regexp.escape(c)}$/ }
-        return reject(domain, "subdomain of #{subdomain}")
-      end
-
-      return reject(domain, 'unresolvable') if !options[:skip_resolve] && !domain_resolves?(domain)
+      return false unless ensure_valid(domain) && ensure_regex(domain)
+      return false if !options[:skip_dupe] && dupe?
+      return false if !options[:skip_resolve] && !ensure_resolve(domain)
       true
     end
 
@@ -120,6 +115,37 @@ class Gman
     end
 
     private
+
+    def ensure_regex(domain)
+      REGEX_CHECKS.each do |msg, regex|
+        return reject(domain, msg) if domain =~ regex
+      end
+      true
+    end
+
+    def ensure_valid(domain)
+      return false if domain.empty?
+      if BLACKLIST.include?(domain)
+        reject(domain, 'blacklist')
+      elsif !PublicSuffix.valid?(".#{domain}")
+        reject(domain, 'invalid')
+      elsif Swot.is_academic?(domain)
+        reject(domain, 'academic')
+      else
+        true
+      end
+    end
+
+    def ensure_resolves
+      return reject(domain, 'unresolvable') unless domain_resolves?(domain)
+      true
+    end
+
+    def dupe?(domain)
+      return reject(domain, 'duplicate') if current.domains.include?(domain)
+      parent = current.parent_domain(domain)
+      return reject(domain, "subdomain of #{parent}") if parent
+    end
 
     def normalize_domains!
       domains.list.each do |_group, domains|

@@ -73,22 +73,24 @@ class Gman
   end
 
   def district?
-    !!matches && matches[1] == 'dst'
+    matches && matches[1] == 'dst'
   end
 
   def cog?
-    !!matches && matches[1] == 'cog'
+    matches && matches[1] == 'cog'
   end
 
   private
 
   def list_category
     @list_category ||= begin
-      if match = Gman.list.find(domain.to_s)
-        regex = Regexp.new "\/\/ ([^\\n]+)\\n?[^\/\/]*\\n#{Regexp.escape(match.name)}\\n", 'im'
-        matches = Gman.list_contents.match(regex)
-        matches[1] if matches
-      end
+      match = Gman.list.find(domain.to_s)
+      return unless match
+      regex = %r{
+        // ([^\\n]+)\\n?[^\/\/]*\\n#{Regexp.escape(match.name)}\\n
+      }imx
+      matches = Gman.list_contents.match(regex)
+      matches[1] if matches
     end
   end
 
@@ -97,19 +99,23 @@ class Gman
     @matches = domain.to_s.match(Locality::REGEX)
   end
 
-  def self.dotgov_list_path
-    File.join Gman.config_path, 'vendor/dotgovs.csv'
-  end
-
-  def self.dotgov_list
-    @@dotgov_list ||= CSV.read(dotgov_list_path, headers: true)
-  end
-
   def dotgov_listing
     return @dotgov_listing if defined? @dotgov_listing
     return unless dotgov?
     @dotgov_listing = Gman.dotgov_list.find do |listing|
       listing['Domain Name'].casecmp("#{domain.sld}.gov") == 0
+    end
+  end
+
+  class << self
+    def dotgov_list
+      @dotgov_list ||= CSV.read(dotgov_list_path, headers: true)
+    end
+
+    private
+
+    def dotgov_list_path
+      File.join Gman.config_path, 'vendor/dotgovs.csv'
     end
   end
 end

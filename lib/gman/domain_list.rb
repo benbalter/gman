@@ -64,6 +64,10 @@ class Gman
       list.sort!
     end
 
+    def parent_domain(domain)
+      domains.find { |c| domain =~ /\.#{Regexp.escape(c)}$/ }
+    end
+
     private
 
     # Given an array of comments/domains in public suffix format
