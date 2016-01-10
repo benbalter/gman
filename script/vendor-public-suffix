@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 # Propagates an initial list of best-guess government domains
 
-require "public_suffix"
-require "yaml"
-require_relative "../lib/gman"
-require_relative "../lib/gman/importer"
+require 'public_suffix'
+require 'yaml'
+require_relative '../lib/gman'
+require_relative '../lib/gman/importer'
 
 # https://gist.github.com/benbalter/6147066
 REGEX = /(\.g[ou]{1,2}(v|b|vt)|\.mil|\.gc|\.fed)(\.[a-z]{2})?$/i
@@ -15,13 +15,13 @@ PublicSuffix::List.default.each do |rule|
 
   if rule.parts.length == 1
     domain = rule.parts.first if ".#{rule.value}" =~ REGEX
-  else
-    domain = rule.parts.pop(2).join(".") if ".#{rule.value}" =~ REGEX
+  elsif ".#{rule.value}" =~ REGEX
+    domain = rule.parts.pop(2).join('.')
   end
 
-  domains.push domain unless domain.nil? or domains.include? domain
+  domains.push domain unless domain.nil? || domains.include?(domain)
 end
 
 # Note: We want to skip resolution here, because a domain like `gov.sv` may be
 # a valid TLD, not have any top-level sites, and we'd still want it listed
-Gman.import({"non-us gov" => domains}, :skip_resolve => true)
+Gman.import({ 'non-us gov' => domains }, skip_resolve: true)

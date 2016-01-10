@@ -3,4 +3,5 @@
 set -ex
 
 bundle exec rake test
+bundle exec rubocop
 bundle exec script/dedupe

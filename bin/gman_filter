@@ -1,16 +1,16 @@
 #!/usr/bin/env ruby
-# Given a list of newline-separated email addresses, retain only government/military
+# Given a list of newline-separated email addresses, retain only government
 
-require "./lib/gman"
+require './lib/gman'
 
 # Auto-flush
 STDOUT.sync = true
 STDERR.sync = true
 
 ARGF.each do |line|
-    begin
-        puts line if Gman.valid?(line)
-    rescue
-        STDERR.write "Couldn't parse #{line}"
-    end
+  begin
+    puts line if Gman.valid?(line)
+  rescue
+    STDERR.write "Couldn't parse #{line}"
+  end
 end

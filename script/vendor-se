@@ -5,15 +5,17 @@ require 'csv'
 require './lib/gman'
 require './lib/gman/importer'
 
-url = "http://www.myndighetsregistret.scb.se/Myndighet.aspx"
+url = 'http://www.myndighetsregistret.scb.se/Myndighet.aspx'
 agent = Mechanize.new
 page = agent.get(url)
 form = page.forms.first
-form.radiobuttons.find { |r| r.value = "Textfil" }.check
-submit_button = form.buttons.find { |b| b.type == "submit" }
+form.radiobuttons.find { |r| r.value = 'Textfil' }.check
+submit_button = form.buttons.find { |b| b.type == 'submit' }
 response = agent.submit(form, submit_button)
 
-rows = CSV.parse(response.content, :headers => true, :col_sep => "\t")
-domains = rows.map { |row| row["Webbadress"] unless row["Namn"] =~ /UNIVERSITET/}
+rows = CSV.parse(response.content, headers: true, col_sep: "\t")
+domains = rows.map do |row|
+  row['Webbadress'] unless row['Namn'] =~ /UNIVERSITET/
+end
 
-Gman.import("Swedish Administrative Authorities" => domains)
+Gman.import('Swedish Administrative Authorities' => domains)

@@ -1,0 +1,19 @@
+AllCops:
+  TargetRubyVersion: 2.0
+  Exclude:
+    - config/**/*
+
+Style/AlignHash:
+  EnforcedHashRocketStyle: table
+  EnforcedColonStyle: table
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/AbcSize:
+  Exclude:
+    - lib/gman/importer.rb
+
+Metrics/ClassLength:
+  Exclude:
+    - lib/gman/importer.rb
