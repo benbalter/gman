@@ -70,7 +70,7 @@ class Gman
     end
 
     def valid_domain?(domain, options = {})
-      return false unless ensure_valid(domain) && ensure_regex(domain)
+      return false unless ensure_valid(domain)
       return false if !options[:skip_dupe] && dupe?
       return false if !options[:skip_resolve] && !ensure_resolve(domain)
       true
@@ -132,7 +132,7 @@ class Gman
       elsif Swot.is_academic?(domain)
         reject(domain, 'academic')
       else
-        true
+        ensure_regex(domain)
       end
     end
 

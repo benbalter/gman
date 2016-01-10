@@ -9,3 +9,11 @@ Style/AlignHash:
 
 Style/Documentation:
   Enabled: false
+
+Metrics/AbcSize:
+  Exclude:
+    - lib/gman/importer.rb
+
+Metrics/ClassLength:
+  Exclude:
+    - lib/gman/importer.rb
