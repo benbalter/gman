@@ -3,7 +3,7 @@ class Gman
     attr_accessor :list
     alias to_h list
 
-    COMMENT_REGEX = /\/\/[\/\s]*(.*)$/i
+    COMMENT_REGEX = %r{//[/\s]*(.*)$}i
 
     def initialize(list)
       @list = list.reject { |_group, domains| domains.compact.empty? }
@@ -32,8 +32,7 @@ class Gman
     end
 
     def to_public_suffix
-      current_group = ''
-      output = ''
+      current_group = output = ''
       list.sort_by { |group, _domains| group.downcase }.each do |group, domains|
         if group != current_group
           output << "\n\n" unless current_group.empty? # first entry
@@ -68,23 +67,29 @@ class Gman
       domains.find { |c| domain =~ /\.#{Regexp.escape(c)}$/ }
     end
 
-    private
+    class << self
+      private
 
-    # Given an array of comments/domains in public suffix format
-    # Converts to a hash in the form of :group => [domain1, domain2...]
-    def self.array_to_hash(domains)
-      group = ''
-      domain_hash = {}
-      domains.each do |line|
-        next if line.empty?
-        if match = COMMENT_REGEX.match(line)
-          group = match[1]
-        else
-          domain_hash[group] = [] if domain_hash[group].nil?
-          domain_hash[group].push line.downcase
+      # Given an array of comments/domains in public suffix format
+      # Converts to a hash in the form of :group => [domain1, domain2...]
+      def array_to_hash(domains)
+        domain_hash = {}
+        group = ''
+        domains.each do |line|
+          if line =~ COMMENT_REGEX
+            group = COMMENT_REGEX.match(line)[1]
+          else
+            safe_push(domain_hash, group, line.downcase)
+          end
         end
+        domain_hash
       end
-      domain_hash
+
+      def safe_push(hash, key, value)
+        return if value.empty?
+        hash[key] ||= []
+        hash[key].push value
+      end
     end
   end
 end

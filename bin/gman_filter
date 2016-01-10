@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# Given a list of newline-separated email addresses, retain only government/military
+# Given a list of newline-separated email addresses, retain only government
 
 require './lib/gman'
 

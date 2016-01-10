@@ -7,12 +7,5 @@ Style/AlignHash:
   EnforcedHashRocketStyle: table
   EnforcedColonStyle: table
 
-Style/FileName:
-  ExpectMatchingDefinition: true
-  Exclude:
-    - test/helper.rb
-    - script/*
-    - lib/gman/version.rb
-
 Style/Documentation:
   Enabled: false

@@ -1,20 +1,10 @@
 class Gman
   def type
-    if state?
-      :state
-    elsif district?
-      :district
-    elsif cog?
-      :cog
-    elsif city?
-      :city
-    elsif federal?
-      :federal
-    elsif county?
-      :county
-    elsif list_category.nil?
-      nil
-    elsif list_category.include?('usagov')
+    [:state, :district, :cog, :city, :federal, :county].each do |type|
+      return type if send "#{type}?"
+    end
+    return if list_category.nil?
+    if list_category.include?('usagov')
       :unknown
     else
       list_category.to_sym
@@ -86,9 +76,7 @@ class Gman
     @list_category ||= begin
       match = Gman.list.find(domain.to_s)
       return unless match
-      regex = %r{
-        // ([^\\n]+)\\n?[^\/\/]*\\n#{Regexp.escape(match.name)}\\n
-      }imx
+      regex = %r{// ([^\n]+)\n?[^/]*\n#{Regexp.escape(match.name)}\n}im
       matches = Gman.list_contents.match(regex)
       matches[1] if matches
     end
