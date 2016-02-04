@@ -3129,6 +3129,9 @@ mod.uk
 // non-us sub-divisions
 ega.or.th
 
+// Denmark
+skat.dk
+
 // Norway
 dep.no
 difi.no
