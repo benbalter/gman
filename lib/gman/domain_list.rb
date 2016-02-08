@@ -10,15 +10,15 @@ class Gman
     end
 
     def groups
-      @groups ||= list.keys
+      list.keys
     end
 
     def domains
-      @domains ||= list.values.flatten.compact.sort.uniq
+      list.values.flatten.compact.sort.uniq
     end
 
     def count
-      @count ||= domains.count
+      domains.count
     end
 
     def alphabetize

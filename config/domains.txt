@@ -5888,7 +5888,6 @@ userra.gov
 usgcrp.gov
 usgeo.gov
 usgovernment.gov
-usgovernmentmanual.gov
 usgs.gov
 ushmm.gov
 usich.gov
