@@ -71,7 +71,7 @@ class Gman
 
     def valid_domain?(domain, options = {})
       return false unless ensure_valid(domain)
-      return false if !options[:skip_dupe] && dupe?(domain)
+      return false if !options[:skip_dupe] && !ensure_not_dupe(domain)
       return false if !options[:skip_resolve] && !ensure_resolves(domain)
       true
     end
@@ -141,10 +141,18 @@ class Gman
       true
     end
 
+    def ensure_not_dupe(domain)
+      return true unless dupe?(domain)
+      if current.domains.include?(domain)
+        reject(domain, 'duplicate')
+      else
+        parent = current.parent_domain(domain)
+        reject(domain, "subdomain of #{parent}")
+      end
+    end
+
     def dupe?(domain)
-      return reject(domain, 'duplicate') if current.domains.include?(domain)
-      parent = current.parent_domain(domain)
-      return reject(domain, "subdomain of #{parent}") if parent
+      current.domains.include?(domain) || current.parent_domain(domain)
     end
 
     def normalize_domains!
