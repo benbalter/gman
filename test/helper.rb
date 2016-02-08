@@ -21,6 +21,14 @@ require_relative '../lib/gman/domain_list'
 
 require './lib/gman/importer'
 
+def bin_path(cmd = 'gman')
+  File.expand_path "../bin/#{cmd}", File.dirname(__FILE__)
+end
+
 def test_bin(*args)
-  Open3.capture2e('bundle', 'exec', 'gman', *args)
+  Open3.capture2e('bundle', 'exec', bin_path, *args)
+end
+
+def fixture_path(fixture)
+  File.expand_path "./fixtures/#{fixture}", File.dirname(__FILE__)
 end

@@ -39,4 +39,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency('mechanize', '~> 2.7')
   s.add_development_dependency('addressable', '~> 2.3')
   s.add_development_dependency('ruby-prof', '~> 0.15')
+  s.add_development_dependency('rubocop', '~> 0.37')
 end
