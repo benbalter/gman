@@ -254,7 +254,6 @@ dinosaurvalley.com
 discoverkl.ca
 discovermiddleton.ca
 discoverminnedosa.com
-discoverwinnipegosis.com
 district.kent.bc.ca
 district.mackenzie.bc.ca
 district.metchosin.bc.ca
@@ -766,7 +765,6 @@ rmofarmstrong.com
 rmofbeaverriver622.ca
 rmofblanshard.ca
 rmofdufferin.com
-rmofelton.ca
 rmoffisher.com
 rmofgrey.ca
 rmofharrison.com
@@ -1723,10 +1721,8 @@ flugmet.eu
 flugwetter-beratung.de
 flugwetter.de
 flugwetter.eu
-foerdern-und-fordern.info
 fons-civitatis.de
 fuereinlebenswertesland.de
-fördern-und-fordern.info
 füreinlebenswertesland.de
 gcos.de
 gda-psyche.de
@@ -3412,8 +3408,6 @@ d11nuscgaux.info
 fivecivilizedtribes.org
 fmyn.org
 glitc.org
-gulfofmexicoalliance.org
-havasupaifalls.net
 incog.org
 indianwatertrails.com
 ionemiwok.org
@@ -3680,9 +3674,7 @@ siloamsprings.com
 whitecountyar.org
 
 // usagovAS
-americansamoa.travel
 amsamoatourism.com
-asgteo.com
 doe.as
 
 // usagovAZ
@@ -6236,7 +6228,6 @@ townofcentreville.org
 townofchevychase.org
 townofdelmar.us
 townofgalena.com
-townofhampstead.us
 townofindianhead.org
 townoflaplata.org
 townofprincessanne.com
@@ -6451,7 +6442,6 @@ cannontwp.org
 canton-mi.org
 carocity.net
 cascadetwp.com
-cascostclair.org
 casscountymi.org
 cfcsemi.org
 cfcwesternmichigan.org
@@ -7347,7 +7337,6 @@ easthelenamt.us
 ennismontana.org
 falloncounty.net
 fortbenton.com
-froidmt.com
 greatfallsmt.net
 hardinmt.com
 hillcounty.us
@@ -7838,7 +7827,6 @@ formannd.com
 fostercounty.com
 garrisondiv.org
 glen-ullin.com
-glenburn.us
 graftongov.com
 grandforksgov.com
 grantcountynd.com
@@ -8424,7 +8412,6 @@ mountephraim-nj.com
 mountholly.info
 mountlaurel.com
 mountolivetownship.com
-mpnj.com
 mtnj.org
 mtnlakes.org
 mtolivetwp.org
@@ -9078,7 +9065,6 @@ matinecockvillage.org
 mayfieldny.org
 mbpo.org
 mechanicville.com
-middlefieldny.com
 middletown-ny.com
 mnr.org
 monroeny.org
@@ -9261,7 +9247,6 @@ townofboston.com
 townofbrighton.net
 townofbrighton.org
 townofbristol.org
-townofbroadalbin.org
 townofbrunswick.org
 townofbrutus.org
 townofbusti.com
@@ -9480,7 +9465,6 @@ villageofarcade.org
 villageofbarneveld.org
 villageofbath.org
 villageofbergen.com
-villageofbridgewater.org
 villageofbronxville.com
 villageofbuchanan.com
 villageofcapevincent.org
@@ -9809,7 +9793,6 @@ rossfordohio.com
 rrcity.com
 sandusky-county.com
 sciotocountyohio.com
-sebringohio.net.dnnmax.com
 sevenhillsohio.org
 shakeronline.com
 shawneehillsoh.com
@@ -11756,7 +11739,6 @@ east-wenatchee.com
 ephrata.org
 experiencewa.com
 ferry-county.com
-fhlbsea.com
 forkswashington.org
 fridayharbor.org
 garfieldwa.com
