@@ -71,8 +71,8 @@ class Gman
 
     def valid_domain?(domain, options = {})
       return false unless ensure_valid(domain)
-      return false if !options[:skip_dupe] && dupe?
-      return false if !options[:skip_resolve] && !ensure_resolve(domain)
+      return false if !options[:skip_dupe] && dupe?(domain)
+      return false if !options[:skip_resolve] && !ensure_resolves(domain)
       true
     end
 
@@ -111,7 +111,7 @@ class Gman
     # Verifies that the given domain has an MX record, and thus is valid
     def domain_resolves?(domain)
       domain = Addressable::URI.new(host: domain).normalize.host
-      ip? || returns_record?(domain, 'NS') || returns_record?(domain, 'MX')
+      ip?(domain) || returns_record?(domain, 'NS') || returns_record?(domain, 'MX')
     end
 
     private
@@ -136,7 +136,7 @@ class Gman
       end
     end
 
-    def ensure_resolves
+    def ensure_resolves(domain)
       return reject(domain, 'unresolvable') unless domain_resolves?(domain)
       true
     end
