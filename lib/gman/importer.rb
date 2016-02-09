@@ -53,6 +53,7 @@ class Gman
       'tripod.com'      => /tripod\.com$/,
       'squarespace.com' => /squarespace\.com$/,
       'github.io'       => /github\.io$/,
+      'tumblr'          => /tumblr\.com$/,
       'locality'        => Gman::Locality::REGEX
     }.freeze
 
