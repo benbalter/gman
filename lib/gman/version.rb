@@ -1,3 +1,3 @@
 class Gman
-  VERSION = '5.0.9'.freeze
+  VERSION = '6.0.0'.freeze
 end
