@@ -111,7 +111,8 @@ class Gman
     # Verifies that the given domain has an MX record, and thus is valid
     def domain_resolves?(domain)
       domain = Addressable::URI.new(host: domain).normalize.host
-      ip?(domain) || returns_record?(domain, 'NS') || returns_record?(domain, 'MX')
+      return true if ip?(domain)
+      returns_record?(domain, 'NS') || returns_record?(domain, 'MX')
     end
 
     private

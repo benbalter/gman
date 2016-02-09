@@ -53,4 +53,10 @@ class TestGman < Minitest::Test
   should 'returns the path to domains.txt' do
     assert_equal true, File.exist?(Gman.list_path)
   end
+
+  should 'stub domains when asked' do
+    with_env 'GMAN_STUB_DOMAINS', 'true' do
+      assert_equal fixture_path('domains.txt'), Gman.list_path
+    end
+  end
 end

@@ -5,6 +5,16 @@ class TestGManImporter < Minitest::Test
     @importer = Gman::Importer.new 'test' => ['example.com']
     @stdout = StringIO.new
     @importer.instance_variable_set '@logger', Logger.new(@stdout)
+
+    with_env 'GMAN_STUB_DOMAINS', 'true' do
+      @original_domain_list = File.open(Gman.list_path).read
+    end
+  end
+
+  def teardown
+    with_env 'GMAN_STUB_DOMAINS', 'true' do
+      File.write Gman.list_path, @original_domain_list
+    end
   end
 
   should 'init the domain list' do
@@ -25,9 +35,6 @@ class TestGManImporter < Minitest::Test
     assert_equal Resolv::DNS, @importer.resolver.class
   end
 
-  should 'import' do
-  end
-
   context 'domain rejection' do
     should 'return false for a rejected domain' do
       refute @importer.reject 'example.com', 'reasons'
@@ -41,13 +48,47 @@ class TestGManImporter < Minitest::Test
   end
 
   context 'manipulating the domain list' do
-    should 'normalize all domains within the domain list' do
+    should 'normalize domains within the domain list' do
+      importer = Gman::Importer.new 'test' => ['www.EXAMPLE.com/']
+      importer.send :normalize_domains!
+      assert_equal 'example.com', importer.domains.domains.first
     end
 
     should 'remove invalid domains from the domain list' do
+      importer = Gman::Importer.new 'test' => ['foo.github.io', 'example.com']
+      importer.instance_variable_set '@logger', Logger.new(@stdout)
+
+      assert_equal 2, importer.domains.domains.count
+      importer.send :ensure_validity!
+      assert_equal 1, importer.domains.domains.count
     end
 
-    should 'add domains to the current domain list' do
+    context 'writing the domain list' do
+      should 'add domains to the current domain list' do
+        with_env 'GMAN_STUB_DOMAINS', 'true' do
+          domains = { 'test' => ['example.com'], 'test2' => ['github.com'] }
+          importer = Gman::Importer.new domains
+          importer.send :add_to_current
+          expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
+          assert_equal expected, File.open(Gman.list_path).read
+        end
+      end
+
+      should 'import' do
+        with_env 'GMAN_STUB_DOMAINS', 'true' do
+          domains = {
+            'test'  => ['www.example.com', 'goo.github.io'],
+            'test2' => ['github.com', 'www.github.com', 'whitehouse.gov']
+          }
+
+          importer = Gman::Importer.new domains
+          importer.instance_variable_set '@logger', Logger.new(@stdout)
+          importer.import(skip_resolve: true)
+
+          expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
+          assert_equal expected, File.open(Gman.list_path).read
+        end
+      end
     end
   end
 
@@ -182,7 +223,8 @@ class TestGManImporter < Minitest::Test
 
   context 'normalizing domains' do
     should 'normalize URLs to domains' do
-      assert_equal 'example.com', @importer.normalize_domain('http://example.com')
+      expected = 'example.com'
+      assert_equal expected, @importer.normalize_domain('http://example.com')
     end
 
     should 'strip WWW' do
