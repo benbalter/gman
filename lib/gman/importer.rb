@@ -159,6 +159,7 @@ class Gman
     def normalize_domains!
       domains.list.each do |_group, domains|
         domains.map! { |domain| normalize_domain(domain) }
+        domains.uniq!
       end
     end
 
