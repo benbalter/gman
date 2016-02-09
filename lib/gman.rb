@@ -19,12 +19,16 @@ class Gman
     end
 
     def config_path
-      File.join(File.dirname(__FILE__), '../config')
+      File.expand_path '../config', File.dirname(__FILE__)
     end
 
     # Returns the absolute path to the domain list
     def list_path
-      File.join(config_path, 'domains.txt')
+      if ENV['GMAN_STUB_DOMAINS']
+        File.expand_path '../test/fixtures/domains.txt', File.dirname(__FILE__)
+      else
+        File.expand_path 'domains.txt', config_path
+      end
     end
 
     def list_contents
