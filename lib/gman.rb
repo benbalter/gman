@@ -6,20 +6,22 @@ require_relative 'gman/version'
 require_relative 'gman/country_codes'
 require_relative 'gman/locality'
 require_relative 'gman/identifier'
+require_relative 'gman/list_file'
 
 class Gman
   include NaughtyOrNice
 
   class << self
-    # returns an instance of our custom public suffix list
-    # list behaves like PublicSuffix::List
-    # but is limited to our whitelisted domains
     def list
-      @list ||= PublicSuffix::List.parse(list_contents)
+      @list ||= ListFile.new(list_path)
+    end
+
+    def academic_list
+      @academic_list ||= ListFile.new(academic_list_path)
     end
 
     def config_path
-      File.expand_path '../config', File.dirname(__FILE__)
+      @config_path ||= File.expand_path '../config', File.dirname(__FILE__)
     end
 
     # Returns the absolute path to the domain list
@@ -31,8 +33,8 @@ class Gman
       end
     end
 
-    def list_contents
-      @list_contents ||= File.new(list_path, 'r:utf-8').read
+    def academic_list_path
+      File.expand_path 'vendor/academic.txt', config_path
     end
   end
 
@@ -50,18 +52,14 @@ class Gman
   private
 
   def valid_domain?
-    domain && domain.valid? && !academic?
+    @valid_domains ||= domain && domain.valid? && !academic?
   end
 
   def academic?
-    domain && Swot.is_academic?(domain)
+    @academic ||= domain && Gman.academic_list.valid?(to_s)
   end
 
-  # domain is on the domain list and
-  # domain is not explicitly blacklisted and
-  # domain matches a standard public suffix list rule
   def public_suffix_valid?
-    rule = Gman.list.find(to_s)
-    !rule.nil? && rule.type != :exception && rule.allow?(".#{domain}")
+    @public_suffix_valid ||= Gman.list.valid?(to_s)
   end
 end
