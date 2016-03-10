@@ -3135,6 +3135,7 @@ kartverket.no
 met.no
 mil.no
 nav.no
+vegvesen.no
 
 // Spain Municipal
 madrid.es
