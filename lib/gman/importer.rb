@@ -71,8 +71,8 @@ class Gman
     end
 
     def valid_domain?(domain, options = {})
-      return false unless ensure_valid(domain)
       return false if !options[:skip_dupe] && !ensure_not_dupe(domain)
+      return false unless ensure_valid(domain)
       return false if !options[:skip_resolve] && !ensure_resolves(domain)
       true
     end
@@ -89,7 +89,7 @@ class Gman
       @current ||= DomainList.current
     end
 
-    def import(options)
+    def import(options={})
       logger.info "Current: #{Gman::DomainList.current.count} domains"
       logger.info "Adding: #{domain_list.count} domains"
 
@@ -190,11 +190,5 @@ class Gman
     rescue Resolv::ResolvError
       false
     end
-  end
-end
-
-class Gman
-  def self.import(hash, options = {})
-    Gman::Importer.new(hash).import(options)
   end
 end
