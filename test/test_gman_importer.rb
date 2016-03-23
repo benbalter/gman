@@ -18,9 +18,9 @@ class TestGManImporter < Minitest::Test
   end
 
   should 'init the domain list' do
-    assert_equal Gman::DomainList, @importer.domains.class
-    assert_equal 1, @importer.domains.domains.count
-    assert_equal 'example.com', @importer.domains.domains.first
+    assert_equal Gman::DomainList, @importer.domain_list.class
+    assert_equal 1, @importer.domain_list.count
+    assert_equal 'example.com', @importer.domain_list.domains.first
   end
 
   should 'init the logger' do
@@ -51,16 +51,16 @@ class TestGManImporter < Minitest::Test
     should 'normalize domains within the domain list' do
       importer = Gman::Importer.new 'test' => ['www.EXAMPLE.com/']
       importer.send :normalize_domains!
-      assert_equal 'example.com', importer.domains.domains.first
+      assert_equal 'example.com', importer.domain_list.domains.first
     end
 
     should 'remove invalid domains from the domain list' do
       importer = Gman::Importer.new 'test' => ['foo.github.io', 'example.com']
       importer.instance_variable_set '@logger', Logger.new(@stdout)
 
-      assert_equal 2, importer.domains.domains.count
+      assert_equal 2, importer.domain_list.count
       importer.send :ensure_validity!
-      assert_equal 1, importer.domains.domains.count
+      assert_equal 1, importer.domain_list.count
     end
 
     context 'writing the domain list' do

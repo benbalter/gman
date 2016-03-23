@@ -1,23 +1,27 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+
 require 'naughty_or_nice'
 require 'swot'
 require 'iso_country_codes'
 require 'csv'
 require_relative 'gman/version'
 require_relative 'gman/country_codes'
-require_relative 'gman/locality'
 require_relative 'gman/identifier'
-require_relative 'gman/list_file'
 
 class Gman
   include NaughtyOrNice
 
+  autoload :DomainList, "gman/domain_list"
+  autoload :Importer,   "gman/importer"
+  autoload :Locality,   "gman/locality"
+
   class << self
     def list
-      @list ||= ListFile.new(list_path)
+      @list ||= DomainList.new(path: list_path)
     end
 
     def academic_list
-      @academic_list ||= ListFile.new(academic_list_path)
+      @academic_list ||= DomainList.new(path: academic_list_path)
     end
 
     def config_path
@@ -47,6 +51,10 @@ class Gman
       return false if academic?
       locality? || public_suffix_valid?
     end
+  end
+
+  def locality?
+    Locality.valid?(domain)
   end
 
   private

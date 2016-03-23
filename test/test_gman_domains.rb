@@ -20,7 +20,7 @@ class TestGmanDomains < Minitest::Test
     end
 
     invalid = []
-    list = Gman::DomainList.current.list
+    list = Gman.list.to_h
     Parallel.each(list, in_threads: 2) do |group, domains|
       next if WHITELIST.include?(group)
       invalid.push domains.reject { |domain|

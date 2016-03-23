@@ -1,39 +1,99 @@
 class Gman
   class DomainList
-    attr_accessor :list
-    alias to_h list
 
     COMMENT_REGEX = %r{//[/\s]*(.*)$}i
 
-    def initialize(list)
-      @list = list.reject { |_group, domains| domains.compact.empty? }
+    class << self
+      # The current, government domain list
+      def current
+        DomainList.new(path: Gman.list_path)
+      end
+
+      def from_file(path)
+        DomainList.new(path: path)
+      end
+
+      def from_hash(hash)
+        DomainList.new(data: hash)
+      end
+
+      def from_public_suffix(string)
+        DomainList.new(contents: string)
+      end
+      alias_method :from_string, :from_public_suffix
     end
 
+    def initialize(path: nil, contents: nil, data: nil)
+      @path     = path
+      @contents = contents
+      @data     = data.reject { |_, domains| domains.compact.empty? } if data
+    end
+
+    # Returns the raw content of the domain list as a string
+    def contents
+      @contents ||= begin
+        File.new(path, 'r:utf-8').read if path
+      end
+    end
+
+    # Returns the parsed contents of the domain list as a hash
+    # in the form for group => domains
+    def data
+      @data ||= string_to_hash(contents)
+    end
+    alias_method :to_h, :data
+
+    # Returns the path to the domain list on disk
+    def path
+      @path ||= Gman.list_path
+    end
+
+    # returns an instance of our custom public suffix list
+    # list behaves like PublicSuffix::List
+    # but is limited to our whitelisted domains
+    def public_suffix_list
+      @public_suffix_list ||= PublicSuffix::List.parse(contents)
+    end
+
+    # domain is on the domain list and
+    # domain is not explicitly blacklisted and
+    # domain matches a standard public suffix list rule
+    def valid?(domain)
+      rule = public_suffix_list.find(domain)
+      !rule.nil? && rule.type != :exception && rule.allow?(".#{domain}")
+    end
+
+    # Returns an array of strings representing the list groups
     def groups
-      list.keys
+      data.keys
     end
 
+    # Return an array of strings representing all domains on the list
     def domains
-      list.values.flatten.compact.sort.uniq
+      data.values.flatten.compact.sort.uniq
     end
 
+    # Return the total number of domains in the list
     def count
       domains.count
     end
 
+    # Alphabetize groups and domains within each group
     def alphabetize
-      @list = @list.sort_by { |k, _v| k.downcase }.to_h
-      @list.each { |_group, domains| domains.sort!.uniq! }
+      @data = @data.sort_by { |k, _v| k.downcase }.to_h
+      @data.each { |_group, domains| domains.sort!.uniq! }
     end
 
+    # Write the domain list to disk
     def write
       alphabetize
-      File.write(Gman.list_path, to_public_suffix)
+      File.write(path, to_public_suffix)
     end
 
-    def to_public_suffix
+    # The string representation of the domain list, in public suffix format
+    def to_s
       current_group = output = ''
-      list.sort_by { |group, _domains| group.downcase }.each do |group, domains|
+      data.sort_by { |group, _| group.downcase }.each do |group, domains|
         if group != current_group
           output << "\n\n" unless current_group.empty? # first entry
           output << "// #{group}\n"
@@ -43,45 +103,40 @@ class Gman
       end
       output
     end
+    alias_method :to_public_suffix, :to_s
 
-    def self.current
-      current = File.open(Gman.list_path).read
-      DomainList.from_public_suffix(current)
-    end
-
-    def self.from_public_suffix(string)
-      string = string.gsub(/\r\n?/, "\n").split("\n")
-      hash = array_to_hash(string)
-      DomainList.new(hash)
-    end
-
+    # Given a domain, find any domain on the list that includes that domain
+    # E.g., `fcc.gov` would be the parent of `data.fcc.gov`
     def parent_domain(domain)
       domains.find { |c| domain =~ /\.#{Regexp.escape(c)}$/ }
     end
 
-    class << self
-      private
+    private
 
-      # Given an array of comments/domains in public suffix format
-      # Converts to a hash in the form of :group => [domain1, domain2...]
-      def array_to_hash(domains)
-        domain_hash = {}
-        group = ''
-        domains.each do |line|
-          if line =~ COMMENT_REGEX
-            group = COMMENT_REGEX.match(line)[1]
-          else
-            safe_push(domain_hash, group, line.downcase)
-          end
+    # Parse a public-suffix formatted string into a hash of groups => [domains]
+    def string_to_hash(string)
+      return unless string
+      lines = string.gsub(/\r\n?/, "\n").split("\n")
+      domain_hash = {}
+      group = ''
+      lines.each do |line|
+        if line =~ COMMENT_REGEX
+          group = COMMENT_REGEX.match(line)[1]
+        else
+          safe_push(domain_hash, group, line.downcase)
         end
-        domain_hash
       end
+      domain_hash
+    end
 
-      def safe_push(hash, key, value)
-        return if value.empty?
-        hash[key] ||= []
-        hash[key].push value
-      end
+    # Add a value to an array in a hash, creating the array if necessary
+    # hash  - the hash
+    # key   - the key within that hash to add the value to
+    # value - the single value to push into the array at hash[key]
+    def safe_push(hash, key, value)
+      return if value.empty?
+      hash[key] ||= []
+      hash[key].push value
     end
   end
 end
