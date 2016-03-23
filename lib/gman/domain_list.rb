@@ -83,7 +83,7 @@ class Gman
 
     # Alphabetize groups and domains within each group
     def alphabetize
-      @data = @data.sort_by { |k, _v| k.downcase }.to_h
+      @data = data.sort_by { |k, _v| k.downcase }.to_h
       @data.each { |_group, domains| domains.sort!.uniq! }
     end
 
