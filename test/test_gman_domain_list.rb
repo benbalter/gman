@@ -38,7 +38,7 @@ class TestGmanDomainList < Minitest::Test
 
       should 'return the list contents' do
         list = domain_list(type)
-        assert_match /^gov$/, list.contents
+        assert_match(/^gov$/, list.contents)
       end
 
       should 'return the list path' do

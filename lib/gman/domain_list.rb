@@ -36,7 +36,7 @@ class Gman
                       File.new(path, 'r:utf-8').read
                     else
                       to_s
-      end
+                    end
     end
 
     # Returns the parsed contents of the domain list as a hash
@@ -119,7 +119,15 @@ class Gman
     # Parse a public-suffix formatted string into a hash of groups => [domains]
     def string_to_hash(string)
       return unless string
-      lines = string.gsub(/\r\n?/, "\n").split("\n")
+      lines = string_to_array(string)
+      array_to_hash(lines)
+    end
+
+    def string_to_array(string)
+      string.gsub(/\r\n?/, "\n").split("\n")
+    end
+
+    def array_to_hash(lines)
       domain_hash = {}
       group = ''
       lines.each do |line|
