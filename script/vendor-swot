@@ -1,0 +1,42 @@
+#! /usr/bin/env ruby
+#
+# Vendors the Swot-maintained list of adademic domains into config/academic.txt
+# Source: https://github.com/leereilly/swot/
+#
+# Usage: script/vendor-swot
+#
+# Will automatically fetch latest version of the list and merge
+# You can check for changes and commit via `git status`
+#
+# It's also probably a good idea to run `script/ci-build` for good measure
+#
+# Note: We do this, because as a bajillion individual files, Swot takes up 30MB
+
+require './lib/gman/importer'
+require 'swot'
+
+# Generate array of all Swot domains
+domains = Swot.all_domains
+domains << Swot::ACADEMIC_TLDS
+
+# Init the importer, builiding a DomainList
+hash = { "Academic domains vendored from Swot v#{Swot::VERSION}" => domains }
+importer = Gman::Importer.new(hash)
+importer.logger.info "Importing from Swot v#{Swot::VERSION}"
+importer.logger.info "Found #{domains.count} academic domains"
+
+# Cleanup and write
+# Note: we're not using the import method, as that assume's we're writing the
+# government domain list and would use Swot to ensure domains aren't academic
+importer.send :normalize_domains!
+importer.domains.alphabetize
+
+# blacklist blacklisted domains
+output = importer.domains.to_public_suffix
+output << "\n"
+output << Swot::BLACKLIST.map { |domain| "!#{domain}" }.join("\n")
+
+## Write
+File.write(Gman.academic_list_path, output)
+
+importer.logger.info "Vendored #{importer.domains.count} academic domains."

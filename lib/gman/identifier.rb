@@ -74,10 +74,10 @@ class Gman
 
   def list_category
     @list_category ||= begin
-      match = Gman.list.find(domain.to_s)
+      match = Gman.list.public_suffix_list.find(domain.to_s)
       return unless match
       regex = %r{// ([^\n]+)\n?[^/]*\n#{Regexp.escape(match.name)}\n}im
-      matches = Gman.list_contents.match(regex)
+      matches = Gman.list.contents.match(regex)
       matches[1] if matches
     end
   end

@@ -38,3 +38,11 @@ def with_env(key, value)
   yield
   ENV[key] = old_env
 end
+
+def stubbed_list_path
+  File.expand_path './fixtures/domains.txt', File.dirname(__FILE__)
+end
+
+def stubbed_list
+  Gman::DomainList.new(path: stubbed_list_path)
+end

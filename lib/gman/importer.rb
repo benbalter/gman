@@ -9,7 +9,7 @@ require_relative './domain_list'
 
 class Gman
   class Importer
-    attr_accessor :domains
+    attr_accessor :domain_list
 
     # Known false positives from vendored lists
     BLACKLIST = %w(
@@ -58,7 +58,7 @@ class Gman
     }.freeze
 
     def initialize(domains)
-      @domains = DomainList.new(domains)
+      @domain_list = DomainList.new(data: domains)
     end
 
     def logger
@@ -91,12 +91,12 @@ class Gman
 
     def import(options)
       logger.info "Current: #{Gman::DomainList.current.count} domains"
-      logger.info "Adding: #{domains.count} domains"
+      logger.info "Adding: #{domain_list.count} domains"
 
       normalize_domains!
       ensure_validity!(options)
 
-      if domains.count == 0
+      if domain_list.count == 0
         logger.info 'Nothing to add. Aborting'
         exit 0
       end
@@ -158,22 +158,22 @@ class Gman
     end
 
     def normalize_domains!
-      domains.list.each do |_group, domains|
+      domain_list.to_h.each do |_group, domains|
         domains.map! { |domain| normalize_domain(domain) }
         domains.uniq!
       end
     end
 
     def ensure_validity!(options = {})
-      domains.list.each do |_group, domains|
+      domain_list.data.each do |_group, domains|
         domains.select! { |domain| valid_domain?(domain, options) }
       end
     end
 
     def add_to_current
-      domains.list.each do |group, domains|
-        current.list[group] ||= []
-        current.list[group].concat domains
+      domain_list.data.each do |group, domains|
+        current.data[group] ||= []
+        current.data[group].concat domains
       end
       current.write
     end

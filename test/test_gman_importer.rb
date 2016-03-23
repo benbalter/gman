@@ -6,21 +6,17 @@ class TestGManImporter < Minitest::Test
     @stdout = StringIO.new
     @importer.instance_variable_set '@logger', Logger.new(@stdout)
 
-    with_env 'GMAN_STUB_DOMAINS', 'true' do
-      @original_domain_list = File.open(Gman.list_path).read
-    end
+    @original_domain_list = File.read(stubbed_list_path)
   end
 
   def teardown
-    with_env 'GMAN_STUB_DOMAINS', 'true' do
-      File.write Gman.list_path, @original_domain_list
-    end
+    File.write stubbed_list_path, @original_domain_list
   end
 
   should 'init the domain list' do
-    assert_equal Gman::DomainList, @importer.domains.class
-    assert_equal 1, @importer.domains.domains.count
-    assert_equal 'example.com', @importer.domains.domains.first
+    assert_equal Gman::DomainList, @importer.domain_list.class
+    assert_equal 1, @importer.domain_list.count
+    assert_equal 'example.com', @importer.domain_list.domains.first
   end
 
   should 'init the logger' do
@@ -51,43 +47,41 @@ class TestGManImporter < Minitest::Test
     should 'normalize domains within the domain list' do
       importer = Gman::Importer.new 'test' => ['www.EXAMPLE.com/']
       importer.send :normalize_domains!
-      assert_equal 'example.com', importer.domains.domains.first
+      assert_equal 'example.com', importer.domain_list.domains.first
     end
 
     should 'remove invalid domains from the domain list' do
       importer = Gman::Importer.new 'test' => ['foo.github.io', 'example.com']
       importer.instance_variable_set '@logger', Logger.new(@stdout)
 
-      assert_equal 2, importer.domains.domains.count
+      assert_equal 2, importer.domain_list.count
       importer.send :ensure_validity!
-      assert_equal 1, importer.domains.domains.count
+      assert_equal 1, importer.domain_list.count
     end
 
     context 'writing the domain list' do
       should 'add domains to the current domain list' do
-        with_env 'GMAN_STUB_DOMAINS', 'true' do
-          domains = { 'test' => ['example.com'], 'test2' => ['github.com'] }
-          importer = Gman::Importer.new domains
-          importer.send :add_to_current
-          expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
-          assert_equal expected, File.open(Gman.list_path).read
-        end
+        domains = { 'test' => ['example.com'], 'test2' => ['github.com'] }
+        importer = Gman::Importer.new domains
+        importer.instance_variable_set '@current', stubbed_list
+        importer.send :add_to_current
+        expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
+        assert_equal expected, File.open(stubbed_list_path).read
       end
 
       should 'import' do
-        with_env 'GMAN_STUB_DOMAINS', 'true' do
-          domains = {
-            'test'  => ['www.example.com', 'goo.github.io'],
-            'test2' => ['github.com', 'www.github.com', 'whitehouse.gov']
-          }
+        domains = {
+          'test'  => ['www.example.com', 'goo.github.io'],
+          'test2' => ['github.com', 'www.github.com', 'whitehouse.gov']
+        }
 
-          importer = Gman::Importer.new domains
-          importer.instance_variable_set '@logger', Logger.new(@stdout)
-          importer.import(skip_resolve: true)
+        importer = Gman::Importer.new domains
+        importer.instance_variable_set '@current', stubbed_list
+        importer.instance_variable_set '@logger', Logger.new(@stdout)
+        importer.import(skip_resolve: true)
 
-          expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
-          assert_equal expected, File.open(Gman.list_path).read
-        end
+        expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
+        assert_equal expected, File.open(stubbed_list_path).read
       end
     end
   end

@@ -1,4 +1,16 @@
 class Gman
+  # Second level .us domains for states and locality
+  # See http://en.wikipedia.org/wiki/.us
+  #
+  # Examples:
+  #  * foo.state.il.us
+  #  * ci.foo.il.us
+  #
+  # Not:
+  #  * state.foo.il.us
+  #  * foo.ci.il.us
+  #  * k12.il.us
+  #  * ci.foo.zx.us
   class Locality
     AFFINITY_NAMESPACES = %w(state dst cog).freeze
 
@@ -20,21 +32,9 @@ class Gman
         (#{Regexp.union(LOCALITY_DOMAINS)})\.[a-z-]+
       )\.(#{Regexp.union(STATES)})\.us
     /x
-  end
 
-  # Second level .us domains for states and locality
-  # See http://en.wikipedia.org/wiki/.us
-  #
-  # Examples:
-  #  * foo.state.il.us
-  #  * ci.foo.il.us
-  #
-  # Not:
-  #  * state.foo.il.us
-  #  * foo.ci.il.us
-  #  * k12.il.us
-  #  * ci.foo.zx.us
-  def locality?
-    !domain.to_s.match(Locality::REGEX).nil?
+    def self.valid?(domain)
+      !domain.to_s.match(Locality::REGEX).nil?
+    end
   end
 end

@@ -19,3 +19,6 @@ Metrics/ClassLength:
   Exclude:
     - lib/gman/importer.rb
     - test/**/*
+
+Metrics/ClassLength:
+  Enabled: false
