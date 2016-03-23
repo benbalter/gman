@@ -6,7 +6,7 @@ class TestGManImporter < Minitest::Test
     @stdout = StringIO.new
     @importer.instance_variable_set '@logger', Logger.new(@stdout)
 
-    @original_domain_list = stubbed_list.contents
+    @original_domain_list = File.read(stubbed_list_path)
   end
 
   def teardown
@@ -63,7 +63,7 @@ class TestGManImporter < Minitest::Test
       should 'add domains to the current domain list' do
         domains = { 'test' => ['example.com'], 'test2' => ['github.com'] }
         importer = Gman::Importer.new domains
-        importer.instance_variable_set "@current", stubbed_list
+        importer.instance_variable_set '@current', stubbed_list
         importer.send :add_to_current
         expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
         assert_equal expected, File.open(stubbed_list_path).read
@@ -76,7 +76,7 @@ class TestGManImporter < Minitest::Test
         }
 
         importer = Gman::Importer.new domains
-        importer.instance_variable_set "@current", stubbed_list
+        importer.instance_variable_set '@current', stubbed_list
         importer.instance_variable_set '@logger', Logger.new(@stdout)
         importer.import(skip_resolve: true)
 

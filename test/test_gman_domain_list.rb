@@ -3,6 +3,14 @@ require File.join(File.dirname(__FILE__), 'helper')
 class TestGmanDomainList < Minitest::Test
   INIT_TYPES = [:path, :contents, :data].freeze
 
+  def setup
+    @original_domain_list = File.read(stubbed_list_path)
+  end
+
+  def teardown
+    File.write stubbed_list_path, @original_domain_list
+  end
+
   def domain_list(type)
     case type
     when :path
@@ -79,8 +87,8 @@ class TestGmanDomainList < Minitest::Test
 
       should 'write the list' do
         list = domain_list(type)
-        list.instance_variable_set("@path", stubbed_list_path)
-        list.data = { "foo" => ["bar.gov", "baz.net"] }
+        list.instance_variable_set('@path', stubbed_list_path)
+        list.data = { 'foo' => ['bar.gov', 'baz.net'] }
         list.write
         contents = File.read(stubbed_list_path)
         assert_match %r{^// foo$}, contents
