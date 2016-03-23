@@ -89,7 +89,7 @@ class Gman
       @current ||= DomainList.current
     end
 
-    def import(options={})
+    def import(options = {})
       logger.info "Current: #{Gman::DomainList.current.count} domains"
       logger.info "Adding: #{domain_list.count} domains"
 
