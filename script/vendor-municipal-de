@@ -3,7 +3,6 @@
 require 'csv'
 require 'open-uri'
 require './lib/gman'
-require './lib/gman/importer'
 
 url = 'http://www.mik.nrw.de/nc/themen-aufgaben/kommunales/kommunale-adressen.html?tx_szkommunaldb_pi1%5Bexport%5D=csv'
 
@@ -20,4 +19,4 @@ csv = lines.join("\n")
 data = CSV.parse(csv, headers: true, col_sep: ';')
 domains = data.map { |row| row['Internet'] }
 
-Gman.import('German Municipalities' => domains)
+Gman::Importer.new('German Municipalities' => domains).import
