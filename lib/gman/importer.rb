@@ -96,11 +96,6 @@ class Gman
       normalize_domains!
       ensure_validity!(options)
 
-      if domain_list.count == 0
-        logger.info 'Nothing to add. Aborting'
-        exit 0
-      end
-
       add_to_current
       logger.info "New: #{current.count} domains"
     end
