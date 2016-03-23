@@ -63,10 +63,10 @@ class TestGManImporter < Minitest::Test
       should 'add domains to the current domain list' do
         domains = { 'test' => ['example.com'], 'test2' => ['github.com'] }
         importer = Gman::Importer.new domains
-        imoprter.domain_list.path = stubbed_list_path
+        importer.instance_variable_set "@current", stubbed_list
         importer.send :add_to_current
         expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
-        assert_equal expected, File.open(Gman.list_path).read
+        assert_equal expected, File.open(stubbed_list_path).read
       end
 
       should 'import' do
@@ -76,12 +76,12 @@ class TestGManImporter < Minitest::Test
         }
 
         importer = Gman::Importer.new domains
-        imoprter.domain_list.path = stubbed_list_path
+        importer.instance_variable_set "@current", stubbed_list
         importer.instance_variable_set '@logger', Logger.new(@stdout)
         importer.import(skip_resolve: true)
 
         expected = "// test\nexample.com\ngov\n\n// test2\ngithub.com"
-        assert_equal expected, File.open(Gman.list_path).read
+        assert_equal expected, File.open(stubbed_list_path).read
       end
     end
   end

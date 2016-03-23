@@ -2,7 +2,7 @@ class Gman
   class DomainList
     COMMENT_REGEX = %r{//[/\s]*(.*)$}i
 
-    attr_writer :data
+    attr_writer :data, :path, :contents
 
     class << self
       # The current, government domain list

@@ -44,5 +44,5 @@ def stubbed_list_path
 end
 
 def stubbed_list
-  DomainList.new(path: stubbed_list_path)
+  Gman::DomainList.new(path: stubbed_list_path)
 end

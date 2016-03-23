@@ -165,7 +165,7 @@ class Gman
     end
 
     def ensure_validity!(options = {})
-      domain_list.to_h.each do |_group, domains|
+      domain_list.data.each do |_group, domains|
         domains.select! { |domain| valid_domain?(domain, options) }
       end
     end
