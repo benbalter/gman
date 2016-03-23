@@ -1,6 +1,5 @@
 class Gman
   class DomainList
-
     COMMENT_REGEX = %r{//[/\s]*(.*)$}i
 
     class << self
@@ -20,7 +19,7 @@ class Gman
       def from_public_suffix(string)
         DomainList.new(contents: string)
       end
-      alias_method :from_string, :from_public_suffix
+      alias from_string from_public_suffix
     end
 
     def initialize(path: nil, contents: nil, data: nil)
@@ -41,7 +40,7 @@ class Gman
     def data
       @data ||= string_to_hash(contents)
     end
-    alias_method :to_h, :data
+    alias to_h data
 
     # Returns the path to the domain list on disk
     def path
@@ -103,7 +102,7 @@ class Gman
       end
       output
     end
-    alias_method :to_public_suffix, :to_s
+    alias to_public_suffix to_s
 
     # Given a domain, find any domain on the list that includes that domain
     # E.g., `fcc.gov` would be the parent of `data.fcc.gov`

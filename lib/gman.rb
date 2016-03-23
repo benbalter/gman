@@ -11,9 +11,9 @@ require_relative 'gman/identifier'
 class Gman
   include NaughtyOrNice
 
-  autoload :DomainList, "gman/domain_list"
-  autoload :Importer,   "gman/importer"
-  autoload :Locality,   "gman/locality"
+  autoload :DomainList, 'gman/domain_list'
+  autoload :Importer,   'gman/importer'
+  autoload :Locality,   'gman/locality'
 
   class << self
     def list
