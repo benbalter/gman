@@ -3135,6 +3135,7 @@ kartverket.no
 met.no
 mil.no
 nav.no
+vegvesen.no
 
 // Spain Municipal
 madrid.es
@@ -4727,6 +4728,7 @@ marioncountyfl.org
 melbournebeachfl.org
 melbourneflorida.org
 miamigov.com
+miamiparking.com
 miamishoresvillage.com
 midwayfl.com
 mycarrabelle.com
@@ -6830,6 +6832,7 @@ hermantownmn.com
 heronlakecity.org
 hobarttownship.com
 hopkinsmn.com
+house.mn
 hoytlakes.com
 hrdc.org
 idatownship.com
@@ -6844,6 +6847,7 @@ lakefieldmn.com
 lakelandmn.com
 laketowntownship.info
 lakewoodmn.com
+leg.mn
 lenttownship.com
 lindstrom.mn.org
 linwoodtownship.org
@@ -6910,6 +6914,7 @@ royaltontownship.com
 sanfranciscotownship.com
 sartellmn.com
 sciotatownship-mn.us
+senate.mn
 sidelake.org
 silverbay.com
 silverbrooktownship.org
@@ -12219,7 +12224,7 @@ cityofworland.org
 conversecounty.org
 evanstonwy.org
 fremontcountywy.org
-house.mn
+
 hscounty.com
 johnsoncountywyoming.org
 kemmerer.org
@@ -12231,7 +12236,7 @@ newcastlewyoming.org
 parkcounty.us
 rawlins-wyoming.com
 rswy.net
-senate.mn
+
 sheridancounty.com
 sublettewyo.com
 sweet.wy.us
