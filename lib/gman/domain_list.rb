@@ -2,6 +2,8 @@ class Gman
   class DomainList
     COMMENT_REGEX = %r{//[/\s]*(.*)$}i
 
+    attr_writer :data
+
     class << self
       # The current, government domain list
       def current
@@ -30,8 +32,10 @@ class Gman
 
     # Returns the raw content of the domain list as a string
     def contents
-      @contents ||= begin
-        File.new(path, 'r:utf-8').read if path
+      @contents ||= if path
+                      File.new(path, 'r:utf-8').read
+                    else
+                      to_s
       end
     end
 

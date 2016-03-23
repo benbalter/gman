@@ -30,11 +30,7 @@ class Gman
 
     # Returns the absolute path to the domain list
     def list_path
-      if ENV['GMAN_STUB_DOMAINS']
-        File.expand_path '../test/fixtures/domains.txt', File.dirname(__FILE__)
-      else
-        File.expand_path 'domains.txt', config_path
-      end
+      File.expand_path 'domains.txt', config_path
     end
 
     def academic_list_path
