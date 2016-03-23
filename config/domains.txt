@@ -1905,7 +1905,6 @@ unsere-rente.com
 unsere-rente.info
 unternehmens-wert-mensch.de
 unternehmensservice-demografie.de
-unternehmensservice-demographie.de
 usd-portal.de
 uv-index.de
 uv-index.eu
@@ -2831,7 +2830,6 @@ tubbergen.nl
 tweedekamer.nl
 twenterand.nl
 tynaarlo.nl
-uden.nl
 uitgeest.nl
 uithoorn.nl
 urk.nl
@@ -3446,7 +3444,6 @@ skokomish.org
 srbc.net
 swotero.org
 tananachiefs.org
-timbisha.com
 tunicabiloxi.org
 uctp.org
 ysletadelsurpueblo.org
@@ -4775,7 +4772,6 @@ ncflepc.org
 ncfrpc.org
 nefrpc.org
 nlauderdale.org
-northwestfloridacfc.org
 oaklandparkfl.org
 ocalafl.org
 oceanridgeflorida.com
@@ -4962,13 +4958,11 @@ gainesville.org
 galottery.com
 ganocall.com
 gasdf.com
-georgiacivilwar.org
 georgiafmc.com
 georgiamedicalcenterauthority.org
 georgiatrust.org
 glynncounty.org
 gnfa.com
-godr.org
 gordoncounty.org
 gsfc.org
 gwinnettcounty.com
@@ -5052,13 +5046,11 @@ guamlegislature.com
 guamsupremecourt.com
 guamtax.com
 investguam.com
-justice.gov.gu
 visitguam.org
 
 // usagovHI
 gohawaii.com
 hawaii.sdp.sirsi.net
-hawaiipublicschools.org
 hi-mauicounty.civicplus.com
 htdc.org
 oahumpo.org
@@ -5264,7 +5256,6 @@ elmorecounty.org
 franklinidaho.org
 fruitland.org
 gardencityidaho.org
-goodingcounty.org
 grangeville.us
 greenleaf-idaho.us
 haileycityhall.org
@@ -5448,7 +5439,6 @@ mountprospect.org
 mtcarrollil.org
 mtvernon.com
 mtzion.com
-mundelein-il.org
 mundelein.org
 murphysboro.com
 naperville.il.us
@@ -6026,7 +6016,6 @@ sulphur.org
 tangipahoa.org
 townofberwick.org
 townofblanchard.us
-townofchatham.org
 townoffranklinton.com
 townofgoldenmeadow.com
 townoflivingston.com
@@ -6036,7 +6025,6 @@ tpcg.org
 trsl.org
 washington-la.org
 wbrcouncil.org
-wppj.org
 youngsville.us
 zwollela.net
 
@@ -6420,7 +6408,6 @@ woolwich.us
 yorkmaine.org
 
 // usagovMH
-rmi-op.net
 
 // usagovMI
 aatwp.org
@@ -7257,7 +7244,6 @@ cityoflongbeachms.com
 cityoflucedale.com
 cityofmacon.org
 cityofmagee.com
-cityofmagnoliams.com
 cityofpascagoula.com
 cityofpearl.com
 cityofsenatobia.com
@@ -7886,7 +7872,6 @@ mckenziecounty.net
 mcville.com
 medorand.com
 mercercountynd.com
-michigannd.com
 milnornd.com
 minnewaukan.com
 minotnd.org
@@ -8097,7 +8082,6 @@ ossipee.org
 pelhamweb.com
 pembroke-nh.com
 pittsfield-nh.com
-plainfieldnh.org
 plaistow.com
 plymouth-nh.org
 raymond-nh.com
@@ -8235,7 +8219,6 @@ cityofpassaic.com
 cityofrahway.com
 cityofsummit.org
 claytonnj.com
-clementonborough.com
 cliftonnj.org
 clintontwpnj.com
 closterboro.com
@@ -8434,7 +8417,6 @@ mountephraim-nj.com
 mountholly.info
 mountlaurel.com
 mountolivetownship.com
-mpnj.com
 mtnj.org
 mtnlakes.org
 mtolivetwp.org
@@ -8679,7 +8661,6 @@ taosgov.com
 torrancecountynm.org
 townofbernalillo.org
 townofsilvercity.org
-utelake.com
 villageoftularosa.com
 vtsv.org
 
@@ -8687,7 +8668,6 @@ vtsv.org
 arctic.net
 c-a-tribes.org
 cahto.org
-ccthita.org
 chehalistribe.org
 cherokee.org
 cheyennenation.com
@@ -8736,7 +8716,6 @@ kalispeltribe.com
 karuk.us
 kawerak.org
 kawnation.com
-keetoowahcherokee.org
 kictribe.org
 klamathtribes.org
 kniktribalcouncil.org
@@ -8815,7 +8794,6 @@ squaxinisland.org
 standingrock.org
 stillaguamish.com
 summitlaketribe.org
-svt.org
 tachi-yokut.com
 taino-tribe.org
 temoaktribe.com
@@ -9081,7 +9059,6 @@ manliusvillage.org
 manorhaven.org
 marbletown.net
 marcellusny.com
-marlboroughny.com
 masonville-ny.us
 massenaworks.com
 matinecockvillage.org
@@ -9535,7 +9512,6 @@ villageofminoa.com
 villageofmontebello.com
 villageofmontgomery.org
 villageofmontourfalls.com
-villageofmountmorris.com
 villageofmuttontown.com
 villageofnelsonville.org
 villageofnewark.com
@@ -9688,7 +9664,6 @@ eastliverpool.com
 erie-county-ohio.net
 fairfaxohio.org
 fairfield-city.org
-fairviewpark.org
 fayette-co-oh.com
 fhlbcin.com
 forestpark.org
@@ -9862,7 +9837,6 @@ weathersfieldtwp.com
 westcarrollton.org
 westchesteroh.org
 whitehall-oh.us
-willardohio.com
 willoughbyohio.com
 wjohio.org
 woosteroh.com
@@ -10125,7 +10099,6 @@ carrolltown.pa.us
 carrollvalley.org
 ccpa.net
 centertwp.netfirms.com
-centralpacfc.org
 chalfontborough.com
 cheltenhamtownship.org
 chesco.org
@@ -10618,7 +10591,6 @@ cityofcentral.org
 cityofclemson.org
 cityofclintonsc.com
 cityofconway.com
-cityofeasley.net
 cityofflorence.com
 cityoffollybeach.com
 cityofgeorgetownsc.com
@@ -10795,7 +10767,6 @@ cityofdeadwood.com
 cityofdellrapids.org
 cityofflandreau.com
 cityofgregory.com
-cityofhotspringssd.org
 cityofhoward.com
 cityoflennoxsd.com
 cityofmadisonsd.com
@@ -11520,7 +11491,6 @@ legvi.org
 nationalarchives.gov.vg
 usviber.org
 usvieda.org
-vide.vi
 viig.org
 visitusvi.com
 visupremecourt.org
