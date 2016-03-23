@@ -20,13 +20,12 @@ class TestGmanDomains < Minitest::Test
     end
 
     invalid = []
-    list = Gman.list.to_h
-    Parallel.each(list, in_threads: 2) do |group, domains|
+    options = { skip_dupe: true, skip_resolve: !resolve_domains? }
+    Gman.list.to_h.each do |group, domains|
       next if WHITELIST.include?(group)
-      invalid.push domains.reject { |domain|
-        options = { skip_dupe: true, skip_resolve: !resolve_domains? }
-        importer.valid_domain?(domain, options)
-      }
+      Parallel.each(domains, in_threads: 4) do |domain|
+        invalid.push(domain) unless importer.valid_domain?(domain, options)
+      end
     end
     assert_equal [], invalid.flatten.reject(&:empty?)
   end
