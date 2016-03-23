@@ -1931,6 +1931,18 @@ wiewollenwirarbeiten.de
 willkommenindeutschland.info
 wsv.de
 xenos-de.de
+xn--allianz-fr-arbeitskrfte-f8b20d.de
+xn--allianz-fr-fachkrfte-rzb33c.de
+xn--beschftigtebeteiligen-91b.de
+xn--beschftigung-gestalten-44b.de
+xn--einsatzfrarbeit-6vb.de
+xn--fachkrfte-allianz-vqb.de
+xn--fachkrfteoffensive-qtb.de
+xn--fachkrftewoche-bib.de
+xn--freinlebenswertesland-8hc.de
+xn--initiative-fr-fachkraefte-qwc.de
+xn--initiative-fr-fachkrfte-f8b50d.de
+xn--vereint-fr-gemeinsame-bildung-tbd.de
 yes-we-are-open.info
 yesweareopen.de
 zielvereinbarungsregister.de
@@ -3232,6 +3244,7 @@ migrationsverket.se
 modernamuseet.se
 msb.se
 mtm.se
+myh.se
 namndenmotdiskriminering.se
 nationalmuseum.se
 naturvardsverket.se
@@ -3675,6 +3688,7 @@ siloamsprings.com
 whitecountyar.org
 
 // usagovAS
+americansamoa.travel
 amsamoatourism.com
 doe.as
 
@@ -4380,6 +4394,7 @@ afreserve.com
 afthunderbirds.com
 agfirst.com
 agribank.com
+airdefenseartillery.com
 airforce.com
 airspacemag.com
 ajb.org
@@ -6230,6 +6245,7 @@ townofcentreville.org
 townofchevychase.org
 townofdelmar.us
 townofgalena.com
+townofhampstead.us
 townofindianhead.org
 townoflaplata.org
 townofprincessanne.com
@@ -6444,6 +6460,7 @@ cannontwp.org
 canton-mi.org
 carocity.net
 cascadetwp.com
+cascostclair.org
 casscountymi.org
 cfcsemi.org
 cfcwesternmichigan.org
@@ -10128,6 +10145,7 @@ clintoncountypa.com
 coatesville.org
 colliertownship.net
 columbiapa.org
+conewagotwpadamsco.us
 conshohockenpa.org
 coolbaughtwp.org
 coplayborough.org
@@ -12224,7 +12242,6 @@ cityofworland.org
 conversecounty.org
 evanstonwy.org
 fremontcountywy.org
-
 hscounty.com
 johnsoncountywyoming.org
 kemmerer.org
@@ -12236,7 +12253,6 @@ newcastlewyoming.org
 parkcounty.us
 rawlins-wyoming.com
 rswy.net
-
 sheridancounty.com
 sublettewyo.com
 sweet.wy.us
