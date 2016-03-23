@@ -1,5 +1,10 @@
 // Academic domains vendored from Swot v0.4.2
 
+!america.edu
+!australia.edu
+!californiacolleges.edu
+!cet.edu
+!si.edu
 2isa.org
 7aprilu.edu.ly
 7ou.edu.ly
@@ -8032,8 +8037,3 @@ zu.edu.eg
 zums.ac.ir
 zut.edu.pl
 zuyd.nl
-!si.edu
-!america.edu
-!californiacolleges.edu
-!australia.edu
-!cet.edu

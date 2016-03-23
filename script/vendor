@@ -6,7 +6,7 @@ for file in script/vendor-*; do
     echo "*************************************"
     echo "Vendoring $file"
     echo "*************************************"
-    "$file"
+    bundle exec "$file"
   fi
 done
 

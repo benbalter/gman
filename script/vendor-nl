@@ -2,6 +2,7 @@
 # See https://github.com/github/government.github.com/pull/367#issuecomment-102108763
 
 require 'fileutils'
+require './lib/gman'
 
 FileUtils.rm_rf('almanak.overheid.nl')
 commands = [
@@ -15,4 +16,4 @@ commands = [
 ]
 domains = system commands.join('|')
 
-Gman.import('Netherlands' => domains.split("\n"))
+Gman::Importer.new('Netherlands' => domains.split("\n")).import

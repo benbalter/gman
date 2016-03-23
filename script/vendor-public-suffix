@@ -4,7 +4,6 @@
 require 'public_suffix'
 require 'yaml'
 require_relative '../lib/gman'
-require_relative '../lib/gman/importer'
 
 # https://gist.github.com/benbalter/6147066
 REGEX = /(\.g[ou]{1,2}(v|b|vt)|\.mil|\.gc|\.fed)(\.[a-z]{2})?$/i
@@ -24,4 +23,4 @@ end
 
 # Note: We want to skip resolution here, because a domain like `gov.sv` may be
 # a valid TLD, not have any top-level sites, and we'd still want it listed
-Gman.import({ 'non-us gov' => domains }, skip_resolve: true)
+Gman::Importer.new({ 'non-us gov' => domains }).import(skip_resolve: true)

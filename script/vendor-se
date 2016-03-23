@@ -3,7 +3,6 @@
 require 'mechanize'
 require 'csv'
 require './lib/gman'
-require './lib/gman/importer'
 
 url = 'http://www.myndighetsregistret.scb.se/Myndighet.aspx'
 agent = Mechanize.new
@@ -18,4 +17,4 @@ domains = rows.map do |row|
   row['Webbadress'] unless row['Namn'] =~ /UNIVERSITET/
 end
 
-Gman.import('Swedish Administrative Authorities' => domains)
+Gman::Importer.new('Swedish Administrative Authorities' => domains).import

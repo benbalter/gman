@@ -10,7 +10,8 @@
 #
 # It's also probably a good idea to run `script/ci-build` for good measure
 
-require './lib/gman/importer'
+require './lib/gman'
+require 'open-uri'
 
 blacklist = %w(usagovQUASI usagovFEDgov)
 source = 'https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt'
@@ -32,4 +33,4 @@ data.each do |row|
 end
 
 domains.reject! { |g, _| blacklist.include?(g) }
-Gman.import(domains)
+Gman::Importer.new(domains).import
