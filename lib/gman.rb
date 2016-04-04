@@ -1,7 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'naughty_or_nice'
-require 'swot'
 require 'iso_country_codes'
 require 'csv'
 require_relative 'gman/version'

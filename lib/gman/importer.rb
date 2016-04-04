@@ -4,6 +4,7 @@ require 'yaml'
 require 'open-uri'
 require 'resolv'
 require 'logger'
+require 'swot'
 require_relative '../gman'
 require_relative './domain_list'
 
