@@ -2982,6 +2982,7 @@ gov.ec
 gov.ee
 gov.eg
 gov.et
+gov.pf
 gov.ge
 gov.gg
 gov.gh
