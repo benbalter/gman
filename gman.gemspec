@@ -28,6 +28,7 @@ Gem::Specification.new do |s|
   s.add_dependency('iso_country_codes', '~> 0.6')
   s.add_dependency('naughty_or_nice', '~> 2.0')
   s.add_dependency('colored', '~> 1.2')
+  s.add_dependency('public_suffix', '~> 1.5')
 
   s.add_development_dependency('swot', '~> 1.0')
   s.add_development_dependency('rake', '~> 10.4')
