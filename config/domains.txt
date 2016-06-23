@@ -3030,6 +3030,7 @@ gov.my
 gov.ng
 gov.nr
 gov.om
+gov.pf
 gov.ph
 gov.pk
 gov.pl
