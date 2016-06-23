@@ -13,8 +13,7 @@ VALID = ['foo.gov',
          'foo.state.il.us',
          'state.il.us',
          'foo@af.mil',
-         'foo.gov.in'
-        ].freeze
+         'foo.gov.in'].freeze
 
 INVALID = ['foo.bar.com',
            'bar@foo.biz',
@@ -30,8 +29,7 @@ INVALID = ['foo.bar.com',
            'foo.city.il.us',
            'foo.ci.il.us',
            'foo.zx.us',
-           'foo@mail.gov.ua'
-          ].freeze
+           'foo@mail.gov.ua'].freeze
 
 class TestGman < Minitest::Test
   VALID.each do |domain|
