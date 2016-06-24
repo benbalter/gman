@@ -3080,6 +3080,7 @@ mairie-nanterre.fr
 mil.tr
 nic.in
 onroerenderfgoed.be
+informatique.gov.pf
 
 // non-us mil
 mil.ac
