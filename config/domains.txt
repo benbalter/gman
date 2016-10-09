@@ -3357,6 +3357,9 @@ vs.ch
 zg.ch
 zh.ch
 
+// UK
+historicengland.org.uk
+
 // US Combined Federal Campaigns
 3riverscfc.org
 cbacfc.org
