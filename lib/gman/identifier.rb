@@ -91,7 +91,7 @@ class Gman
     return @dotgov_listing if defined? @dotgov_listing
     return unless dotgov?
     @dotgov_listing = Gman.dotgov_list.find do |listing|
-      listing['Domain Name'].casecmp("#{domain.sld}.gov") == 0
+      listing['Domain Name'].casecmp("#{domain.sld}.gov").zero?
     end
   end
 
