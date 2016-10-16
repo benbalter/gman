@@ -2,7 +2,7 @@
 
 set -ex
 
-bundle exec rake test
+bundle exec rspec
 bundle exec rubocop -D -S -a
 bundle exec script/dedupe
 bundle exec gem build gman.gemspec
