@@ -3063,7 +3063,6 @@ gov.tr
 gov.tt
 gov.tw
 gov.ua
-!mail.gov.ua
 gov.uk
 gov.vc
 gov.ve
@@ -3080,6 +3079,7 @@ mairie-nanterre.fr
 mil.tr
 nic.in
 onroerenderfgoed.be
+!mail.gov.ua
 
 // non-us mil
 mil.ac
