@@ -12,7 +12,7 @@
 #
 # Note: We do this, because as a bajillion individual files, Swot takes up 30MB
 
-require './lib/gman'
+require 'gman'
 require 'swot'
 
 # Generate array of all Swot domains
