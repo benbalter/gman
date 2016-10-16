@@ -1,3 +1,4 @@
 // foo
 bar.gov
 baz.net
+!mail.bar.gov

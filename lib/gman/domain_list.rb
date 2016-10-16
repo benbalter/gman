@@ -154,9 +154,9 @@ class Gman
 
     def sort_with_exceptions(a, b)
       if a.start_with?('!') && !b.start_with?('!')
-        -1
-      elsif b.start_with?('!') && !a.start_with?('!')
         1
+      elsif b.start_with?('!') && !a.start_with?('!')
+        -1
       else
         a <=> b
       end

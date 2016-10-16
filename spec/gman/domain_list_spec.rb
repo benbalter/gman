@@ -82,7 +82,17 @@ RSpec.describe Gman::DomainList do
         end
 
         context 'with list data stubbed' do
-          before { subject.data = { 'foo' => ['bar.gov', 'baz.net'] } }
+          before do
+            subject.data = { 'foo' => ['!mail.bar.gov', 'bar.gov', 'baz.net'] }
+          end
+
+          context 'alphabetizing' do
+            before { subject.alphabetize }
+
+            it 'puts exceptions last' do
+              expect(subject.data['foo'].last).to eql('!mail.bar.gov')
+            end
+          end
 
           context 'writing' do
             before { subject.write }
