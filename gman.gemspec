@@ -26,9 +26,9 @@ Gem::Specification.new do |s|
   s.required_ruby_version = '~> 2.0'
 
   s.add_dependency('iso_country_codes', '~> 0.6')
-  s.add_dependency('naughty_or_nice', '= 2.0')
+  s.add_dependency('naughty_or_nice', '= 2.1')
   s.add_dependency('colored', '~> 1.2')
-  s.add_dependency('public_suffix', '~> 1.5')
+  s.add_dependency('public_suffix', '~> 2.0')
 
   s.add_development_dependency('swot', '~> 1.0')
   s.add_development_dependency('pry', '~> 0.10')

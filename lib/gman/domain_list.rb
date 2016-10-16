@@ -58,12 +58,10 @@ class Gman
       @public_suffix_list ||= PublicSuffix::List.parse(contents)
     end
 
-    # domain is on the domain list and
-    # domain is not explicitly blacklisted and
-    # domain matches a standard public suffix list rule
+    # domain is on the domain list
     def valid?(domain)
-      rule = public_suffix_list.find(domain)
-      !rule.nil? && rule.type != :exception && rule.allow?(".#{domain}")
+      rule = public_suffix_list.find(domain, default: nil)
+      !(rule.nil? || rule.is_a?(PublicSuffix::Rule::Exception))
     end
 
     # Returns an array of strings representing the list groups
@@ -82,9 +80,13 @@ class Gman
     end
 
     # Alphabetize groups and domains within each group
+    # We need to ensure exceptions appear after their coresponding rules
     def alphabetize
       @data = data.sort_by { |k, _v| k.downcase }.to_h
-      @data.each { |_group, domains| domains.sort!.uniq! }
+      @data.map do |_group, domains|
+        domains.sort! { |a, b| sort_with_exceptions(a, b) }
+        domains.uniq!
+      end
     end
 
     # Write the domain list to disk
@@ -148,6 +150,16 @@ class Gman
       return if value.empty?
       hash[key] ||= []
       hash[key].push value
+    end
+
+    def sort_with_exceptions(a, b)
+      if a.start_with?('!') && !b.start_with?('!')
+        -1
+      elsif b.start_with?('!') && !a.start_with?('!')
+        1
+      else
+        a <=> b
+      end
     end
   end
 end

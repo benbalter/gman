@@ -2923,7 +2923,6 @@ zwijndrecht.nl
 zwolle.nl
 
 // non-us gov
-!mail.gov.ua
 admin.ch
 belgium.be
 go.jp
@@ -3064,6 +3063,7 @@ gov.tr
 gov.tt
 gov.tw
 gov.ua
+!mail.gov.ua
 gov.uk
 gov.vc
 gov.ve
@@ -6410,8 +6410,6 @@ winthropmaine.org
 wiscasset.org
 woolwich.us
 yorkmaine.org
-
-// usagovMH
 
 // usagovMI
 aatwp.org

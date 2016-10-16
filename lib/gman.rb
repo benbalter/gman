@@ -55,7 +55,7 @@ class Gman
   private
 
   def valid_domain?
-    @valid_domains ||= domain && domain.valid? && !academic?
+    @valid_domains ||= !domain.nil? && !academic?
   end
 
   def academic?

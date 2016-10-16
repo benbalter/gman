@@ -9,7 +9,8 @@ RSpec.describe 'Gman domains' do
     context "the #{group} group" do
       Parallel.each(domains, in_threads: 4) do |domain|
         context "the #{domain} domain" do
-          let(:valid_domain?) { importer.valid_domain?(domain, options) }
+          let(:subdomain) { "foo.#{domain}" }
+          let(:valid_domain?) { importer.valid_domain?(subdomain, options) }
 
           it 'is a valid domain' do
             expect(valid_domain?).to eql(true)
