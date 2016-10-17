@@ -125,7 +125,6 @@ carlingtownship.ca
 carlowmayo.ca
 carmacks.ca
 carnduff.ca
-caroline.ca
 carrotriver.ca
 carstairs.ca
 cartwrightmb.ca
@@ -636,7 +635,6 @@ northhuron.ca
 northmiddlesex.on.ca
 northnorfolk.ca
 northperth.ca
-northrustico.net
 northsaanich.ca
 notl.org
 notre-dame-de-lourdes.ca
@@ -767,7 +765,6 @@ rmofblanshard.ca
 rmofdufferin.com
 rmoffisher.com
 rmofgrey.ca
-rmofharrison.com
 rmofheadingley.ca
 rmofkelsey.ca
 rmofmacdonald.com
@@ -912,7 +909,6 @@ stbruno.ca
 stbrunokam.qc.ca
 stcatharines.ca
 stclaude.ca
-stdenissurrichelieu.ca
 steannemb.ca
 stececiledemilton.qc.ca
 stececiledewhitton.qc.ca
@@ -935,14 +931,12 @@ stpetersbaypei.com
 stphilippedeneri.com
 stpierrejolys.com
 stratfordcanada.ca
-strathclair.ca
 strathcona.ab.ca
 strathmore.ca
 strathroy-caradoc.ca
 sturgeoncounty.ab.ca
 stwalburg.com
 summerland.ca
-summervillageofsandybeach.com
 summervillageofsilversands.com
 summervillageofsouthview.com
 summervillageofyellowstone.com
@@ -1002,7 +996,6 @@ town.bonnyville.ab.ca
 town.botwood.nl.ca
 town.bowden.ab.ca
 town.bracebridge.on.ca
-town.bridgetown.ns.ca
 town.caledon.on.ca
 town.cochrane.on.ca
 town.collingwood.on.ca
@@ -1034,7 +1027,6 @@ town.redcliff.ab.ca
 town.renfrew.on.ca
 town.richmond-hill.on.ca
 town.shelburne.ns.ca
-town.springhill.ns.ca
 town.stanthony.nf.ca
 town.sterosedulac.mb.ca
 town.stgeorge.nb.ca
@@ -1191,7 +1183,6 @@ village.donalda.ab.ca
 village.frelighsburg.qc.ca
 village.fruitvale.bc.ca
 village.harvey-station.nb.ca
-village.hazelton.bc.ca
 village.longview.ab.ca
 village.memramcook.com
 village.merrickville-wolford.on.ca
@@ -1333,7 +1324,6 @@ villepincourt.qc.ca
 villesaintpascal.com
 villestoneham.com
 virden.ca
-viscount.ca
 visitcramahe.ca
 vonm.ca
 vsll.ca
@@ -1375,7 +1365,6 @@ whistler.ca
 whitby.ca
 whitecity.ca
 whitecourt.ca
-whitefox.ca
 whitehorse.ca
 whiteriver.ca
 whiterockcity.ca
@@ -2740,7 +2729,6 @@ bundessozialgericht.de
 bundessozialministerium.de
 bundessozialministerium.eu
 bundessprachenamt.de
-bundesstelle-fuer-informationstechnik.de
 bundestag-magazin.de
 bundestag-online.de
 bundestag-und-schule.de
@@ -5451,7 +5439,6 @@ job3punkt0.de
 job3punktnull.de
 jobcenterreform.de
 jobcenterservice.de
-jobcentersuche.de
 jobdreipunktnull.de
 jobsohnebarrieren.de
 joehstadt.de
@@ -5698,7 +5685,6 @@ klettgau.de
 kliding.de
 klimadaten.eu
 klimadeutschland.de
-klimagutachten.eu
 klimamonitoring.de
 klimaservices.de
 klimaueberwachung.de
@@ -6531,7 +6517,6 @@ met4pilot.com
 met4pilot.de
 met4pilot.eu
 meteoalarm.de
-metlis.eu
 mettlach.de
 metzels.de
 metzingen.de
@@ -9271,7 +9256,6 @@ verkehrsministerium.de
 vertreterdesbundesinteresses.de
 verwaltungsamt-helbra.de
 verwaltungsmodernisierung.de
-verwaltungsservicezentrum.de
 vestenbergsgreuth.de
 vetschau.de
 vettelschoss.de
@@ -10859,7 +10843,6 @@ montfoort.nl
 mookenmiddelaar.nl
 mrdh.nl
 muiden.nl
-mzhz.nl
 naarden.nl
 nationaleombudsman.nl
 nederbetuwe.nl
@@ -11777,7 +11760,6 @@ jaspercity.com
 jccal.org
 lauderdalecountyonline.com
 leeco.us
-limestonecounty.net
 lincolnalabama.com
 luverne.org
 marioncountyalabama.org
@@ -12693,10 +12675,8 @@ mynextmove.org
 myskillsmyfuture.org
 nagb.org
 nasa.orau.org
-nasarealworldinworld.org
 nationalatlas.com
 nationalatlas.net
-nationalatlas.org
 nationalguard.com
 nationalserviceresources.org
 nationalzoostore.tamretail.net
@@ -12754,7 +12734,6 @@ uscgaux.info
 uscgboating.org
 uscgnews.com
 usdirectexpress.com
-usembassy-china.org.cn
 usmc-mccs.org
 usps.com
 ustraveldocs.com
@@ -12856,7 +12835,6 @@ dunnellon.org
 eaglelake-fla.com
 ecfrpc.org
 eflorida.com
-escarosacfc.org
 eustis.org
 fbfl.us
 fcsw.net
@@ -12970,7 +12948,6 @@ oaklandparkfl.org
 ocalafl.org
 oceanridgeflorida.com
 ocoee.org
-okaloosa-waltoncfc.org
 orangecountyfl.net
 ormondbeach.org
 osceola.org
@@ -13469,7 +13446,6 @@ lemhicountyidaho.org
 lewiscountyid.us
 mccall.id.us
 meridiancity.org
-middletonidaho.us
 minidoka.id.us
 mountain-home.us
 newmeadowsidaho.us
@@ -13923,7 +13899,6 @@ hortonkansas.net
 hutchgov.com
 jfcountyks.com
 jocogov.org
-kansascfc.org
 kansashighwaypatrol.org
 kansastreasurers.org
 kechiks.com
@@ -14194,7 +14169,6 @@ mybossier.com
 newroads.net
 norpc.org
 npgov.org
-nppj.org
 oppj.org
 pineville.net
 plaquemine.org
@@ -14451,7 +14425,6 @@ visitmaryland.org
 walkersville-md.com
 washco-md.net
 washingtongrovemd.org
-westernmarylandcfc.org
 westgov.com
 wicomicocounty.org
 woodsboro.org
@@ -15190,7 +15163,6 @@ brentwoodmo.org
 bridgetonmo.com
 buffalomissouri.us
 byrnesmill.org
-cabool.org
 camdentoncity.com
 cameron-mo.com
 cameronmo.com
@@ -15266,7 +15238,6 @@ drexelmo.com
 duenwegmo.com
 eastprairiemo.net
 ellisville.mo.us
-elsberrycity.com
 eureka.mo.us
 ewgateway.org
 fayette.missouri.org
@@ -15433,7 +15404,6 @@ cityofamoryms.com
 cityofbaldwyn.com
 cityofbatesvillems.com
 cityofbaysprings.com
-cityofboonevillems.com
 cityofboonevillems.org
 cityofbrandon.net
 cityofcarthage.org
@@ -15461,7 +15431,6 @@ diberville.ms.us
 florams.com
 florencems.com
 forest-ms.com
-gearupms.org
 governorbryant.com
 greatermscfc.org
 greenvillems.org
@@ -15500,7 +15469,6 @@ phwd.net
 picayune.ms.us
 plantersvillems.com
 polkville.org
-puckettms.org
 rankincounty.org
 raymondms.com
 ridgelandms.org
@@ -15767,7 +15735,6 @@ ncbussafety.org
 ncbytrain.org
 nccancer.com
 nccbsw.org
-nccgl.net
 ncchildsupport.com
 ncchiroboard.com
 nccivilwar150.com
@@ -15802,7 +15769,6 @@ ncfisheries.net
 ncfloodmaps.com
 ncforeclosurehelp.org
 ncforestactionplan.com
-ncforestassessment.com
 ncfreshlink.com
 ncfriendsofagriculture.org
 ncgov.com
@@ -16077,7 +16043,6 @@ mckenziecounty.net
 mcville.com
 medorand.com
 mercercountynd.com
-michigannd.com
 milnornd.com
 minnewaukan.com
 minotnd.org
@@ -16808,7 +16773,6 @@ westamwelltwp.org
 westcaldwell.com
 westcapemay.us
 westdeptford.com
-westlongbranch.org
 westmilford.org
 westnewyorknj.org
 westorange.org
@@ -16920,7 +16884,6 @@ jamestowntribe.org
 jamulindianvillage.com
 jemezpueblo.org
 jenachoctaw.org
-jicarilla.net
 kakefirstnation.org
 kalispeltribe.com
 karuk.us
@@ -17090,7 +17053,6 @@ bainbridgeny.org
 baldwinsville.org
 batavianewyork.com
 baxterestates.org
-bedfordny.info
 bellerosevillage.org
 belleterre.us
 bellportvillage.org
@@ -17389,7 +17351,6 @@ russellgardens.com
 russellny.org
 rvcny.us
 ryebrook.org
-saddlerock.org
 salem-ny.com
 salina.ny.us
 salmun.com
@@ -17494,7 +17455,6 @@ townofcortlandt.com
 townofcovington.com
 townofcrawford.org
 townofcroghan.com
-townofdannemora.org
 townofday.com
 townofdeerfield.org
 townofdeerpark.org
@@ -17698,7 +17658,6 @@ villageofeastnassau.org
 villageofeastrockaway.org
 villageofeastsyracuse.com
 villageofelbridge.com
-villageofellenville.sharepoint.com
 villageoffrankfortny.org
 villageofgouverneur.org
 villageofhamburg.com
@@ -17761,7 +17720,6 @@ villagepulaski.org
 villagespringvalley.org
 visitgenevany.com
 vnhp.org
-vofab.org
 vofishkill.us
 voh-ny.com
 vsvny.org
@@ -17802,7 +17760,6 @@ auroraoh.com
 austintowntwp.com
 avonlake.org
 bainbridgetwp.com
-ballville.org
 baltimoreohio.org
 bathtownship.org
 beachwoodohio.com
@@ -18424,7 +18381,6 @@ hatfieldborough.com
 hatfieldtownship.org
 haverfordtownship.com
 hazletoncity.org
-heidelbergborough.com
 hermitage.net
 hilltown.org
 honeybrooktwp.com
@@ -18528,7 +18484,6 @@ norristown.org
 north-fayette.com
 northamptoncounty.org
 northamptontownship.com
-northfranklintwp.com
 northumberlandborough.com
 northumberlandco.org
 nvtpa.com
@@ -18641,7 +18596,6 @@ swarthmorepa.org
 swataratwp.com
 swissvaleborough.com
 tarentumboro.com
-telfordborough.com
 telfordborough.org
 terrehillboro.com
 thornbury.org
@@ -18659,7 +18613,6 @@ trainerboro.com
 trainerborough.org
 trappeborough.com
 tredyffrin.org
-trumbauersville.org
 tunkboro.com
 twpusc.org
 tyroneboropa.com
@@ -18853,7 +18806,6 @@ fortmillsc.org
 fountaininn.org
 gastonsc.org
 georgetowncountysc.org
-greatfallssc.net
 greenvillecounty.org
 hamptoncountysc.org
 hamptonsc.net
@@ -19363,12 +19315,10 @@ shady-shores.com
 shenandoahtx.com
 sjra.net
 smith-county.com
-socorrotexas.org
 sonora-texas.com
 spag.org
 springvalleytx.com
 stonewallcountytexas.us
-sulphurriverbasinauthority.org
 sulphurspringstx.org
 tarrantcounty.com
 taylorcountytexas.org
@@ -20129,7 +20079,6 @@ deerfieldwi.com
 denmark-wi.org
 dickeyville.com
 douglascountywi.org
-drugcontrolprogram.org
 easttroy-wi.com
 ecb.org
 elk-mound.org
