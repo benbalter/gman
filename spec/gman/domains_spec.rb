@@ -7,15 +7,15 @@ RSpec.describe 'Gman domains' do
     next if ['non-us gov', 'non-us mil', 'US Federal'].include?(group)
 
     context "the #{group} group" do
-      Parallel.each(domains, in_threads: 4) do |domain|
-        context "the #{domain} domain" do
-          let(:subdomain) { "foo.#{domain}" }
-          let(:valid_domain?) { importer.valid_domain?(subdomain, options) }
+      it 'only contains valid domains' do
+        invalid_domains = []
 
-          it 'is a valid domain' do
-            expect(valid_domain?).to eql(true)
-          end
+        Parallel.each(domains, in_threads: 4) do |domain|
+          next if importer.valid_domain?(domain, options)
+          invalid_domains.push domain
         end
+
+        expect(invalid_domains).to be_empty
       end
     end
   end

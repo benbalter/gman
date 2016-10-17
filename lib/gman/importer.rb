@@ -125,7 +125,7 @@ class Gman
       return false if domain.empty?
       if BLACKLIST.include?(domain)
         reject(domain, 'blacklist')
-      elsif !PublicSuffix.valid?(domain)
+      elsif !PublicSuffix.valid?("foo.#{domain}")
         reject(domain, 'invalid')
       elsif Swot.is_academic?(domain)
         reject(domain, 'academic')
