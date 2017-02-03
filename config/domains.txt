@@ -10,6 +10,7 @@ abernethy.ca
 acme.ca
 acwtownship.ca
 adelaidemetcalfe.on.ca
+adjtos.ca
 admastonbromley.com
 aguanish.org
 airdrie.ca
@@ -192,6 +193,7 @@ clarenville.net
 clarington.net
 clarksharbour.com
 clearhillscounty.ab.ca
+clearview.ca
 clearwatercounty.ca
 clive.ca
 cms.burlington.ca
@@ -203,6 +205,7 @@ cochin.ca
 cochrane.ca
 coldlake.com
 colemantownship.ca
+collingwood.ca
 colwood.ca
 comox.ca
 conceptionbaysouth.ca
@@ -296,6 +299,7 @@ enniskillen.ca
 eriksdale.com
 erin.ca
 esquimalt.ca
+essatownship.on.ca
 estevan.ca
 eston.ca
 explorelunenburg.ca
@@ -405,6 +409,7 @@ ileauxnoix.com
 ilecadieux.ca
 imperial.ca
 innisfail.ca
+innisfil.ca
 inuvik.ca
 invermere.net
 iroquoisfalls.com
@@ -542,6 +547,7 @@ meota.ca
 merritt.ca
 messines.ca
 middlesexcentre.on.ca
+midland.ca
 midwaybc.ca
 mille-isles.ca
 millet.ca
@@ -620,6 +626,7 @@ newbury.ca
 newdenver.ca
 newglasgow.ca
 newhazelton.ca
+newtecumseth.ca
 newwestcity.ca
 niagarafalls.ca
 nipawin.com
@@ -658,6 +665,8 @@ oliver.ca
 oliverpaipoonge.ca
 onoway.com
 orangeville.ca
+orillia.ca
+oro-medonte.ca
 oromocto.ca
 oshawa.ca
 osler-sk.ca
@@ -676,6 +685,7 @@ pelee.org
 pelham.ca
 pelly.ca
 pemberton.ca
+penetanguishene.ca
 penticton.ca
 perth-andover.com
 petawawa.ca
@@ -721,6 +731,7 @@ radisson.sasktelwebhosting.com
 radiumhotsprings.ca
 radville.ca
 rainbowlake.ca
+ramara.ca
 ramea.ca
 rapidcitymb.ca
 raymond.ca
@@ -858,6 +869,7 @@ sicamous.ca
 sidney.ca
 silverbeach.ca
 silverton.ca
+simcoe.ca
 siouxlookout.ca
 sjdl.qc.ca
 slavelake.ca
@@ -954,6 +966,7 @@ swanrivermanitoba.ca
 swiftcurrent.ca
 sylvanlake.ca
 taber.ca
+tay.ca
 tayvalleytwp.ca
 tecumseh.ca
 telkwa.com
@@ -980,6 +993,7 @@ thunderbay.ca
 tidehead.ca
 tignish.com
 timmins.ca
+tiny.ca
 tofieldalberta.ca
 tofino.ca
 tol.ca
@@ -1051,6 +1065,7 @@ townofbeausejour.com
 townofbiggar.com
 townofbredenbury.ca
 townofburin.com
+townofbwg.com
 townofcarberry.ca
 townofcarlyle.com
 townofcarman.com
@@ -1138,6 +1153,7 @@ township.wellesley.on.ca
 township.wollaston.on.ca
 townshipofbrock.ca
 townshipofgreatermadawaska.com
+townshipofsevern.com
 townshipsofheadclaramaria.ca
 tracadie-sheila.ca
 trail.ca
