@@ -1201,7 +1201,6 @@ village.fruitvale.bc.ca
 village.harvey-station.nb.ca
 village.longview.ab.ca
 village.memramcook.com
-village.merrickville-wolford.on.ca
 village.stantoine.nb.ca
 village.westport.on.ca
 villagecharlo.com
@@ -1213,7 +1212,6 @@ villageofbitternlake.ca
 villageofbriercrest.ca
 villageofcentreville.ca
 villageofconquest.ca
-villageofdorintosh.sasktelwebsite.net
 villageofduchess.com
 villageofedberg.com
 villageofgagetown.ca
@@ -2297,7 +2295,6 @@ bestensee.de
 betteldorf.de
 bettendorf.eu
 bettenfeld.de
-bettingen-eifel.de
 betzdorf.de
 betzenstein.de
 betzenweiler.de
@@ -3904,7 +3901,6 @@ gemeinde-arenrath.de
 gemeinde-arkebek.de
 gemeinde-arnsdorf.de
 gemeinde-arzberg.de
-gemeinde-asbach.de
 gemeinde-ascheffel.de
 gemeinde-asendorf.de
 gemeinde-auerbach.de
@@ -3994,7 +3990,6 @@ gemeinde-einhaus.de
 gemeinde-elbtal.de
 gemeinde-ellzee.de
 gemeinde-elsteraue.de
-gemeinde-elxleben.de
 gemeinde-emmerting.de
 gemeinde-ensdorf.de
 gemeinde-eppendorf.de
@@ -4511,7 +4506,6 @@ gimbsheim.de
 gimbweiler.de
 gingen.de
 ginsheim-gustavsburg.de
-ginsweiler.de
 girkenroth.de
 gisc-offenbach.eu
 gladenbach.de
@@ -7104,7 +7098,6 @@ oberbergkirchen.de
 oberbillig.de
 oberboesa.de
 oberboihingen.de
-oberbrombach.de
 oberdachstetten.de
 oberderdingen.de
 oberdiebach.de
@@ -8465,7 +8458,6 @@ sinzing.de
 sipplingen.de
 sirksfelde.de
 sittensen.de
-sitters-pfalz.de
 sitzendorf-schwarzatal.de
 so-klingt-europa.de
 soderstorf.de
@@ -9311,7 +9303,6 @@ vg-baunach.de
 vg-berka-werra.de
 vg-berlstedt.de
 vg-birkenfeld.de
-vg-bme.de
 vg-bodenheim.de
 vg-boos.de
 vg-brahmetal.de
@@ -14514,7 +14505,6 @@ eliotmaine.org
 fairfieldme.com
 farmingdalemaine.com
 farmington-maine.org
-fayettemaine.com
 fortfairfield.org
 fortkent.org
 franklinmaine.net
@@ -15609,7 +15599,6 @@ ayden.com
 badin.org
 battleshipnc.com
 beaufortnc.org
-bentonvillebattlefield.com
 berrytownecrafts.com
 bessemercity.com
 bikesafenc.com
@@ -15707,7 +15696,6 @@ hollyspringsnc.us
 huntersville.org
 hwtfc.org
 i-85yadkinriver.com
-inclusivehealth.org
 indiantrail.org
 itsok2ask.com
 jacksonnc.org
@@ -16057,7 +16045,6 @@ formannd.com
 fostercounty.com
 garrisondiv.org
 glen-ullin.com
-glenburn.us
 graftongov.com
 grandforksgov.com
 grantcountynd.com
@@ -18220,7 +18207,6 @@ dunescity.com
 durham-oregon.us
 echo-oregon.com
 elkton-oregon.com
-fallscity.org
 gduway.org
 getcollegefunds.org
 hermiston.or.us
@@ -18265,7 +18251,6 @@ waldport.org
 
 // usagovPA
 abington.org
-abingtontownship.us
 adamscounty.us
 adamstwp.org
 adoptpakids.org
@@ -18748,7 +18733,6 @@ gobierno.pr
 loteriaelectronicapr.com
 mayaguez.pr
 municipiocarolina.com
-municipiodearecibo.com
 municipiodebayamon.com
 sanjuanciudadpatria.com
 seepuertorico.com
