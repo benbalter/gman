@@ -13032,7 +13032,6 @@ stpete.org
 stpetebeach.org
 suncoastcfc.org
 swfrpc.org
-swfwmd.state.fl.us
 talgov.com
 tamarac.org
 tampagov.net
@@ -13059,6 +13058,7 @@ vivaflorida.org
 volunteerflorida.org
 volusia.org
 washingtonfl.com
+watermatters.org
 westmelbourne.org
 westonfl.org
 wfrpc.org
