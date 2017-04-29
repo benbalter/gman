@@ -14917,6 +14917,14 @@ wmsrdc.org
 woodhavenmi.org
 wyandotte.net
 
+// usagovMIL
+mail.mil
+navy.mil
+usmc.mil
+marines.mil
+nrl.navy.mil
+erdc.dren.mil
+
 // usagovMN
 albanytownship.com
 alexandriatownship.org
