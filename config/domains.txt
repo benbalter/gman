@@ -11338,6 +11338,23 @@ mil.no
 nav.no
 vegvesen.no
 
+// Singapore Town Councils
+ahtc.sg
+amktc.org.sg
+btptc.org.sg
+ccktc.org.sg
+ectc.org.sg
+hbptc.org.sg
+jbtc.org.sg
+jrtc.org.sg
+mptc.org.sg
+myttc.org.sg
+nstc.org.sg
+prpg-tc.org.sg
+sbtc.org.sg
+tampines.org.sg
+tptc.org.sg
+
 // Spain Municipal
 madrid.es
 
