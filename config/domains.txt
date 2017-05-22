@@ -11384,24 +11384,15 @@ conseil-constitutionnel.fr
 conseil-etat.fr
 ctsb.fr
 debatpublic.fr
-ec-nantes.fr
-ecp.fr
 educagri.fr
 elysee.fr
-ena.fr
-enac.fr
-enpc.fr
-entpe.fr
 has-sante.fr
 ifce.fr
 ifpen.fr|
 ifremer.fr
 ifsttar.fr
-ign.fr
-inra.fr
 inrap.fr
 ineris.fr
-inria.fr
 insee.fr
 insep.fr
 inserm.fr
@@ -11411,7 +11402,6 @@ irsn.fr
 irstea.fr
 juradm.fr
 justice.fr
-meteo.fr
 mnhn.fr
 monuments-nationaux.fr
 onf.fr
@@ -11423,7 +11413,6 @@ senat.fr
 shom.fr
 supmaritme.fr
 ugap.fr
-unistra.fr
 
 // French Municipalities
 mairie-nanterre.fr
