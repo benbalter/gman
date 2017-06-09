@@ -49,7 +49,7 @@ end
 
 puts 'Status  : ' + 'Valid government domain'.green
 
-%w(type country state city agency).each do |key|
+%w[type country state city agency].each do |key|
   value = gman.send(key)
   puts "#{key.capitalize.ljust(8)}: #{value}" if value
 end

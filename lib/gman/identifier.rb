@@ -1,6 +1,6 @@
 class Gman
   def type
-    [:state, :district, :cog, :city, :federal, :county].each do |type|
+    %i[state district cog city federal county].each do |type|
       return type if send "#{type}?"
     end
     return if list_category.nil?
@@ -40,7 +40,7 @@ class Gman
 
   def city?
     if matches
-      %w(ci town vil).include?(matches[3])
+      %w[ci town vil].include?(matches[3])
     elsif dotgov_listing
       dotgov_listing['Domain Type'] == 'City'
     end

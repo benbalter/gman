@@ -13,7 +13,7 @@ class Gman
     attr_accessor :domain_list
 
     # Known false positives from vendored lists
-    BLACKLIST = %w(
+    BLACKLIST = %w[
       business.centurytel.net
       chesnee.net
       citlink.net
@@ -39,7 +39,7 @@ class Gman
       wctc.net
       webconnections.net
       webpages.charter.net
-    ).freeze
+    ].freeze
 
     REGEX_CHECKS = {
       'home. regex'     => /^home\./,

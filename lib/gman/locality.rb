@@ -12,18 +12,18 @@ class Gman
   #  * k12.il.us
   #  * ci.foo.zx.us
   class Locality
-    AFFINITY_NAMESPACES = %w(state dst cog).freeze
+    AFFINITY_NAMESPACES = %w[state dst cog].freeze
 
-    STATES = %w(
+    STATES = %w[
       ak al ar az ca co ct dc de fl ga hi ia id il in ks ky
       la ma md me mi mn mo ms mt nc nd ne nh nj nm nv ny oh
       ok or pa ri sc sd tn tx um ut va vt wa wi wv wy
-    ).freeze
+    ].freeze
 
-    LOCALITY_DOMAINS = %w(
+    LOCALITY_DOMAINS = %w[
       ci co borough boro city county
       parish town twp vi vil village
-    ).freeze
+    ].freeze
 
     REGEX = /
       (

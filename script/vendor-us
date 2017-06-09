@@ -13,7 +13,7 @@
 require './lib/gman'
 require 'open-uri'
 
-blacklist = %w(usagovQUASI usagovFEDgov)
+blacklist = %w[usagovQUASI usagovFEDgov]
 source = 'https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt'
 
 data = open(source).read

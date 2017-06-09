@@ -2,7 +2,7 @@ RSpec.describe Gman::DomainList do
   let(:data) { subject.data }
   let(:canada) { data['Canada municipal'] }
 
-  [:path, :contents, :data].each do |type|
+  %i[path contents data].each do |type|
     context "when initialized by #{type}" do
       subject do
         case type
