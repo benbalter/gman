@@ -1,3 +1,6 @@
+//Kenya
+equitybank.co.ke
+go.ke
 // Canada federal
 canada.ca
 gc.ca
@@ -4530,6 +4533,7 @@ glonn.de
 glottertal.de
 glowe.de
 glueckstadt.de
+gmail.com
 gmd-forstern.de
 gnarrenburg.de
 gnotzheim.de
