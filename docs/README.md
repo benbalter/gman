@@ -1,4 +1,4 @@
-# Gman Gem
+# Gman
 
 [![Build Status](https://travis-ci.org/benbalter/gman.png)](https://travis-ci.org/benbalter/gman) [![Gem Version](https://badge.fury.io/rb/gman.png)](http://badge.fury.io/rb/gman)
 
