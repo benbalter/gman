@@ -10569,9 +10569,10 @@ wuerselen.de
 wuppertal.de
 xanten.de
 
-// Italian municipalities
+// Italian government and municipalities
 comune.bologna.it
 formez.it
+governo.it
 plonegov.it
 regione.emilia-romagna.it
 
