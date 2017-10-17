@@ -1,6 +1,6 @@
 # Gman
 
-[![Build Status](https://travis-ci.org/benbalter/gman.png)](https://travis-ci.org/benbalter/gman) [![Gem Version](https://badge.fury.io/rb/gman.png)](http://badge.fury.io/rb/gman)
+[![Build Status](https://travis-ci.org/benbalter/gman.png)](https://travis-ci.org/benbalter/gman) [![Gem Version](https://badge.fury.io/rb/gman.png)](http://badge.fury.io/rb/gman) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 A ruby gem to check if the owner of a given email address or website is working for THE MAN (a.k.a verifies government domains). It will also provide you with metadata about the domain, such as the country, state, city, or agency, where applicable. It does this by leveraging the power of [Naughty or Nice](https://github.com/benbalter/naughty_or_nice), the [Public Suffix List](http://publicsuffix.org/), and the associated [Ruby Gem](https://github.com/weppos/publicsuffix-ruby).
 
