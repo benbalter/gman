@@ -1,8 +1,10 @@
-# Contributing to GMan
+# Contributing to Gman
 
-GMan is an open source project, built one contribution at a time by users like you. There are many ways to contribute, from writing tutorials or blog posts, improving the documentation, submitting bug reports and feature requests, helping other users by commenting on issues, or writing code which can be incorporated into GMan itself.
+Gman is an open source project supported by the efforts of an entire community and built one contribution at a time by users like you. We'd love for you to get involved. Whatever your level of skill or however much time you can give, your contribution is greatly appreciated. There are many ways to contribute, from writing tutorials or blog posts, improving the documentation, submitting bug reports and feature requests, helping other users by commenting on issues, or writing code which can be incorporated into Gman itself.
 
 Following these guidelines helps to communicate that you respect the time of the developers managing and developing this open source project. In return, they should reciprocate that respect in addressing your issue, assessing changes, and helping you finalize your pull requests.
+
+
 
 ## How to report a bug
 
@@ -14,22 +16,32 @@ Here are a few tips for writing *great* bug reports:
 * Include the steps to reproduce the bug, what you expected to happen, and what happened instead
 * Check that you are using the latest version of the project and its dependencies
 * Include what version of the project your using, as well as any relevant dependencies
-* Break distinct problems into distinct issues whenever possible
+* Only include one bug per issue. If you have discovered two bugs, please file two issues
+* Include screenshots or screencasts whenever possible
 * Even if you don't know how to fix the bug, including a failing test may help others track it down
 
 **If you find a security vulnerability, do not open an issue. Please email ben@balter.com instead.**
 
 ## How to suggest a feature or enhancement
 
-If you find yourself wishing for a feature that doesn't exist in GMan, you are probably not alone. There are bound to be others out there with similar needs. Many of the features that GMan has today have been added because our users saw the need.
+If you find yourself wishing for a feature that doesn't exist in Gman, you are probably not alone. There are bound to be others out there with similar needs. Many of the features that Gman has today have been added because our users saw the need.
 
 Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and goals of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible, including describing the problem you're trying to solve.
 
 [Open an issue](https://github.com/benbalter/gman/issues/new) which describes the feature you would like to see, why you want it, how it should work, etc.
 
+## Domains
+
+Domains live in `./config/domains.txt` as a list of TLDs and SLD+TLDs.
+
+Right now, the only valid government top level domains (TLDs), represent the US government and are `.gov`, and `.mil`. Secondary domains (e.g., `gov.uk`, or `mil.au`) represent non-US government entities.
+
+To add or remove a domain from the list of known government domains, simply edit the `domains.txt` file.
+
+
 ## Your first contribution
 
-We'd love for you to contribute to the project. Unsure where to begin contributing to GMan? You can start by looking through these "good first issue" and "help wanted" issues:
+We'd love for you to contribute to the project. Unsure where to begin contributing to Gman? You can start by looking through these "good first issue" and "help wanted" issues:
 
 * [Good first issues](https://github.com/benbalter/gman/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) - issues which should only require a few lines of code and a test or two
 * [Help wanted issues](https://github.com/benbalter/gman/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22) - issues which may be a bit more involved, but are specifically seeking community contributions
@@ -46,7 +58,7 @@ Here's a few general guidelines for proposing changes:
 * Do not commit changes to files that are irrelevant to your feature or bug fix
 * Don't bump the version number in your pull request (it will be bumped prior to release)
 
-At a high level, the process for proposing changes is:
+At a high level, [the process for proposing changes](https://guides.github.com/introduction/flow/) is:
 
 1. Fork the project
 2. Create a descriptively named branch
@@ -54,14 +66,6 @@ At a high level, the process for proposing changes is:
 4. Submit a pull request describing your change
 
 **Interesting in submitting your first Pull Request?** It's easy! You can learn how from this *free* series [How to Contribute to an Open Source Project on GitHub](https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github)
-
-## Domains
-
-Domains live in `./config/domains.txt` as a list of TLDs and SLD+TLDs.
-
-Right now, the only valid government top level domains (TLDs), represent the US government and are `.gov`, and `.mil`. Secondary domains (e.g., `gov.uk`, or `mil.au`) represent non-US government entities.
-
-To add or remove a domain from the list of known government domains, simply edit the `domains.txt` file.
 
 ## Bootstrapping your local development environment
 
@@ -73,4 +77,4 @@ To add or remove a domain from the list of known government domains, simply edit
 
 ## Code of conduct
 
-This project is governed by [the Contributor Covenant Code of Conduct](CONTRIBUTING.md). By participating, you are expected to uphold this code.
+This project is governed by [the Contributor Covenant Code of Conduct](CODE_OF_CONDUCT.md). By participating, you are expected to uphold this code.
