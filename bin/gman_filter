@@ -8,9 +8,5 @@ STDOUT.sync = true
 STDERR.sync = true
 
 ARGF.each do |line|
-  begin
-    puts line if Gman.valid?(line)
-  rescue
-    STDERR.write "Couldn't parse #{line}"
-  end
+  puts line if Gman.valid?(line)
 end

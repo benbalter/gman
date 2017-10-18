@@ -154,14 +154,14 @@ class Gman
     end
 
     def normalize_domains!
-      domain_list.to_h.each do |_group, domains|
+      domain_list.to_h.each_value do |domains|
         domains.map! { |domain| normalize_domain(domain) }
         domains.uniq!
       end
     end
 
     def ensure_validity!(options = {})
-      domain_list.data.each do |_group, domains|
+      domain_list.data.each_value do |domains|
         domains.select! { |domain| valid_domain?(domain, options) }
       end
     end

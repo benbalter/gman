@@ -2,13 +2,13 @@ require File.expand_path './lib/gman/version', File.dirname(__FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'gman'
-  s.summary = <<-EOF
+  s.summary = <<-SUMMARY
     Check if a given domain or email address belong to a governemnt entity
-  EOF
-  s.description = <<-EOF
+  SUMMARY
+  s.description = <<-DESC
     A ruby gem to check if the owner of a given email address is working for
     THE MAN.
-  EOF
+  DESC
   s.version = Gman::VERSION
   s.authors = ['Ben Balter']
   s.email = 'ben.balter@github.com'

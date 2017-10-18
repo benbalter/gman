@@ -118,7 +118,7 @@ RSpec.describe Gman::Importer do
       :invalid     => 'foo.invalid',
       :academic    => 'harvard.edu',
       :"rejex'd"   => 'foo.github.io'
-    }.each do |type, _domain|
+    }.each_key do |type|
       context "a #{type} domain" do
         it 'is invalid' do
           expect(valid?).to eql(false)

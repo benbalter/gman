@@ -87,11 +87,11 @@ RSpec.describe 'Gman bin' do
     let(:args) { [txt_path] }
 
     it 'returns only government domains' do
-      expected = <<-EOS
+      expected = <<-EXPECTED
 mr.senator@obama.senate.gov
 president@whitehouse.gov
 commander.in.chief@us.army.mil
-      EOS
+      EXPECTED
 
       expect(output).to eql(expected)
     end

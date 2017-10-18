@@ -33,7 +33,7 @@ importer = Gman::Importer.new(domains)
 
 importer.logger.info "Starting with #{importer.domains.count} domains"
 
-importer.domains.list.each do |_group, d|
+importer.domains.list.each_value do |d|
   d.map! { |domain| Gman.new(domain).to_s }
   d.map! { |domain| importer.normalize_domain(domain) }
 end
