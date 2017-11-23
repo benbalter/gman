@@ -10607,6 +10607,7 @@ alphenaandenrijn.nl
 ameland.nl
 amersfoort.nl
 amstelveen.nl
+amsterdam.nl
 apeldoorn.nl
 appingedam.nl
 arnhem.nl
@@ -10657,6 +10658,7 @@ ccmo.nl
 ceg.nl
 cibg.nl
 coevorden.nl
+codefor.nl
 cpb.nl
 cranendonck.nl
 cromstrijen.nl
