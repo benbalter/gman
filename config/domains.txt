@@ -20576,34 +20576,13 @@ wyomingbusiness.org
 wyomingtourism.org
 
 // Brazil Federal Government
-eb.mil.br
-brasil.gov.br
-dpu.def.br
-planalto.gov.br
-fazenda.gov.br
-planejamento.gov.br
-cultura.gov.br
-presidencia.gov.br
-mpf.mp.br
-mc.gov.br
-mec.gov.br
-mma.gov.br
-mre.gov.br
-saude.gov.br
-desenvolvimento.gov.br
-justica.gov.br
-mte.gov.br
-mme.gov.br
-defesa.gov.br
-mct.gov.br
-senado.gov.br
-camara.gov.br
+mil.br
+gov.br
+jus.br
+def.br
+mp.br
 
 // Brazil Federal Institutes
-anatel.gov.br
-regulacao.gov.br
-anac.gov.br
-abin.gov.br
 unb.br
 ufac.br
 unifap.br
@@ -20651,16 +20630,4 @@ ufrgs.br
 ufsc.br
 ufsm.br
 cnpq.br
-capes.gov.br
 rnp.br
-
-// Brazil State Government
-pf.gov.br
-df.gov.br
-sp.gov.br
-es.gov.br
-sc.gov.br
-pr.gov.br
-to.gov.br
-mg.gov.br
-rj.gov.br
