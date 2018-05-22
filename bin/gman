@@ -1,4 +1,6 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
+
 # Given a domain-link string, returns information about the domain
 
 require_relative '../lib/gman'

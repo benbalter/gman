@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'Gman domains' do
   let(:resolve_domains?) { ENV['GMAN_RESOLVE_DOMAINS'] == 'true' }
   let(:importer) { Gman::Importer.new({}) }

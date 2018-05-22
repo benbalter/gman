@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Gman::Importer do
   let(:domains) { { 'test' => ['example.com'] } }
   let(:stdout) { StringIO.new }
@@ -113,11 +115,11 @@ RSpec.describe Gman::Importer do
     end
 
     {
-      :empty       => '',
-      :blacklisted => 'egovlink.com',
-      :invalid     => 'foo.invalid',
-      :academic    => 'harvard.edu',
-      :"rejex'd"   => 'foo.github.io'
+      empty:       '',
+      blacklisted: 'egovlink.com',
+      invalid:     'foo.invalid',
+      academic:    'harvard.edu',
+      "rejex'd":   'foo.github.io'
     }.each_key do |type|
       context "a #{type} domain" do
         it 'is invalid' do

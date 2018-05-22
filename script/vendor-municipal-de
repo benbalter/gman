@@ -1,4 +1,5 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
 
 require 'csv'
 require 'open-uri'
@@ -6,7 +7,7 @@ require './lib/gman'
 
 url = 'http://www.mik.nrw.de/nc/themen-aufgaben/kommunales/kommunale-adressen.html?tx_szkommunaldb_pi1%5Bexport%5D=csv'
 
-csv = open(url).read.force_encoding('iso-8859-1').encode('UTF-8')
+csv = URI.open(url).read.force_encoding('iso-8859-1').encode('UTF-8')
 
 # For some reason, the header row is actually the last row
 # Pop the last line off the file and prepend it at the begining

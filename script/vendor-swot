@@ -1,4 +1,6 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 # Vendors the Swot-maintained list of adademic domains into config/academic.txt
 # Source: https://github.com/leereilly/swot/

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Gman
   # Second level .us domains for states and locality
   # See http://en.wikipedia.org/wiki/.us

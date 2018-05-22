@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 # Reconciles the USA.gov-maintained list of US domains with domains.txt
 # to show domains listed in the USA.gov-maintained list that we reject and why
@@ -12,7 +14,7 @@ ENV['RECONCILING'] = 'true'
 blacklist = ['usagovQUASI']
 source = 'https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt'
 
-data = open(source).read
+data = URI.open(source).read
 data = data.split('_' * 74)
 data = data.last.strip
 data = data.split(/\r?\n/).reject(&:empty?)

@@ -1,4 +1,6 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 # Add one or more domains to a given group, running the standard import checks
 #

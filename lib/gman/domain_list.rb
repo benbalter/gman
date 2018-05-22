@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Gman
   class DomainList
     COMMENT_REGEX = %r{//[/\s]*(.*)$}i
@@ -97,7 +99,7 @@ class Gman
 
     # The string representation of the domain list, in public suffix format
     def to_s
-      current_group = output = ''
+      current_group = output = +''
       data.sort_by { |group, _| group.downcase }.each do |group, domains|
         if group != current_group
           output << "\n\n" unless current_group.empty? # first entry
@@ -152,13 +154,13 @@ class Gman
       hash[key].push value
     end
 
-    def sort_with_exceptions(a, b)
-      if a.start_with?('!') && !b.start_with?('!')
+    def sort_with_exceptions(left, right)
+      if left.start_with?('!') && !right.start_with?('!')
         1
-      elsif b.start_with?('!') && !a.start_with?('!')
+      elsif right.start_with?('!') && !left.start_with?('!')
         -1
       else
-        a <=> b
+        left <=> right
       end
     end
   end

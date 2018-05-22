@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 # Propagates an initial list of best-guess government domains
 
 require 'public_suffix'

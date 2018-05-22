@@ -1,4 +1,6 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
+
 #
 # Vendors the USA.gov-maintained list of US domains into domains.txt
 # Source: https://github.com/GSA-OCSIT/govt-urls
@@ -16,7 +18,7 @@ require 'open-uri'
 blacklist = %w[usagovQUASI usagovFEDgov]
 source = 'https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt'
 
-data = open(source).read
+data = URI.open(source).read
 data = data.split('_' * 74)
 data = data.last.strip
 data = data.split(/\r?\n/).reject(&:empty?)

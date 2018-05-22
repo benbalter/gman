@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 require 'naughty_or_nice'
@@ -55,7 +57,7 @@ class Gman
   private
 
   def valid_domain?
-    @valid_domains ||= !domain.nil? && !academic?
+    @valid_domain ||= !domain.nil? && !academic?
   end
 
   def academic?
