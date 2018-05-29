@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Gman
   # Map last part of TLD to alpha2 country code
   ALPHA2_MAP = {

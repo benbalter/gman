@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 # Given an array of domains, removes them from the list
 # Example usage: script/prune foo.invalid, bar.invalid, foo.bar.invalid
 

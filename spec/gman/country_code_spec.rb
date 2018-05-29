@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'Gman Country Codes' do
   {
     'whitehouse.gov' => 'United States of America',

@@ -1,4 +1,6 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 # Given a list of newline-separated email addresses, retain only government
 
 require './lib/gman'

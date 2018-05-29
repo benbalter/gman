@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe 'Gman bin' do
   let(:domain) { 'whitehouse.gov' }
   let(:args) { [domain] }
@@ -87,10 +89,10 @@ RSpec.describe 'Gman bin' do
     let(:args) { [txt_path] }
 
     it 'returns only government domains' do
-      expected = <<-EXPECTED
-mr.senator@obama.senate.gov
-president@whitehouse.gov
-commander.in.chief@us.army.mil
+      expected = <<~EXPECTED
+        mr.senator@obama.senate.gov
+        president@whitehouse.gov
+        commander.in.chief@us.army.mil
       EXPECTED
 
       expect(output).to eql(expected)

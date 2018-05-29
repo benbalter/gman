@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # Utility functions for parsing and manipulating public-suffix domain lists
 # Only used in development and not loaded by default
 require 'yaml'

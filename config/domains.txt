@@ -1429,6 +1429,11 @@ saskatchewan.ca
 // Catalonia
 gencat.cat
 
+// Czech republic government
+justice.cz
+mvcr.cz
+mfcr.cz
+
 // Denmark
 skat.dk
 

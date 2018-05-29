@@ -1,4 +1,6 @@
 #! /usr/bin/env ruby
+# frozen_string_literal: true
+
 # See https://github.com/github/government.github.com/pull/367#issuecomment-102108763
 
 require 'fileutils'

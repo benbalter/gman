@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Gman::Locality do
   context 'valid domains' do
     ['foo.state.il.us', 'ci.foo.il.us'].each do |domain|

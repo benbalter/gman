@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Gman::DomainList do
   let(:data) { subject.data }
   let(:canada) { data['Canada municipal'] }

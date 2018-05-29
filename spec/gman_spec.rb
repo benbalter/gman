@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Gman do
   context 'valid domains' do
     ['foo.gov', 'http://foo.mil', 'foo@bar.gc.ca', 'foo.gov.au',

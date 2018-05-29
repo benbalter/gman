@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Gman
   def type
     %i[state district cog city federal county].each do |type|
