@@ -37,7 +37,8 @@ class Gman
   end
 
   def federal?
-    dotgov_listing && dotgov_listing['Domain Type'] == 'Federal Agency'
+    return false unless dotgov_listing
+    dotgov_listing['Domain Type'] == 'Federal Agency'
   end
 
   def city?
@@ -45,6 +46,8 @@ class Gman
       %w[ci town vil].include?(matches[3])
     elsif dotgov_listing
       dotgov_listing['Domain Type'] == 'City'
+    else
+      false
     end
   end
 
@@ -53,6 +56,8 @@ class Gman
       matches[3] == 'co'
     elsif dotgov_listing
       dotgov_listing['Domain Type'] == 'County'
+    else
+      false
     end
   end
 
@@ -61,15 +66,19 @@ class Gman
       matches[1] == 'state'
     elsif dotgov_listing
       dotgov_listing['Domain Type'] == 'State/Local Govt'
+    else
+      false
     end
   end
 
   def district?
-    matches && matches[1] == 'dst'
+    return false unless matches
+    matches[1] == 'dst'
   end
 
   def cog?
-    matches && matches[1] == 'cog'
+    return false unless matches
+    matches[1] == 'cog'
   end
 
   private
