@@ -11278,6 +11278,7 @@ lg.jp
 mil.tr
 nic.in
 onroerenderfgoed.be
+!education.nsw.gov.au
 !mail.gov.ua
 
 // non-us mil
