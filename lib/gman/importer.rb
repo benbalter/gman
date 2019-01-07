@@ -107,7 +107,7 @@ class Gman
     end
 
     def resolver
-      @resolver ||= Resolv::DNS.new(nameserver: ['8.8.8.8', '8.8.4.4'])
+      @resolver ||= Resolv::DNS.new(nameserver: ['1.1.1.1', '8.8.8.8'])
     end
 
     # Verifies that the given domain has an MX record, and thus is valid
