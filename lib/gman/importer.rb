@@ -57,7 +57,8 @@ class Gman
       'squarespace.com' => /squarespace\.com$/,
       'github.io'       => /github\.io$/,
       'tumblr'          => /tumblr\.com$/,
-      'locality'        => Gman::Locality::REGEX
+      'locality'        => Gman::Locality::REGEX,
+      'french edu'      => /^ac-.*?\.fr/
     }.freeze
 
     def initialize(domains)

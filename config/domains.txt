@@ -1431,8 +1431,8 @@ gencat.cat
 
 // Czech republic government
 justice.cz
-mvcr.cz
 mfcr.cz
+mvcr.cz
 
 // Denmark
 skat.dk
@@ -1460,6 +1460,64 @@ vm.ee
 // Finland
 hel.fi
 lounaispaikka.fi
+
+// French Administrative Authorities
+ademe.fr
+afbiodiversite.fr
+anses.fr
+aphp.fr
+arcep.fr
+asp-public.fr
+assemblee-nationale.fr
+banque-france.fr
+brgm.fr
+caissedesdepots.fr
+ccomptes.fr
+cea.fr
+cerema.fr
+cines.fr
+cnamts.fr
+cndp.fr
+cned.fr
+cnes.fr
+cnil.fr
+cnrs.fr
+conseil-constitutionnel.fr
+conseil-etat.fr
+ctsb.fr
+debatpublic.fr
+educagri.fr
+elysee.fr
+has-sante.fr
+ifce.fr
+ifpen.fr|
+ifremer.fr
+ifsttar.fr
+ineris.fr
+inrap.fr
+insee.fr
+insep.fr
+inserm.fr
+inshea.fr
+ipsl.fr
+irsn.fr
+irstea.fr
+juradm.fr
+justice.fr
+mnhn.fr
+monuments-nationaux.fr
+onf.fr
+onisep.fr
+quaibranly.fr
+reseau-canope.fr
+sante.fr
+senat.fr
+shom.fr
+supmaritme.fr
+ugap.fr
+
+// French Municipalities
+mairie-nanterre.fr
 
 // German Federal
 17498neuenkirchen.de
@@ -1660,6 +1718,7 @@ am-dobrock.de
 amberg.de
 amelinghausen.de
 amerang.de
+amerdingen.de
 ammerbuch.de
 ammerndorf.de
 ammersbek.de
@@ -1871,6 +1930,8 @@ aresing.de
 argenbuehl.de
 argenschwang.de
 argenthal.de
+arkebek.de
+arl-net.de
 armsheim.de
 armstedt.de
 armstorf.de
@@ -1941,6 +2002,7 @@ auslandsschulwesen.de
 auslandsschulwesen.eu
 auslandsschulwesen.net
 aussernzell.de
+aussernzell.info
 aussiedlerbeauftragter.de
 auswaertiges-amt.de
 auswanderungswesen.de
@@ -2097,6 +2159,7 @@ baernau.de
 baerweiler.de
 bafa.de
 bafg.de
+bafin.de
 bafoeg-rueckzahlung.de
 bafoeg.online
 bafza.de
@@ -2132,6 +2195,7 @@ bamf.de
 bammental.de
 bankenunion.de
 bannewitz.de
+banst-pt.de
 banu.bund.de
 barbelroth.de
 barbing.de
@@ -2145,6 +2209,7 @@ bargteheide-land.eu
 bargteheide.de
 bargum.de
 barleben.de
+barlt.de
 barmstedt.de
 barnstorf.de
 barsbuettel.de
@@ -2162,6 +2227,7 @@ bast.de
 bastheim.de
 basthorst.de
 battenberg-eder.de
+baua.de
 baudenbach.de
 baumholder.de
 bauminister.de
@@ -2199,6 +2265,7 @@ behindern-ist-heilbar.de
 behrensdorf-ostsee.de
 beiersdorf-ol.de
 beilngries.de
+beilrode.de
 beilstein.de
 beimerstetten.de
 beindersheim.de
@@ -2301,6 +2368,7 @@ bestensee.de
 betteldorf.de
 bettendorf.eu
 bettenfeld.de
+bettingen-eifel.de
 betzdorf.de
 betzenstein.de
 betzenweiler.de
@@ -2323,6 +2391,7 @@ bfn.de
 bfr.bund.de
 bfs.de
 bfu-web.de
+bibb.de
 biberach-baden.de
 biberach-riss.de
 biberbach.de
@@ -2402,6 +2471,7 @@ bitz.de
 bka-bund.de
 bka.de
 bkg.bund.de
+bkge.de
 blaibach.de
 blaichach.de
 blankenburg.de
@@ -2695,6 +2765,7 @@ buehl.de
 buehlertal.de
 buehlertann.de
 buehlerzell.de
+buehnenversorgung.de
 buehnsdorf.de
 buehren.de
 buensdorf.de
@@ -2731,6 +2802,7 @@ bundesfinanzministerium.de
 bundesgerichtshof.de
 bundeshaus.de
 bundeshaushalt-info.de
+bundesimmobilien.de
 bundesinfrastrukturministerium.de
 bundesjustizamt.de
 bundeskanzleramt.de
@@ -2777,6 +2849,7 @@ bundesversammlung.de
 bundesversicherungsamt.de
 bundesverwaltungsamt.de
 bundesverwaltungsgericht.de
+bundeswahlleiter.de
 bundeswehr-karriere.de
 bunsoh.de
 burbach-eifel.de
@@ -2861,6 +2934,7 @@ chieming.de
 christiansholm.de
 ciec-deutschland.de
 cio.bund.de
+cir.bundeswehr.de
 clausen.de
 claussnitz.de
 clausthal-zellerfeld.de
@@ -2929,6 +3003,7 @@ dahn.de
 dahnen.net
 dahner-felsenland.de
 dahner-felsenland.net
+dainst.org
 daisendorf.de
 daleiden.de
 dalheim-rheinhessen.de
@@ -2983,6 +3058,7 @@ deiningen.de
 deisenhausen.de
 deisslingen.de
 deizisau.de
+dekabank.de
 delingsdorf.de
 delitzsch.de
 dellfeld.de
@@ -3035,8 +3111,10 @@ deutscher-wetterdienst.de
 deutscher-wetterdienst.eu
 deutscherdom.de
 deutsches-klimaportal.de
+deutsches-museum.de
 deutsches-parlament.eu
 deutschesheer.de
+deutscheweine.de
 deutschland-wird-inklusiv.de
 dexheim.de
 dichtelbach.de
@@ -3050,6 +3128,7 @@ die-rente.org
 diebach.de
 dieblich.net
 dieburg.com
+dieburg.de
 diekholzen.de
 dielheim.de
 diemelsee.de
@@ -3107,6 +3186,7 @@ dittelsheim-hessloch.de
 dittenheim.de
 dittweiler.de
 ditzingen.de
+dnb.de
 dobel.de
 doberan-land.de
 doberlug-kirchhain.de
@@ -3178,6 +3258,7 @@ dresden.de
 driedorf.de
 drochtersen.de
 drognitz.de
+droyssig.de
 dsd-weltweit.de
 dsd.online
 dta9.de
@@ -3204,6 +3285,7 @@ duingen.de
 dummerstorf.de
 dunningen.de
 dunsum.de
+dunum.de
 dunzweiler.de
 durach-allgaeu.de
 durbach.de
@@ -3212,6 +3294,7 @@ durlangen.de
 durmersheim.de
 dusslingen.de
 dvdv.de
+dw-world.de
 dwd-shop.de
 dwd-shop.eu
 dwd.bund.de
@@ -3346,6 +3429,7 @@ einselthum.de
 eiselfing.eu
 eisenach.de
 eisenbach.de
+eisenbahn-unfalluntersuchung.de
 eisenberg-allgaeu.de
 eisenberg.de
 eisenheim.info
@@ -3442,6 +3526,7 @@ ensheim-rheinhessen.eu
 enspel.de
 enzkloesterle.eu
 eparlament.de
+epenwoehrden.de
 epfenbach.de
 epfendorf.de
 eppelborn.de
@@ -3480,6 +3565,7 @@ erkner.de
 erlangen.de
 erlbach.de
 erlenbach-hn.de
+erlenbach-pfalz.de
 erlenbach.net
 erlenmoos.de
 erlensee.de
@@ -3662,8 +3748,10 @@ flugwetter.de
 flugwetter.eu
 fluorn-winzeln.de
 fluterschen.de
+fmsa.de
 fockbek.de
 foeritz.de
+foev-speyer.de
 fohren-linden.de
 fons-civitatis.de
 forbach.de
@@ -3864,6 +3952,7 @@ gehofen.de
 gehrde.de
 gehrden.de
 gehren.eu
+gei.de
 geiersthal.de
 geilnau.de
 geisa.de
@@ -3876,6 +3965,7 @@ geisenhausen.de
 geisenheim.de
 geisfeld.de
 geisig.de
+geising.de
 geisingen.de
 geislingen.de
 geithain.de
@@ -3907,6 +3997,7 @@ gemeinde-arenrath.de
 gemeinde-arkebek.de
 gemeinde-arnsdorf.de
 gemeinde-arzberg.de
+gemeinde-asbach.de
 gemeinde-ascheffel.de
 gemeinde-asendorf.de
 gemeinde-auerbach.de
@@ -3996,6 +4087,7 @@ gemeinde-einhaus.de
 gemeinde-elbtal.de
 gemeinde-ellzee.de
 gemeinde-elsteraue.de
+gemeinde-elxleben.de
 gemeinde-emmerting.de
 gemeinde-ensdorf.de
 gemeinde-eppendorf.de
@@ -4035,6 +4127,7 @@ gemeinde-glaubitz.de
 gemeinde-goeggingen.de
 gemeinde-gorsleben.de
 gemeinde-gossel.de
+gemeinde-graalmueritz.de
 gemeinde-grafschaft.de
 gemeinde-grebin.de
 gemeinde-greiling.de
@@ -4060,6 +4153,7 @@ gemeinde-harra.de
 gemeinde-harsdorf.de
 gemeinde-hartmannsdorf.de
 gemeinde-hasel.de
+gemeinde-haselbach.de
 gemeinde-hasenkrug.de
 gemeinde-hausen.de
 gemeinde-heede.de
@@ -4211,6 +4305,7 @@ gemeinde-oberammergau.de
 gemeinde-oberau.de
 gemeinde-oberhausen.de
 gemeinde-oberschoena.de
+gemeinde-ockenfels.de
 gemeinde-odderade.de
 gemeinde-offenbuettel.de
 gemeinde-oldenbuettel.de
@@ -4240,6 +4335,7 @@ gemeinde-prebitz.de
 gemeinde-prinzenmoor.de
 gemeinde-puderbach.de
 gemeinde-puls.com
+gemeinde-rabenau.de
 gemeinde-rackwitz.de
 gemeinde-raesfeld.de
 gemeinde-rain.de
@@ -4248,6 +4344,7 @@ gemeinde-rehborn.de
 gemeinde-rehling.de
 gemeinde-reichenbach.de
 gemeinde-reichertsheim.de
+gemeinde-reichling.de
 gemeinde-reinsberg.de
 gemeinde-reiskirchen.de
 gemeinde-rettenbach.de
@@ -4314,6 +4411,7 @@ gemeinde-sonnenstein.de
 gemeinde-sophienhamm.de
 gemeinde-spiegelau.de
 gemeinde-spiegelberg.de
+gemeinde-sprakensehl.de
 gemeinde-stammham.de
 gemeinde-stapelfeld.de
 gemeinde-steinberg.com
@@ -4355,6 +4453,7 @@ gemeinde-triebel.de
 gemeinde-trierweiler.de
 gemeinde-troendel.de
 gemeinde-trossin.de
+gemeinde-tschernitz.de
 gemeinde-tunau.de
 gemeinde-uder.de
 gemeinde-uebersee.de
@@ -4379,6 +4478,7 @@ gemeinde-walschleben.info
 gemeinde-wang.de
 gemeinde-wangen.de
 gemeinde-wartenberg.de
+gemeinde-wattenbek.de
 gemeinde-weberstedt.de
 gemeinde-weede.de
 gemeinde-weihmichl.de
@@ -4429,6 +4529,7 @@ gemeindebrieselang.de
 gemeindebrunnen.de
 gemeindebuchheim.de
 gemeindefreden.de
+gemeindeganderkesee.de
 gemeindegrossgroenau.de
 gemeindegumtow.de
 gemeindehohenstein-harz.de
@@ -4512,6 +4613,7 @@ gimbsheim.de
 gimbweiler.de
 gingen.de
 ginsheim-gustavsburg.de
+ginsweiler.de
 girkenroth.de
 gisc-offenbach.eu
 gladenbach.de
@@ -5339,6 +5441,7 @@ idar-oberstein.de
 idenheim.de
 idstedt.de
 idstein.de
+ifado.de
 iffeldorf.de
 iffezheim.de
 igensdorf.de
@@ -5473,6 +5576,7 @@ jobcenterreform.de
 jobcenterservice.de
 jobdreipunktnull.de
 jobsohnebarrieren.de
+jockgrim.de
 joehstadt.de
 joerl.de
 johannesberg.de
@@ -5492,6 +5596,7 @@ jueterbog.eu
 jugendinarbeit.de
 jugenheim-rheinhessen.de
 julbach.de
+julius-kuehn.de
 kaaks.de
 kabelsketal.de
 kaden-ww.de
@@ -5603,6 +5708,7 @@ kettenkamp.de
 kettershausen.de
 ketzin.de
 kfw-foerderbank.de
+kfw.de
 kickeshausen.de
 kiebitzreihe.de
 kiedrich.de
@@ -5733,6 +5839,7 @@ klosterkumbd.com
 klosterlechfeld.de
 klosterlehnin.de
 klosterstadt-hornbach.de
+klotten.de
 kluesserath.de
 kluetz-mv.de
 kluetzer-winkel.de
@@ -6109,6 +6216,7 @@ leutesdorf-rhein.de
 leutkirch.de
 lg-am-ohmberg.de
 lg-suedeichsfeld.de
+liag-hannover.de
 lich.de
 lichtenau-baden.de
 lichtenberg-erzgebirge.de
@@ -6219,6 +6327,7 @@ lucka.de
 luckau.de
 luckenbach-ww.de
 luckenwalde.de
+ludorf.online
 ludwigsau.de
 ludwigsburg.de
 ludwigschorgast.de
@@ -6235,6 +6344,7 @@ luebz.de
 luechow-wendland.de
 luechow.de
 lueckenburg.de
+luedersfeld.de
 luehe-online.de
 luelsfeld.de
 luenebach.info
@@ -6798,6 +6908,7 @@ neidenfels.de
 neidenstein.de
 neidhartshausen.de
 neidlingen.de
+neisse-malxetal.de
 neisseaue.de
 nellingen.de
 nennhausen.de
@@ -6810,6 +6921,7 @@ neroth.de
 nersingen.de
 nerzweiler.de
 neschwitz.de
+nesselwang-buergerservice.de
 nesselwang.de
 netzallianz-digitales-deutschland.de
 netzallianzdeutschland.de
@@ -6905,6 +7017,7 @@ neumarkt.de
 neumuehle-elster.de
 neumuenster.de
 neunburg.de
+neunburgvormwald.de
 neundorf-schleiz.eu
 neunkhausen.de
 neunkirchen-am-brand.de
@@ -7105,6 +7218,7 @@ oberbergkirchen.de
 oberbillig.de
 oberboesa.de
 oberboihingen.de
+oberbrombach.de
 oberdachstetten.de
 oberderdingen.de
 oberdiebach.de
@@ -7208,6 +7322,7 @@ obertrubach.de
 obertshausen.de
 oberursel.de
 oberviechtach.de
+oberweid.jimdo.com
 oberweid.jimdo.de
 oberweiler.eu
 oberweis.de
@@ -7226,6 +7341,7 @@ ochtendung.de
 ockenheim.de
 ockfen.de
 ockholm.de
+odderade.de
 odelzhausen.de
 odernheim.de
 oderwitz.de
@@ -7257,6 +7373,7 @@ offenbach-hundheim.de
 offenbach-queich.de
 offenbach.de
 offenberg.de
+offenbuettel.de
 offenburg.de
 offenhausen.de
 offenheim.de
@@ -7304,6 +7421,7 @@ oppenweiler.de
 oppershausen.de
 oranienbaum-woerlitz.de
 oranienburg.de
+orchesterversorgung.de
 orghandbuch.de
 ormont.de
 ornbau.de
@@ -7322,10 +7440,12 @@ ortsgemeinde-isenburg.de
 ortsgemeinde-kesseling.de
 ortsgemeinde-koerperich.de
 ortsgemeinde-kruft.de
+ortsgemeinde-nack.de
 ortsgemeinde-ransweiler.de
 ortsgemeinde-scheidt.de
 ortsgemeinde-steinborn.de
 osann-monzel.de
+oschatz.org
 oscherslebenbode.de
 osnabrueck.de
 oss.bund.de
@@ -7344,12 +7464,14 @@ osterhofen.de
 osterholz-scharmbeck.de
 osternienburgerland.de
 osterode.de
+osterrade.de
 osterroenfeld.de
 osterspai.de
 osterstedt.de
 osterzell.de
 ostfildern.de
 ostheide.de
+ostheim.de
 ostheim.rhoen-saale.net
 osthofen.de
 ostrach.de
@@ -7677,6 +7799,7 @@ rathaus-muenchenbernsdorf.de
 rathaus-rottach-egern.de
 rathaus-tegernsee.de
 rathaus-willingen.de
+rathaus-xanten.de
 rathaus.pfronten.de
 rathaus.reitimwinkl.de
 rathaus.walkenried.de
@@ -7762,6 +7885,7 @@ reipeldingen.de
 reipoltskirchen.de
 reisbach.de
 reischach.de
+reitimwinkl.de
 rellingen.de
 remagen.de
 remchingen.de
@@ -7855,6 +7979,7 @@ ringelai.de
 ringgau.de
 ringleben.net
 ringsheim.de
+ringstedt.de
 rinnthal.de
 rinteln.de
 rinzenberg.de
@@ -7894,6 +8019,7 @@ roemerstein.de
 roes-eifel.de
 roeslau.de
 roetgesbuettel-info.de
+roetgesbuettel.de
 roetha.de
 roethenbach.de
 roethlein.de
@@ -7981,6 +8107,7 @@ ruedersdorf.de
 ruedesheim-nahe.de
 ruedesheim.de
 ruegland.de
+ruehen.de
 ruelzheim.de
 ruemmelsheim.de
 ruemmingen.de
@@ -8050,6 +8177,7 @@ samtgemeinde-grasleben.de
 samtgemeinde-holtriem.de
 samtgemeinde-ilmenau.de
 samtgemeinde-nord-elm.de
+samtgemeinde-oberharz.de
 samtgemeinde-oderwald.de
 samtgemeinde-rosche.de
 samtgemeinde-sibbesse.de
@@ -8157,6 +8285,7 @@ schlepzig.de
 schlesen.com
 schleswig.de
 schlettau-im-erzgebirge.de
+schlettau.de
 schleusegrund.de
 schleusingen.de
 schlieben.com
@@ -8179,6 +8308,7 @@ schmidgaden.de
 schmidmuehlen.de
 schmidthachenbach.de
 schmiechen.de
+schmiedeberg.net
 schmiedefeld.de
 schmilau.de
 schmissberg.de
@@ -8205,6 +8335,7 @@ schoeffengrund.de
 schoefweg.de
 schoellkrippen.de
 schoellnach.de
+schoellnach.info
 schoemberg.de
 schoemerich.de
 schoenaich.de
@@ -8382,6 +8513,7 @@ selsingen.de
 selters-taunus.de
 selters-ww.de
 selzen.de
+senden-westfalen.de
 senftenberg.de
 sengenthal.de
 sengerich.de
@@ -8476,6 +8608,7 @@ soehrewald.de
 soelden.de
 soemmerda.de
 soennebuell.de
+soergenloch.de
 soerup.de
 sohland.de
 sollerup.de
@@ -8569,6 +8702,7 @@ stadt-bad-reichenhall.de
 stadt-bad-salzuflen.de
 stadt-badbentheim.de
 stadt-badgottleuba-berggiesshuebel.de
+stadt-badlaasphe.de
 stadt-badpyrmont.de
 stadt-barby.de
 stadt-barth.de
@@ -8959,6 +9093,7 @@ tagmersheim.de
 taimering.de
 talheim.de
 talkau.de
+talling.de
 tambach-dietharz.de
 tamm.org
 tangerhuette.de
@@ -9130,6 +9265,7 @@ trunkelsberg.de
 tschirn-online.de
 tuchenbach.de
 tuebingen.de
+tuelau.de
 tuemlauer-koog.de
 tuerkenfeld.de
 tuerkheim.de
@@ -9265,6 +9401,7 @@ vallendar-rhein.de
 varel.de
 varrel.de
 vaterstetten.de
+vbl.de
 vechelde.de
 vechta.de
 veilsdorf.de
@@ -9310,6 +9447,7 @@ vg-baunach.de
 vg-berka-werra.de
 vg-berlstedt.de
 vg-birkenfeld.de
+vg-bme.de
 vg-bodenheim.de
 vg-boos.de
 vg-brahmetal.de
@@ -9335,11 +9473,13 @@ vg-grammetal.de
 vg-grossbreitenbach.de
 vg-h.de
 vg-hahnstaetten.de
+vg-hainich-werratal.de
 vg-hainleite.de
 vg-hanstein-rusteberg.de
 vg-hermsdorf.de
 vg-herrstein.de
 vg-hinterschmiding.de
+vg-hoerlkofen.de
 vg-hohnstein.de
 vg-kallmuenz.de
 vg-kandel.de
@@ -9374,6 +9514,7 @@ vg-saarburg.de
 vg-salzbruecke.de
 vg-salzwedel-land.de
 vg-schlotheim.de
+vg-schoensee.de
 vg-seenplatte.de
 vg-selters.de
 vg-speicher.de
@@ -9383,6 +9524,7 @@ vg-thaleischweiler-froeschen.de
 vg-thalfang.de
 vg-uder.de
 vg-unstrut-hainich.de
+vg-wartenberg.de
 vg-wasungen.de
 vg-westerburg.de
 vg-wittlich-land.de
@@ -9744,6 +9886,7 @@ welle-nordheide.de
 wellen-mosel.de
 wellendingen.de
 wellheim.de
+welmbuettel.blogspot.de
 welschbillig.de
 welterod.de
 weltersburg.de
@@ -10117,6 +10260,7 @@ zimmern-udb.de
 zingst.de
 zinnowitz.de
 zirndorf.de
+zittau.de
 zittau.eu
 zivildienst.de
 zivit.de
@@ -11368,101 +11512,6 @@ tptc.org.sg
 // Spain Municipal
 madrid.es
 
-// French Administrative Authorities
-ademe.fr
-afbiodiversite.fr
-anses.fr
-aphp.fr
-arcep.fr
-asp-public.fr
-assemblee-nationale.fr
-banque-france.fr
-brgm.fr
-caissedesdepots.fr
-ccomptes.fr
-cea.fr
-cerema.fr
-cines.fr
-cnamts.fr
-cndp.fr
-cned.fr
-cnes.fr
-cnil.fr
-cnrs.fr
-conseil-constitutionnel.fr
-conseil-etat.fr
-ctsb.fr
-debatpublic.fr
-educagri.fr
-elysee.fr
-has-sante.fr
-ifce.fr
-ifpen.fr|
-ifremer.fr
-ifsttar.fr
-inrap.fr
-ineris.fr
-insee.fr
-insep.fr
-inserm.fr
-inshea.fr
-ipsl.fr
-irsn.fr
-irstea.fr
-juradm.fr
-justice.fr
-mnhn.fr
-monuments-nationaux.fr
-onf.fr
-onisep.fr
-quaibranly.fr
-reseau-canope.fr
-sante.fr
-senat.fr
-shom.fr
-supmaritme.fr
-ugap.fr
-
-// French Municipalities
-mairie-nanterre.fr
-
-// French Universities
-ac-aix-marseille.fr
-ac-amiens.fr
-ac-besancon.fr
-ac-bordeaux.fr
-ac-caen.fr
-ac-clermont.fr
-ac-corse.fr
-ac-creteil.fr
-ac-dijon.fr
-ac-grenoble.fr
-ac-guadeloupe.fr
-ac-guyane.fr
-ac-lille.fr
-ac-limoges.fr
-ac-lyon.fr
-ac-martinique.fr
-ac-mayotte.fr
-ac-montpellier.fr
-ac-nancy-metz.fr
-ac-nantes.fr
-ac-nice.fr
-ac-noumea.nc
-ac-orleans-tours.fr
-ac-paris.fr
-ac-poitiers.fr
-ac-polynesie.pf
-ac-reims.fr
-ac-rennes.fr
-ac-reunion.fr
-ac-rouen.fr
-ac-strasbourg.fr
-ac-toulouse.fr
-ac-versailles.fr
-ac-wf.wf
-ac-spm.fr
-
 // Swedish Administrative Authorities
 aklagare.se
 arbetsformedlingen.se
@@ -11684,8 +11733,8 @@ zg.ch
 zh.ch
 
 // UK
-historicengland.org.uk
 hee.nhs.uk
+historicengland.org.uk
 
 // US Combined Federal Campaigns
 3riverscfc.org
@@ -12018,6 +12067,7 @@ whitecountyar.org
 // usagovAS
 americansamoa.travel
 amsamoatourism.com
+asgteo.com
 doe.as
 
 // usagovAZ
@@ -12810,6 +12860,7 @@ insidevoa.com
 jamrs.org
 jfklibrary.org
 jlab.org
+kb.cert.org
 kennedy-center.org
 knowitall.org
 knowyouroptions.com
@@ -12999,6 +13050,7 @@ dunnellon.org
 eaglelake-fla.com
 ecfrpc.org
 eflorida.com
+escarosacfc.org
 eustis.org
 fbfl.us
 fcsw.net
@@ -14636,6 +14688,7 @@ eliotmaine.org
 fairfieldme.com
 farmingdalemaine.com
 farmington-maine.org
+fayettemaine.com
 fortfairfield.org
 fortkent.org
 franklinmaine.net
@@ -15730,6 +15783,7 @@ ayden.com
 badin.org
 battleshipnc.com
 beaufortnc.org
+bentonvillebattlefield.com
 berrytownecrafts.com
 bessemercity.com
 bikesafenc.com
@@ -15827,6 +15881,7 @@ hollyspringsnc.us
 huntersville.org
 hwtfc.org
 i-85yadkinriver.com
+inclusivehealth.org
 indiantrail.org
 itsok2ask.com
 jacksonnc.org
@@ -15906,6 +15961,7 @@ ncbussafety.org
 ncbytrain.org
 nccancer.com
 nccbsw.org
+nccgl.net
 ncchildsupport.com
 ncchiroboard.com
 nccivilwar150.com
@@ -16176,6 +16232,7 @@ formannd.com
 fostercounty.com
 garrisondiv.org
 glen-ullin.com
+glenburn.us
 graftongov.com
 grandforksgov.com
 grantcountynd.com
@@ -17894,6 +17951,7 @@ villagepulaski.org
 villagespringvalley.org
 visitgenevany.com
 vnhp.org
+vofab.org
 vofishkill.us
 voh-ny.com
 vsvny.org
@@ -18554,6 +18612,7 @@ hatfieldborough.com
 hatfieldtownship.org
 haverfordtownship.com
 hazletoncity.org
+heidelbergborough.com
 hermitage.net
 hilltown.org
 honeybrooktwp.com
@@ -18864,6 +18923,7 @@ gobierno.pr
 loteriaelectronicapr.com
 mayaguez.pr
 municipiocarolina.com
+municipiodearecibo.com
 municipiodebayamon.com
 sanjuanciudadpatria.com
 seepuertorico.com
