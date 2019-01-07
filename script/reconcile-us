@@ -46,6 +46,7 @@ importer.logger.info "Filtered down to #{count} normalized domains"
 missing = {}
 importer.domains.list.each do |g, usagovdomains|
   next unless importer.current.list[g]
+
   missing[g] = importer.current.list[g] - usagovdomains
 end
 

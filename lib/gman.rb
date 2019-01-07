@@ -46,6 +46,7 @@ class Gman
     @valid ||= begin
       return false unless valid_domain?
       return false if academic?
+
       locality? || public_suffix_valid?
     end
   end

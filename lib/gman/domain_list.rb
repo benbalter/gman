@@ -2,7 +2,7 @@
 
 class Gman
   class DomainList
-    COMMENT_REGEX = %r{//[/\s]*(.*)$}i
+    COMMENT_REGEX = %r{//[/\s]*(.*)$}i.freeze
 
     attr_writer :data, :path, :contents
 
@@ -123,6 +123,7 @@ class Gman
     # Parse a public-suffix formatted string into a hash of groups => [domains]
     def string_to_hash(string)
       return unless string
+
       lines = string_to_array(string)
       array_to_hash(lines)
     end
@@ -150,6 +151,7 @@ class Gman
     # value - the single value to push into the array at hash[key]
     def safe_push(hash, key, value)
       return if value.empty?
+
       hash[key] ||= []
       hash[key].push value
     end

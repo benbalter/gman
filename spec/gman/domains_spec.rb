@@ -14,6 +14,7 @@ RSpec.describe 'Gman domains' do
 
         Parallel.each(domains, in_threads: 4) do |domain|
           next if importer.valid_domain?(domain, options)
+
           invalid_domains.push domain
         end
 

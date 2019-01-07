@@ -8,7 +8,7 @@ require 'yaml'
 require_relative '../lib/gman'
 
 # https://gist.github.com/benbalter/6147066
-REGEX = /(\.g[ou]{1,2}(v|b|vt)|\.mil|\.gc|\.fed)(\.[a-z]{2})?$/i
+REGEX = /(\.g[ou]{1,2}(v|b|vt)|\.mil|\.gc|\.fed)(\.[a-z]{2})?$/i.freeze
 
 domains = []
 PublicSuffix::List.default.each do |rule|

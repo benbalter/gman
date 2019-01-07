@@ -23,13 +23,10 @@ class Gman
   # e.g., United States = US, United Kingdom = GB
   def alpha2
     return unless domain
+
     @alpha2 ||= begin
       alpha2 = domain.tld.split('.').last
-      if ALPHA2_MAP[alpha2.to_sym]
-        ALPHA2_MAP[alpha2.to_sym]
-      else
-        alpha2
-      end
+      ALPHA2_MAP[alpha2.to_sym] || alpha2
     end
   end
 
@@ -40,10 +37,11 @@ class Gman
   # Gman.new("foo.gov").country.currency => "USD"
   def country
     return @country if defined? @country
+
     @country ||= begin
       IsoCountryCodes.find(alpha2) if alpha2
-    rescue IsoCountryCodes::UnknownCodeError
-      nil
+                 rescue IsoCountryCodes::UnknownCodeError
+                   nil
     end
   end
 end

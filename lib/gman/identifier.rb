@@ -6,6 +6,7 @@ class Gman
       return type if send "#{type}?"
     end
     return if list_category.nil?
+
     if list_category.include?('usagov')
       :unknown
     else
@@ -38,6 +39,7 @@ class Gman
 
   def federal?
     return false unless dotgov_listing
+
     dotgov_listing['Domain Type'] == 'Federal Agency'
   end
 
@@ -73,11 +75,13 @@ class Gman
 
   def district?
     return false unless matches
+
     matches[1] == 'dst'
   end
 
   def cog?
     return false unless matches
+
     matches[1] == 'cog'
   end
 
@@ -87,6 +91,7 @@ class Gman
     @list_category ||= begin
       match = Gman.list.public_suffix_list.find(domain.to_s)
       return unless match
+
       regex = %r{// ([^\n]+)\n?[^/]*\n#{Regexp.escape(match.value)}\n}im
       matches = Gman.list.contents.match(regex)
       matches[1] if matches
@@ -95,12 +100,14 @@ class Gman
 
   def matches
     return @matches if defined? @matches
+
     @matches = domain.to_s.match(Locality::REGEX)
   end
 
   def dotgov_listing
     return @dotgov_listing if defined? @dotgov_listing
     return unless dotgov?
+
     @dotgov_listing = Gman.dotgov_list.find do |listing|
       listing['Domain Name'].casecmp("#{domain.sld}.gov").zero?
     end

@@ -77,6 +77,7 @@ class Gman
       return false if !options[:skip_dupe] && !ensure_not_dupe(domain)
       return false unless ensure_valid(domain)
       return false if !options[:skip_resolve] && !ensure_resolves(domain)
+
       true
     end
 
@@ -84,6 +85,7 @@ class Gman
     # rather than a bool and silence log output
     def reject(domain, reason)
       return reason if ENV['RECONCILING']
+
       logger.info "👎 `#{domain}`: #{reason}"
       false
     end
@@ -111,6 +113,7 @@ class Gman
     def domain_resolves?(domain)
       domain = Addressable::URI.new(host: domain).normalize.host
       return true if ip?(domain)
+
       returns_record?(domain, 'NS') || returns_record?(domain, 'MX')
     end
 
@@ -125,6 +128,7 @@ class Gman
 
     def ensure_valid(domain)
       return false if domain.empty?
+
       if BLACKLIST.include?(domain)
         reject(domain, 'blacklist')
       elsif !PublicSuffix.valid?("foo.#{domain}")
@@ -138,11 +142,13 @@ class Gman
 
     def ensure_resolves(domain)
       return reject(domain, 'unresolvable') unless domain_resolves?(domain)
+
       true
     end
 
     def ensure_not_dupe(domain)
       return true unless dupe?(domain)
+
       if current.domains.include?(domain)
         reject(domain, 'duplicate')
       else
