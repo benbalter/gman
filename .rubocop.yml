@@ -4,10 +4,6 @@ AllCops:
     - config/**/*
     - vendor/**/*
 
-Style/AlignHash:
-  EnforcedHashRocketStyle: table
-  EnforcedColonStyle: table
-
 Style/Documentation:
   Enabled: false
 
@@ -25,3 +21,7 @@ Metrics/ClassLength:
 
 Metrics/BlockLength:
   Enabled: false
+
+Style/AccessModifierDeclarations:
+  Exclude:
+    - lib/gman/identifier.rb

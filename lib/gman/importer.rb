@@ -44,21 +44,21 @@ class Gman
     ].freeze
 
     REGEX_CHECKS = {
-      'home. regex'     => /^home\./,
-      'user. regex'     => /^users?\./,
-      'sites. regex'    => /^sites?\./,
-      'weebly'          => /weebly\.com$/,
-      'wordpress'       => /wordpress\.com$/,
-      'govoffice'       => /govoffice\d?\.com$/,
-      'homestead'       => /homestead\.com$/,
-      'wix.com'         => /wix\.com$/,
-      'blogspot.com'    => /blogspot\.com$/,
-      'tripod.com'      => /tripod\.com$/,
+      'home. regex' => /^home\./,
+      'user. regex' => /^users?\./,
+      'sites. regex' => /^sites?\./,
+      'weebly' => /weebly\.com$/,
+      'wordpress' => /wordpress\.com$/,
+      'govoffice' => /govoffice\d?\.com$/,
+      'homestead' => /homestead\.com$/,
+      'wix.com' => /wix\.com$/,
+      'blogspot.com' => /blogspot\.com$/,
+      'tripod.com' => /tripod\.com$/,
       'squarespace.com' => /squarespace\.com$/,
-      'github.io'       => /github\.io$/,
-      'tumblr'          => /tumblr\.com$/,
-      'locality'        => Gman::Locality::REGEX,
-      'french edu'      => /^ac-.*?\.fr/
+      'github.io' => /github\.io$/,
+      'tumblr' => /tumblr\.com$/,
+      'locality' => Gman::Locality::REGEX,
+      'french edu' => /^ac-.*?\.fr/
     }.freeze
 
     def initialize(domains)

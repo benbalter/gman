@@ -85,7 +85,7 @@ RSpec.describe Gman::Importer do
       context 'importing' do
         let(:domains) do
           {
-            'test'  => ['www.example.com', 'foo.github.io'],
+            'test' => ['www.example.com', 'foo.github.io'],
             'test2' => ['github.com', 'www.github.com', 'whitehouse.gov']
           }
         end
@@ -115,11 +115,11 @@ RSpec.describe Gman::Importer do
     end
 
     {
-      empty:       '',
+      empty: '',
       blacklisted: 'egovlink.com',
-      invalid:     'foo.invalid',
-      academic:    'harvard.edu',
-      "rejex'd":   'foo.github.io'
+      invalid: 'foo.invalid',
+      academic: 'harvard.edu',
+      "rejex'd": 'foo.github.io'
     }.each_key do |type|
       context "a #{type} domain" do
         it 'is invalid' do

@@ -23,7 +23,7 @@ RSpec.describe 'Gman bin' do
     end
 
     it 'knows the type' do
-      expect(output).to match('federal')
+      expect(output).to match(/federal/i)
     end
 
     it 'knows the agency' do

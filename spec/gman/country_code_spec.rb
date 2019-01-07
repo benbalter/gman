@@ -3,10 +3,10 @@
 RSpec.describe 'Gman Country Codes' do
   {
     'whitehouse.gov' => 'United States of America',
-    'foo.gov.uk'     => 'United Kingdom of Great Britain and Northern Ireland',
-    'army.mil'       => 'United States of America',
-    'foo.gc.ca'      => 'Canada',
-    'foo.eu'         => nil
+    'foo.gov.uk' => 'United Kingdom of Great Britain and Northern Ireland',
+    'army.mil' => 'United States of America',
+    'foo.gc.ca' => 'Canada',
+    'foo.eu' => nil
   }.each do |domain, expected_country|
     context "given #{domain.inspect}" do
       subject { Gman.new(domain) }

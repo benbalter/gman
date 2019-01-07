@@ -96,6 +96,10 @@ RSpec.describe 'Gman identifier' do
         it 'knows the agency' do
           expect(subject.agency).to eql('Executive Office of the President')
         end
+
+        it 'knows the organization' do
+          expect(subject.organization).to eql('White House')
+        end
       end
 
       context 'a state .gov' do
@@ -163,14 +167,43 @@ RSpec.describe 'Gman identifier' do
           expect(subject.city).to eql('Pittsburgh')
         end
       end
+
+      context 'a city .gov' do
+        let(:domain) { 'ABERDEENMD.GOV' }
+
+        it "knows it's a city" do
+          expect(subject).to be_a_city
+          expect(subject.type).to eql(:city)
+        end
+
+        it 'knows the city' do
+          expect(subject.city).to eql('Aberdeen')
+        end
+
+        it 'knows the state' do
+          expect(subject.state).to eql('MD')
+        end
+
+        it "knows it's a dotgov" do
+          expect(subject).to be_a_dotgov
+        end
+
+        it "know's it's not a state" do
+          expect(subject).to_not be_a_state
+        end
+
+        it "know's it's not a county" do
+          expect(subject).to_not be_a_county
+        end
+      end
     end
   end
 
   context "determining a domain's type" do
     {
-      unknown:            'cityofperu.org',
+      unknown: 'cityofperu.org',
       "Canada municipal": 'acme.ca',
-      "Canada federal":   'canada.ca'
+      "Canada federal": 'canada.ca'
     }.each do |expected, domain|
       context "Given the #{domain} domain" do
         let(:domain) { domain }
