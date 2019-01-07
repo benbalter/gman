@@ -14,9 +14,9 @@ list = File.open('./config/domains.txt').read
 puts "Starting list: #{Gman::DomainList.current.count} domains"
 
 domains.each do |domain|
-  list.gsub!(/^#{domain}$\n/, '')
+  list.gsub!(/^#{Regexp.escape(domain)}$\n/, '')
 end
 
-puts "Ending list: #{Gman::DomainList.current.count} domains"
-
 File.write './config/domains.txt', list
+
+puts "Ending list: #{Gman::DomainList.current.count} domains"
