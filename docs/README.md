@@ -72,7 +72,7 @@ domain.country.name                #=> "United States"
 domain.country.alpha2              #=> "US"
 domain.country.alpha3              #=> "USA"
 domain.country.currency            #=> "USD"
-domain.conutry.calling_code        #=> "+1"
+domain.country.calling_code        #=> "+1"
 ```
 
 ### Check if a country is on the US Sanctions list
