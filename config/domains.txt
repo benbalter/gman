@@ -10710,6 +10710,9 @@ governo.it
 plonegov.it
 regione.emilia-romagna.it
 
+// Korea, South
+korea.kr
+
 // Lithuania
 vpt.lt
 
