@@ -34,7 +34,7 @@ Feature requests are welcome. But take a moment to find out whether your idea fi
 
 ## Domains
 
-Domains live in `./config/domains.txt` as a list of TLDs and SLD+TLDs.
+Domains live in [`config/domains.txt`](../config/domains.txt) as a list of TLDs and SLD+TLDs.
 
 Right now, the only valid government top level domains (TLDs), represent the US government and are `.gov`, and `.mil`. Secondary domains (e.g., `gov.uk`, or `mil.au`) represent non-US government entities.
 
