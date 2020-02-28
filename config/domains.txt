@@ -11490,8 +11490,50 @@ sbtc.org.sg
 tampines.org.sg
 tptc.org.sg
 
-// Spain Municipal
+// Spain Municipal & Provincial
+albacete.es
+alicante.es
+almeriaciudad.es
+barcelona.cat
+bilbao.eus
+castillalamancha.es
+cordoba.es
+coruna.gal
+granada.org
+huelva.es
+laspalmasgc.es
 madrid.es
+madrid.org
+malaga.es
+malaga.eu
+murcia.es
+oviedo.es
+palma.cat
+sevilla.org
+valencia.es
+valladolid.es
+vitoria-gasteiz.org
+zaragoza.es
+
+
+// Spain Autonomic
+aragon.es
+asturias.es
+caib.es
+carm.es
+euskadi.eus
+gencat.cat
+gobcan.es
+gobcantabria.es
+gobex.es
+gva.es
+jccm.es
+jcyl.es
+juntadeandalucia.es
+larioja.org
+madrid.org
+navarra.es
+xunta.gal
 
 // Swedish Administrative Authorities
 aklagare.se
