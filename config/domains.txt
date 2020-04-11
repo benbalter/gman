@@ -20512,3 +20512,9 @@ uintacounty.com
 wrightwyoming.com
 wyomingbusiness.org
 wyomingtourism.org
+
+// Nepal federal
+nepal.gov.np
+
+// Nepal municipal
+kawasotimun.gov.np
