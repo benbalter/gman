@@ -11709,6 +11709,7 @@ zg.ch
 zh.ch
 
 // UK
+parliament.uk
 police.uk
 hee.nhs.uk
 historicengland.org.uk
