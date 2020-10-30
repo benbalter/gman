@@ -36,7 +36,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('parallel', '~> 1.6')
   s.add_development_dependency('pry', '~> 0.10')
   s.add_development_dependency('rspec', '~> 3.5')
-  s.add_development_dependency('rubocop', '~> 0.37')
+  s.add_development_dependency('rubocop', '~> 1.1')
   s.add_development_dependency('ruby-prof', '~> 0.15')
   s.add_development_dependency('swot', '~> 1.0')
 end
