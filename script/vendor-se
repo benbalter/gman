@@ -15,7 +15,7 @@ response = agent.submit(form, submit_button)
 
 rows = CSV.parse(response.content, headers: true, col_sep: "\t")
 domains = rows.map do |row|
-  row['Webbadress'] unless row['Namn'] =~ /UNIVERSITET/
+  row['Webbadress'] unless /UNIVERSITET/.match?(row['Namn'])
 end
 
 Gman::Importer.new('Swedish Administrative Authorities' => domains).import

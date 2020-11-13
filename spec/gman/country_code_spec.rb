@@ -10,6 +10,7 @@ RSpec.describe 'Gman Country Codes' do
   }.each do |domain, expected_country|
     context "given #{domain.inspect}" do
       subject { Gman.new(domain) }
+
       let(:country) { subject.country }
 
       it 'knows the country' do

@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 RSpec.describe 'Gman identifier' do
-  let(:domain) { '' }
   subject { Gman.new(domain) }
+
+  let(:domain) { '' }
 
   it 'parses the dotgov list' do
     expect(Gman.dotgov_list).to be_a(CSV::Table)
@@ -15,7 +16,7 @@ RSpec.describe 'Gman identifier' do
 
       it "knows it's a state" do
         expect(subject).to be_a_state
-        expect(subject.type).to eql(:state)
+        expect(subject.type).to be(:state)
       end
 
       it 'knows the state' do
@@ -23,15 +24,15 @@ RSpec.describe 'Gman identifier' do
       end
 
       it "knows it's not a dotgov" do
-        expect(subject).to_not be_a_dotgov
+        expect(subject).not_to be_a_dotgov
       end
 
       it "know's it's not a city" do
-        expect(subject).to_not be_a_city
+        expect(subject).not_to be_a_city
       end
 
       it "know's it's not a county" do
-        expect(subject).to_not be_a_county
+        expect(subject).not_to be_a_county
       end
     end
 
@@ -40,7 +41,7 @@ RSpec.describe 'Gman identifier' do
 
       it "knows it's a city" do
         expect(subject).to be_a_city
-        expect(subject.type).to eql(:city)
+        expect(subject.type).to be(:city)
       end
 
       it 'knows the state' do
@@ -48,15 +49,15 @@ RSpec.describe 'Gman identifier' do
       end
 
       it "knows it's not a dotgov" do
-        expect(subject).to_not be_a_dotgov
+        expect(subject).not_to be_a_dotgov
       end
 
       it "know's it's not a state" do
-        expect(subject).to_not be_a_state
+        expect(subject).not_to be_a_state
       end
 
       it "know's it's not a county" do
-        expect(subject).to_not be_a_county
+        expect(subject).not_to be_a_county
       end
     end
 
@@ -66,7 +67,7 @@ RSpec.describe 'Gman identifier' do
 
         it "knows it's federal" do
           expect(subject).to be_federal
-          expect(subject.type).to eql(:federal)
+          expect(subject.type).to be(:federal)
         end
 
         it "knows it's a dotgov" do
@@ -74,15 +75,15 @@ RSpec.describe 'Gman identifier' do
         end
 
         it "knows it's not a city" do
-          expect(subject).to_not be_a_city
+          expect(subject).not_to be_a_city
         end
 
         it "knows it's not a state" do
-          expect(subject).to_not be_a_state
+          expect(subject).not_to be_a_state
         end
 
         it "knows it's not a county" do
-          expect(subject).to_not be_a_county
+          expect(subject).not_to be_a_county
         end
 
         it 'knows the state' do
@@ -107,7 +108,7 @@ RSpec.describe 'Gman identifier' do
 
         it "knows it's a state" do
           expect(subject).to be_a_state
-          expect(subject.type).to eql(:state)
+          expect(subject.type).to be(:state)
         end
 
         it "knows it's a dotgov" do
@@ -115,15 +116,15 @@ RSpec.describe 'Gman identifier' do
         end
 
         it "knows it's not a city" do
-          expect(subject).to_not be_a_city
+          expect(subject).not_to be_a_city
         end
 
         it "knows it's not federal" do
-          expect(subject).to_not be_federal
+          expect(subject).not_to be_federal
         end
 
         it "knows it's not a county" do
-          expect(subject).to_not be_a_county
+          expect(subject).not_to be_a_county
         end
 
         it 'knows the state' do
@@ -140,7 +141,7 @@ RSpec.describe 'Gman identifier' do
 
         it "knows it's a county" do
           expect(subject).to be_a_county
-          expect(subject.type).to eql(:county)
+          expect(subject.type).to be(:county)
         end
 
         it "knows it's a dotgov" do
@@ -148,15 +149,15 @@ RSpec.describe 'Gman identifier' do
         end
 
         it "knows it's not a city" do
-          expect(subject).to_not be_a_city
+          expect(subject).not_to be_a_city
         end
 
         it "knows it's not federal" do
-          expect(subject).to_not be_federal
+          expect(subject).not_to be_federal
         end
 
         it "knows it's not a state" do
-          expect(subject).to_not be_a_state
+          expect(subject).not_to be_a_state
         end
 
         it 'knows the state' do
@@ -173,7 +174,7 @@ RSpec.describe 'Gman identifier' do
 
         it "knows it's a city" do
           expect(subject).to be_a_city
-          expect(subject.type).to eql(:city)
+          expect(subject.type).to be(:city)
         end
 
         it 'knows the city' do
@@ -189,11 +190,11 @@ RSpec.describe 'Gman identifier' do
         end
 
         it "know's it's not a state" do
-          expect(subject).to_not be_a_state
+          expect(subject).not_to be_a_state
         end
 
         it "know's it's not a county" do
-          expect(subject).to_not be_a_county
+          expect(subject).not_to be_a_county
         end
       end
     end

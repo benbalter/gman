@@ -10,8 +10,8 @@ RSpec.describe Gman do
        subject { described_class.new(domain) }
 
        it "knows #{domain.inspect} is valid government domain" do
-         expect(described_class.valid?(domain)).to eql(true)
-         expect(subject.valid?).to eql(true)
+         expect(described_class.valid?(domain)).to be(true)
+         expect(subject.valid?).to be(true)
        end
      end
   end
@@ -24,8 +24,8 @@ RSpec.describe Gman do
       subject { described_class.new(domain) }
 
       it "knows #{domain.inspect} is not a valid government domain" do
-        expect(described_class.valid?(domain)).to eql(false)
-        expect(subject.valid?).to eql(false)
+        expect(described_class.valid?(domain)).to be(false)
+        expect(subject.valid?).to be(false)
       end
     end
   end
@@ -37,7 +37,7 @@ RSpec.describe Gman do
       let(:domain) { 'github.gov' }
 
       it "knows it's not a locality" do
-        expect(subject.locality?).to eql(false)
+        expect(subject.locality?).to be(false)
       end
     end
 
@@ -45,7 +45,7 @@ RSpec.describe Gman do
       let(:domain) { 'foo.state.il.us' }
 
       it "knows it's a locality" do
-        expect(subject.locality?).to eql(true)
+        expect(subject.locality?).to be(true)
       end
     end
   end
@@ -60,15 +60,15 @@ RSpec.describe Gman do
     end
 
     it 'returns the config path' do
-      expect(Dir.exist?(described_class.config_path)).to eql(true)
+      expect(Dir.exist?(described_class.config_path)).to be(true)
     end
 
     it 'returns the list path' do
-      expect(File.exist?(described_class.list_path)).to eql(true)
+      expect(File.exist?(described_class.list_path)).to be(true)
     end
 
     it 'returns the academic list path' do
-      expect(File.exist?(described_class.academic_list_path)).to eql(true)
+      expect(File.exist?(described_class.academic_list_path)).to be(true)
     end
   end
 end

@@ -18,4 +18,4 @@ end
 
 result = RubyProf.stop
 printer = RubyProf::FlatPrinter.new(result)
-printer.print(STDOUT)
+printer.print($stdout)

@@ -136,7 +136,7 @@ class Gman
       domain_hash = {}
       group = ''
       lines.each do |line|
-        if line =~ COMMENT_REGEX
+        if COMMENT_REGEX.match?(line)
           group = COMMENT_REGEX.match(line)[1]
         else
           safe_push(domain_hash, group, line.downcase)

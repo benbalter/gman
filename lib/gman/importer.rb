@@ -66,7 +66,7 @@ class Gman
     end
 
     def logger
-      @logger ||= Logger.new(STDOUT)
+      @logger ||= Logger.new($stdout)
     end
 
     def normalize_domain(domain)
@@ -122,7 +122,7 @@ class Gman
 
     def ensure_regex(domain)
       REGEX_CHECKS.each do |msg, regex|
-        return reject(domain, msg) if domain =~ regex
+        return reject(domain, msg) if domain&.match?(regex)
       end
       true
     end

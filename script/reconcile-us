@@ -22,7 +22,7 @@ data = data.split(/\r?\n/).reject(&:empty?)
 domains = {}
 group = ''
 data.each do |row|
-  if row =~ /^\w/
+  if /^\w/.match?(row)
     group = row
     domains[group] = []
   else
