@@ -10878,6 +10878,8 @@ goes.nl
 goirle.nl
 gorinchem.nl
 gouda.nl
+gov.nl
+government.nl
 gr.nl
 grave.nl
 grdebevelanden.nl
