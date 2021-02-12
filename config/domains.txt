@@ -10703,6 +10703,9 @@ wuerselen.de
 wuppertal.de
 xanten.de
 
+// Hungary government and municipalities
+budapest.hu
+
 // Italian government and municipalities
 comune.bologna.it
 formez.it
