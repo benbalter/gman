@@ -11493,6 +11493,10 @@ tptc.org.sg
 // Spain Municipal
 madrid.es
 
+// Spain Provincial
+itracasa.es
+navarra.es
+
 // Swedish Administrative Authorities
 aklagare.se
 arbetsformedlingen.se
