@@ -24,7 +24,7 @@ Gem::Specification.new do |s|
   end
 
   s.require_paths = ['lib']
-  s.required_ruby_version = '~> 2.5'
+  s.required_ruby_version = '>= 2.5', '< 4.0'
 
   s.add_dependency('colored', '~> 1.2')
   s.add_dependency('iso_country_codes', '~> 0.6')
