@@ -40,8 +40,8 @@ class Gman
 
     @country ||= begin
       IsoCountryCodes.find(alpha2) if alpha2
-                 rescue IsoCountryCodes::UnknownCodeError
-                   nil
+    rescue IsoCountryCodes::UnknownCodeError
+      nil
     end
   end
 end

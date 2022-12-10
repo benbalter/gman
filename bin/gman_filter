@@ -6,8 +6,8 @@
 require './lib/gman'
 
 # Auto-flush
-STDOUT.sync = true
-STDERR.sync = true
+$stdout.sync = true
+$stderr.sync = true
 
 ARGF.each do |line|
   puts line if Gman.valid?(line)

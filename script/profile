@@ -8,7 +8,7 @@ require './lib/gman'
 # without pre-loading the Gman list for an accurate benchmark
 count = (ARGV[0] || 100).to_i
 domains = File.readlines('./config/domains.txt')
-domains = domains.select { |l| l =~ /^[a-z0-9]/i }
+domains = domains.grep(/^[a-z0-9]/i)
 domains = domains.sample(count)
 
 RubyProf.start
@@ -18,4 +18,4 @@ end
 
 result = RubyProf.stop
 printer = RubyProf::FlatPrinter.new(result)
-printer.print(STDOUT)
+printer.print($stdout)

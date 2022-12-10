@@ -20,7 +20,7 @@ RSpec.describe Gman::DomainList do
       end
 
       it 'stores the init var' do
-        expect(subject.send(type)).to_not be_nil
+        expect(subject.send(type)).not_to be_nil
       end
 
       it 'returns the domain data' do
@@ -41,11 +41,11 @@ RSpec.describe Gman::DomainList do
       end
 
       it 'knows if a domain is valid' do
-        expect(subject.valid?('whitehouse.gov')).to eql(true)
+        expect(subject.valid?('whitehouse.gov')).to be(true)
       end
 
       it 'knows if a domain is invalid' do
-        expect(subject.valid?('example.com')).to eql(false)
+        expect(subject.valid?('example.com')).to be(false)
       end
 
       it 'returns the domain groups' do
@@ -63,13 +63,13 @@ RSpec.describe Gman::DomainList do
 
       it 'alphabetizes the list' do
         canada.shuffle!
-        expect(canada.first).to_not eql('100milehouse.com')
+        expect(canada.first).not_to eql('100milehouse.com')
         subject.alphabetize
         expect(canada.first).to eql('100milehouse.com')
       end
 
       it 'outputs public suffix format' do
-        expect(subject.to_s).to match("// Canada federal\ncanada\.ca\n")
+        expect(subject.to_s).to match("// Canada federal\ncanada.ca\n")
       end
 
       it "finds a domain's parent" do
@@ -80,7 +80,7 @@ RSpec.describe Gman::DomainList do
         let(:stubbed_file_contents) { File.read(stubbed_list_path) }
 
         before do
-          subject.instance_variable_set('@path', stubbed_list_path)
+          subject.instance_variable_set(:@path, stubbed_list_path)
         end
 
         context 'with list data stubbed' do

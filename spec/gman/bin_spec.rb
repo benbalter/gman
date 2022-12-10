@@ -19,7 +19,7 @@ RSpec.describe 'Gman bin' do
 
     it "knows it's valid" do
       expect(output).to match('Valid government domain')
-      expect(exit_code).to eql(0)
+      expect(exit_code).to be(0)
     end
 
     it 'knows the type' do
@@ -50,7 +50,7 @@ RSpec.describe 'Gman bin' do
       let(:args) { [domain, '--no-color'] }
 
       it "doesn't color" do
-        expect(output).to_not match(/\e\[32m/)
+        expect(output).not_to match(/\e\[32m/)
       end
     end
   end
@@ -68,7 +68,7 @@ RSpec.describe 'Gman bin' do
 
     it 'knows the domain is invalid' do
       expect(output).to match('Invalid domain')
-      expect(exit_code).to eql(1)
+      expect(exit_code).to be(1)
     end
   end
 
@@ -77,7 +77,7 @@ RSpec.describe 'Gman bin' do
 
     it "knows it's not a government domain" do
       expect(output).to match('Not a government domain')
-      expect(exit_code).to eql(1)
+      expect(exit_code).to be(1)
     end
   end
 

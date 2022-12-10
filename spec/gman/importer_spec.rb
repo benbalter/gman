@@ -1,19 +1,20 @@
 # frozen_string_literal: true
 
 RSpec.describe Gman::Importer do
+  subject { described_class.new(domains) }
+
   let(:domains) { { 'test' => ['example.com'] } }
   let(:stdout) { StringIO.new }
   let(:logger) { Logger.new(@stdout) }
   let(:domain_list) { subject.domain_list }
-  subject { described_class.new(domains) }
 
   before do
-    subject.instance_variable_set '@logger', logger
+    subject.instance_variable_set :@logger, logger
   end
 
   it 'inits the domain list' do
     expect(domain_list).to be_a(Gman::DomainList)
-    expect(domain_list.count).to eql(1)
+    expect(domain_list.count).to be(1)
     expect(domain_list.domains.first).to eql('example.com')
   end
 
@@ -31,7 +32,7 @@ RSpec.describe Gman::Importer do
 
   context 'domain rejection' do
     it 'returns false' do
-      expect(subject.reject('example.com', 'reasons')).to eql(false)
+      expect(subject.reject('example.com', 'reasons')).to be(false)
     end
 
     it 'returns the reason why asked' do
@@ -44,6 +45,7 @@ RSpec.describe Gman::Importer do
   context 'manipulating the domain list' do
     context 'normalizing domains' do
       let(:domains) { { 'test' => ['www.EXAMPLE.com/'] } }
+
       before { subject.send :normalize_domains! }
 
       it 'normalizes the domains' do
@@ -53,10 +55,11 @@ RSpec.describe Gman::Importer do
 
     context 'removing invalid domains' do
       let(:domains) { { 'test' => ['foo.github.io', 'example.com'] } }
+
       before { subject.send :ensure_validity! }
 
       it 'removes invalid domains' do
-        expect(domain_list.count).to eql(1)
+        expect(domain_list.count).to be(1)
       end
     end
   end
@@ -64,11 +67,14 @@ RSpec.describe Gman::Importer do
   context 'with the current list stubbed' do
     let(:stubbed_list) { Gman::DomainList.new(path: stubbed_list_path) }
     let(:stubbed_file_contents) { File.read(stubbed_list_path) }
-    before { subject.instance_variable_set '@current', stubbed_list }
+
+    before { subject.instance_variable_set :@current, stubbed_list }
 
     context 'writing' do
       before { @current = subject.current.to_s }
+
       before { subject.send :add_to_current }
+
       after  { File.write(stubbed_list_path, @current) }
 
       context 'adding domains' do
@@ -89,6 +95,7 @@ RSpec.describe Gman::Importer do
             'test2' => ['github.com', 'www.github.com', 'whitehouse.gov']
           }
         end
+
         before { subject.import(skip_resolve: true) }
 
         it 'imports' do
@@ -110,7 +117,7 @@ RSpec.describe Gman::Importer do
       let(:domain) { 'whitehouse.gov' }
 
       it 'is valid' do
-        expect(valid?).to eql(true)
+        expect(valid?).to be(true)
       end
     end
 
@@ -123,7 +130,7 @@ RSpec.describe Gman::Importer do
     }.each_key do |type|
       context "a #{type} domain" do
         it 'is invalid' do
-          expect(valid?).to eql(false)
+          expect(valid?).to be(false)
         end
       end
     end
