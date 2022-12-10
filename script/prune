@@ -10,7 +10,7 @@ require_relative '../lib/gman/domain_list'
 domains = ARGV
 domains = domains.clone.map { |d| d.delete ',' }
 
-list = File.open('./config/domains.txt').read
+list = File.read('./config/domains.txt')
 puts "Starting list: #{Gman::DomainList.current.count} domains"
 
 domains.each do |domain|

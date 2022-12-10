@@ -26,7 +26,7 @@ data.each do |row|
     group = row
     domains[group] = []
   else
-    domains[group].push row.sub("\.\t", '').strip
+    domains[group].push row.sub(".\t", '').strip
   end
 end
 
