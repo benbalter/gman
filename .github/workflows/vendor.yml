@@ -1,0 +1,29 @@
+name: "Vendor Domain List"
+
+on:
+  schedule:
+    - cron: '38 17 * * 5'
+  workflow_dispatch: {}
+
+jobs:
+  vendor: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Ruby
+
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+
+      - name: Vendor
+        run: script/vendor
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+            commit-message: Vendor domain list
+            title: Vendor domain list
+            add-paths: config/*
