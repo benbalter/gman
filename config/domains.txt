@@ -10710,6 +10710,7 @@ formez.it
 governo.it
 plonegov.it
 regione.emilia-romagna.it
+regione.umbria.it
 
 // Korea, South
 korea.kr
