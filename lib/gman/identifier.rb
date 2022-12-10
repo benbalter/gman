@@ -60,7 +60,7 @@ class Gman
   def federal?
     return false unless dotgov_listing
 
-    domain_type =~ /^Federal Agency/i
+    domain_type =~ /^Federal/i
   end
 
   def city?
