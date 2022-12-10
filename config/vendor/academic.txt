@@ -3485,7 +3485,6 @@ ltu.se
 lu.ac.ir
 lu.lv
 lu.se
-lublin.pl
 luc.edu
 luca-arts.be
 luiss.it
