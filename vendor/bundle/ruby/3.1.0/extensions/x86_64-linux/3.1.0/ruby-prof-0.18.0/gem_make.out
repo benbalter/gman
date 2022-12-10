@@ -1,0 +1,235 @@
+current directory: /home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof
+/opt/hostedtoolcache/Ruby/3.1.3/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/3.1.3/x64/lib/ruby/3.1.0 extconf.rb
+checking for rb_gc_stat()... yes
+checking for rb_gc_count()... yes
+checking for rb_remove_event_hook_with_data()... yes
+checking for rb_os_allocated_objects()... no
+checking for rb_gc_allocated_size()... no
+checking for rb_gc_collections()... no
+checking for rb_gc_time()... no
+checking for rb_gc_total_time()... no
+checking for rb_gc_total_mallocs()... no
+checking for rb_gc_total_malloced_bytes()... no
+checking for rb_heap_total_mem()... no
+checking for rb_gc_heap_info()... no
+creating Makefile
+
+current directory: /home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof
+make DESTDIR\= sitearchdir\=./.gem.20221210-1653-4pcuvt sitelibdir\=./.gem.20221210-1653-4pcuvt clean
+
+current directory: /home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof
+make DESTDIR\= sitearchdir\=./.gem.20221210-1653-4pcuvt sitelibdir\=./.gem.20221210-1653-4pcuvt
+compiling rp_call_info.c
+rp_call_info.c: In function ‘call_info_table_create’:
+rp_call_info.c:98:1: warning: old-style function definition [-Wold-style-definition]
+   98 | call_info_table_create()
+      | ^~~~~~~~~~~~~~~~~~~~~~
+rp_call_info.c: In function ‘prof_call_infos_create’:
+rp_call_info.c:338:1: warning: old-style function definition [-Wold-style-definition]
+  338 | prof_call_infos_create()
+      | ^~~~~~~~~~~~~~~~~~~~~~
+rp_call_info.c: In function ‘rp_init_call_info’:
+rp_call_info.c:404:6: warning: old-style function definition [-Wold-style-definition]
+  404 | void rp_init_call_info()
+      |      ^~~~~~~~~~~~~~~~~
+rp_call_info.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_measure.c
+rp_measure.c: In function ‘rp_init_measure’:
+rp_measure.c:30:6: warning: old-style function definition [-Wold-style-definition]
+   30 | void rp_init_measure()
+      |      ^~~~~~~~~~~~~~~
+rp_measure.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_measure_allocations.c
+rp_measure_allocations.c: In function ‘measure_allocations’:
+rp_measure_allocations.c:26:1: warning: old-style function definition [-Wold-style-definition]
+   26 | measure_allocations()
+      | ^~~~~~~~~~~~~~~~~~~
+rp_measure_allocations.c: In function ‘prof_measurer_allocations’:
+rp_measure_allocations.c:47:18: warning: old-style function definition [-Wold-style-definition]
+   47 | prof_measurer_t* prof_measurer_allocations()
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_allocations.c: In function ‘rp_init_measure_allocations’:
+rp_measure_allocations.c:69:6: warning: old-style function definition [-Wold-style-definition]
+   69 | void rp_init_measure_allocations()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_allocations.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_measure_cpu_time.c
+rp_measure_cpu_time.c: In function ‘get_cpu_time’:
+rp_measure_cpu_time.c:42:27: warning: old-style function definition [-Wold-style-definition]
+   42 | static unsigned long long get_cpu_time()
+      |                           ^~~~~~~~~~~~
+rp_measure_cpu_time.c: In function ‘get_cpu_frequency’:
+rp_measure_cpu_time.c:63:27: warning: old-style function definition [-Wold-style-definition]
+   63 | static unsigned long long get_cpu_frequency()
+      |                           ^~~~~~~~~~~~~~~~~
+rp_measure_cpu_time.c: In function ‘measure_cpu_time’:
+rp_measure_cpu_time.c:82:15: warning: old-style function definition [-Wold-style-definition]
+   82 | static double measure_cpu_time()
+      |               ^~~~~~~~~~~~~~~~
+rp_measure_cpu_time.c: In function ‘prof_measurer_cpu_time’:
+rp_measure_cpu_time.c:100:18: warning: old-style function definition [-Wold-style-definition]
+  100 | prof_measurer_t* prof_measurer_cpu_time()
+      |                  ^~~~~~~~~~~~~~~~~~~~~~
+rp_measure_cpu_time.c: In function ‘rp_init_measure_cpu_time’:
+rp_measure_cpu_time.c:128:6: warning: old-style function definition [-Wold-style-definition]
+  128 | void rp_init_measure_cpu_time()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_cpu_time.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_measure_gc_runs.c
+rp_measure_gc_runs.c: In function ‘measure_gc_runs’:
+rp_measure_gc_runs.c:24:1: warning: old-style function definition [-Wold-style-definition]
+   24 | measure_gc_runs()
+      | ^~~~~~~~~~~~~~~
+rp_measure_gc_runs.c: In function ‘prof_measurer_gc_runs’:
+rp_measure_gc_runs.c:45:18: warning: old-style function definition [-Wold-style-definition]
+   45 | prof_measurer_t* prof_measurer_gc_runs()
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+rp_measure_gc_runs.c: In function ‘rp_init_measure_gc_runs’:
+rp_measure_gc_runs.c:66:6: warning: old-style function definition [-Wold-style-definition]
+   66 | void rp_init_measure_gc_runs()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_gc_runs.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_measure_gc_time.c
+rp_measure_gc_time.c: In function ‘measure_gc_time’:
+rp_measure_gc_time.c:15:1: warning: old-style function definition [-Wold-style-definition]
+   15 | measure_gc_time()
+      | ^~~~~~~~~~~~~~~
+rp_measure_gc_time.c: In function ‘prof_measurer_gc_time’:
+rp_measure_gc_time.c:36:18: warning: old-style function definition [-Wold-style-definition]
+   36 | prof_measurer_t* prof_measurer_gc_time()
+      |                  ^~~~~~~~~~~~~~~~~~~~~
+rp_measure_gc_time.c: In function ‘rp_init_measure_gc_time’:
+rp_measure_gc_time.c:53:6: warning: old-style function definition [-Wold-style-definition]
+   53 | void rp_init_measure_gc_time()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_gc_time.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_measure_memory.c
+rp_measure_memory.c: In function ‘measure_memory’:
+rp_measure_memory.c:25:1: warning: old-style function definition [-Wold-style-definition]
+   25 | measure_memory()
+      | ^~~~~~~~~~~~~~
+rp_measure_memory.c: In function ‘prof_measurer_memory’:
+rp_measure_memory.c:53:18: warning: old-style function definition [-Wold-style-definition]
+   53 | prof_measurer_t* prof_measurer_memory()
+      |                  ^~~~~~~~~~~~~~~~~~~~
+rp_measure_memory.c: In function ‘rp_init_measure_memory’:
+rp_measure_memory.c:70:6: warning: old-style function definition [-Wold-style-definition]
+   70 | void rp_init_measure_memory()
+      |      ^~~~~~~~~~~~~~~~~~~~~~
+rp_measure_memory.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_measure_process_time.c
+rp_measure_process_time.c: In function ‘measure_process_time’:
+rp_measure_process_time.c:10:1: warning: old-style function definition [-Wold-style-definition]
+   10 | measure_process_time()
+      | ^~~~~~~~~~~~~~~~~~~~
+rp_measure_process_time.c: In function ‘prof_measurer_process_time’:
+rp_measure_process_time.c:55:18: warning: old-style function definition [-Wold-style-definition]
+   55 | prof_measurer_t* prof_measurer_process_time()
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_process_time.c: In function ‘rp_init_measure_process_time’:
+rp_measure_process_time.c:63:6: warning: old-style function definition [-Wold-style-definition]
+   63 | void rp_init_measure_process_time()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_process_time.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_measure_wall_time.c
+rp_measure_wall_time.c: In function ‘measure_wall_time’:
+rp_measure_wall_time.c:13:1: warning: old-style function definition [-Wold-style-definition]
+   13 | measure_wall_time()
+      | ^~~~~~~~~~~~~~~~~
+rp_measure_wall_time.c: In function ‘prof_measurer_wall_time’:
+rp_measure_wall_time.c:20:18: warning: old-style function definition [-Wold-style-definition]
+   20 | prof_measurer_t* prof_measurer_wall_time()
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_wall_time.c: In function ‘rp_init_measure_wall_time’:
+rp_measure_wall_time.c:38:6: warning: old-style function definition [-Wold-style-definition]
+   38 | void rp_init_measure_wall_time()
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~
+rp_measure_wall_time.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_method.c
+rp_method.c:423:5: warning: initialization of ‘int (*)(st_data_t,  st_data_t)’ {aka ‘int (*)(long unsigned int,  long unsigned int)’} from incompatible pointer type ‘int (*)(prof_method_key_t *, prof_method_key_t *)’ [-Wincompatible-pointer-types]
+  423 |     method_table_cmp,
+      |     ^~~~~~~~~~~~~~~~
+rp_method.c:423:5: note: (near initialization for ‘type_method_hash.compare’)
+rp_method.c:424:5: warning: initialization of ‘st_index_t (*)(st_data_t)’ {aka ‘long unsigned int (*)(long unsigned int)’} from incompatible pointer type ‘st_index_t (*)(prof_method_key_t *)’ {aka ‘long unsigned int (*)(prof_method_key_t *)’} [-Wincompatible-pointer-types]
+  424 |     method_table_hash
+      |     ^~~~~~~~~~~~~~~~~
+rp_method.c:424:5: note: (near initialization for ‘type_method_hash.hash’)
+rp_method.c: In function ‘method_table_create’:
+rp_method.c:428:1: warning: old-style function definition [-Wold-style-definition]
+  428 | method_table_create()
+      | ^~~~~~~~~~~~~~~~~~~
+rp_method.c: In function ‘rp_init_method_info’:
+rp_method.c:611:6: warning: old-style function definition [-Wold-style-definition]
+  611 | void rp_init_method_info()
+      |      ^~~~~~~~~~~~~~~~~~~
+rp_method.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_stack.c
+rp_stack.c: In function ‘prof_stack_create’:
+rp_stack.c:28:1: warning: old-style function definition [-Wold-style-definition]
+   28 | prof_stack_create()
+      | ^~~~~~~~~~~~~~~~~
+rp_stack.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling rp_thread.c
+rp_thread.c: In function ‘thread_data_create’:
+rp_thread.c:10:1: warning: old-style function definition [-Wold-style-definition]
+   10 | thread_data_create()
+      | ^~~~~~~~~~~~~~~~~~
+rp_thread.c: In function ‘threads_table_create’:
+rp_thread.c:104:1: warning: old-style function definition [-Wold-style-definition]
+  104 | threads_table_create()
+      | ^~~~~~~~~~~~~~~~~~~~
+rp_thread.c: In function ‘rp_init_thread’:
+rp_thread.c:269:6: warning: old-style function definition [-Wold-style-definition]
+  269 | void rp_init_thread()
+      |      ^~~~~~~~~~~~~~
+rp_thread.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+compiling ruby_prof.c
+ruby_prof.c: In function ‘Init_ruby_prof’:
+ruby_prof.c:767:6: warning: old-style function definition [-Wold-style-definition]
+  767 | void Init_ruby_prof()
+      |      ^~~~~~~~~~~~~~
+ruby_prof.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+linking shared-object ruby_prof.so
+
+current directory: /home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof
+make DESTDIR\= sitearchdir\=./.gem.20221210-1653-4pcuvt sitelibdir\=./.gem.20221210-1653-4pcuvt install
+/usr/bin/install -c -m 0755 ruby_prof.so ./.gem.20221210-1653-4pcuvt

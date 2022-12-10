@@ -10725,6 +10725,12 @@ siauliai.lt
 utena.lt
 vilnius.lt
 
+// Nepal federal
+nepal.gov.np
+
+// Nepal municipal
+kawasotimun.gov.np
+
 // Netherlands
 aaenhunze.nl
 aaenmaas.nl
@@ -11709,10 +11715,10 @@ zg.ch
 zh.ch
 
 // UK
-parliament.uk
-police.uk
 hee.nhs.uk
 historicengland.org.uk
+parliament.uk
+police.uk
 wmfs.net
 
 // US Combined Federal Campaigns
@@ -20514,9 +20520,3 @@ uintacounty.com
 wrightwyoming.com
 wyomingbusiness.org
 wyomingtourism.org
-
-// Nepal federal
-nepal.gov.np
-
-// Nepal municipal
-kawasotimun.gov.np

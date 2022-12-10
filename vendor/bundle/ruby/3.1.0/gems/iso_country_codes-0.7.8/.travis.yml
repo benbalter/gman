@@ -1,0 +1,20 @@
+language: ruby
+bundler_args: --without development
+rvm:
+  - 2.3.0
+  - 2.2.4
+  - 2.1
+  - 2.0.0
+  - 1.9.3
+  - ruby-head
+  - ree
+  - jruby-19mode
+  - jruby-head
+matrix:
+  allow_failures:
+    - rvm: ruby-head
+    - rvm: jruby-head
+    - rvm: ree
+notifications:
+  recipients:
+    - alexrabarts@gmail.com

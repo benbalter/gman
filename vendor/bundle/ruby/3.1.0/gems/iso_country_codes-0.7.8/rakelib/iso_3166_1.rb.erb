@@ -1,0 +1,15 @@
+# encoding: utf-8
+
+class IsoCountryCodes
+  class Code
+  <% codes.keys.each do |code| -%>
+    class <%= code.upcase %> < Code #:nodoc:
+      self.numeric = %q{<%= codes[code][:numeric] %>}
+      self.name    = %q{<%= codes[code][:name] %>}
+      self.alpha2  = %q{<%= codes[code][:alpha2] %>}
+      self.alpha3  = %q{<%= codes[code][:alpha3] %>}
+    end
+  <% end -%>
+  end # end Code
+end # IsoCountryCodes
+

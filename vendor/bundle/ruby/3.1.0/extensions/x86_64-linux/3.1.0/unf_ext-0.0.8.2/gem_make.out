@@ -1,0 +1,16 @@
+current directory: /home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+/opt/hostedtoolcache/Ruby/3.1.3/x64/bin/ruby -I /opt/hostedtoolcache/Ruby/3.1.3/x64/lib/ruby/3.1.0 extconf.rb
+checking for -lstdc++... yes
+creating Makefile
+
+current directory: /home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20221210-1653-4sssa7 sitelibdir\=./.gem.20221210-1653-4sssa7 clean
+
+current directory: /home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20221210-1653-4sssa7 sitelibdir\=./.gem.20221210-1653-4sssa7
+compiling unf.cc
+linking shared-object unf_ext.so
+
+current directory: /home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/unf_ext-0.0.8.2/ext/unf_ext
+make DESTDIR\= sitearchdir\=./.gem.20221210-1653-4sssa7 sitelibdir\=./.gem.20221210-1653-4sssa7 install
+/usr/bin/install -c -m 0755 unf_ext.so ./.gem.20221210-1653-4sssa7

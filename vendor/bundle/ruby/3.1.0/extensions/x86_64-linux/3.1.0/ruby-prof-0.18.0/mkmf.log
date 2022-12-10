@@ -1,0 +1,608 @@
+have_func: checking for rb_gc_stat()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main(int argc, char **argv)
+4: {
+5:   return !!argv[argc];
+6: }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_stat; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_count()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_count; return !p; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_remove_event_hook_with_data()... -------------------- yes
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_remove_event_hook_with_data’ undeclared (first use in this function); did you mean ‘rb_remove_event_hook’?
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_remove_event_hook_with_data; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                         rb_remove_event_hook
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_remove_event_hook_with_data; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_remove_event_hook_with_data();
+15: int t(void) { rb_remove_event_hook_with_data(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_os_allocated_objects()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_os_allocated_objects’ undeclared (first use in this function)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_os_allocated_objects; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_os_allocated_objects; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/ccOWTJPz.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_os_allocated_objects'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_os_allocated_objects();
+15: int t(void) { rb_os_allocated_objects(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_allocated_size()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_gc_allocated_size’ undeclared (first use in this function)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_allocated_size; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_allocated_size; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/ccEqM5nh.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_gc_allocated_size'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_gc_allocated_size();
+15: int t(void) { rb_gc_allocated_size(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_collections()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_gc_collections’ undeclared (first use in this function); did you mean ‘rb_gc_location’?
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_collections; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~
+      |                                                         rb_gc_location
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_collections; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/ccaBZSD5.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_gc_collections'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_gc_collections();
+15: int t(void) { rb_gc_collections(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_time()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_gc_time’ undeclared (first use in this function); did you mean ‘rb_cTime’?
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_time; return !p; }
+      |                                                         ^~~~~~~~~~
+      |                                                         rb_cTime
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_time; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/ccVEs1Ec.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_gc_time'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_gc_time();
+15: int t(void) { rb_gc_time(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_total_time()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_gc_total_time’ undeclared (first use in this function); did you mean ‘rb_gc_location’?
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_total_time; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~
+      |                                                         rb_gc_location
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_total_time; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/cch0wd6a.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_gc_total_time'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_gc_total_time();
+15: int t(void) { rb_gc_total_time(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_total_mallocs()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_gc_total_mallocs’ undeclared (first use in this function)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_total_mallocs; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_total_mallocs; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/cc3ndQPw.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_gc_total_mallocs'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_gc_total_mallocs();
+15: int t(void) { rb_gc_total_mallocs(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_total_malloced_bytes()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_gc_total_malloced_bytes’ undeclared (first use in this function)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_total_malloced_bytes; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_total_malloced_bytes; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/ccEBYm3x.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_gc_total_malloced_bytes'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_gc_total_malloced_bytes();
+15: int t(void) { rb_gc_total_malloced_bytes(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_heap_total_mem()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_heap_total_mem’ undeclared (first use in this function)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_heap_total_mem; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~~~
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_heap_total_mem; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/ccjGLlV3.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_heap_total_mem'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_heap_total_mem();
+15: int t(void) { rb_heap_total_mem(); return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_gc_heap_info()... -------------------- no
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+conftest.c: In function ‘t’:
+conftest.c:14:57: error: ‘rb_gc_heap_info’ undeclared (first use in this function)
+   14 | int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_heap_info; return !p; }
+      |                                                         ^~~~~~~~~~~~~~~
+conftest.c:14:57: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c: At top level:
+cc1: note: unrecognized command-line option ‘-Wno-self-assign’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-parentheses-equality’ may have been intended to silence earlier diagnostics
+cc1: note: unrecognized command-line option ‘-Wno-constant-logical-operand’ may have been intended to silence earlier diagnostics
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: int t(void) { void ((*volatile p)()); p = (void ((*)()))rb_gc_heap_info; return !p; }
+/* end */
+
+LD_LIBRARY_PATH=.:/opt/hostedtoolcache/Ruby/3.1.3/x64/lib "gcc -o conftest -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/x86_64-linux -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0/ruby/backward -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include/ruby-3.1.0 -I. -I/opt/hostedtoolcache/Ruby/3.1.3/x64/include -DENABLE_PATH_CHECK=0   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wdeprecated-declarations -Wduplicated-cond -Wimplicit-function-declaration -Wimplicit-int -Wmisleading-indentation -Wpointer-arith -Wwrite-strings -Wold-style-definition -Wimplicit-fallthrough=0 -Wmissing-noreturn -Wno-cast-function-type -Wno-constant-logical-operand -Wno-long-long -Wno-missing-field-initializers -Wno-overlength-strings -Wno-packed-bitfield-compat -Wno-parentheses-equality -Wno-self-assign -Wno-tautological-compare -Wno-unused-parameter -Wno-unused-value -Wsuggest-attribute=format -Wsuggest-attribute=noreturn -Wunused-variable -Wundef  -fPIC -std=c99 conftest.c  -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L. -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib  -fstack-protector-strong -rdynamic -Wl,-export-dynamic -Wl,--no-as-needed     -Wl,-rpath,/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -L/opt/hostedtoolcache/Ruby/3.1.3/x64/lib -lruby  -lm  -lc"
+/usr/bin/ld: /tmp/cc0gvyMN.o: in function `t':
+/home/runner/work/gman/gman/vendor/bundle/ruby/3.1.0/gems/ruby-prof-0.18.0/ext/ruby_prof/conftest.c:15: undefined reference to `rb_gc_heap_info'
+collect2: error: ld returned 1 exit status
+checked program was:
+/* begin */
+ 1: #include "ruby.h"
+ 2: 
+ 3: /*top*/
+ 4: extern int t(void);
+ 5: int main(int argc, char **argv)
+ 6: {
+ 7:   if (argc > 1000000) {
+ 8:     int (* volatile tp)(void)=(int (*)(void))&t;
+ 9:     printf("%d", (*tp)());
+10:   }
+11: 
+12:   return !!argv[argc];
+13: }
+14: extern void rb_gc_heap_info();
+15: int t(void) { rb_gc_heap_info(); return 0; }
+/* end */
+
+--------------------
+
