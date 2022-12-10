@@ -1452,6 +1452,7 @@ vm.ee
 // Finland
 hel.fi
 lounaispaikka.fi
+tampere.fi
 
 // French Administrative Authorities
 ademe.fr
