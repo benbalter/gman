@@ -69,7 +69,7 @@ RSpec.describe Gman::DomainList do
       end
 
       it 'outputs public suffix format' do
-        expect(subject.to_s).to match("// Canada federal\ncanada\.ca\n")
+        expect(subject.to_s).to match("// Canada federal\ncanada.ca\n")
       end
 
       it "finds a domain's parent" do
@@ -80,7 +80,7 @@ RSpec.describe Gman::DomainList do
         let(:stubbed_file_contents) { File.read(stubbed_list_path) }
 
         before do
-          subject.instance_variable_set('@path', stubbed_list_path)
+          subject.instance_variable_set(:@path, stubbed_list_path)
         end
 
         context 'with list data stubbed' do

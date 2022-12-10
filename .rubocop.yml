@@ -5,6 +5,7 @@ require:
   - rubocop-rspec
 
 AllCops:
+  NewCops: enable
   TargetRubyVersion: 2.5
   Exclude:
     - config/**/*
@@ -16,11 +17,6 @@ Style/Documentation:
 Metrics/AbcSize:
   Exclude:
     - lib/gman/importer.rb
-
-Metrics/ClassLength:
-  Exclude:
-    - lib/gman/importer.rb
-    - test/**/*
 
 Metrics/ClassLength:
   Enabled: false
