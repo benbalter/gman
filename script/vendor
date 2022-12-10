@@ -10,4 +10,4 @@ for file in script/vendor-*; do
   fi
 done
 
-script/alphabetize
+bundle exec script/alphabetize
