@@ -24,7 +24,7 @@ domains = {}
 begin
   raw = URI.open(source).read
   File.write(path, raw)
-  data = CSV.table('tmp.csv')
+  data = CSV.table(path)
 
   data.each do |domain|
     next if domain[:type_of_government] == 'Quasigovernmental'
