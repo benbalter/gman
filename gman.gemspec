@@ -18,13 +18,12 @@ Gem::Specification.new do |s|
   s.licenses = ['MIT']
 
   s.files         = `git ls-files`.split("\n")
-  s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map do |f|
     File.basename(f)
   end
 
   s.require_paths = ['lib']
-  s.required_ruby_version = '~> 2.5'
+  s.required_ruby_version = '>= 2.5', '< 4.0'
 
   s.add_dependency('colored', '~> 1.2')
   s.add_dependency('iso_country_codes', '~> 0.6')
@@ -41,4 +40,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rubocop-rspec', '~> 2.0')
   s.add_development_dependency('ruby-prof', '~> 1.4')
   s.add_development_dependency('swot', '~> 1.0')
+  s.metadata['rubygems_mfa_required'] = 'true'
 end

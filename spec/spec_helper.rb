@@ -24,7 +24,7 @@ def stubbed_list_path
 end
 
 def with_env(key, value)
-  old_env = ENV[key]
+  old_env = ENV.fetch(key, nil)
   ENV[key] = value
   yield
   ENV[key] = old_env

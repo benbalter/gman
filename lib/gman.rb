@@ -43,12 +43,11 @@ class Gman
   #
   # Returns boolean true if a government domain
   def valid?
-    @valid ||= begin
-      return false unless valid_domain?
-      return false if academic?
+    return @valid if defined?(@valid)
 
-      locality? || public_suffix_valid?
-    end
+    @valid = false unless valid_domain?
+    @valid = false if academic?
+    @valid ||= locality? || public_suffix_valid?
   end
 
   def locality?
