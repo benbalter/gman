@@ -203,8 +203,8 @@ RSpec.describe 'Gman identifier' do
   context "determining a domain's type" do
     {
       unknown: 'cityofperu.org',
-      "Canada municipal": 'acme.ca',
-      "Canada federal": 'canada.ca'
+      'Canada municipal': 'acme.ca',
+      'Canada federal': 'canada.ca'
     }.each do |expected, domain|
       context "Given the #{domain} domain" do
         let(:domain) { domain }

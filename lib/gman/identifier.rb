@@ -26,7 +26,7 @@ class Gman
   def_hash_delegator :dotgov_listing, :Agency
   def_hash_delegator :dotgov_listing, :Organization
   def_hash_delegator :dotgov_listing, :City
-  def_hash_delegator :dotgov_listing, :"Domain Type"
+  def_hash_delegator :dotgov_listing, :'Domain Type'
   private :domain_type
 
   def type
@@ -108,14 +108,14 @@ class Gman
   private
 
   def list_category
-    @list_category ||= begin
-      match = Gman.list.public_suffix_list.find(domain.to_s)
-      return unless match
+    return @list_category if defined?(@list_category)
 
-      regex = %r{// ([^\n]+)\n?[^/]*\n#{Regexp.escape(match.value)}\n}im
-      matches = Gman.list.contents.match(regex)
-      matches[1] if matches
-    end
+    match = Gman.list.public_suffix_list.find(domain.to_s)
+    return @list_category = nil unless match
+
+    regex = %r{// ([^\n]+)\n?[^/]*\n#{Regexp.escape(match.value)}\n}im
+    matches = Gman.list.contents.match(regex)
+    @list_category = matches ? matches[1] : nil
   end
 
   def matches
