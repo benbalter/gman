@@ -19,9 +19,6 @@ jobs:
           ruby-version: 3.0
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      - name: Bootstrap
-        run: script/bootstrap
-
       - name: Alphabetize
         run: bundle exec script/alphabetize
 
