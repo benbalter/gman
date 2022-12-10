@@ -87,7 +87,7 @@ class Gman
     if matches
       matches[1] == 'state'
     elsif dotgov_listing
-      domain_type == 'State/Local Govt' || domain_type == "State"
+      domain_type == 'State/Local Govt' || domain_type == 'State'
     else
       false
     end
