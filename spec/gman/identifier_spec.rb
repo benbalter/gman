@@ -45,7 +45,7 @@ RSpec.describe 'Gman identifier' do
       end
 
       it 'knows the state' do
-        expect(subject.state).to eql('MD')
+        expect(subject.state).to eql('IL')
       end
 
       it "knows it's not a dotgov" do
