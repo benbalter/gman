@@ -28,3 +28,4 @@ jobs:
         with:
             commit-message: Clean domain list
             title: Clean domain list
+            add-paths: config/*
