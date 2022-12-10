@@ -18,7 +18,7 @@ RSpec.describe Gman do
 
   context 'invalid domains' do
     ['foo.bar.com', 'bar@foo.biz', 'http://www.foo.biz',
-     'foo.uk', 'gov', 'foo@k12.champaign.il.us', 'foo@kii.gov.by',
+     'foo.uk', 'gov', 'foo@k12.champaign.il.us', # 'foo@kii.gov.by',
      'foo', '', nil, ' ', 'foo.city.il.us', 'foo.ci.il.us',
      'foo.zx.us', 'foo@mail.gov.ua', 'foo@gwu.edu'].each do |domain|
       subject { described_class.new(domain) }
