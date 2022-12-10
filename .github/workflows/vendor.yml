@@ -20,3 +20,10 @@ jobs:
 
       - name: Vendor
         run: script/vendor
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+            commit-message: Vendor domain list
+            title: Vendor domain list
+            add-paths: config/*
