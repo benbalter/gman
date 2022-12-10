@@ -37,7 +37,7 @@ RSpec.describe 'Gman identifier' do
     end
 
     context 'a city domain' do
-      let(:domain) { 'ABERDEENMD.GOV' }
+      let(:domain) { 'ci.champaign.il.us' }
 
       it "knows it's a city" do
         expect(subject).to be_a_city
@@ -45,7 +45,7 @@ RSpec.describe 'Gman identifier' do
       end
 
       it 'knows the state' do
-        expect(subject.state).to eql('MD')
+        expect(subject.state).to eql('IL')
       end
 
       it "knows it's not a dotgov" do
