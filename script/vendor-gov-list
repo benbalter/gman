@@ -9,7 +9,7 @@ rm -Rf tmp/gsa-data
 
 # Vendor the last file in the dotgov-domains folder that ends in `-full.csv`
 git clone https://github.com/GSA/data tmp/gsa-data
-pattern="tmp/gsa-data/dotgov-domains/*-full.csv"
+pattern="tmp/gsa-data/dotgov-domains/*_full.csv"
 files=( $pattern )
 cp -f "${files[@]:(-1)}" config/vendor/dotgovs.csv
 
