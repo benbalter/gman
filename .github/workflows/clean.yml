@@ -18,12 +18,15 @@ jobs:
         with:
           ruby-version: 3.0
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-      
+
+      - name: Bootstrap
+        run: script/bootstrap
+
       - name: Alphabetize
-        run: script/alphabetize
+        run: bundle exec script/alphabetize
 
       - name: Dedupe
-        run: script/dedupe
+        run: bundle exec script/dedupe
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
