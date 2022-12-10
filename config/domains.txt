@@ -10704,6 +10704,9 @@ wuerselen.de
 wuppertal.de
 xanten.de
 
+// Hungary government and municipalities
+budapest.hu
+
 // Italian government and municipalities
 comune.bologna.it
 formez.it
@@ -10875,11 +10878,15 @@ geonovum.nl
 ghornml.nl
 giessenlanden.nl
 gilzerijen.nl
+gobiernodireino.nl
+gobiernudireino.nl
 goeree-overflakkee.nl
 goes.nl
 goirle.nl
 gorinchem.nl
 gouda.nl
+gov.nl
+government.nl
 gr.nl
 grave.nl
 grdebevelanden.nl
