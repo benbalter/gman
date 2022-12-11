@@ -14,25 +14,29 @@
 
 require './lib/gman'
 require 'open-uri'
+require 'csv'
 
+path = File.expand_path('./vendor-us-tmp.csv')
 blacklist = %w[usagovQUASI usagovFEDgov]
-source = 'https://raw.githubusercontent.com/GSA/govt-urls/master/government-urls-hierarchical-list.txt'
-
-data = URI.open(source).read
-data = data.split('_' * 74)
-data = data.last.strip
-data = data.split(/\r?\n/).reject(&:empty?)
-
+source = 'https://raw.githubusercontent.com/GSA/govt-urls/main/1_govt_urls_full.csv'
 domains = {}
-group = ''
-data.each do |row|
-  if /^\w/.match?(row)
-    group = row
-    domains[group] = []
-  else
-    domains[group].push row.sub("\.\t", '').strip
-  end
-end
 
-domains.reject! { |g, _| blacklist.include?(g) }
-Gman::Importer.new(domains).import
+begin
+  raw = URI.open(source).read
+  File.write(path, raw)
+  data = CSV.table(path)
+
+  data.each do |domain|
+    next if domain[:type_of_government] == 'Quasigovernmental'
+
+    group = "US #{domain[:type_of_government]}"
+    group += " (#{domain[:state]})" if domain[:type_of_government] != 'Federal' && domain[:state]
+    domains[group] ||= []
+    domains[group] << domain[:domain_name]
+  end
+
+  domains.reject! { |g, _| blacklist.include?(g) }
+  Gman::Importer.new(domains).import
+ensure
+  File.delete(path)
+end

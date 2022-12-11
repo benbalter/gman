@@ -9,7 +9,7 @@ RSpec.describe Gman::Importer do
   let(:domain_list) { subject.domain_list }
 
   before do
-    subject.instance_variable_set '@logger', logger
+    subject.instance_variable_set :@logger, logger
   end
 
   it 'inits the domain list' do
@@ -68,7 +68,7 @@ RSpec.describe Gman::Importer do
     let(:stubbed_list) { Gman::DomainList.new(path: stubbed_list_path) }
     let(:stubbed_file_contents) { File.read(stubbed_list_path) }
 
-    before { subject.instance_variable_set '@current', stubbed_list }
+    before { subject.instance_variable_set :@current, stubbed_list }
 
     context 'writing' do
       before { @current = subject.current.to_s }

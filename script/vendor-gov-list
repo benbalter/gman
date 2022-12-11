@@ -3,15 +3,6 @@
 # Vendors the full list of US .gov domains from https://github.com/GSA/data
 # Usage: script/vendor-gov-list
 
-# Set up
-mkdir tmp
-rm -Rf tmp/gsa-data
-
 # Vendor the last file in the dotgov-domains folder that ends in `-full.csv`
-git clone https://github.com/GSA/data tmp/gsa-data
-pattern="tmp/gsa-data/dotgov-domains/*-full.csv"
-files=( $pattern )
-cp -f "${files[@]:(-1)}" config/vendor/dotgovs.csv
+wget https://raw.githubusercontent.com/cisagov/dotgov-data/main/current-full.csv -O ./config/vendor/dotgovs.csv
 
-# Clean up
-rm -Rf tmp/gsa-data
