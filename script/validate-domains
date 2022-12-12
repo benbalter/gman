@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+# ! /usr/bin/env ruby
+# frozen_string_literal: true
+
+#
+# Add one or more domains to a given group, running the standard import checks
+#
+# Usage: script/add [GROUP] [DOMAIN(S)]
+
+require './lib/gman/importer'
+
+importer = Gman::Importer.new({})
+options = { skip_dupe: true, skip_resolve: false }
+list_path = File.expand_path '../config/domains.txt', __FILE__
+
+importer.logger.info "Starting list: #{Gman::DomainList.current.count} domains"
+
+Gman.list.to_h.values.shuffle.each do |domains|
+  # next if ['non-us gov', 'non-us mil', 'US Federal'].include?(group)
+
+  domains.each do |domain|
+    next if importer.valid_domain?(domain, options)
+
+    importer.logger.warn "#{domain} is not valid, removing from list"
+    list = File.read(list_path)
+    list.gsub!(/^#{Regexp.escape(domain)}$\n/, '')
+    File.write list_path, list
+  end
+end
+
+importer.logger.info "Ending list: #{Gman::DomainList.current.count} domains"

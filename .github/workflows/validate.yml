@@ -18,7 +18,12 @@ jobs:
           ruby-version: 3.0
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
-      - name: Run tests
-        run: script/cibuild
-        env:
-          GMAN_RESOLVE_DOMAINS: true
+      - name: Validate domains
+        run: be script/validate_domains
+ 
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+            commit-message: Clean domain list
+            title: Clean domain list
+            add-paths: config/*
