@@ -19,7 +19,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - name: Validate domains
-        run: be script/validate_domains
+        run: bundle exec script/validate_domains
  
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
