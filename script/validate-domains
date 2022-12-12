@@ -12,7 +12,7 @@ require './lib/gman/importer'
 
 importer = Gman::Importer.new({})
 options = { skip_dupe: true, skip_resolve: false }
-list_path = File.expand_path '../config/domains.txt', __FILE__
+list_path = File.expand_path '../config/domains.txt', __dir__
 
 importer.logger.info "Starting list: #{Gman::DomainList.current.count} domains"
 
