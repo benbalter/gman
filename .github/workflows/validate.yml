@@ -24,6 +24,6 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-            commit-message: Clean domain list
-            title: Clean domain list
+            commit-message: Remove invalid domains
+            title: Remove invalid domains
             add-paths: config/*
