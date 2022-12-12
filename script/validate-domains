@@ -9,6 +9,7 @@
 # Usage: script/add [GROUP] [DOMAIN(S)]
 
 require './lib/gman/importer'
+require 'parallel'
 
 importer = Gman::Importer.new({})
 options = { skip_dupe: true, skip_resolve: false }
@@ -19,7 +20,7 @@ importer.logger.info "Starting list: #{Gman::DomainList.current.count} domains"
 Gman.list.to_h.values.shuffle.each do |domains|
   # next if ['non-us gov', 'non-us mil', 'US Federal'].include?(group)
 
-  domains.each do |domain|
+  Parallel.each(domains) do |domain|
     importer.logger.info "Validating #{domain}"
     next if importer.valid_domain?(domain, options)
 
