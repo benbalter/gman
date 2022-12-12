@@ -39,6 +39,7 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rubocop-performance', '~> 1.5')
   s.add_development_dependency('rubocop-rspec', '~> 2.0')
   s.add_development_dependency('ruby-prof', '~> 1.4')
+  s.add_development_dependency('ruby-progressbar', '~> 1.10')
   s.add_development_dependency('swot', '~> 1.0')
   s.metadata['rubygems_mfa_required'] = 'true'
 end
