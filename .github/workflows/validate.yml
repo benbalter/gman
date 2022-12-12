@@ -23,6 +23,7 @@ jobs:
  
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
+        if: always()
         with:
             commit-message: Remove invalid domains
             title: Remove invalid domains
