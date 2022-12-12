@@ -25,4 +25,4 @@ end
 
 # NOTE: We want to skip resolution here, because a domain like `gov.sv` may be
 # a valid TLD, not have any top-level sites, and we'd still want it listed
-Gman::Importer.new('non-us gov' => domains, skip_resolve: false).import(skip_resolve: true)
+Gman::Importer.new('non-us gov' => domains).import(skip_resolve: true)
