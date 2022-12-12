@@ -19,8 +19,9 @@ importer.logger.info "Starting list: #{Gman::DomainList.current.count} domains"
 
 Gman.list.to_h.values.shuffle.each do |domains|
   # next if ['non-us gov', 'non-us mil', 'US Federal'].include?(group)
-
+  
   Parallel.each(domains, progress: "Validating") do |domain|
+    next if domain.start_with?("!")
     next if importer.valid_domain?(domain, options)
 
     importer.logger.warn "#{domain} is not valid, removing from list"
