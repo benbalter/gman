@@ -3524,6 +3524,7 @@ estenfeld.net
 esterwegen.de
 esthal.de
 estorf.de
+etschberg.info
 ettal.de
 ettenheim.de
 ettenstatt.de
@@ -4231,6 +4232,7 @@ gemeinde-pirk.de
 gemeinde-plate.de
 gemeinde-ploetzkau.de
 gemeinde-poelitz.de
+gemeinde-poelzig.de
 gemeinde-pohnsdorf.de
 gemeinde-pokrent.de
 gemeinde-pottiga.de
@@ -6972,6 +6974,7 @@ niederfrohna.de
 niederfuellbach.de
 niedergoersdorf.de
 niederhambach.com
+niederhausennahe.de
 niederheimbach.de
 niederhofen.de
 niederhorbach.de
@@ -7289,6 +7292,7 @@ ombudsrat.de
 opfenbach.de
 oppach.de
 oppenau.de
+oppenheim-tourismus.de
 oppenweiler.de
 oppershausen.de
 oranienbaum-woerlitz.de
@@ -9652,6 +9656,7 @@ wasserlosen.de
 wassertruedingen.de
 wasungen.de
 wathlingen.de
+wathlingen.wmks.de
 wattenbek.de
 wattendorf-oberfranken.de
 wattenheim.de
@@ -11596,8 +11601,14 @@ northernlightscfc.org
 // US County (Colorado)
 montezumacounty.org
 
+// US County (Iowa)
+pottcounty.com
+
 // US County (Kansas)
 cheyennecounty.org
+
+// US County (Kentucky)
+bullittcounty.org
 
 // US County (Louisiana)
 bienvilleparish.org
@@ -11616,6 +11627,7 @@ abmceducation.org
 acinet.org
 actagainstaids.org
 ahrqadmin.org
+ahrqdev.org
 ahrqstg.org
 airdefenseartillery.com
 alx.org
@@ -11633,6 +11645,7 @@ cdcpartners.org
 cdmdashboard.com
 cfcgiving.org
 cfcmaine.org
+cfcsanantonio.org
 cfsrportal.org
 chainonline.org
 charmm.org
@@ -11722,6 +11735,7 @@ medicalbillrights.com
 medicalbillrights.net
 medicalbillrights.org
 medlars.us
+medlineplus.com
 medlineplus.net
 medlneplus.com
 medlneplus.info
@@ -11784,6 +11798,7 @@ racwarehouse.org
 realwarriors.net
 rfj.tips
 scienceforum.sc
+scportal.us
 searchablemuseum.com
 seecstories.com
 servicelocator.org
@@ -11812,6 +11827,7 @@ usajobsrecruit.com
 usajobsrecruit.us
 usarmyband.com
 usarmymars.org
+usembassy-china.org.cn
 useuosh.org
 uspreventiveservicestaskforce.org
 ustedquepuedehacer.org
@@ -11840,6 +11856,9 @@ millercenter.org
 stclairmo.com
 usagbank.com
 
+// US Local (Alabama)
+alexandercityonline.com
+
 // US Local (California)
 cityofalturas.org
 sbrda.org
@@ -11866,6 +11885,9 @@ cityofmandeville.org
 // US Local (Massachusetts)
 easthamptonweb.com
 
+// US Local (Michigan)
+grosseile.com
+
 // US Local (Minnesota)
 eastgrandforks.net
 
@@ -11875,8 +11897,10 @@ florencems.com
 
 // US Local (Missouri)
 ashgrovemo.org
+cityofhawkpoint.jigsy.com
 
 // US Local (New Hampshire)
+pittsfield-nh.com
 town-of-groton.com
 
 // US Local (New Jersey)
@@ -11894,6 +11918,7 @@ townofhopemills.com
 
 // US Local (North Dakota)
 leedsnd.com
+marmarth.org
 michigannd.com
 townercountynd.com
 
