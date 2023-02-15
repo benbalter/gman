@@ -11989,8 +11989,6 @@ ncforestassessment.com
 nchilb.com
 ncshiip.com
 
-// US State (Alabama)
-
 // US State (Alaska)
 akrr.com
 
