@@ -22,7 +22,7 @@ jobs:
         run: bundle exec script/validate-domains
  
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v5
         if: always()
         with:
             commit-message: Remove invalid domains
