@@ -2,7 +2,7 @@ name: Clean domain list
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   clean:
