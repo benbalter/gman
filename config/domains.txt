@@ -39,7 +39,6 @@ baie-durfe.qc.ca
 baiejohanbeetz.qc.ca
 baiesaintpaul.com
 baiestecatherine.com
-baietrinite.info
 balmoralnb.com
 banff.ca
 barrhead.ca
@@ -79,7 +78,6 @@ borden-carleton.ca
 bordensask.ca
 boucherville.ca
 bouchette.ca
-bouctouche.org
 bowman.ca
 boylealberta.com
 brampton.ca
@@ -108,7 +106,6 @@ campbellriver.ca
 campbellton.org
 camrose.ca
 canalflats.com
-candlelakeresort.ca
 canmore.ca
 cantley.ca
 canton.orford.qc.ca
@@ -164,7 +161,6 @@ city.langley.bc.ca
 city.mississauga.on.ca
 city.peterborough.on.ca
 city.portage-la-prairie.mb.ca
-city.quintewest.on.ca
 city.sault-ste-marie.on.ca
 city.summerside.pe.ca
 city.welland.on.ca
@@ -175,7 +171,6 @@ cityofflinflon.ca
 cityofgp.com
 cityofkingston.ca
 cityoflangford.ca
-cityofmelfort.ca
 cityofnb.ca
 cityofnorthbay.ca
 cityofrevelstoke.com
@@ -194,7 +189,6 @@ clearhillscounty.ab.ca
 clearview.ca
 clearwatercounty.ca
 clive.ca
-cms.burlington.ca
 cnv.org
 coaldale.ca
 coalhurst.ca
@@ -212,7 +206,6 @@ coquitlam.ca
 cornerbrook.com
 cornwall.ca
 cornwallpe.ca
-coronach.ca
 corp.delta.bc.ca
 cotesaintluc.org
 county.camrose.ab.ca
@@ -222,7 +215,6 @@ countybarrhead.ab.ca
 countygp.ab.ca
 countyofnewell.ab.ca
 countyofnorthernlights.com
-countyofwarner5.ab.ca
 countypaintearth.ca
 courtenay.ca
 cowansville.org
@@ -281,12 +273,10 @@ easthawkesbury.ca
 eaststpaul.com
 ebonfield.org
 eckville.com
-edgerton-oasis.ca
 edmonton.ca
 edson.ca
 edwardsburghcardinal.ca
 eganville.com
-elbowsask.com
 elizabethtown-kitley.on.ca
 elkford.ca
 elkhorn.mb.ca
@@ -346,7 +336,6 @@ gracefield.ca
 grahamdale.ca
 grandecache.ca
 grandremous.ca
-granum.ca
 gravelbourg.ca
 greaternapanee.com
 greatersudbury.ca
@@ -355,7 +344,6 @@ greenwoodcity.com
 grenfell.ca
 grenville.ca
 grenvillesurlarouge.ca
-gretna.ca
 greyhighlands.ca
 grimsby.ca
 grimshaw.ca
@@ -378,13 +366,11 @@ hardisty.ca
 harrington.ca
 harrisonhotsprings.ca
 hastingshighlands.ca
-havelockbelmontmethuen.on.ca
 havresaintpierre.com
 hawkesbury.ca
 hayriver.com
 hazletsk.ca
 hearst.ca
-heartscontent.ca
 hepburn.ca
 highlands.bc.ca
 highlevel.ca
@@ -400,7 +386,6 @@ hudsonshope.ca
 huntsville.ca
 huroneast.com
 huronkinloss.com
-ile-anticosti.com
 ile-perrot.qc.ca
 ileauxnoix.com
 ilecadieux.ca
@@ -484,7 +469,6 @@ lockeport.ns.ca
 loganlake.ca
 london.ca
 longharbour.net
-longueuil.ca
 lorrainville.ca
 lowquebec.ca
 lucanbiddulph.on.ca
@@ -585,7 +569,6 @@ municipalite.austin.qc.ca
 municipalite.duhamel.qc.ca
 municipalite.eastfarnham.qc.ca
 municipalite.laminerve.qc.ca
-municipalite.notre-dame-du-nord.qc.ca
 municipalite.oka.qc.ca
 municipalite.parisville.qc.ca
 municipalite.pointe-calumet.qc.ca
@@ -594,12 +577,10 @@ municipalite.saint-isidore.qc.ca
 municipalite.saint-philippe.qc.ca
 municipalite.saint-valerien.qc.ca
 municipalite.sainte-martine.qc.ca
-municipaliteboileau.ca
 municipalitedeboltonouest.com
 municipalitehopetown.ca
 municipaliteremigny.qc.ca
 municipalitesaintsulpice.com
-municipality.frontenacislands.on.ca
 municipalityofmcdougall.com
 municipalityofshelburne.ca
 muniles.ca
@@ -653,7 +634,6 @@ nvkuujjuaq.ca
 nvpuvirnituq.ca
 nvumiujaq.ca
 oakbay.ca
-oaklakeandarea.com
 oakville.ca
 oilsprings.ca
 okotoks.ca
@@ -724,12 +704,10 @@ qualicumbeach.com
 queencharlotte.ca
 quesnel.ca
 quispamsis.ca
-radisson.sasktelwebhosting.com
 radiumhotsprings.ca
 radville.ca
 rainbowlake.ca
 ramara.ca
-ramea.ca
 rapidcitymb.ca
 raymond.ca
 rdcounty.ca
@@ -755,8 +733,6 @@ riviereapierre.com
 riviereouelle.ca
 rm-cartier.mb.ca
 rm-stfrancois.mb.ca
-rm.shellriver.mb.ca
-rm171fv.com
 rm343.com
 rmalexander.com
 rmbifrost.com
@@ -764,9 +740,7 @@ rmbuckland.ca
 rmcormanpark.ca
 rmdesalaberry.mb.ca
 rmeldon.ca
-rmfranklin.com
 rmfrenchmanbutte.ca
-rmloonlake.com
 rmofarmstrong.com
 rmofbeaverriver622.ca
 rmofblanshard.ca
@@ -859,7 +833,6 @@ sexsmith.ca
 shamrockpark.ca
 shaunavon.com
 shediac.org
-shellbrook.net
 shippagan.ca
 shuniah.org
 sicamous.ca
@@ -910,14 +883,11 @@ st-robertbellarmin.qc.ca
 stada.ca
 stalbert.ca
 stalexkamouraska.com
-standardab.ca
 standredekamouraska.ca
 stanhopecovehead.pe.ca
 starlandcounty.com
 stbruno.ca
-stbrunokam.qc.ca
 stcatharines.ca
-stclaude.ca
 steannemb.ca
 stececiledemilton.qc.ca
 stececiledewhitton.qc.ca
@@ -952,7 +922,6 @@ summervillageofyellowstone.com
 sundre.com
 sundridge.ca
 sunpeaksmunicipality.ca
-sunsetbeach.ca
 surrey.ca
 sussex.ca
 sussexcorner.com
@@ -980,7 +949,6 @@ thamescentre.on.ca
 thcounty.ab.ca
 thearchipelago.on.ca
 thebluemountains.ca
-thevillageofstanley.ca
 thompson.ca
 thorhildcounty.com
 thorold.com
@@ -998,43 +966,31 @@ torbay.ca
 toronto.ca
 town.aurora.on.ca
 town.bancroft.on.ca
-town.beaumont.ab.ca
-town.bentley.ab.ca
 town.berwick.ns.ca
 town.blackdiamond.ab.ca
-town.bluewater.on.ca
 town.bonnyville.ab.ca
-town.botwood.nl.ca
 town.bowden.ab.ca
-town.bracebridge.on.ca
 town.caledon.on.ca
 town.cochrane.on.ca
 town.collingwood.on.ca
 town.coronation.ab.ca
-town.deerlake.nf.ca
 town.devon.ab.ca
-town.falher.ab.ca
 town.forterie.ca
 town.goderich.on.ca
 town.grandbay-westfield.nb.ca
 town.hartland.nb.ca
-town.howick.on.ca
 town.ignace.on.ca
 town.killam.ab.ca
-town.kingsville.on.ca
 town.lafleche.sk.ca
 town.lakecowichan.bc.ca
 town.lanigan.sk.ca
 town.lasalle.on.ca
-town.legal.ab.ca
 town.minto.on.ca
 town.newmarket.on.ca
-town.outlook.sk.ca
 town.oxford.ns.ca
 town.parrsboro.ns.ca
 town.petrolia.on.ca
 town.portmcneill.bc.ca
-town.redcliff.ab.ca
 town.renfrew.on.ca
 town.richmond-hill.on.ca
 town.shelburne.ns.ca
@@ -1055,7 +1011,6 @@ townofalameda.ca
 townofantigonish.ca
 townofappleton.ca
 townofarborg.com
-townofarnoldscove.com
 townofasquith.com
 townofbashaw.com
 townofbeausejour.com
@@ -1067,8 +1022,6 @@ townofcarberry.ca
 townofcarlyle.com
 townofcarman.com
 townofcarmanville.ca
-townofcolonsay.ca
-townofcomebychance.ca
 townofcreighton.ca
 townofcudworth.com
 townofcupar.com
@@ -1096,7 +1049,6 @@ townofleafrapids.ca
 townofmaidstone.com
 townofmanitou.ca
 townofmarystown.com
-townofmclennan.com
 townofmidale.com
 townofmontaguepei.com
 townofmorris.ca
@@ -1145,9 +1097,7 @@ township.limerick.on.ca
 township.montague.on.ca
 township.northdumfries.on.ca
 township.southfrontenac.on.ca
-township.wainfleet.on.ca
 township.wellesley.on.ca
-township.wollaston.on.ca
 townshipofbrock.ca
 townshipofgreatermadawaska.com
 townshipofsevern.com
@@ -1163,8 +1113,6 @@ tsawwassenfirstnation.com
 tudorandcashel.com
 turnervalley.ca
 twp.beckwith.on.ca
-twp.seguin.on.ca
-twp.southwold.on.ca
 twp.stclair.on.ca
 twp.tweed.on.ca
 twprideaulakes.on.ca
@@ -1188,7 +1136,6 @@ vibank.ca
 victoria.ca
 viewroyal.ca
 village-fassett.com
-village.breton.ab.ca
 village.clinton.bc.ca
 village.donalda.ab.ca
 village.frelighsburg.qc.ca
@@ -1197,9 +1144,7 @@ village.harvey-station.nb.ca
 village.longview.ab.ca
 village.memramcook.com
 village.stantoine.nb.ca
-village.westport.on.ca
 villagecharlo.com
-villagedeclair.com
 villageofalix.ca
 villageofalliance.ca
 villageofbitternlake.ca
@@ -1217,7 +1162,6 @@ villageofheisler.ca
 villageofhillsborough.ca
 villageoflipton.com
 villageoflougheed.com
-villageoflove.ca
 villageofminto.ca
 villageofperdue.com
 villageofpointedward.com
@@ -1227,7 +1171,6 @@ villageoftahsis.com
 villageoftogo.com
 villageoftompkins.ca
 villagesenneville.qc.ca
-ville-marie.ca
 ville.alma.qc.ca
 ville.amos.qc.ca
 ville.amqui.qc.ca
@@ -1241,7 +1184,6 @@ ville.candiac.qc.ca
 ville.chambly.qc.ca
 ville.charlemagne.qc.ca
 ville.chateauguay.qc.ca
-ville.cheneville.qc.ca
 ville.contrecoeur.qc.ca
 ville.ddo.qc.ca
 ville.delson.qc.ca
@@ -1275,17 +1217,14 @@ ville.mont-saint-hilaire.qc.ca
 ville.montreal-est.qc.ca
 ville.montreal.qc.ca
 ville.neuville.qc.ca
-ville.nicolet.qc.ca
 ville.noyan.qc.ca
 ville.otterburnpark.qc.ca
 ville.plaisance.qc.ca
-ville.plessisville.qc.ca
 ville.pointe-claire.qc.ca
 ville.quebec.qc.ca
 ville.repentigny.qc.ca
 ville.richelieu.qc.ca
 ville.rimouski.qc.ca
-ville.ripon.qc.ca
 ville.riviere-du-loup.qc.ca
 ville.rosemere.qc.ca
 ville.saguenay.ca
@@ -1344,7 +1283,6 @@ warman.ca
 warner.ca
 warwicktownship.ca
 wasagabeach.com
-waskada.ca
 waterloo.ca
 watsonlake.ca
 wawanesa.ca
@@ -1614,15 +1552,11 @@ allensbach.de
 allersberg.de
 allershausen.de
 alleshausen.de
-allianz-fuer-fachkraefte.de
-allianz-für-arbeitskräfte.de
-allianz-für-fachkräfte.de
 alling.de
 allmannshofen.de
 allmannsweiler-bc.de
 allmendingen.de
 allmersbach.de
-allstedt.info
 almdorf.de
 almersbach.de
 alpenflugwetter.com
@@ -1675,11 +1609,6 @@ altenthann.de
 altentreptow.de
 alterkuelz.de
 altersbach.net
-altersvorsorgemachtschule.com
-altersvorsorgemachtschule.de
-altersvorsorgemachtschule.info
-altersvorsorgemachtschule.net
-altersvorsorgemachtschule.org
 altertheim.de
 althegnenberg.de
 altheim-alb.de
@@ -1902,7 +1831,6 @@ appenheim.de
 appenweier.de
 arb-5.de
 arbeit-4-null.de
-arbeit-4-punkt-null.de
 arbeit-psyche.de
 arbeitderzukunft.de
 arbeiten-4-0.de
@@ -1955,7 +1883,6 @@ aspach.de
 asperg.de
 aspisheim.de
 assamstadt.de
-asse.bund.de
 asselfingen.de
 asslar.de
 assling.de
@@ -1987,7 +1914,6 @@ aurach.de
 aurachtal.de
 aurich.de
 ausacker.de
-ausbildungsportal.org
 auslandschulwesen.de
 auslandsschulportal.de
 auslandsschulwesen.de
@@ -2005,7 +1931,6 @@ axstedt.de
 aying.de
 ayl.de
 aystetten.de
-ba-reform.de
 baain.de
 baainbw.de
 baar-ebenhausen.de
@@ -2188,7 +2113,6 @@ bammental.de
 bankenunion.de
 bannewitz.de
 banst-pt.de
-banu.bund.de
 barbelroth.de
 barbing.de
 barchfeld-immelborn.de
@@ -2348,10 +2272,8 @@ berumbur.de
 berzhahn.de
 berzhausen.de
 beschaeftigtebeteiligen.de
-beschaeftigung-aelterer.de
 bescheid.de
 beschäftigtebeteiligen.de
-beschäftigung-gestalten.de
 besdorf.de
 beselich.de
 besigheim.de
@@ -2408,7 +2330,6 @@ bietigheim-bissingen.de
 bietigheim.de
 bildungskredit.de
 bildungskredit.online
-bildungspaket-bmas.de
 bildungszentrum.bundeswehr.de
 billigheim-ingenheim.de
 billigheim.de
@@ -2457,7 +2378,6 @@ bitburg-land.de
 bitburg.de
 bitburgerland.de
 bitterfeld-wolfen.de
-bitv-lotse.bund.de
 bitvlotse.de
 bitz.de
 bka-bund.de
@@ -2489,10 +2409,8 @@ blindheim.de
 blumendorfschuelp.de
 blunk.de
 bma.de
-bmas-alleinerziehende.de
 bmas.de
 bmas.eu
-bmas.mobi
 bmbf.de
 bmel.de
 bmfsfj.de
@@ -2673,12 +2591,6 @@ brickeln.de
 briedel.de
 brieden-eifel.de
 briedern-mosel.de
-briefing4aviation.com
-briefing4aviation.de
-briefing4aviation.eu
-briefing4pilot.com
-briefing4pilot.de
-briefing4pilot.eu
 briesen-mark.de
 brieskow-finkenheerd.de
 brigachtal.de
@@ -2928,7 +2840,6 @@ celle.de
 cert-bund.de
 cham.de
 chamerau.de
-chancen-mit-erfahrung.de
 chemnitz.de
 chiemgau-tourismus.de
 chieming.de
@@ -2977,10 +2888,7 @@ crossen.de
 crostwitz.de
 crottendorf-erzgebirge.de
 csr-preis-bund.de
-csr-unternehmenswerte.de
 csrindeutschland.de
-csringermany.de
-csrmadeingermany.de
 cumlosen.de
 cunewalde.de
 cursdorf.com
@@ -2993,7 +2901,6 @@ dachsbach.de
 dachsberg.de
 dachsenhausen.de
 dachwig.de
-dackscheid.com
 daegeling.de
 dagebuell.de
 dahlenburg.de
@@ -3013,7 +2920,6 @@ damflos.de
 damme.de
 damnatz-elbtalaue.de
 damscheid.de
-damshagen.info
 dankmarshausen.de
 danndorf.de
 dannenberg.de
@@ -3022,16 +2928,11 @@ dargun.de
 darmstadt.de
 darscheid.de
 darss-fischland.de
-das-bildungspaket.de
 das-demographie-netzwerk.de
-das-halbe-leben.com
-das-halbe-leben.net
 das-jobcenter.de
 das-parlament.de
 das-rentenpaket.de
-das-rentenreformpaket.de
 dasburg.de
-dashalbeleben.de
 dasing.de
 dassendorf.de
 datenhandbuch-bundestag.de
@@ -3109,7 +3010,6 @@ deutscher-bundestag.eu
 deutscher-klimaatlas.de
 deutscher-wetterdienst.com
 deutscher-wetterdienst.de
-deutscher-wetterdienst.eu
 deutscherdom.de
 deutsches-klimaportal.de
 deutsches-museum.de
@@ -3425,12 +3325,9 @@ ein-und-ausblicke.de
 einbeck.de
 einfach-leichte-sprache.de
 einfachteilhaben.de
-einfachteilhaben.mobi
 einhausen.de
 einheitsgemeinde-probstzella.de
 einoellen.de
-einsatzfuerarbeit.de
-einsatzfürarbeit.de
 einselthum.de
 eiselfing.eu
 eisenach.de
@@ -3585,8 +3482,6 @@ erpolzheim.de
 ershausen-geismar.de
 ertingen.de
 erzhausen.de
-esa-cloud-cci.eu
-esa-cloud-cci.info
 esa-cloud-cci.net
 esa-cloud-cci.org
 eschach.de
@@ -3604,10 +3499,8 @@ eschershausen-stadtoldendorf.de
 eschfeld.de
 eschwege.de
 esens.de
-esf-foerderung.de
 esf-in-deutschland.de
 esf-meine-geschichte.de
-esf-programm.de
 esf.de
 esgrus.de
 eslarn.de
@@ -3652,12 +3545,9 @@ eyendorf.de
 eyershausen-landwehr.de
 eystrup.de
 fachbach.de
-fachkraefte-allianz.de
 fachkraefteoffensive.de
 fachkraeftewoche.de
-fachkräfte-allianz.de
 fachkräfteoffensive.de
-fachkräftewoche.de
 fachwerkdorf-mehren.de
 fahner-hoehe.de
 fahrdorf.de
@@ -3810,7 +3700,6 @@ freiamt.de
 freiberg-an.de
 freiberg.de
 freiburg.de
-freienbessingen.net
 freienorla.de
 freiensteinau.de
 freienwill.de
@@ -3877,7 +3766,6 @@ fuchsmuehl.de
 fuchsstadt.de
 fuchstal.de
 fuenfstetten.de
-fuereinlebenswertesland.de
 fuerfeld.de
 fuerstenau.de
 fuerstenberg-havel.de
@@ -3894,7 +3782,6 @@ furth-bei-landshut.de
 furth.de
 furtwangen.de
 fussgoenheim.de
-füreinlebenswertesland.de
 gablenz-online.de
 gablingen.de
 gabsheim.de
@@ -4016,7 +3903,6 @@ gemeinde-aufhausen.de
 gemeinde-bad-bellingen.de
 gemeinde-bad-grund.de
 gemeinde-badenweiler.de
-gemeinde-ballstaedt.de
 gemeinde-balow.de
 gemeinde-banzkow.de
 gemeinde-bargstall.de
@@ -4298,14 +4184,12 @@ gemeinde-muenster.de
 gemeinde-muessen.de
 gemeinde-muldestausee.de
 gemeinde-murr.de
-gemeinde-nack.de
 gemeinde-nahe.de
 gemeinde-nauendorf.de
 gemeinde-negenborn.de
 gemeinde-nessetal.de
 gemeinde-neuenkirchen.de
 gemeinde-neufahrn.de
-gemeinde-neundorf.de
 gemeinde-niederaichbach.de
 gemeinde-niederbrombach.de
 gemeinde-niederer-flaeming.de
@@ -4428,7 +4312,6 @@ gemeinde-spiegelau.de
 gemeinde-spiegelberg.de
 gemeinde-sprakensehl.de
 gemeinde-stammham.de
-gemeinde-stapelfeld.de
 gemeinde-steinberg.com
 gemeinde-steinberg.de
 gemeinde-steinhagen.de
@@ -4459,7 +4342,6 @@ gemeinde-tespe.de
 gemeinde-teutschenthal.de
 gemeinde-thaden.de
 gemeinde-thallwitz.de
-gemeinde-thalwenden.de
 gemeinde-tiefenbach.de
 gemeinde-tolk.de
 gemeinde-tonndorf.de
@@ -4536,7 +4418,6 @@ gemeinde-ziethen.de
 gemeinde-zislow.de
 gemeinde-zschaitz-ottewig.de
 gemeinde.berchtesgaden.de
-gemeinde.deutschneudorf.net
 gemeinde.gmund.de
 gemeinde.lechbruck.de
 gemeinde.neuharlingersiel.de
@@ -4566,7 +4447,6 @@ gemuenden-ww.de
 gemuenden.de
 genderkingen.de
 generalbundesanwalt.de
-generationenarbeit.de
 generationpraktikum.de
 genschmar.de
 gensingen.de
@@ -4615,7 +4495,6 @@ gesees.de
 geslau.de
 gessertshausen.de
 gestratz.de
-gesundheit-badhonnef.de
 gesundheitswetter.eu
 gettorf.de
 gevenich.com
@@ -4688,7 +4567,6 @@ goldisthal.de
 goldkronach.de
 gollenberg.de
 gollhofen.de
-goltoft-schlei.de
 gomadingen.de
 gomaringen.de
 gommern.de
@@ -5139,7 +5017,6 @@ heiligkreuzsteinach.de
 heilsbronn.de
 heimbuchenthal.de
 heimenkirch.de
-heimkinder-fonds.de
 heimsheim.de
 heinersreuth.de
 heiningen-online.de
@@ -5225,7 +5102,6 @@ herzogenaurach.de
 hesel.de
 hessdorf.de
 hessen.de
-hesseneck-odenwald.de
 hessigheim.de
 hessisch-lichtenau.de
 hessisch-oldendorf.de
@@ -5291,7 +5167,6 @@ hirzenhain.de
 hitzacker.de
 hitzhofen.de
 hitzhusen.de
-hk.apfelstaedtaue.de
 hochborn.de
 hochdorf.de
 hochheim.de
@@ -5428,7 +5303,6 @@ hoyerswerda.de
 hude.de
 hueffelsheim.de
 hueffenhardt.de
-hueffler.net
 huefingen.de
 huegelland-taeler.de
 huegelsheim.de
@@ -5448,7 +5322,6 @@ huisheim.de
 hummelshain-schmoelln.de
 hummeltal.de
 hunderdorf.de
-hundhaupten.de
 hunding.de
 hundsangen.de
 hungen.de
@@ -5490,7 +5363,6 @@ illingen.de
 illmensee.de
 illschwang.de
 ilmenau.de
-ilmmuenster.123cms.de
 ilmtal-weinstrasse.de
 ilsfeld.de
 ilshofen.de
@@ -5512,15 +5384,12 @@ ingenried.de
 ingersheim.de
 ingoldingen.de
 ingolstadt.de
-initiative-für-fachkraefte.de
-initiative-für-fachkräfte.de
 initiative-neue-qualitaet-der-arbeit.de
 inklusionslandkarte.de
 innerersicherheitsfonds.de
 innernzell.de
 inning.de
 inqa-bestellservice.de
-inqa-check.de
 inqa-ddn.de
 inqa-demografie.de
 inqa-demographie-netzwerk.de
@@ -5595,13 +5464,8 @@ jettingen.de
 jetzendorf.de
 jki.bund.de
 joachimsthal.de
-job-drei-null.de
-job3punkt0.de
-job3punktnull.de
 jobcenterreform.de
 jobcenterservice.de
-jobdreipunktnull.de
-jobsohnebarrieren.de
 jockgrim.de
 joehstadt.de
 joerl.de
@@ -5619,7 +5483,6 @@ juebek.de
 juehnde.de
 juenkerath.de
 jueterbog.eu
-jugendinarbeit.de
 jugenheim-rheinhessen.de
 julbach.de
 julius-kuehn.de
@@ -5855,7 +5718,6 @@ klimadeutschland.de
 klimamonitoring.de
 klimaservices.de
 klimaueberwachung.de
-klimaueberwachung.eu
 klingenberg-main.de
 klingenmuenster.de
 klingenthal.de
@@ -5996,7 +5858,6 @@ krostitz.de
 krottelbach.de
 kruemmel-ww.de
 kruen.de
-kruezen.de
 krukow.de
 krumbach.de
 krummbek.de
@@ -6329,7 +6190,6 @@ lohmen-sachsen.de
 lohmen.de
 lohne.de
 lohnsfeld.de
-lohntarifpaket.de
 lohr.de
 lohra.de
 lohrheim.de
@@ -6617,34 +6477,24 @@ mehren.de
 mehring.org
 mehrstetten.de
 mein-bad-kleinen.de
-mein-comeback.info
 mein-microkredit.com
 mein-microkredit.eu
 mein-mikrokredit.com
 mein-mikrokredit.eu
 mein-mikrokredit.org
-mein-schweinschied.de
 meinborn.de
 meincomeback.de
 meinersen.de
 meinhard.de
 meinheim.de
 meiningen.de
-meinmicrocredit.com
-meinmicrocredit.de
-meinmicrocredit.eu
 meinmicrokredit.de
-meinmicrokredit.org
-meinmikrocredit.com
-meinmikrocredit.de
-meinmikrocredit.eu
 meinmikrokredit.de
 meisburg.de
 meisenheim.de
 meissenheim.de
 melchow.de
 meldorf-nordsee.de
-mellenbach-glasbach.eu
 mellingen-online.de
 mellrichstadt.de
 melsdorf.de
@@ -6688,12 +6538,6 @@ messingen.de
 messkirch.de
 messstetten.de
 mestlin.de
-met4aviation.com
-met4aviation.de
-met4aviation.eu
-met4pilot.com
-met4pilot.de
-met4pilot.eu
 meteoalarm.de
 mettlach.de
 metzels.de
@@ -6722,8 +6566,6 @@ miltach.de
 mindelheim.de
 mindelstetten.de
 minderlittgen.de
-mindestlohn-gilt.de
-mindestlohn-kommt.de
 mindestlohn-wirkt.de
 minfeld.de
 minheim.de
@@ -6734,7 +6576,6 @@ mistelbach.de
 mistelgau.de
 mit-mischen.de
 mitmischen.tv
-mitneuemmut.de
 mittelbiberach.de
 mittelbrunn.de
 mitteleschenbach.de
@@ -6793,7 +6634,6 @@ molbergen.de
 molfsee.de
 molschleben.de
 monheim-bayern.de
-monitoring-esf.de
 monreal-eifel.de
 monsheim.de
 monstab-web.de
@@ -6804,7 +6644,6 @@ monzingen.de
 moorbad-lobenstein.de
 moorenweis.de
 moorgrund.de
-moormerland.conne.net
 moos.de
 moosach.info
 moosbach.de
@@ -6963,10 +6802,8 @@ netzallianz-digitales-deutschland.de
 netzallianzdeutschland.de
 netzbach.de
 netzschkau.de
-netzwerk-alleinerziehende.de
 neu-anspach.de
 neu-bamberg.de
-neu-bartelshagen.eu
 neu-eichenberg.de
 neu-isenburg.de
 neu-poserin.de
@@ -6988,7 +6825,6 @@ neudarchau.de
 neudenau.de
 neudrossenfeld.de
 neue-qualitaet-der-arbeit.de
-neuekulturderarbeit.de
 neuenbuerg.de
 neuenburg.de
 neuendettelsau.eu
@@ -7008,7 +6844,6 @@ neuenstein.net
 neuental.de
 neuerburg-eifel.de
 neuerkirch.de
-neues-jobcenter.de
 neufahrn.de
 neuffen.de
 neufra.de
@@ -7430,7 +7265,6 @@ ohlsbach.de
 ohlstadt.de
 ohmbach.com
 ohmden.de
-ohnedichkeinwir.de
 ohorn-sachsen.de
 ohrdruf.de
 ohrenbach.de
@@ -7446,11 +7280,7 @@ ollmuth.de
 olmscheid.net
 olsbruecken.de
 olzheim.de
-ombudsrad.de
 ombudsrat.de
-ombudsrat.info
-ombudsrat.net
-ombudsrat.org
 opfenbach.de
 oppach.de
 oppenau.de
@@ -7487,7 +7317,6 @@ osann-monzel.de
 oschatz.org
 oscherslebenbode.de
 osnabrueck.de
-oss.bund.de
 ossling.net
 osteel.de
 ostelsheim.de
@@ -7586,7 +7415,6 @@ pattensen.de
 paul-loebe-haus.de
 paulinenaue.info
 paunzhausen.de
-pc-met.eu
 pcmet.com
 pcmet.de
 pechbrunn.de
@@ -7694,7 +7522,6 @@ pluetscheid.de
 pluwig.de
 pockau-lengefeld.de
 pocking.de
-podelzig.kirche-oderbruch.de
 poecking.de
 poehl.de
 poelich.de
@@ -7751,7 +7578,6 @@ pritzwalk.de
 probsteierhagen.de
 prohn.de
 projekt-e-demokratie.de
-projekt-persoenliches-budget.de
 pronsfeld-eifel.de
 pronstorf.de
 propstei-zella.de
@@ -7759,7 +7585,6 @@ prosselsheim.de
 pruem.de
 pruemzurlay.de
 prutting.de
-psyga-check.de
 ptb.de
 puchheim.de
 puderbach.de
@@ -7947,7 +7772,6 @@ rennertshofen.de
 renningen.de
 renquishausen.de
 rentenpaket.de
-rentenreformpaket.de
 rentweinsdorf.de
 reppenstedt.de
 rerik.de
@@ -8136,14 +7960,12 @@ rotthalmuenster.de
 rottinn.net
 rottweil.de
 roxheim.de
-rth-offenbach.eu
 rudelzhausen.org
 ruderatshofen.de
 rudersberg.de
 ruderting.de
 rudolstadt.de
 rueckersdorf.de
-rueckersdorf.org
 rueckholz.de
 rueckweiler.de
 ruedenau.de
@@ -8395,7 +8217,6 @@ schoenau-berzdorf.de
 schoenau-im-schwarzwald.de
 schoenau-koenigssee.com
 schoenau-pfalz.de
-schoenauadbrend.rhoen-saale.net
 schoenbach-eifel.de
 schoenberg-land.de
 schoenberg-sachsen.de
@@ -8478,7 +8299,6 @@ schwanstetten.de
 schwarme.de
 schwarmstedt.de
 schwartbuck.de
-schwarza1175.de
 schwarzach-b-nabburg.de
 schwarzach-main.de
 schwarzach-online.de
@@ -8512,7 +8332,6 @@ schwepnitz.de
 schweppenhausen.de
 schwerbach.de
 schwerin.de
-schwerstedt-weimar.de
 schwesing.de
 schwetzingen.de
 schwieberdingen.de
@@ -8562,7 +8381,6 @@ seifhennersdorf.de
 seinsheim.de
 seitingen-oberflacht.de
 selb.de
-selberhandeln.de
 selbitz.de
 seligenstadt.de
 selmsdorf.de
@@ -8604,7 +8422,6 @@ sgbii-kennzahlen.de
 sgbii.com
 sgbii.eu
 sgbii.net
-sgbii.org
 sgbzwei.com
 sgbzwei.de
 sgbzwei.eu
@@ -8698,9 +8515,7 @@ soyen.de
 sozialbeirat.de
 soziale-entschaedigung.de
 sozialministerium.eu
-sozialpolitische-informationen.de
 sozialversicherungswahlen.de
-sozialwahl2011.de
 spabruecken.de
 spaichingen.de
 spall-soonwald.de
@@ -9061,7 +8876,6 @@ stockstadt.de
 stockum-pueschen.de
 stoedtlen.de
 stoernstein.de
-stoessen-online.de
 stoetten.de
 stoettwang.de
 stollberg-erzgebirge.de
@@ -9391,12 +9205,10 @@ ummerstadt.de
 umpferstedt.de
 umweltbundesamt.de
 un-behindertenrechtskonvention.de
-un-koordinierungsstelle.de
 und.de
 undeloh.de
 undenheim.de
 ungerhausen.de
-uniohneabi.de
 unkel.de
 unlingen.de
 unsere-rente.com
@@ -9490,9 +9302,6 @@ verbgem-unstruttal.de
 verbgem-westlicheboerde.de
 verchen.de
 verden.de
-vereint-fuer-gemeinsame-bildung.de
-vereint-für-gemeinsame-bildung.de
-vereintaktiv.de
 verfassungsschutz.de
 veringenstadt.de
 verkehrsminister.de
@@ -9517,7 +9326,6 @@ vg-baunach.de
 vg-berka-werra.de
 vg-berlstedt.de
 vg-birkenfeld.de
-vg-bme.de
 vg-bodenheim.de
 vg-boos.de
 vg-brahmetal.de
@@ -9625,7 +9433,6 @@ vgleubatal.de
 vgloreley.de
 vgmzartern.de
 vgnassau.de
-vgnassau.info
 vgnastaetten.de
 vgrd.de
 vgrn.de
@@ -10047,7 +9854,6 @@ wiershop.de
 wiesau.de
 wiesbaden.de
 wiesbaum.eu
-wiesemscheider.de
 wiesenbach.de
 wiesenbach.eu
 wiesenbronn.de
@@ -10067,8 +9873,6 @@ wiesweiler.de
 wietmarschen.de
 wietze.de
 wietzendorf.de
-wiewerdenwirarbeiten.de
-wiewollenwirarbeiten.de
 wiggensbach.de
 wilburgstetten.de
 wildau.de
@@ -10089,7 +9893,6 @@ wilhelmsthal.net
 wilkau-hasslau.de
 willanzheim.de
 willingshausen.de
-willkommenindeutschland.info
 willmars.rhoen-saale.net
 willmenrod.de
 willmering.de
@@ -10133,7 +9936,6 @@ winnweiler.de
 winsen-aller.de
 winsen-holstein.de
 winsen.de
-winterbach.bnv-gz.de
 winterbach.de
 winterbachsoonwald.de
 winterhausen.de
@@ -10260,31 +10062,21 @@ wyhl.de
 wyk.de
 x500.bund.de
 xenos-de.de
-xn--allianz-fr-arbeitskrfte-f8b20d.de
-xn--allianz-fr-fachkrfte-rzb33c.de
 xn--beschftigtebeteiligen-91b.de
-xn--beschftigung-gestalten-44b.de
 xn--brevrde-d1a.de
-xn--einsatzfrarbeit-6vb.de
 xn--endschtz-c6a.de
 xn--epenwhrden-icb.de
-xn--fachkrfte-allianz-vqb.de
 xn--fachkrfteoffensive-qtb.de
-xn--fachkrftewoche-bib.de
-xn--freinlebenswertesland-8hc.de
 xn--gemeinde-lbesse-8vb.de
 xn--gllesheim-q9a.de
 xn--gltt-6qa.de
 xn--hchstenbach-rfb.de
 xn--heinersbrck-1hb.de
 xn--hohen-slzen-zhb.de
-xn--initiative-fr-fachkraefte-qwc.de
-xn--initiative-fr-fachkrfte-f8b50d.de
 xn--nesse-apfelstdt-dlb.de
 xn--neubrger-q4a.de
 xn--schnhausen-elbe-btb.com
 yes-we-are-open.info
-yesweareopen.de
 zaberfeld.de
 zachenberg.de
 zaisenhausen.de
@@ -11178,7 +10970,6 @@ putten.nl
 pzh.nl
 raadvanstate.nl
 raalte.nl
-rechspraak.nl
 rechtspraak.nl
 reclassering.nl
 recreatieschapdrenthe.nl
@@ -11354,7 +11145,6 @@ zwolle.nl
 // non-us gov
 admin.ch
 belgium.be
-go.jp
 gob.ar
 gob.bo
 gob.cl
@@ -11362,27 +11152,19 @@ gob.do
 gob.ec
 gob.es
 gob.gt
-gob.hn
 gob.mx
 gob.pa
 gob.pe
-gob.pk
 gob.sv
 gob.ve
 gouv.bj
 gouv.ci
-gouv.fr
-gouv.ht
 gouv.km
 gouv.ml
-gouv.rw
 gouv.sn
-gov.ac
 gov.ae
-gov.af
 gov.al
 gov.ar
-gov.as
 gov.au
 gov.az
 gov.ba
@@ -11390,19 +11172,13 @@ gov.bb
 gov.bf
 gov.bh
 gov.bm
-gov.bo
 gov.br
 gov.bs
 gov.bt
 gov.by
 gov.bz
-gov.cd
 gov.cl
-gov.cm
 gov.cn
-gov.co
-gov.cu
-gov.cx
 gov.dm
 gov.do
 gov.dz
@@ -11414,7 +11190,6 @@ gov.ge
 gov.gg
 gov.gh
 gov.gi
-gov.gn
 gov.gr
 gov.hk
 gov.ie
@@ -11423,12 +11198,10 @@ gov.im
 gov.in
 gov.iq
 gov.ir
-gov.is
 gov.it
 gov.je
 gov.jo
 gov.kg
-gov.ki
 gov.km
 gov.kn
 gov.kp
@@ -11438,10 +11211,8 @@ gov.la
 gov.lb
 gov.lc
 gov.lk
-gov.lr
 gov.lt
 gov.lv
-gov.ly
 gov.ma
 gov.me
 gov.mg
@@ -11451,7 +11222,6 @@ gov.mn
 gov.mo
 gov.mr
 gov.ms
-gov.mu
 gov.mv
 gov.mw
 gov.my
@@ -11460,7 +11230,6 @@ gov.nr
 gov.om
 gov.pf
 gov.ph
-gov.pk
 gov.pl
 gov.pn
 gov.pr
@@ -11473,18 +11242,13 @@ gov.rs
 gov.ru
 gov.rw
 gov.sa
-gov.sb
 gov.sc
 gov.sd
 gov.se
 gov.sg
-gov.sh
 gov.sl
 gov.st
-gov.sx
 gov.sy
-gov.tj
-gov.tl
 gov.tm
 gov.tn
 gov.to
@@ -11503,39 +11267,29 @@ government.se
 govt.nz
 gub.uy
 leg.br
-lg.jp
-mil.tr
 nic.in
 onroerenderfgoed.be
 !education.nsw.gov.au
 !mail.gov.ua
 
 // non-us mil
-mil.ac
 mil.ae
 mil.al
 mil.ar
-mil.az
 mil.ba
-mil.bo
 mil.br
 mil.by
 mil.cl
 mil.cn
-mil.co
 mil.do
 mil.ec
-mil.eg
-mil.ge
 mil.gh
 mil.gt
-mil.hn
 mil.id
 mil.in
 mil.iq
 mil.jo
 mil.kg
-mil.km
 mil.kr
 mil.kz
 mil.lv
@@ -11550,13 +11304,7 @@ mil.pl
 mil.py
 mil.qa
 mil.ru
-mil.rw
-mil.sh
-mil.st
-mil.sy
-mil.tj
 mil.tm
-mil.to
 mil.tw
 mil.tz
 mil.uy
@@ -11624,7 +11372,6 @@ domstol.se
 ehalsomyndigheten.se
 ekn.se
 ekobrottsmyndigheten.se
-elegnamnden.se
 elsakerhetsverket.se
 energimarknadsinspektionen.se
 energimyndigheten.se
@@ -11827,32 +11574,27 @@ wmfs.net
 cbacfc.org
 cfc-hawaii.org
 cfcaz.org
-cfcgreaternc.org
-cfclouisville.org
 cfcnca.org
 cfcredrivervalley.org
 cfcshr.org
-cfcsnj.org
-chattanoogacfc.org
-cowvcfc.org
-ctandwmacfc.org
 gatewaycfc.org
 heartlandcfc.org
-heartofthemidlandscfc.org
 intermountaincfc.org
 inwcfc.org
 nefl-sega-cfc.org
-northcoastcfc.org
 northernlightscfc.org
-northernnewenglandcfc.org
-pacificnwcfc.org
-riandsemacfc.org
 
 // US County (Colorado)
 montezumacounty.org
 
+// US County (Iowa)
+pottcounty.com
+
 // US County (Kansas)
 cheyennecounty.org
+
+// US County (Kentucky)
+bullittcounty.org
 
 // US County (Louisiana)
 bienvilleparish.org
@@ -11871,6 +11613,7 @@ abmceducation.org
 acinet.org
 actagainstaids.org
 ahrqadmin.org
+ahrqdev.org
 ahrqstg.org
 airdefenseartillery.com
 alx.org
@@ -11888,6 +11631,7 @@ cdcpartners.org
 cdmdashboard.com
 cfcgiving.org
 cfcmaine.org
+cfcsanantonio.org
 cfsrportal.org
 chainonline.org
 charmm.org
@@ -11915,7 +11659,6 @@ dcsafesurrender.org
 detroitself.org
 directihs.net
 discoverytheater.org
-docline.org
 doi.net
 ecosystemsontheedge.org
 ellajenkins.com
@@ -11923,14 +11666,8 @@ epa.maps.arcgis.com
 epancic.org
 epaosc.org
 epolicyworks.org
-ertsupport.org
-ertvideo.org
 euusosh.org
-every-try-counts.org
-everytry.org
-everytrycounts.org
 fatherhoodgov.info
-fed.us
 federalcampaign.org
 federalrelay.us
 fedroom.com
@@ -11944,9 +11681,6 @@ genbank.xyz
 genomereference.org
 glnpo.net
 gov
-gratefulmed.com
-gratefulmed.info
-gratefulmed.net
 hapmap.org
 hcgov.us
 hearttruth.com
@@ -11959,11 +11693,7 @@ howrightnow.online
 howrightnow.org
 hudexchange.info
 hudnsphelp.info
-igm.org
 inclusiveapprenticeship.org
-informationrx.info
-informationrx.net
-informationrx.org
 jcmarketplace.com
 jcsuccess.org
 jctalentworks.com
@@ -11971,21 +11701,15 @@ jobcorps.org
 joinjobcorps.com
 kcp.com
 literacydirectory.org
-loansomedoc.net
 makersinspaces.org
 manufacturingusa.com
 mdacareers.com
 medicalbillrights.com
 medicalbillrights.net
 medicalbillrights.org
-medlars.com
-medlars.us
-medlineplus.net
-medlneplus.com
-medlneplus.info
+medlineplus.com
 mepsdocs.org
 mepstech.com
-mesh.org
 mil
 monitor.net.co
 mughalgardens.org
@@ -12001,10 +11725,6 @@ neapmap.com
 necfuture.com
 nhlbiwgs.org
 nih.com
-nihseniorhealth.net
-nihseniorhealth.org
-nlm.org
-nlmgiftshop.com
 nmaahcstore.com
 oahpmdata.net
 onetcenter.org
@@ -12042,6 +11762,7 @@ racwarehouse.org
 realwarriors.net
 rfj.tips
 scienceforum.sc
+scportal.us
 searchablemuseum.com
 seecstories.com
 servicelocator.org
@@ -12070,12 +11791,11 @@ usajobsrecruit.com
 usajobsrecruit.us
 usarmyband.com
 usarmymars.org
+usembassy-china.org.cn
 useuosh.org
 uspreventiveservicestaskforce.org
 ustedquepuedehacer.org
 vaccinefinder.org
-vetmed.wiki
-vetmedinfo.net
 war-on-pineapple.com
 waterqualitydata.us
 whatcanyoudocampaign.org
@@ -12097,6 +11817,9 @@ lili.org
 millercenter.org
 stclairmo.com
 usagbank.com
+
+// US Local (Alabama)
+alexandercityonline.com
 
 // US Local (California)
 cityofalturas.org
@@ -12124,6 +11847,9 @@ cityofmandeville.org
 // US Local (Massachusetts)
 easthamptonweb.com
 
+// US Local (Michigan)
+grosseile.com
+
 // US Local (Minnesota)
 eastgrandforks.net
 
@@ -12133,8 +11859,10 @@ florencems.com
 
 // US Local (Missouri)
 ashgrovemo.org
+cityofhawkpoint.jigsy.com
 
 // US Local (New Hampshire)
+pittsfield-nh.com
 town-of-groton.com
 
 // US Local (New Jersey)
@@ -12151,7 +11879,7 @@ brookfieldny.com
 townofhopemills.com
 
 // US Local (North Dakota)
-leedsnd.com
+marmarth.org
 michigannd.com
 townercountynd.com
 
@@ -12261,9 +11989,6 @@ ncforestassessment.com
 nchilb.com
 ncshiip.com
 
-// US State (Alabama)
-alabamacounterdrug.com
-
 // US State (Alaska)
 akrr.com
 
@@ -12306,7 +12031,6 @@ akaerospace.com
 akenergyauthority.org
 akoltco.org
 akpb.org
-alaskacfc.org
 alaskarailroad.com
 alaskarrt.org
 alaskaseafood.org
@@ -12352,7 +12076,6 @@ alabamafilm.org
 alalinc.net
 albme.org
 albop.com
-alexandercityonline.com
 arabcity.org
 asdd.com
 athensal.us
@@ -12417,11 +12140,9 @@ guntersvilleal.org
 hamiltoncityal.org
 hartselle.org
 headlandalabama.org
-heartofalabamacfc.org
 henrycountyal.com
 hooveral.org
 houstoncounty.org
-hueytownal.org
 jacksoncountyal.com
 jacksonville-al.org
 jaspercity.com
@@ -12449,7 +12170,6 @@ rbcalabama.com
 rcala.com
 robertsdale.org
 saraland.org
-sardiscity.org
 sheffieldalabama.org
 shelbyal.com
 shelbycountyalabama.com
@@ -12480,7 +12200,6 @@ arguard.org
 arhomeandgarden.org
 ark-ives.com
 arkansas.com
-arkansasctf.org
 arkansased.org
 arkansasedc.com
 arkansasethics.com
@@ -12494,7 +12213,6 @@ asbca.org
 baxtercounty.org
 bentonvillear.com
 carlislear.org
-cfcgreaterarkansas.org
 cherokeevillage.org
 cityofbryant.com
 cityofconway.org
@@ -12519,7 +12237,6 @@ myarkansaslottery.com
 mymelbournearkansas.com
 newportarcity.org
 northlr.org
-rogersarkansas.com
 russellvillearkansas.org
 salinecounty.org
 seviercountyar.com
@@ -12529,7 +12246,6 @@ whitecountyar.org
 // usagovAS
 americansamoa.travel
 amsamoatourism.com
-asgteo.com
 doe.as
 
 // usagovAZ
@@ -12628,8 +12344,6 @@ carpinteria.ca.us
 cccounty.us
 cehtp.org
 cerritos.us
-cfcmontereysantacruz.org
-cfcofgreatersocal.org
 chico.ca.us
 chicorec.com
 chinohills.org
@@ -12794,7 +12508,6 @@ emeryville.org
 encinonc.com
 encinowatch.com
 escondido.org
-eurekawebs.com
 fairoakspark.org
 fhlbsf.com
 fillmoreca.com
@@ -12872,7 +12585,6 @@ moval.org
 murrieta.org
 mynevadacounty.com
 newark.org
-norcalcfc.org
 norco.ca.us
 novatosan.com
 nsd.us
@@ -12944,7 +12656,6 @@ slocity.org
 slolafco.com
 smbsd.org
 smgov.net
-socalcfc.org
 sogate.org
 solvangusa.com
 sonoma-county.org
@@ -13045,7 +12756,6 @@ jeffco.us
 kitcarsoncounty.org
 lakewood.org
 littletongov.org
-metrodenvercfc.org
 metromayors.org
 minturn.org
 mountain-village.co.us
@@ -13061,7 +12771,6 @@ pueblo.org
 pueblo.us
 rifleco.org
 riograndecounty.org
-rockymountaincfc.org
 rtd-denver.com
 sanmiguelcounty.org
 silverthorne.org
@@ -13081,11 +12790,9 @@ townofmeeker.org
 townofmonument.net
 townofmountainvillage.com
 townofsilt.org
-townofsuperior.com
 townofwellington.com
 utemountainutetribe.com
 windsorgov.com
-wrayco.net
 
 // usagovCT
 andoverct.org
@@ -13252,8 +12959,6 @@ buyaccessible.net
 capmembers.com
 careerinfonet.org
 careeronestop.org
-cbp-ntep.info
-ccitoolsforfeds.org
 cdcnpin.org
 cfcnexus.org
 cfe-dmha.org
@@ -13268,7 +12973,6 @@ cooperativepatentclassification.org
 cooperhewitt.org
 d13cgaux.com
 deamuseum.org
-defensetv.tv
 dhs-summit.us
 digitalvaults.org
 docsteach.org
@@ -13281,7 +12985,6 @@ e2.gov.cwtsatotravel.com
 earthsystemcog.org
 earthsystemmodeling.org
 elcivicsonline.org
-eng.embassyusa.cn
 enviroflash.info
 fairhousingfirst.org
 fanniemae.com
@@ -13306,7 +13009,6 @@ goarmy.com
 gocivilairpatrol.com
 gocoastguard.com
 godirect.org
-homelandsecurity.conferenceon.tv
 hsdl.org
 hubblesite.org
 hudhomestore.com
@@ -13360,7 +13062,6 @@ onecpd.info
 onetonline.org
 opengovplatform.org
 pancanal.com
-pbgc.org
 pcaobus.org
 pepfar.net
 predict.org
@@ -13399,7 +13100,6 @@ uscgaux.info
 uscgboating.org
 uscgnews.com
 usdirectexpress.com
-usembassy-china.org.cn
 usmc-mccs.org
 usps.com
 ustraveldocs.com
@@ -13418,7 +13118,6 @@ alachuacounty.us
 altamonte.org
 apdcares.org
 apopka.net
-atlanticcoastcfc.org
 avonpark.cc
 bakercountyfl.org
 balharbourgov.com
@@ -13500,7 +13199,6 @@ dunnellon.org
 eaglelake-fla.com
 ecfrpc.org
 eflorida.com
-escarosacfc.org
 eustis.org
 fbfl.us
 fcsw.net
@@ -13516,7 +13214,6 @@ flgisa.org
 flgov.com
 flofr.com
 floir.com
-floridacounterdrug.com
 floridafathers.org
 floridamarine.org
 floridaredistricting.org
@@ -13525,7 +13222,6 @@ floridatracking.com
 fltreasurehunt.org
 flwaterpermits.com
 franklincountyflorida.com
-freshfromflorida.com
 fruitlandpark.org
 fscia.org
 fwb.org
@@ -13649,7 +13345,6 @@ shalimarflorida.org
 sibfl.net
 sjrwmd.com
 southdaytona.org
-southwestfloridacfc.org
 southwestranches.org
 springfieldfl.org
 srwmd.org
@@ -13657,7 +13352,6 @@ staugbch.com
 stcloud.org
 stpete.org
 stpetebeach.org
-suncoastcfc.org
 swfrpc.org
 talgov.com
 tamarac.org
@@ -13727,7 +13421,6 @@ carrollcountyga.com
 catoosa.com
 celebratedouglascounty.com
 centervillega.org
-cfcaaga.org
 chambleega.com
 chathamcounty.org
 cherokeega.com
@@ -13769,7 +13462,6 @@ cityofwinder.com
 cityofwinterville.com
 cobbcounty.org
 collegeparkga.com
-columbusbenningcfc.org
 columbusga.com
 commercega.org
 cscj.org
@@ -13828,7 +13520,6 @@ lowndescounty.com
 madisonco.us
 madisonga.com
 metter-candler.com
-middlegacfc.com
 milledgevillega.us
 mitchellcountyga.net
 monroecountygeorgia.com
@@ -13957,7 +13648,6 @@ denisonia.com
 dmcounty.com
 donnellsoniowa.com
 dubuquecounty.org
-dunlapia.org
 elginiowa.org
 elyiowa.com
 emmetcountyia.com
@@ -14019,7 +13709,6 @@ plainfieldiowa.com
 pleasanthilliowa.org
 plymouthiowa.us
 pocahontasiowa.com
-pottcounty.com
 prairiecityiowa.us
 primghar.com
 redfieldia.com
@@ -14269,7 +13958,6 @@ maywood-il.org
 mchenrytownship.com
 melrosepark.org
 minooka.com
-mocoil.org
 mokena.org
 moline.il.us
 molinetownship.com
@@ -14418,7 +14106,6 @@ bloomfieldtownship.org
 brownsburg.org
 burnsharbor.org
 centertownshiptrustee.com
-cfcindiana.org
 chestertonin.org
 churubusco.net
 cityofanderson.com
@@ -14452,7 +14139,6 @@ henryco.net
 hmdin.com
 hoosierlottery.com
 hudsontown.org
-ifcem.com
 kcgov.com
 lagrangecounty.org
 lakecountyin.org
@@ -14655,7 +14341,6 @@ bellevueky.org
 bgky.org
 boonecountyky.org
 brandenburgky.org
-bullittcounty.org
 campbellcountyky.org
 campbellsville.com
 carrolltonky.net
@@ -14701,7 +14386,6 @@ kentuckystatepolice.org
 kentuckytourism.com
 kfcyumcenter.com
 kheaa.com
-kltprc.info
 kyagr.com
 kyconvention.org
 kyepsb.net
@@ -14722,7 +14406,6 @@ owsleycountykentucky.org
 pcgovt.com
 prospectky.com
 radcliff.org
-shelbycountykentucky.com
 shelbyvillekentucky.com
 springfieldky.org
 stregispark.net
@@ -14746,7 +14429,6 @@ broussardla.com
 bruslyla.com
 caddo.org
 carencro.org
-cfcgno.org
 choudrant.org
 churchpoint-la.com
 cityofalexandriala.com
@@ -14818,7 +14500,6 @@ lsbd.org
 lsbep.org
 lsbes.org
 lsbid.org
-lsbmt.org
 lsbpie.com
 lsbpne.com
 lsbvm.org
@@ -14845,11 +14526,9 @@ rppj.com
 ruston.org
 sbpg.net
 sjbparish.com
-springhillla.com
 state.lib.la.us
 stfrancisville.net
 stjamesla.com
-stmartinparish-la.org
 stpgov.org
 sulphur.org
 tangipahoa.org
@@ -14863,7 +14542,6 @@ townoflockport.com
 townofwelsh.com
 tpcg.org
 trsl.org
-washington-la.org
 wbrcouncil.org
 wppj.org
 youngsville.us
@@ -14922,7 +14600,6 @@ masslottery.com
 massvacation.com
 mattapoisett.net
 medford.org
-middleboroughcom.vps1.dependable-hosting.com
 millis.org
 montague.net
 nahant.org
@@ -15063,14 +14740,12 @@ taneytown.org
 thurmont.com
 town-eastonmd.com
 townofbetterton.com
-townofbladensburg.com
 townofbrentwood-md.us
 townofbrookevillemd.org
 townofcentreville.org
 townofchevychase.org
 townofdelmar.us
 townofgalena.com
-townofhampstead.us
 townofindianhead.org
 townoflaplata.org
 townofprincessanne.com
@@ -15128,7 +14803,6 @@ farmington-maine.org
 fayettemaine.com
 fortfairfield.org
 fortkent.org
-franklinmaine.net
 freeportmaine.com
 fryeburgmaine.org
 fryeisland.com
@@ -15173,7 +14847,6 @@ northyarmouth.org
 oakfieldme.org
 oaklandmaine.us
 oobmaine.com
-orlandme.org
 orono.org
 oxfordcounty.org
 perrymaine.org
@@ -15285,7 +14958,6 @@ carocity.net
 cascadetwp.com
 cascostclair.org
 casscountymi.org
-cfcsemi.org
 charlevoixcounty.org
 cheboygan.org
 cheboygancounty.net
@@ -15389,7 +15061,6 @@ grand-ledge.com
 grandbeach.org
 grandhaven.org
 greenoaktwp.com
-grosseile.com
 gvmc.org
 hamtramck.us
 harrison-township.org
@@ -15433,7 +15104,6 @@ mayfieldtownship.com
 melvindale.org
 menomineecounty.com
 mersofmich.com
-michcfc.org
 michigan.org
 michiganhumanities.org
 michiganlottery.com
@@ -15458,7 +15128,6 @@ oneidatownship.org
 ontwatwp.org
 oriontownship.org
 osceola-county.org
-oscodatwp.com
 oshtemo.org
 oxfordtownship.org
 parchment.org
@@ -15676,7 +15345,6 @@ hrdc.org
 idatownship.com
 idealtownship.com
 ivanhoe-mn.com
-kabetogamatownship.org
 kanabeccounty.org
 lagrandtownship.com
 lakebentonminnesota.com
@@ -15843,10 +15511,8 @@ cityofesmo.com
 cityoffestus.org
 cityofflinthill.com
 cityofforistell.org
-cityofforsythmo.com
 cityofgrainvalley.org
 cityofgreenpark.com
-cityofhawkpoint.jigsy.com
 cityofherculaneum.org
 cityofhollister.com
 cityoflamar.org
@@ -15854,7 +15520,6 @@ cityoflaplata.net
 cityoflaurie.com
 cityofls.net
 cityofmaplewood.com
-cityofmarblehill.com
 cityofmarthasvillemo.org
 cityofmonett.com
 cityofoakgrove.com
@@ -15928,7 +15593,6 @@ joplinmo.org
 kansascityfed.org
 kcmo.org
 kennettmo.org
-kimberling-city.net
 kirksvillecity.com
 kirkwoodmo.org
 knobnostergov.com
@@ -15956,7 +15620,6 @@ missouribooks.org
 missourifamilies.org
 mmrpc.org
 mo-butler.civiccities.com
-mo-opc.org
 moberlymo.org
 moguard.com
 mohumanities.org
@@ -16016,7 +15679,6 @@ stjamesmo.org
 stlcin.missouri.org
 stlouisfed.org
 stpetersmo.net
-straffordmissouri.org
 straffordmo.net
 sugar-creek.mo.us
 sullivan.mo.us
@@ -16074,7 +15736,6 @@ cityoflongbeachms.com
 cityoflucedale.com
 cityofmacon.org
 cityofmagee.com
-cityofmagnoliams.com
 cityofpascagoula.com
 cityofpearl.com
 cityofsenatobia.com
@@ -16134,7 +15795,6 @@ smithvillems.org
 southaven.org
 terryms.org
 thecityofcolumbusms.org
-tishomingo.ms
 townofedwards.com
 townofheidelberg.com
 townofprentiss.com
@@ -16157,7 +15817,6 @@ beaverheadcounty.org
 bozeman.net
 browningmontana.com
 cartercountymt.info
-cfcwesternmontana.org
 cityofcolstrip.com
 cityofcolumbiafalls.org
 cityofcutbank.org
@@ -16213,8 +15872,6 @@ ayden.com
 badin.org
 battleshipnc.com
 beaufortnc.org
-bentonvillebattlefield.com
-berrytownecrafts.com
 bessemercity.com
 bikesafenc.com
 biltmoreforest.org
@@ -16233,7 +15890,6 @@ carteretcountygov.org
 caswellbeach.org
 caswellcenter.org
 centralina.org
-cfcwnc.com
 cfnc.org
 charmeck.org
 chathamnc.org
@@ -16310,13 +15966,11 @@ hokecounty.net
 hollyspringsnc.us
 huntersville.org
 hwtfc.org
-inclusivehealth.org
 indiantrail.org
 itsok2ask.com
 jacksonnc.org
 jamestown-nc.us
 jennettespier.net
-jfkadatc.net
 jirdc.org
 johnstonnc.com
 kdhnc.com
@@ -16350,7 +16004,6 @@ naturalsciences.org
 nc-ddc.org
 nc-educationlottery.org
 nc-sco.com
-ncabc.com
 ncacc.org
 ncadfp.org
 ncagfairs.org
@@ -16408,7 +16061,6 @@ ncdjjdp.org
 ncdmf.net
 ncdnpe.org
 ncdoi.com
-ncdoj.com
 ncdrought.org
 ncdsca.org
 ncecho.org
@@ -16423,7 +16075,6 @@ ncfilm.com
 ncfirewise.org
 ncfisheries.net
 ncfloodmaps.com
-ncforeclosurehelp.org
 ncforestactionplan.com
 ncfreshlink.com
 ncfriendsofagriculture.org
@@ -16490,7 +16141,6 @@ ncsitesearch.com
 ncstatefair.org
 ncstatesurplus.com
 ncstormwater.org
-ncstrokeregistry.com
 ncswboard.org
 ncsymphony.org
 nctobaccofreeschools.org
@@ -16543,7 +16193,6 @@ sehsr.org
 selma-nc.com
 shpnc.org
 smithfield-nc.com
-sosnc.com
 southernpines.net
 southernshores.org
 spindalenc.net
@@ -16555,14 +16204,12 @@ surpluspropertydivision.com
 sustainablenc.org
 tarboro-nc.com
 taylorsvillenc.com
-teach4nc.com
 toknc.com
 topsailbeach.org
 townofaberdeen.net
 townofbannerelk.org
 townofbenson.com
 townofblackmountain.org
-townofblowingrock.com
 townofboone.net
 townofburnsville.org
 townofcalabash.net
@@ -16651,7 +16298,6 @@ edgeley.com
 edinburgnd.com
 ellendalend.com
 enderlinnd.com
-fessendennd.com
 finleynd.com
 flaxtonnd.com
 formannd.com
@@ -16687,7 +16333,6 @@ lintonnd.org
 lisbonnd.com
 maddocknd.com
 mapletonnd.com
-marmarth.org
 maxnd.com
 mayvilleportland.com
 mccluskynd.com
@@ -16720,7 +16365,6 @@ renvillecounty.org
 richland.nd.us
 riverdalenorthdakota.com
 rolettecounty.com
-rolla.nd.utma.com
 rutlandnd.com
 sargentnd.com
 sheridan.nd.us
@@ -16728,14 +16372,12 @@ sherwoodnd.com
 stanleynd.com
 stantonnd.com
 steelend.com
-stjohn.nd.utma.com
 strasburgnd.com
 surreynd.org
 tiogand.net
 towercitynd.com
 turtlelakend.org
 valleycity.us
-velva.net
 visitmcleancounty.com
 wahpeton.com
 walhalland.org
@@ -16820,7 +16462,6 @@ bethlehemnh.org
 bow-nh.com
 bradfordnh.com
 brookfieldnh.org
-brookline.nh.us
 camptonnh.org
 candianh.org
 canterbury-nh.org
@@ -16861,7 +16502,6 @@ haverhill-nh.com
 hebronnh.org
 henniker.org
 hillsboroughcountynh.org
-hollis.nh.us
 hooksett.org
 jackson-nh.org
 kingstonnh.org
@@ -16884,7 +16524,6 @@ miltonnh-us.com
 monroetown.com
 montvernonnh.us
 moultonborough.org
-new-boston.nh.us
 new-hampton.nh.us
 newburynh.org
 newdurhamnh.us
@@ -16902,7 +16541,6 @@ orfordnh.us
 ossipee.org
 pelhamweb.com
 pembroke-nh.com
-pittsfield-nh.com
 plainfieldnh.org
 plaistow.com
 plymouth-nh.org
@@ -16916,7 +16554,6 @@ sandown.us
 sandwichnh.org
 seabrooknh.org
 sharonnh.org
-shelburnenh.com
 somersworth.com
 springfieldnh.org
 stoddardnh.org
@@ -16990,7 +16627,6 @@ bernardsvilleboro.org
 bethlehemnj.org
 blairstown-nj.org
 bloomfieldtwpnj.com
-bloomingdalenj.org
 bloomsburynewjersey.com
 bogotaonline.org
 boonton.org
@@ -17098,7 +16734,6 @@ franklintwpnj.org
 franklintwpwarren.org
 freeholdboro.org
 frelinghuysen-nj.us
-frenchtown.com
 garfieldnj.org
 garwood.org
 gibbsboro.com
@@ -17143,7 +16778,6 @@ hobokennj.org
 hollandtownship.org
 holmdeltownship.com
 hopatcong.org
-hopetownship.com
 hopewellboro-nj.us
 hopewelltwp.org
 hpboro.com
@@ -17212,7 +16846,6 @@ merchantville.com
 metuchennj.org
 middletownnj.org
 middletownship.com
-milford-nj.us
 millstone.nj.us
 millstoneboro.org
 milltownnj.org
@@ -17301,7 +16934,6 @@ plumsted.org
 pohatcong.com
 pointpleasantbeach.org
 pomptonlakesgov.com
-princetonboro.org
 princetontwp.org
 prospectpark.net
 ptboro.com
@@ -17337,7 +16969,6 @@ salemcitynj.com
 sayreville.com
 sbtnj.net
 scotchplainsnj.com
-sea-isle-city.nj.us
 seabrightnj.org
 seagirtboro.com
 seaside-heightsnj.org
@@ -17384,7 +17015,6 @@ tuckertonborough.com
 twpofwashington.us
 ucnj.com
 ucnj.org
-unionbeach.net
 uniontownship.com
 uniontwp-hcnj.org
 upperdeerfield.com
@@ -17405,7 +17035,6 @@ warrennj.org
 washington-twp-warren.org
 washington-twp.org
 washingtonboro-nj.org
-washtwpmorris.org
 watchungnj.com
 waterfordtwp.com
 waterfordtwp.org
@@ -17466,7 +17095,6 @@ redriver.org
 rio-arriba.org
 rooseveltcounty.com
 ruidosodowns.us
-sandovalcounty.com
 saonm.org
 sierracounty.net
 sjcounty.net
@@ -17499,7 +17127,6 @@ comanchenation.com
 coquilletribe.org
 costanoanrumsen.org
 cowasuck.org
-cowasuckabenaki.org
 cowcreek.com
 cowlitz.org
 cskt.org
@@ -17536,7 +17163,6 @@ kawnation.com
 keetoowahcherokee.org
 kictribe.org
 klamathtribes.org
-kniktribalcouncil.org
 kootenai.org
 kotzebueira.org
 kumeyaay.info
@@ -17641,7 +17267,6 @@ bcnv.org
 carson.org
 churchillcounty.org
 cityoffallon.com
-cityoffallon.org
 cityoffernley.org
 cityofhenderson.com
 cityofnorthlasvegas.com
@@ -17755,7 +17380,6 @@ clintoncountygov.com
 clydeny.com
 cmvny.com
 coeymans.org
-cohoctonny.com
 cohoes.com
 colonie.org
 colonievillage.org
@@ -17866,7 +17490,6 @@ lloydharbor.org
 lowville.ny.us
 lynbrookvillage.net
 macedontown.net
-madridny.us
 malonetown.com
 malta-town.org
 malvernevillage.org
@@ -17875,7 +17498,6 @@ manliusvillage.org
 manorhaven.org
 marbletown.net
 marcellusny.com
-marlboroughny.com
 masonville-ny.us
 massenaworks.com
 matinecockvillage.org
@@ -17915,9 +17537,7 @@ northsalemny.org
 northsyracuse.org
 northtonawanda.org
 norwichnewyork.net
-norwoodny.org
 nyack.org
-nyccfc.org
 nycom.org
 nyct.com
 nyhistory.org
@@ -18034,15 +17654,12 @@ syrgov.net
 taghkanic.org
 tannersvilleny.org
 tarrytowngov.com
-thurman-ny.com
 tiogacountyny.com
 tivoliny.org
 tocny.org
-toh.li
 tompkins-co.org
 tonawanda.ny.us
 townconstantia.org
-towngranby.org
 townofalbion-ny.us
 townofalbion.com
 townofamsterdam.org
@@ -18135,7 +17752,6 @@ townofhardenburgh.org
 townofhartland.org
 townofhartwick.org
 townofhaverstraw.us
-townofhempstead.org
 townofhighlandny.com
 townofhoosick.org
 townofhopewell.org
@@ -18147,7 +17763,6 @@ townofjewett.com
 townofjohnstown.org
 townofkeeneny.com
 townofkendall.com
-townofkentny.com
 townofkirkland.org
 townofkirkwood.org
 townoflafayette.com
@@ -18199,7 +17814,6 @@ townofpembroke.org
 townofpittsford.com
 townofplattsburgh.com
 townofpomfretny.org
-townofpompey.com
 townofporter.net
 townofpoughkeepsie.com
 townofpoundridge.com
@@ -18228,7 +17842,6 @@ townofstafford.com
 townofstonypoint.org
 townofsweden.org
 townofthompson.com
-townofthurston.com
 townofticonderoga.org
 townoftully.org
 townofulster.org
@@ -18256,7 +17869,6 @@ townverona.org
 townwalworthny.com
 tuckahoe.com
 tughillcouncil.com
-tullyny.org
 tupperlakeny.us
 tusten.org
 tuxedogov.org
@@ -18268,14 +17880,12 @@ valatievillage.com
 vchamplain.com
 vestalny.com
 victorny.org
-villageflowerhill.com
 villageflowerhill.org
 villagehohny.org
 villagemedina.org
 villageofangola.org
 villageofantwerp.net
 villageofarcade.org
-villageofbarneveld.org
 villageofbath.org
 villageofbergen.com
 villageofbronxville.com
@@ -18298,7 +17908,6 @@ villageofelbridge.com
 villageoffrankfortny.org
 villageofgouverneur.org
 villageofhamburg.com
-villageofharrisvilleny.org
 villageofhempstead.org
 villageofholley.org
 villageofhoneoyefalls.org
@@ -18327,7 +17936,6 @@ villageofmountmorris.com
 villageofmuttontown.com
 villageofnelsonville.org
 villageofnewark.com
-villageofnewhartford.com
 villageofnewpaltz.org
 villageofoceanbeach.org
 villageoforiskanyfalls.org
@@ -18346,7 +17954,6 @@ villageofskaneateles.com
 villageofsolvay.com
 villageofspringvilleny.com
 villageofvernonny.org
-villageofwashingtonville.org
 villageofwebster.com
 villageofwestbury.org
 villageofwestcarthage.org
@@ -18504,7 +18111,6 @@ hamilton-co.org
 hamilton-township.org
 harrisonoh.org
 hccommissioners.com
-hebronvillage.com
 henrycohd.org
 henrycountyengineer.com
 henrycountyfamilycourt.com
@@ -18605,7 +18211,6 @@ sandusky-county.com
 sciotocountyohio.com
 sevenhillsohio.org
 shakeronline.com
-shawneehillsoh.com
 shawneehillsoh.org
 shawneetownship.com
 sidneyoh.com
@@ -18651,7 +18256,6 @@ westchesteroh.org
 whitehall-oh.us
 willardohio.com
 willoughbyohio.com
-wjohio.org
 woosteroh.com
 worthington.org
 yso.com
@@ -18666,8 +18270,6 @@ blaine.okcounties.org
 brightok.net
 buffalooklahoma.com
 canadiancounty.org
-ccok.us
-cfc-centralok.org
 chandlerok.com
 chickasha.org
 cityofaltus.org
@@ -18785,7 +18387,6 @@ cityoftalent.org
 cityoftangent.org
 cityoftoledo.org
 cityofunion.com
-cityofyamhill.com
 clackamas.us
 coburgoregon.org
 columbia-city.org
@@ -18933,7 +18534,6 @@ conshohockenpa.org
 coolbaughtwp.org
 coplayborough.org
 coraopolispa.com
-countyofindiana.org
 crafton.org
 cranberrytownship.org
 crescenttownship.com
@@ -19113,7 +18713,6 @@ norristown.org
 north-fayette.com
 northamptoncounty.org
 northamptontownship.com
-northfranklintwp.com
 northumberlandborough.com
 northumberlandco.org
 nvtpa.com
@@ -19126,7 +18725,6 @@ pacouncilonthearts.org
 pacourts.us
 padmv.org
 paehealth.com
-pafirstnet.com
 palmertonborough.com
 palmertwp.com
 paradisetownship.com
@@ -19189,7 +18787,6 @@ schwenksville-pa.org
 scott-township.com
 selinsgrove.org
 sellersvilleboro.org
-sepa-lehighcfc.org
 sevenfields.org
 sewickleyborough.org
 sewickleyhills.com
@@ -19231,7 +18828,6 @@ thornbury.org
 thornburytwp.com
 throopboro.com
 titusvillepa.com
-tobyhannatownship.org
 towamencin.org
 townofmccandless.org
 townshipofconcord.com
@@ -19269,7 +18865,6 @@ warwick-bucks.org
 warwicktownship.org
 washingtonpa.us
 waterfordboro.net
-watsontwp.org
 waynesboropa.org
 wbrandywine.org
 wcaln.org
@@ -19316,7 +18911,6 @@ fajardopr.org
 gobierno.pr
 loteriaelectronicapr.com
 municipiocarolina.com
-municipiodearecibo.com
 municipiodebayamon.com
 sanjuanciudadpatria.com
 seepuertorico.com
@@ -19480,7 +19074,6 @@ scfirststeps.org
 scgovernorsmansion.org
 scgssm.org
 scguard.com
-scilconline.org
 scinbre.org
 scpcf.com
 scsdb.org
@@ -19541,7 +19134,6 @@ walterborosc.org
 westpelzer.com
 williamstonsc.us
 williston-sc.com
-woodford-sc.com
 yemassee.net
 yorkcitysc.com
 yorkcountygov.com
@@ -19730,10 +19322,7 @@ cctexas.com
 cedarhilltx.com
 cedarhilltxgov.org
 cedarparktx.us
-cfcsanantonio.org
-cfctexasgulfcoast.org
 chandlertx.com
-ci.donna.lib.tx.us
 city-of-muleshoe.com
 cityofallen.org
 cityofalpine.com
@@ -19802,7 +19391,6 @@ cityofwhiteoak.com
 cityofwimberley.com
 cityofyoakum.org
 cob.us
-cobon.net
 colleyville.com
 coloradocitytexas.org
 columbustexas.net
@@ -19930,7 +19518,6 @@ sansabatexas.com
 schertz.com
 seagoville.us
 shady-shores.com
-shenandoahtx.com
 sjra.net
 smith-county.com
 sonora-texas.com
@@ -20055,7 +19642,6 @@ nslcity.org
 oakleycity.com
 ogdencity.com
 orem.org
-panguitch.org
 parkcity.org
 paysonutah.org
 perrycity.org
@@ -20138,7 +19724,6 @@ colonialbeachva.net
 countyofamherst.com
 covington.va.us
 cspdc.org
-culpeper.to
 damascus.org
 daytonva.us
 dickensonva.org
@@ -20176,7 +19761,6 @@ louisatown.org
 manassascity.org
 marionva.org
 montva.com
-motorcycleva.com
 mountjackson.com
 mppdc.com
 mrpdc.org
@@ -20192,7 +19776,6 @@ pearisburg.org
 petersburg-va.org
 pittgov.org
 portofvirginia.com
-potomaccfc.org
 princegeorgeva.org
 pulaskicounty.org
 pulaskitown.org
@@ -20249,7 +19832,6 @@ varetire.org
 vasilc.org
 vats.org
 vbgov.com
-vcef.net
 vdbvi.org
 vddhh.org
 vhda.com
@@ -20403,7 +19985,6 @@ townofjohnson.com
 townofmiddlebury.org
 townofsalisbury.org
 townofstowevt.org
-townofstraffordvt.com
 townofstrattonvt.com
 townofwoodstock.org
 uvlsrpc.org
@@ -20442,7 +20023,6 @@ bucoda.us
 cawh.org
 centralwashingtoncfc.us
 cfcgive.org
-cfcisland.org
 citybonneylake.org
 cityofanacortes.org
 cityofasotin.org
@@ -20524,7 +20104,6 @@ forkswashington.org
 fridayharbor.org
 garfieldwa.com
 go2kennewick.com
-gopcfc.org
 gorgecommission.org
 grandview.wa.us
 harringtonbiz.com
@@ -20540,7 +20119,6 @@ langleywa.org
 lyndenwa.org
 medical-lake.org
 mercergov.org
-midcolumbiacfc.com
 montesano.us
 mylongview.com
 newport-wa.org
@@ -20597,7 +20175,6 @@ tsa-wa.org
 uniontown.us
 visitmorton.com
 visitpalouse.com
-wablueberrycomm.org
 wahardwoodscomm.com
 walottery.com
 wapato-city.org
@@ -20617,7 +20194,6 @@ wscc.com
 wscpr.org
 wsctc.com
 wshfc.org
-wssb.org
 yakimacounty.us
 
 // usagovWI
@@ -20630,7 +20206,6 @@ appleton.org
 argylewi.org
 ashwaubenon.com
 athenswis.com
-badgerlandcfc.org
 barnes-wi.com
 baycitywi.org
 bayfieldcounty.org
@@ -20710,7 +20285,6 @@ glendale-wi.org
 grandchute.net
 grantcounty.org
 grantsburgwi.com
-greaterwicfc.org
 greendale.org
 greenfieldsaukwi.org
 halescorners.org
@@ -20806,7 +20380,6 @@ towngenesee.org
 townofalden.com
 townofalgoma.org
 townofangelica.com
-townofarena.com
 townofashippun.org
 townofbeloit.org
 townofbennettwi.org
@@ -20839,7 +20412,6 @@ townofgreenville.com
 townofharrison.org
 townofhiles.org
 townofjacksonwi.com
-townofjacksonwi.org
 townoflakemills.org
 townofliberty.com
 townoflinn.com
@@ -20851,7 +20423,6 @@ townofminong.us
 townofmorrison.org
 townofmtpleasantwi.com
 townofmukwonago.us
-townofnavarino.com
 townofnorway.org
 townofottawa.com
 townofpeshtigo.org
@@ -20928,7 +20499,6 @@ wheda.com
 wi-ozaukeecounty.civicplus.com
 williamsbay.org
 wilottery.com
-windpointwi.us
 wirapids.org
 wisconsinhistory.org
 wisspd.org
@@ -20948,7 +20518,6 @@ cityofhuntington.com
 cityofripley.org
 cityofspencer.com
 cityofweirton.com
-epcfc.org
 harrisoncountywv.com
 hedgesvillewv.us
 jeffersoncountywv.org
@@ -20957,7 +20526,6 @@ lewisburg-wv.com
 lincolncountywv.org
 marioncountywv.com
 mineralcountywv.com
-mountainstatecfc.org
 parkersburgcity.com
 philippi.org
 prestoncountywv.org
@@ -21017,3 +20585,4 @@ uintacounty.com
 wrightwyoming.com
 wyomingbusiness.org
 wyomingtourism.org
+next-linux.systems

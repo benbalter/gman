@@ -2,7 +2,7 @@ name: "Validate Domain List"
 
 on:
   schedule:
-    - cron: '38 17 * * 5'
+    - cron: '0 0 15 * *'
   workflow_dispatch: {}
 
 jobs:

@@ -11,4 +11,4 @@ domains = URI.open(url).read.encode('UTF-8')
 domains = CSV.parse(domains, headers: true)
 domains = domains.map { |row| row['Domain Name'] }
 
-Gman::Importer.new('German Federal' => domains).import
+Gman::Importer.new('German Federal' => domains).import(skip_resolve: false)
