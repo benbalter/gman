@@ -11596,10 +11596,14 @@ tptc.org.sg
 
 // Spain Municipal
 madrid.es
+zaragoza.es
 
 // Spain Provincial
 itracasa.es
 navarra.es
+
+// Spain Autonomic
+aragon.es
 
 // Swedish Administrative Authorities
 aklagare.se
