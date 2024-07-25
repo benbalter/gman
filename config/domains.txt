@@ -11225,6 +11225,7 @@ gov.ms
 gov.mv
 gov.mw
 gov.my
+gov.mz
 gov.ng
 gov.nr
 gov.om
