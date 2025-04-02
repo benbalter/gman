@@ -11345,6 +11345,7 @@ mil.qa
 mil.ru
 mil.rw
 mil.sh
+mil.sk
 mil.st
 mil.sy
 mil.tj
@@ -11389,6 +11390,7 @@ tptc.org.sg
 
 // Slovak Federal
 justice.sk
+slovensko.sk
 mfsr.sk
 mhsr.sk
 mincrs.sk
