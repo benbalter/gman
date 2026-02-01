@@ -45,7 +45,7 @@ class Gman
   def state
     if matches
       matches[4].upcase
-    elsif dotgov_listing['State']
+    elsif dotgov_listing && dotgov_listing['State']
       dotgov_listing['State']
     elsif list_category
       matches = list_category.match(/usagov([A-Z]{2})/)
