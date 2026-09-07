@@ -3,9 +3,9 @@
 RSpec.describe Gman do
   context 'valid domains' do
     ['foo.gov', 'http://foo.mil', 'foo@bar.gc.ca', 'foo.gov.au',
-     'https://www.foo.gouv.fr', 'foo@ci.champaign.il.us',
+     'https://www.foo.gouv.sn', 'foo@ci.champaign.il.us',
      'foo.bar.baz.gov.au', 'foo@bar.gov.uk', 'foo.gov',
-     'foo.fed.us', 'foo.state.il.us', 'state.il.us',
+     'bensenville.il.us', 'foo.state.il.us', 'state.il.us',
      'foo@af.mil', 'foo.gov.in'].each do |domain|
        subject { described_class.new(domain) }
 

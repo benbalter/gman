@@ -10,13 +10,17 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Ruby
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby-version: ['3.2', '3.3', '3.4']
 
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Ruby ${{ matrix.ruby-version }}
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0
+          ruby-version: ${{ matrix.ruby-version }}
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - name: Run tests
