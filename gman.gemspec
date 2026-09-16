@@ -23,7 +23,13 @@ Gem::Specification.new do |s|
   end
 
   s.require_paths = ['lib']
-  s.required_ruby_version = '>= 2.5', '< 4.0'
+  s.required_ruby_version = '>= 3.2'
+
+  # csv was removed from Ruby's default gems in 3.4, so it must be declared
+  # explicitly. logger is bundled (rather than default) starting in Ruby 3.5;
+  # declaring it now keeps `require 'logger'` in the importer working there too.
+  s.add_dependency('csv', '~> 3.0')
+  s.add_dependency('logger', '~> 1.0')
 
   s.add_dependency('colored', '~> 1.2')
   s.add_dependency('iso_country_codes', '~> 0.6')
@@ -37,7 +43,9 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rspec', '~> 3.5')
   s.add_development_dependency('rubocop', '~> 1.0')
   s.add_development_dependency('rubocop-performance', '~> 1.5')
-  s.add_development_dependency('rubocop-rspec', '~> 2.0')
+  # rubocop-rspec 3.x drops the transitive rubocop-rspec_rails dependency,
+  # which was incompatible with rubocop >= 1.90 (inject_defaults! API change).
+  s.add_development_dependency('rubocop-rspec', '~> 3.0')
   s.add_development_dependency('ruby-prof', '~> 1.4')
   s.add_development_dependency('ruby-progressbar', '~> 1.10')
   s.add_development_dependency('swot', '~> 1.0')
