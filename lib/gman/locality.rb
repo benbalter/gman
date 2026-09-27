@@ -33,7 +33,7 @@ class Gman
       |
         (#{Regexp.union(LOCALITY_DOMAINS)})\.[a-z-]+
       )\.(#{Regexp.union(STATES)})\.us
-    /x.freeze
+    /x
 
     def self.valid?(domain)
       !domain.to_s.match(Locality::REGEX).nil?
