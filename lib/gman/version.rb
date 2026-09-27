@@ -1,5 +1,5 @@
 # frozen_string_literal: true
 
 class Gman
-  VERSION = '7.0.6'
+  VERSION = '8.0.0'
 end
