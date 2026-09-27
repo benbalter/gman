@@ -60,7 +60,7 @@ class Gman
   def federal?
     return false unless dotgov_listing
 
-    domain_type =~ /^Federal/i
+    domain_type.to_s.match?(/^Federal/i)
   end
 
   def city?
@@ -128,14 +128,17 @@ class Gman
     return @dotgov_listing if defined? @dotgov_listing
     return unless dotgov?
 
-    @dotgov_listing = Gman.dotgov_list.find do |listing|
-      listing['Domain Name'].casecmp("#{domain.sld}.gov").zero?
-    end
+    @dotgov_listing = Gman.dotgov_index["#{domain.sld}.gov".downcase]
   end
 
   class << self
     def dotgov_list
       @dotgov_list ||= CSV.read(dotgov_list_path, headers: true)
+    end
+
+    # Hash of lowercase domain name => dotgov listing, for constant-time lookup
+    def dotgov_index
+      @dotgov_index ||= dotgov_list.to_h { |listing| [listing['Domain Name'].downcase, listing] }
     end
 
     private

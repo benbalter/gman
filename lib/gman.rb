@@ -45,9 +45,7 @@ class Gman
   def valid?
     return @valid if defined?(@valid)
 
-    @valid = false unless valid_domain?
-    @valid = false if academic?
-    @valid ||= locality? || public_suffix_valid?
+    @valid = valid_domain? && (locality? || public_suffix_valid?)
   end
 
   def locality?
@@ -57,14 +55,18 @@ class Gman
   private
 
   def valid_domain?
-    @valid_domain ||= !domain.nil? && !academic?
+    !domain.nil? && !academic?
   end
 
   def academic?
-    @academic ||= domain && Gman.academic_list.valid?(to_s)
+    return @academic if defined?(@academic)
+
+    @academic = !domain.nil? && Gman.academic_list.valid?(to_s)
   end
 
   def public_suffix_valid?
-    @public_suffix_valid ||= Gman.list.valid?(to_s)
+    return @public_suffix_valid if defined?(@public_suffix_valid)
+
+    @public_suffix_valid = Gman.list.valid?(to_s)
   end
 end

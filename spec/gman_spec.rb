@@ -3,7 +3,8 @@
 RSpec.describe Gman do
   context 'valid domains' do
     ['foo.gov', 'http://foo.mil', 'foo@bar.gc.ca', 'foo.gov.au',
-     'https://www.foo.gouv.sn', 'foo@ci.champaign.il.us',
+     'https://www.foo.gouv.sn', 'https://www.foo.gouv.fr',
+     'foo@ci.champaign.il.us', 'foo.fed.us',
      'foo.bar.baz.gov.au', 'foo@bar.gov.uk', 'foo.gov',
      'bensenville.il.us', 'foo.state.il.us', 'state.il.us',
      'foo@af.mil', 'foo.gov.in'].each do |domain|
@@ -27,6 +28,18 @@ RSpec.describe Gman do
         expect(described_class.valid?(domain)).to be(false)
         expect(subject.valid?).to be(false)
       end
+    end
+  end
+
+  context 'when a domain is on both the government and academic lists' do
+    subject { described_class.new('foo.gov') }
+
+    let(:academic_list) { Gman::DomainList.from_hash('academic' => ['foo.gov']) }
+
+    before { allow(described_class).to receive(:academic_list).and_return(academic_list) }
+
+    it 'is not a valid government domain' do
+      expect(subject.valid?).to be(false)
     end
   end
 

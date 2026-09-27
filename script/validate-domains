@@ -15,10 +15,13 @@ importer = Gman::Importer.new({})
 options = { skip_dupe: true, skip_resolve: false }
 list_path = File.expand_path '../config/domains.txt', __dir__
 
+# Registry suffixes (e.g., gouv.fr, fed.us) have no DNS records of their own
+SKIP_GROUPS = ['non-us gov', 'non-us mil', 'US Federal'].freeze
+
 importer.logger.info "Starting list: #{Gman::DomainList.current.count} domains"
 
-Gman.list.to_h.values.shuffle.each do |domains|
-  # next if ['non-us gov', 'non-us mil', 'US Federal'].include?(group)
+Gman.list.to_h.to_a.shuffle.each do |group, domains|
+  next if SKIP_GROUPS.include?(group)
 
   Parallel.each(domains, progress: 'Validating') do |domain|
     next if domain.start_with?('!')

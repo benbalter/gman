@@ -5,8 +5,12 @@ on:
     - cron: '0 0 15 * *'
   workflow_dispatch: {}
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
-  validate: 
+  validate:
     runs-on: ubuntu-latest
 
     steps:
@@ -14,14 +18,14 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4'
+          ruby-version: 3.4
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
 
       - name: Validate domains
         run: bundle exec script/validate-domains
- 
+
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v7
         if: always()
         with:
             commit-message: Remove invalid domains
