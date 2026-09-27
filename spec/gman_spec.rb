@@ -30,6 +30,18 @@ RSpec.describe Gman do
     end
   end
 
+  context 'when a domain is on both the government and academic lists' do
+    subject { described_class.new('foo.gov') }
+
+    let(:academic_list) { Gman::DomainList.from_hash('academic' => ['foo.gov']) }
+
+    before { allow(described_class).to receive(:academic_list).and_return(academic_list) }
+
+    it 'is not a valid government domain' do
+      expect(subject.valid?).to be(false)
+    end
+  end
+
   context 'localities' do
     subject { described_class.new(domain) }
 
