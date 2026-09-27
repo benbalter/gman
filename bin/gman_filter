@@ -3,7 +3,7 @@
 
 # Given a list of newline-separated email addresses, retain only government
 
-require './lib/gman'
+require_relative '../lib/gman'
 
 # Auto-flush
 $stdout.sync = true
