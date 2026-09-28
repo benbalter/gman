@@ -126,24 +126,44 @@ class Gman
       group_index[entry]
     end
 
-    # Given a domain, find any domain on the list that includes that domain
-    # E.g., `fcc.gov` would be the parent of `data.fcc.gov`
-    # If more than one list entry matches, returns the alphabetically first one
+    # Given a domain, find the list entry that covers it, using public suffix
+    # rules. E.g., `fcc.gov` would be the parent of `data.fcc.gov`, and
+    # `*.foo.gov` the parent of `bar.foo.gov`.
+    #
+    # If more than one entry matches, the longest wins. A domain under an
+    # exception rule (e.g., `!mail.gov.ua`) has no parent. A domain that is
+    # itself on the list returns the entry that covers its parent, if any.
+    #
+    # Returns the list entry as written (e.g., `*.foo.gov`), or nil
     def parent_domain(domain)
-      suffixes = []
-      domain.scan('.') { suffixes << Regexp.last_match.post_match }
-      suffixes.select { |suffix| domain_set.include?(suffix) }.min
+      rule = parent_list.find(domain, default: nil)
+      if rule && !rule.is_a?(PublicSuffix::Rule::Exception) && rule.value == domain
+        ancestor = domain.split('.', 2)[1]
+        rule = ancestor && parent_list.find(ancestor, default: nil)
+      end
+      return if rule.nil? || rule.is_a?(PublicSuffix::Rule::Exception)
+
+      rule.rule
+    end
+
+    # Returns the exception rule (e.g., `!mail.gov.ua`) that excludes the given
+    # domain from the list, or nil if none does
+    def exception_for(domain)
+      rule = parent_list.find(domain, default: nil)
+      rule.rule if rule.is_a?(PublicSuffix::Rule::Exception)
     end
 
     private
 
     # Clear values derived from data. Call after mutating data in place.
     def clear_cache
-      @domains = @domain_set = @group_index = nil
+      @domains = @parent_list = @group_index = nil
     end
 
-    def domain_set
-      @domain_set ||= Set.new(domains)
+    # PublicSuffix::List of the current data, for parent lookups. Unlike
+    # #public_suffix_list, it is rebuilt when the data changes.
+    def parent_list
+      @parent_list ||= PublicSuffix::List.parse(domains.join("\n"))
     end
 
     # Hash of list entry => group, for constant-time group lookups

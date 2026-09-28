@@ -135,10 +135,26 @@ RSpec.describe Gman::DomainList do
     end
   end
 
-  it 'returns the alphabetically first parent when several match' do
-    list = described_class.new(data: { 'foo' => ['gov', 'fcc.gov'] })
-    expect(list.parent_domain('data.fcc.gov')).to eql('fcc.gov')
-    list = described_class.new(data: { 'foo' => ['a', 'b.a'] })
-    expect(list.parent_domain('x.b.a')).to eql('a')
+  context 'finding parents with public suffix rules' do
+    subject { described_class.new(data: { 'foo' => ['gov', 'fcc.gov', '*.foo.gov', 'bar.gov', '!mail.bar.gov'] }) }
+
+    it 'returns the longest matching entry' do
+      expect(subject.parent_domain('data.fcc.gov')).to eql('fcc.gov')
+    end
+
+    it "returns the entry covering a listed domain's parent" do
+      expect(subject.parent_domain('fcc.gov')).to eql('gov')
+    end
+
+    it 'honors wildcard rules' do
+      expect(subject.parent_domain('baz.foo.gov')).to eql('*.foo.gov')
+    end
+
+    it 'honors exception rules' do
+      expect(subject.parent_domain('mail.bar.gov')).to be_nil
+      expect(subject.parent_domain('www.mail.bar.gov')).to be_nil
+      expect(subject.exception_for('www.mail.bar.gov')).to eql('!mail.bar.gov')
+      expect(subject.exception_for('www.bar.gov')).to be_nil
+    end
   end
 end

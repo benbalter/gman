@@ -153,14 +153,17 @@ class Gman
 
       if current.domains.include?(domain)
         reject(domain, 'duplicate')
-      else
-        parent = current.parent_domain(domain)
+      elsif (parent = current.parent_domain(domain))
         reject(domain, "subdomain of #{parent}")
+      else
+        reject(domain, "excluded by #{current.exception_for(domain)}")
       end
     end
 
+    # A domain is a dupe if it's on the list, covered by a list entry, or
+    # excluded by an exception rule
     def dupe?(domain)
-      current.domains.include?(domain) || current.parent_domain(domain)
+      current.domains.include?(domain) || current.parent_domain(domain) || current.exception_for(domain)
     end
 
     def normalize_domains!
