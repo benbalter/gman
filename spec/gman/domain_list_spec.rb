@@ -72,6 +72,11 @@ RSpec.describe Gman::DomainList do
         expect(subject.to_s).to match("// Canada federal\ncanada.ca\n")
       end
 
+      it "finds an entry's group" do
+        expect(subject.group_for('canada.ca')).to eql('Canada federal')
+        expect(subject.group_for('not-on-the-list.example')).to be_nil
+      end
+
       it "finds a domain's parent" do
         expect(subject.parent_domain('foo.gov.uk')).to eql('gov.uk')
       end

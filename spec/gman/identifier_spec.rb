@@ -204,7 +204,8 @@ RSpec.describe 'Gman identifier' do
     {
       unknown: 'cityofperu.org',
       'Canada municipal': 'acme.ca',
-      'Canada federal': 'canada.ca'
+      'Canada federal': 'canada.ca',
+      nil => 'example.com'
     }.each do |expected, domain|
       context "Given the #{domain} domain" do
         let(:domain) { domain }
@@ -213,6 +214,17 @@ RSpec.describe 'Gman identifier' do
           expect(subject.type).to eql(expected)
         end
       end
+    end
+  end
+
+  context 'looking up list categories' do
+    it 'returns nil for a domain not on the list' do
+      expect(Gman.new('example.com').send(:list_category)).to be_nil
+    end
+
+    it 'finds the category of the last entry on the list' do
+      last_group, last_domains = Gman.list.data.to_a.last
+      expect(Gman.new(last_domains.last).send(:list_category)).to eql(last_group)
     end
   end
 end

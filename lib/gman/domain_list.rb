@@ -4,7 +4,7 @@ class Gman
   class DomainList
     COMMENT_REGEX = %r{//[/\s]*(.*)$}i
 
-    attr_writer :data, :path, :contents
+    attr_writer :path, :contents
 
     class << self
       # The current, government domain list
@@ -39,6 +39,12 @@ class Gman
                     else
                       to_s
                     end
+    end
+
+    # Replaces the list data, a hash of group => domains
+    def data=(data)
+      @data = data
+      clear_cache
     end
 
     # Returns the parsed contents of the domain list as a hash
@@ -84,7 +90,7 @@ class Gman
     # Alphabetize groups and domains within each group
     # We need to ensure exceptions appear after their coresponding rules
     def alphabetize
-      @data = data.sort_by { |k, _v| k.downcase }.to_h
+      self.data = data.sort_by { |k, _v| k.downcase }.to_h
       @data.map do |_group, domains|
         domains.sort! { |a, b| sort_with_exceptions(a, b) }
         domains.uniq!
@@ -112,6 +118,13 @@ class Gman
     end
     alias to_public_suffix to_s
 
+    # Returns the group a list entry belongs to, e.g., "US Federal" for "fcc.gov"
+    # The entry must match the list verbatim. If an entry appears in more than
+    # one group, the first group wins.
+    def group_for(entry)
+      group_index[entry]
+    end
+
     # Given a domain, find any domain on the list that includes that domain
     # E.g., `fcc.gov` would be the parent of `data.fcc.gov`
     def parent_domain(domain)
@@ -119,6 +132,18 @@ class Gman
     end
 
     private
+
+    # Clear values derived from data. Call after mutating data in place.
+    def clear_cache
+      @group_index = nil
+    end
+
+    # Hash of list entry => group, for constant-time group lookups
+    def group_index
+      @group_index ||= data.each_with_object({}) do |(group, domains), index|
+        domains.each { |domain| index[domain] ||= group }
+      end
+    end
 
     # Parse a public-suffix formatted string into a hash of groups => [domains]
     def string_to_hash(string)
