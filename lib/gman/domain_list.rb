@@ -79,7 +79,7 @@ class Gman
 
     # Return an array of strings representing all domains on the list
     def domains
-      data.values.flatten.compact.sort.uniq
+      @domains ||= data.values.flatten.compact.sort.uniq.freeze
     end
 
     # Return the total number of domains in the list
@@ -91,10 +91,11 @@ class Gman
     # We need to ensure exceptions appear after their coresponding rules
     def alphabetize
       self.data = data.sort_by { |k, _v| k.downcase }.to_h
-      @data.map do |_group, domains|
+      @data.each_value do |domains|
         domains.sort! { |a, b| sort_with_exceptions(a, b) }
         domains.uniq!
       end
+      clear_cache
     end
 
     # Write the domain list to disk
@@ -127,15 +128,22 @@ class Gman
 
     # Given a domain, find any domain on the list that includes that domain
     # E.g., `fcc.gov` would be the parent of `data.fcc.gov`
+    # If more than one list entry matches, returns the alphabetically first one
     def parent_domain(domain)
-      domains.find { |c| domain =~ /\.#{Regexp.escape(c)}$/ }
+      suffixes = []
+      domain.scan('.') { suffixes << Regexp.last_match.post_match }
+      suffixes.select { |suffix| domain_set.include?(suffix) }.min
     end
 
     private
 
     # Clear values derived from data. Call after mutating data in place.
     def clear_cache
-      @group_index = nil
+      @domains = @domain_set = @group_index = nil
+    end
+
+    def domain_set
+      @domain_set ||= Set.new(domains)
     end
 
     # Hash of list entry => group, for constant-time group lookups

@@ -163,23 +163,19 @@ class Gman
     end
 
     def normalize_domains!
-      domain_list.to_h.each_value do |domains|
-        domains.map! { |domain| normalize_domain(domain) }
-        domains.uniq!
+      domain_list.data = domain_list.data.transform_values do |domains|
+        domains.map { |domain| normalize_domain(domain) }.uniq
       end
     end
 
     def ensure_validity!(options = {})
-      domain_list.data.each_value do |domains|
-        domains.select! { |domain| valid_domain?(domain, options) }
+      domain_list.data = domain_list.data.transform_values do |domains|
+        domains.select { |domain| valid_domain?(domain, options) }
       end
     end
 
     def add_to_current
-      domain_list.data.each do |group, domains|
-        current.data[group] ||= []
-        current.data[group].concat domains
-      end
+      current.data = current.data.merge(domain_list.data) { |_group, existing, added| existing + added }
       current.write
     end
 

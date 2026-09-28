@@ -112,4 +112,33 @@ RSpec.describe Gman::DomainList do
       end
     end
   end
+
+  context 'when the data changes' do
+    subject { described_class.new(data: { 'foo' => ['foo.gov'] }) }
+
+    before do
+      subject.domains # prime the memoized values
+      subject.data = { 'bar' => ['bar.gov'] }
+    end
+
+    it 'refreshes the domains' do
+      expect(subject.domains).to eql(['bar.gov'])
+    end
+
+    it 'refreshes parent lookups' do
+      expect(subject.parent_domain('www.foo.gov')).to be_nil
+      expect(subject.parent_domain('www.bar.gov')).to eql('bar.gov')
+    end
+
+    it 'refreshes group lookups' do
+      expect(subject.group_for('bar.gov')).to eql('bar')
+    end
+  end
+
+  it 'returns the alphabetically first parent when several match' do
+    list = described_class.new(data: { 'foo' => ['gov', 'fcc.gov'] })
+    expect(list.parent_domain('data.fcc.gov')).to eql('fcc.gov')
+    list = described_class.new(data: { 'foo' => ['a', 'b.a'] })
+    expect(list.parent_domain('x.b.a')).to eql('a')
+  end
 end
