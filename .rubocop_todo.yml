@@ -97,9 +97,8 @@ RSpec/ScatteredSetup:
   Exclude:
     - 'spec/gman/importer_spec.rb'
 
-# Offense count: 3
+# Offense count: 2
 Security/Open:
   Exclude:
-    - 'script/reconcile-us'
     - 'script/vendor-federal-de'
     - 'script/vendor-us'

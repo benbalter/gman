@@ -16,4 +16,4 @@ end
 group = ARGV[0]
 domains = ARGV.drop(1)
 
-Gman.import(group => domains)
+Gman::Importer.new(group => domains).import

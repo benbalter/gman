@@ -72,6 +72,11 @@ RSpec.describe Gman::DomainList do
         expect(subject.to_s).to match("// Canada federal\ncanada.ca\n")
       end
 
+      it "finds an entry's group" do
+        expect(subject.group_for('canada.ca')).to eql('Canada federal')
+        expect(subject.group_for('not-on-the-list.example')).to be_nil
+      end
+
       it "finds a domain's parent" do
         expect(subject.parent_domain('foo.gov.uk')).to eql('gov.uk')
       end
@@ -105,6 +110,51 @@ RSpec.describe Gman::DomainList do
           end
         end
       end
+    end
+  end
+
+  context 'when the data changes' do
+    subject { described_class.new(data: { 'foo' => ['foo.gov'] }) }
+
+    before do
+      subject.domains # prime the memoized values
+      subject.data = { 'bar' => ['bar.gov'] }
+    end
+
+    it 'refreshes the domains' do
+      expect(subject.domains).to eql(['bar.gov'])
+    end
+
+    it 'refreshes parent lookups' do
+      expect(subject.parent_domain('www.foo.gov')).to be_nil
+      expect(subject.parent_domain('www.bar.gov')).to eql('bar.gov')
+    end
+
+    it 'refreshes group lookups' do
+      expect(subject.group_for('bar.gov')).to eql('bar')
+    end
+  end
+
+  context 'finding parents with public suffix rules' do
+    subject { described_class.new(data: { 'foo' => ['gov', 'fcc.gov', '*.foo.gov', 'bar.gov', '!mail.bar.gov'] }) }
+
+    it 'returns the longest matching entry' do
+      expect(subject.parent_domain('data.fcc.gov')).to eql('fcc.gov')
+    end
+
+    it "returns the entry covering a listed domain's parent" do
+      expect(subject.parent_domain('fcc.gov')).to eql('gov')
+    end
+
+    it 'honors wildcard rules' do
+      expect(subject.parent_domain('baz.foo.gov')).to eql('*.foo.gov')
+    end
+
+    it 'honors exception rules' do
+      expect(subject.parent_domain('mail.bar.gov')).to be_nil
+      expect(subject.parent_domain('www.mail.bar.gov')).to be_nil
+      expect(subject.exception_for('www.mail.bar.gov')).to eql('!mail.bar.gov')
+      expect(subject.exception_for('www.bar.gov')).to be_nil
     end
   end
 end

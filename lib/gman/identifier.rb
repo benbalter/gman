@@ -110,12 +110,8 @@ class Gman
   def list_category
     return @list_category if defined?(@list_category)
 
-    match = Gman.list.public_suffix_list.find(domain.to_s)
-    return @list_category = nil unless match
-
-    regex = %r{// ([^\n]+)\n?[^/]*\n#{Regexp.escape(match.value)}\n}im
-    matches = Gman.list.contents.match(regex)
-    @list_category = matches ? matches[1] : nil
+    match = Gman.list.public_suffix_list.find(domain.to_s, default: nil)
+    @list_category = match && Gman.list.group_for(match.value)
   end
 
   def matches
