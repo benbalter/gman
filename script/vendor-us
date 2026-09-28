@@ -16,27 +16,20 @@ require './lib/gman'
 require 'open-uri'
 require 'csv'
 
-path = File.expand_path('./vendor-us-tmp.csv')
 blacklist = %w[usagovQUASI usagovFEDgov]
 source = 'https://raw.githubusercontent.com/GSA/govt-urls/main/1_govt_urls_full.csv'
 domains = {}
 
-begin
-  raw = URI.open(source).read
-  File.write(path, raw)
-  data = CSV.table(path)
+data = CSV.parse(URI.open(source).read, headers: true, header_converters: :symbol)
 
-  data.each do |domain|
-    next if domain[:type_of_government] == 'Quasigovernmental'
+data.each do |domain|
+  next if domain[:type_of_government] == 'Quasigovernmental'
 
-    group = "US #{domain[:type_of_government]}"
-    group += " (#{domain[:state]})" if domain[:type_of_government] != 'Federal' && domain[:state]
-    domains[group] ||= []
-    domains[group] << domain[:domain_name]
-  end
-
-  domains.reject! { |g, _| blacklist.include?(g) }
-  Gman::Importer.new(domains).import(skip_resolve: false)
-ensure
-  File.delete(path)
+  group = "US #{domain[:type_of_government]}"
+  group += " (#{domain[:state]})" if domain[:type_of_government] != 'Federal' && domain[:state]
+  domains[group] ||= []
+  domains[group] << domain[:domain_name]
 end
+
+domains.reject! { |g, _| blacklist.include?(g) }
+Gman::Importer.new(domains).import(skip_resolve: false)
