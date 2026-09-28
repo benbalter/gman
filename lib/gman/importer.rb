@@ -71,7 +71,7 @@ class Gman
 
     def normalize_domain(domain)
       domain = Gman.new(domain).to_s
-      domain.to_s.downcase.strip.gsub(/^www./, '').gsub(%r{/$}, '')
+      domain.to_s.downcase.strip.delete_prefix('www.').delete_suffix('/')
     end
 
     def valid_domain?(domain, options = {})

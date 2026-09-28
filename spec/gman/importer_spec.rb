@@ -232,5 +232,19 @@ RSpec.describe Gman::Importer do
         expect(normalized_domain).to eql('example.com')
       end
     end
+
+    {
+      'www2.example.gov' => 'www2.example.gov',
+      'wwwexample.gov' => 'wwwexample.gov',
+      'www.www.example.gov' => 'www.example.gov'
+    }.each do |input, expected|
+      context "given #{input}" do
+        let(:domain) { input }
+
+        it 'only strips a literal leading www.' do
+          expect(normalized_domain).to eql(expected)
+        end
+      end
+    end
   end
 end
