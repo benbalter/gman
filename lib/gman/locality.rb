@@ -27,12 +27,15 @@ class Gman
       parish town twp vi vil village
     ].freeze
 
+    # Anchored so the locality must be the end of the hostname and start at a
+    # label boundary (e.g. not state.il.us.example.com or state.ca.usexample.com)
     REGEX = /
+      (?:\A|\.)
       (
         (#{Regexp.union(AFFINITY_NAMESPACES)})
       |
         (#{Regexp.union(LOCALITY_DOMAINS)})\.[a-z-]+
-      )\.(#{Regexp.union(STATES)})\.us
+      )\.(#{Regexp.union(STATES)})\.us\z
     /x
 
     def self.valid?(domain)
