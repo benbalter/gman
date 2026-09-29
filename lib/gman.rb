@@ -54,6 +54,24 @@ class Gman
 
   private
 
+  # Overrides NaughtyOrNice#normalized_domain, which parses every input as a
+  # URL. For an email address, the URL host can differ from the domain mail is
+  # delivered to (e.g. "x@gsa.gov#"@example.com), so the domain after the last
+  # @ must be the same host the URL parser sees.
+  #
+  # Returns the domain string, or nil
+  def normalized_domain
+    return if @text.match?(/[[:space:][:cntrl:]]/)
+    return super unless email_like?
+
+    host = @text.rpartition('@').last
+    host if host == super
+  end
+
+  def email_like?
+    @text.include?('@') && !%r{\Ahttps?://}.match?(@text)
+  end
+
   def valid_domain?
     !domain.nil? && !academic?
   end
