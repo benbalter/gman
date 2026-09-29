@@ -7,7 +7,8 @@ RSpec.describe Gman do
      'foo@ci.champaign.il.us', 'foo.fed.us',
      'foo.bar.baz.gov.au', 'foo@bar.gov.uk', 'foo.gov',
      'bensenville.il.us', 'foo.state.il.us', 'state.il.us',
-     'foo@af.mil', 'foo.gov.in'].each do |domain|
+     'foo@af.mil', 'foo.gov.in', 'user@state.il.us', 'user@ci.austin.tx.us',
+     'user@sub.co.somewhere.ca.us', 'www.ci.foo.il.us'].each do |domain|
        subject { described_class.new(domain) }
 
        it "knows #{domain.inspect} is valid government domain" do
@@ -21,7 +22,11 @@ RSpec.describe Gman do
     ['foo.bar.com', 'bar@foo.biz', 'http://www.foo.biz',
      'foo.uk', 'gov', 'foo@k12.champaign.il.us', # 'foo@kii.gov.by',
      'foo', '', nil, ' ', 'foo.city.il.us', 'foo.ci.il.us',
-     'foo.zx.us', 'foo@mail.gov.ua', 'foo@gwu.edu'].each do |domain|
+     'foo.zx.us', 'foo@mail.gov.ua', 'foo@gwu.edu',
+     'user@state.il.us.attacker.com', 'user@ci.foo.il.us.attacker.com',
+     'user@state.ca.usattacker.com', 'user@state.ca.usa-attacker.com',
+     'user@dst.ny.us.evil.co.uk', 'state.il.us.attacker.com',
+     'https://state.il.us.attacker.com/path'].each do |domain|
       subject { described_class.new(domain) }
 
       it "knows #{domain.inspect} is not a valid government domain" do
@@ -59,6 +64,22 @@ RSpec.describe Gman do
 
       it "knows it's a locality" do
         expect(subject.locality?).to be(true)
+      end
+    end
+
+    ['state.il.us.attacker.com', 'ci.foo.il.us.attacker.com',
+     'state.ca.usattacker.com', 'user@state.il.us.attacker.com'].each do |attacker_domain|
+      context "when given #{attacker_domain}" do
+        let(:domain) { attacker_domain }
+
+        it "knows it's not a locality" do
+          expect(subject.locality?).to be(false)
+        end
+
+        it 'has no locality type or state' do
+          expect(subject.type).to be_nil
+          expect(subject.state).to be_nil
+        end
       end
     end
   end
