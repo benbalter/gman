@@ -2,9 +2,9 @@
 
 class Gman
   class DomainList
-    COMMENT_REGEX = %r{//[/\s]*(.*)$}i.freeze
+    COMMENT_REGEX = %r{//[/\s]*(.*)$}i
 
-    attr_writer :data, :path, :contents
+    attr_writer :path, :contents
 
     class << self
       # The current, government domain list
@@ -41,6 +41,12 @@ class Gman
                     end
     end
 
+    # Replaces the list data, a hash of group => domains
+    def data=(data)
+      @data = data
+      clear_cache
+    end
+
     # Returns the parsed contents of the domain list as a hash
     # in the form for group => domains
     def data
@@ -73,7 +79,7 @@ class Gman
 
     # Return an array of strings representing all domains on the list
     def domains
-      data.values.flatten.compact.sort.uniq
+      @domains ||= data.values.flatten.compact.sort.uniq.freeze
     end
 
     # Return the total number of domains in the list
@@ -84,11 +90,12 @@ class Gman
     # Alphabetize groups and domains within each group
     # We need to ensure exceptions appear after their coresponding rules
     def alphabetize
-      @data = data.sort_by { |k, _v| k.downcase }.to_h
-      @data.map do |_group, domains|
+      self.data = data.sort_by { |k, _v| k.downcase }.to_h
+      @data.each_value do |domains|
         domains.sort! { |a, b| sort_with_exceptions(a, b) }
         domains.uniq!
       end
+      clear_cache
     end
 
     # Write the domain list to disk
@@ -112,13 +119,59 @@ class Gman
     end
     alias to_public_suffix to_s
 
-    # Given a domain, find any domain on the list that includes that domain
-    # E.g., `fcc.gov` would be the parent of `data.fcc.gov`
+    # Returns the group a list entry belongs to, e.g., "US Federal" for "fcc.gov"
+    # The entry must match the list verbatim. If an entry appears in more than
+    # one group, the first group wins.
+    def group_for(entry)
+      group_index[entry]
+    end
+
+    # Given a domain, find the list entry that covers it, using public suffix
+    # rules. E.g., `fcc.gov` would be the parent of `data.fcc.gov`, and
+    # `*.foo.gov` the parent of `bar.foo.gov`.
+    #
+    # If more than one entry matches, the longest wins. A domain under an
+    # exception rule (e.g., `!mail.gov.ua`) has no parent. A domain that is
+    # itself on the list returns the entry that covers its parent, if any.
+    #
+    # Returns the list entry as written (e.g., `*.foo.gov`), or nil
     def parent_domain(domain)
-      domains.find { |c| domain =~ /\.#{Regexp.escape(c)}$/ }
+      rule = parent_list.find(domain, default: nil)
+      if rule && !rule.is_a?(PublicSuffix::Rule::Exception) && rule.value == domain
+        ancestor = domain.split('.', 2)[1]
+        rule = ancestor && parent_list.find(ancestor, default: nil)
+      end
+      return if rule.nil? || rule.is_a?(PublicSuffix::Rule::Exception)
+
+      rule.rule
+    end
+
+    # Returns the exception rule (e.g., `!mail.gov.ua`) that excludes the given
+    # domain from the list, or nil if none does
+    def exception_for(domain)
+      rule = parent_list.find(domain, default: nil)
+      rule.rule if rule.is_a?(PublicSuffix::Rule::Exception)
     end
 
     private
+
+    # Clear values derived from data. Call after mutating data in place.
+    def clear_cache
+      @domains = @parent_list = @group_index = nil
+    end
+
+    # PublicSuffix::List of the current data, for parent lookups. Unlike
+    # #public_suffix_list, it is rebuilt when the data changes.
+    def parent_list
+      @parent_list ||= PublicSuffix::List.parse(domains.join("\n"))
+    end
+
+    # Hash of list entry => group, for constant-time group lookups
+    def group_index
+      @group_index ||= data.each_with_object({}) do |(group, domains), index|
+        domains.each { |domain| index[domain] ||= group }
+      end
+    end
 
     # Parse a public-suffix formatted string into a hash of groups => [domains]
     def string_to_hash(string)

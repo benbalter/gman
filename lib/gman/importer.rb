@@ -6,9 +6,10 @@ require 'yaml'
 require 'open-uri'
 require 'resolv'
 require 'logger'
+require 'addressable/uri'
 require 'swot'
 require_relative '../gman'
-require_relative './domain_list'
+require_relative 'domain_list'
 
 class Gman
   class Importer
@@ -71,7 +72,7 @@ class Gman
 
     def normalize_domain(domain)
       domain = Gman.new(domain).to_s
-      domain.to_s.downcase.strip.gsub(/^www./, '').gsub(%r{/$}, '')
+      domain.to_s.downcase.strip.delete_prefix('www.').delete_suffix('/')
     end
 
     def valid_domain?(domain, options = {})
@@ -152,34 +153,33 @@ class Gman
 
       if current.domains.include?(domain)
         reject(domain, 'duplicate')
-      else
-        parent = current.parent_domain(domain)
+      elsif (parent = current.parent_domain(domain))
         reject(domain, "subdomain of #{parent}")
+      else
+        reject(domain, "excluded by #{current.exception_for(domain)}")
       end
     end
 
+    # A domain is a dupe if it's on the list, covered by a list entry, or
+    # excluded by an exception rule
     def dupe?(domain)
-      current.domains.include?(domain) || current.parent_domain(domain)
+      current.domains.include?(domain) || current.parent_domain(domain) || current.exception_for(domain)
     end
 
     def normalize_domains!
-      domain_list.to_h.each_value do |domains|
-        domains.map! { |domain| normalize_domain(domain) }
-        domains.uniq!
+      domain_list.data = domain_list.data.transform_values do |domains|
+        domains.map { |domain| normalize_domain(domain) }.uniq
       end
     end
 
     def ensure_validity!(options = {})
-      domain_list.data.each_value do |domains|
-        domains.select! { |domain| valid_domain?(domain, options) }
+      domain_list.data = domain_list.data.transform_values do |domains|
+        domains.select { |domain| valid_domain?(domain, options) }
       end
     end
 
     def add_to_current
-      domain_list.data.each do |group, domains|
-        current.data[group] ||= []
-        current.data[group].concat domains
-      end
+      current.data = current.data.merge(domain_list.data) { |_group, existing, added| existing + added }
       current.write
     end
 

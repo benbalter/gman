@@ -45,9 +45,7 @@ class Gman
   def valid?
     return @valid if defined?(@valid)
 
-    @valid = false unless valid_domain?
-    @valid = false if academic?
-    @valid ||= locality? || public_suffix_valid?
+    @valid = valid_domain? && (locality? || public_suffix_valid?)
   end
 
   def locality?
@@ -56,15 +54,37 @@ class Gman
 
   private
 
+  # Overrides NaughtyOrNice#normalized_domain, which parses every input as a
+  # URL. For an email address, the URL host can differ from the domain mail is
+  # delivered to (e.g. "x@gsa.gov#"@example.com), so the domain after the last
+  # @ must be the same host the URL parser sees.
+  #
+  # Returns the domain string, or nil
+  def normalized_domain
+    return if @text.match?(/[[:space:][:cntrl:]]/)
+    return super unless email_like?
+
+    host = @text.rpartition('@').last
+    host if host == super
+  end
+
+  def email_like?
+    @text.include?('@') && !%r{\Ahttps?://}.match?(@text)
+  end
+
   def valid_domain?
-    @valid_domain ||= !domain.nil? && !academic?
+    !domain.nil? && !academic?
   end
 
   def academic?
-    @academic ||= domain && Gman.academic_list.valid?(to_s)
+    return @academic if defined?(@academic)
+
+    @academic = !domain.nil? && Gman.academic_list.valid?(to_s)
   end
 
   def public_suffix_valid?
-    @public_suffix_valid ||= Gman.list.valid?(to_s)
+    return @public_suffix_valid if defined?(@public_suffix_valid)
+
+    @public_suffix_valid = Gman.list.valid?(to_s)
   end
 end
