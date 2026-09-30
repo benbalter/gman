@@ -1,22 +1,40 @@
 #! /usr/bin/env ruby
 # frozen_string_literal: true
 
-require 'yaml'
-require 'open-uri'
+#
+# Checks domains.txt for duplicate entries
+#
+# Fails if a domain appears more than once in the same group. Domains listed in
+# more than one group (e.g., a tribal nation listed under both its state and
+# usagovNSN) are reported but allowed, since the group determines Gman#type.
+#
+# Usage: script/dedupe
+
 require './lib/gman'
-require './lib/gman/importer'
 
 current = Gman::DomainList.current
+entries = current.data.values.flatten.compact
 
 puts 'Checking for duplicate domains in the domain list...'
-puts "Current list contains #{current.count} domains..."
+puts "Current list contains #{entries.count} entries (#{current.count} unique domains)..."
 
-dupe = current.count - current.domains.uniq.count
-puts "Found #{dupe} duplicate domains"
-exit 0 if dupe.zero?
+in_group = current.data.transform_values do |domains|
+  domains.tally.select { |_, count| count > 1 }.keys
+end
+in_group.reject! { |_, dupes| dupes.empty? }
 
-dupes = current.domains.select { |domain| current.domains.count(domain) > 1 }
+groups_by_domain = Hash.new { |hash, key| hash[key] = [] }
+current.data.each { |group, domains| domains.uniq.each { |domain| groups_by_domain[domain] << group } }
+cross_group = groups_by_domain.select { |_, groups| groups.count > 1 }
 
-puts 'Duplicate domains:'
-puts dupes
+unless cross_group.empty?
+  puts "Found #{cross_group.count} domains listed in more than one group (allowed):"
+  cross_group.each { |domain, groups| puts "  #{domain}: #{groups.join(', ')}" }
+end
+
+dupe_count = in_group.values.sum(&:count)
+puts "Found #{dupe_count} duplicate domains within a group"
+exit 0 if dupe_count.zero?
+
+in_group.each { |group, dupes| puts "  #{group}: #{dupes.join(', ')}" }
 exit 1

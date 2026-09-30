@@ -45,7 +45,7 @@ class Gman
   def state
     if matches
       matches[4].upcase
-    elsif dotgov_listing['State']
+    elsif dotgov_listing && dotgov_listing['State']
       dotgov_listing['State']
     elsif list_category
       matches = list_category.match(/usagov([A-Z]{2})/)
@@ -60,7 +60,7 @@ class Gman
   def federal?
     return false unless dotgov_listing
 
-    domain_type =~ /^Federal/i
+    domain_type.to_s.match?(/^Federal/i)
   end
 
   def city?
@@ -87,7 +87,7 @@ class Gman
     if matches
       matches[1] == 'state'
     elsif dotgov_listing
-      domain_type == 'State/Local Govt' || domain_type == 'State'
+      ['State/Local Govt', 'State'].include?(domain_type)
     else
       false
     end
@@ -110,12 +110,8 @@ class Gman
   def list_category
     return @list_category if defined?(@list_category)
 
-    match = Gman.list.public_suffix_list.find(domain.to_s)
-    return @list_category = nil unless match
-
-    regex = %r{// ([^\n]+)\n?[^/]*\n#{Regexp.escape(match.value)}\n}im
-    matches = Gman.list.contents.match(regex)
-    @list_category = matches ? matches[1] : nil
+    match = Gman.list.public_suffix_list.find(domain.to_s, default: nil)
+    @list_category = match && Gman.list.group_for(match.value)
   end
 
   def matches
@@ -128,14 +124,17 @@ class Gman
     return @dotgov_listing if defined? @dotgov_listing
     return unless dotgov?
 
-    @dotgov_listing = Gman.dotgov_list.find do |listing|
-      listing['Domain Name'].casecmp("#{domain.sld}.gov").zero?
-    end
+    @dotgov_listing = Gman.dotgov_index["#{domain.sld}.gov".downcase]
   end
 
   class << self
     def dotgov_list
       @dotgov_list ||= CSV.read(dotgov_list_path, headers: true)
+    end
+
+    # Hash of lowercase domain name => dotgov listing, for constant-time lookup
+    def dotgov_index
+      @dotgov_index ||= dotgov_list.to_h { |listing| [listing['Domain Name'].downcase, listing] }
     end
 
     private

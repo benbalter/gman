@@ -166,6 +166,21 @@ RSpec.describe Gman::Importer do
         end
       end
     end
+
+    context 'a domain excluded by an exception rule' do
+      let(:domain) { 'www.mail.gov.ua' }
+
+      it 'rejects it' do
+        expect(dupe?).to be_truthy
+        expect(ensure_not_dupe).to be_falsy
+      end
+
+      it 'gives the exception as the reason' do
+        with_env 'RECONCILING', 'true' do
+          expect(ensure_not_dupe).to eql('excluded by !mail.gov.ua')
+        end
+      end
+    end
   end
 
   context 'domain resolution' do
@@ -230,6 +245,20 @@ RSpec.describe Gman::Importer do
 
       it 'normalizes the domain' do
         expect(normalized_domain).to eql('example.com')
+      end
+    end
+
+    {
+      'www2.example.gov' => 'www2.example.gov',
+      'wwwexample.gov' => 'wwwexample.gov',
+      'www.www.example.gov' => 'www.example.gov'
+    }.each do |input, expected|
+      context "given #{input}" do
+        let(:domain) { input }
+
+        it 'only strips a literal leading www.' do
+          expect(normalized_domain).to eql(expected)
+        end
       end
     end
   end

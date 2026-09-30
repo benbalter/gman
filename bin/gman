@@ -15,23 +15,18 @@ class IsoCountryCodes
 end
 
 domain = ARGV[0]
+COLOR = ARGV.last != '--no-color' && ENV.fetch('NO_COLOR', '').empty?
 
-if ARGV.last == '--no-color'
-  class String
-    def red
-      self
-    end
+def red(string)
+  COLOR ? "\e[31m#{string}\e[0m" : string
+end
 
-    def green
-      self
-    end
-  end
-else
-  require 'colored'
+def green(string)
+  COLOR ? "\e[32m#{string}\e[0m" : string
 end
 
 if domain.to_s.empty? || domain == '--no-color'
-  puts 'USAGE: gman <domain or email address> [--no-color]'.red
+  puts red('USAGE: gman <domain or email address> [--no-color]')
   exit 1
 end
 
@@ -40,16 +35,16 @@ gman = Gman.new(domain)
 puts "Domain  : #{gman.domain}"
 
 if gman.domain.nil?
-  puts "Status  : #{'Invalid domain'.red}"
+  puts "Status  : #{red('Invalid domain')}"
   exit 1
 end
 
 unless gman.valid?
-  puts "Status  : #{'Not a government domain'.red}"
+  puts "Status  : #{red('Not a government domain')}"
   exit 1
 end
 
-puts "Status  : #{'Valid government domain'.green}"
+puts "Status  : #{green('Valid government domain')}"
 
 %w[type country state city agency].each do |key|
   value = gman.send(key)
