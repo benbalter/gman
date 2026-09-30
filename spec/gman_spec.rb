@@ -36,6 +36,45 @@ RSpec.describe Gman do
     end
   end
 
+  context 'when an email address hides a government host' do
+    [
+      '"x@gsa.gov#"@evil.com', '"x@gsa.gov?"@evil.com', '"x@gsa.gov/"@evil.com',
+      'x@gsa.gov#@evil.com', "attacker@evil.com\nx@gsa.gov",
+      "attacker@evil.com\rx@gsa.gov", "attacker@evil.com\tx@gsa.gov",
+      "attacker@evil.com\0x@gsa.gov", "attacker@evil.com\u00a0x@gsa.gov",
+      'attacker@evil.com x@gsa.gov', 'evil.com/@gsa.gov', 'evil.com?@gsa.gov',
+      'evil.com#@gsa.gov'
+    ].each do |input|
+      it "knows #{input.inspect} is not a valid government domain" do
+        gman = described_class.new(input)
+        expect(gman.domain).to be_nil
+        expect(gman.valid?).to be(false)
+        expect(described_class.valid?(input)).to be(false)
+      end
+    end
+
+    it 'uses the URL host when given a URL with an @ in the path' do
+      gman = described_class.new('https://evil.com/@gsa.gov')
+      expect(gman.domain.to_s).to eql('evil.com')
+      expect(gman.valid?).to be(false)
+    end
+  end
+
+  context 'when given an email address or URL' do
+    {
+      'foo@bar.gov' => 'bar.gov', ' FOO@BAR.GOV ' => 'bar.gov',
+      'foo@ci.champaign.il.us' => 'ci.champaign.il.us', 'foo@bar.gc.ca' => 'bar.gc.ca',
+      'mailto:foo@bar.gov' => 'bar.gov', 'foo.gov/path' => 'foo.gov',
+      'https://user@foo.gov/path' => 'foo.gov', 'http://user:pw@foo.gov/x?y#z' => 'foo.gov'
+    }.each do |input, host|
+      it "extracts #{host} from #{input.inspect}" do
+        gman = described_class.new(input)
+        expect(gman.domain.to_s).to eql(host)
+        expect(gman.valid?).to be(true)
+      end
+    end
+  end
+
   context 'when a domain is on both the government and academic lists' do
     subject { described_class.new('foo.gov') }
 
