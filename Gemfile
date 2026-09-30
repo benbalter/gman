@@ -14,7 +14,7 @@ group :development do
   gem 'rubocop', '~> 1.72'
   gem 'rubocop-performance', '~> 1.20'
   gem 'rubocop-rspec', '~> 3.0'
-  gem 'ruby-prof', '~> 1.7'
+  gem 'ruby-prof', '~> 2.0'
   gem 'ruby-progressbar', '~> 1.13'
   gem 'swot', '~> 1.0'
 end
