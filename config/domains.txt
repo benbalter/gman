@@ -11272,6 +11272,7 @@ gov.se
 gov.sg
 gov.sh
 gov.sl
+gov.sk
 gov.st
 gov.sx
 gov.sy
@@ -11344,6 +11345,7 @@ mil.qa
 mil.ru
 mil.rw
 mil.sh
+mil.sk
 mil.st
 mil.sy
 mil.tj
@@ -11385,6 +11387,25 @@ prpg-tc.org.sg
 sbtc.org.sg
 tampines.org.sg
 tptc.org.sg
+
+// Slovak Federal
+justice.sk
+slovensko.sk
+mfsr.sk
+mhsr.sk
+mincrs.sk
+mindop.sk
+minedu.sk
+minv.sk
+minzp.sk
+mksr.sk
+mpsr.sk
+mpsvr.sk
+mzsr.sk
+mzv.sk
+
+// Slovak Municipalities
+// TBD
 
 // Spain Municipal
 madrid.es
