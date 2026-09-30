@@ -30,4 +30,8 @@ Gem::Specification.new do |s|
   s.add_dependency('public_suffix', '>= 3.0')
 
   s.metadata['rubygems_mfa_required'] = 'true'
+  s.metadata['homepage_uri'] = 'https://github.com/benbalter/gman'
+  s.metadata['source_code_uri'] = 'https://github.com/benbalter/gman'
+  s.metadata['bug_tracker_uri'] = 'https://github.com/benbalter/gman/issues'
+  s.metadata['changelog_uri'] = 'https://github.com/benbalter/gman/releases'
 end

@@ -1,8 +1,8 @@
 # Gman
 
-[![Build Status](https://travis-ci.org/benbalter/gman.png)](https://travis-ci.org/benbalter/gman) [![Gem Version](https://badge.fury.io/rb/gman.png)](http://badge.fury.io/rb/gman) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![CI](https://github.com/benbalter/gman/actions/workflows/ci.yml/badge.svg)](https://github.com/benbalter/gman/actions/workflows/ci.yml) [![Gem Version](https://img.shields.io/gem/v/gman)](https://rubygems.org/gems/gman) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-A ruby gem to check if the owner of a given email address or website is working for THE MAN (a.k.a verifies government domains). It will also provide you with metadata about the domain, such as the country, state, city, or agency, where applicable. It does this by leveraging the power of [Naughty or Nice](https://github.com/benbalter/naughty_or_nice), the [Public Suffix List](http://publicsuffix.org/), and the associated [Ruby Gem](https://github.com/weppos/publicsuffix-ruby).
+A ruby gem to check if the owner of a given email address or website is working for THE MAN (a.k.a verifies government domains). It will also provide you with metadata about the domain, such as the country, state, city, or agency, where applicable. It does this by leveraging the power of [Naughty or Nice](https://github.com/benbalter/naughty_or_nice), the [Public Suffix List](https://publicsuffix.org/), and the associated [Ruby Gem](https://github.com/weppos/publicsuffix-ruby).
 
 You could theoretically [use regex](https://gist.github.com/benbalter/6147066), but either you'll get a bunch of false positives, or your regex will be insanely complicated. `gov.uk`, may be valid, for example, but `gov.fr` is not (it's `gouv.fr`, for what it's worth). The solution? Use Public Suffix to verify that it's a valid public domain, then maintain [a crowd-sourced sub-list of known global government and military domains](https://github.com/benbalter/gman/blob/main/config/domains.txt). It should cover all US and international, government and military domains for both email and website verification.
 
@@ -120,7 +120,7 @@ $ gman_filter < path/to/list/of/addresses.txt
 
 ## Contributing
 
-Contributions welcome! Please see [the contribution guidelines](CONTRIBUTING.md) for code contributions or for details on how to add, update, or delete government domains.
+Contributions welcome! Know a government domain that's missing? Open a pull request adding it to [`config/domains.txt`](https://github.com/benbalter/gman/blob/main/config/domains.txt). Please see [the contribution guidelines](CONTRIBUTING.md) for code contributions or for details on how to add, update, or delete government domains.
 
 ## Credits
 
