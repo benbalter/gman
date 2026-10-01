@@ -1472,6 +1472,7 @@ achstetten.de
 achterwehr.de
 achtrup.de
 adelberg.de
+adele-esf.de
 adelebsen.de
 adelmannsfelden.de
 adelsdorf.de
@@ -1557,6 +1558,7 @@ allmannshofen.de
 allmannsweiler-bc.de
 allmendingen.de
 allmersbach.de
+allstedt.info
 almdorf.de
 almersbach.de
 alpenflugwetter.com
@@ -1609,6 +1611,7 @@ altenthann.de
 altentreptow.de
 alterkuelz.de
 altersbach.net
+altersvorsorgemachtschule.de
 altertheim.de
 althegnenberg.de
 altheim-alb.de
@@ -1931,6 +1934,7 @@ axstedt.de
 aying.de
 ayl.de
 aystetten.de
+ba-reform.de
 baain.de
 baainbw.de
 baar-ebenhausen.de
@@ -2330,6 +2334,7 @@ bietigheim-bissingen.de
 bietigheim.de
 bildungskredit.de
 bildungskredit.online
+bildungspaket-bmas.de
 bildungszentrum.bundeswehr.de
 billigheim-ingenheim.de
 billigheim.de
@@ -2591,6 +2596,7 @@ brickeln.de
 briedel.de
 brieden-eifel.de
 briedern-mosel.de
+briefing4pilot.de
 briesen-mark.de
 brieskow-finkenheerd.de
 brigachtal.de
@@ -2704,6 +2710,7 @@ bundesbauministerium.com
 bundesbauministerium.de
 bundesbauministerium.net
 bundesbauministerium.org
+bundescriminalamt.de
 bundesfinanzhof.de
 bundesfinanzministerium.de
 bundesgerichtshof.de
@@ -2734,6 +2741,7 @@ bundessozialgericht.de
 bundessozialministerium.de
 bundessozialministerium.eu
 bundessprachenamt.de
+bundesstelle-fuer-informationstechnik.de
 bundestag-magazin.de
 bundestag-online.de
 bundestag-und-schule.de
@@ -2920,6 +2928,7 @@ damflos.de
 damme.de
 damnatz-elbtalaue.de
 damscheid.de
+damshagen.info
 dankmarshausen.de
 danndorf.de
 dannenberg.de
@@ -2929,10 +2938,12 @@ darmstadt.de
 darscheid.de
 darss-fischland.de
 das-demographie-netzwerk.de
+das-halbe-leben.com
 das-jobcenter.de
 das-parlament.de
 das-rentenpaket.de
 dasburg.de
+dashalbeleben.de
 dasing.de
 dassendorf.de
 datenhandbuch-bundestag.de
@@ -3545,6 +3556,7 @@ eyendorf.de
 eyershausen-landwehr.de
 eystrup.de
 fachbach.de
+fachkraefte-allianz.de
 fachkraefteoffensive.de
 fachkraeftewoche.de
 fachkräfteoffensive.de
@@ -3700,6 +3712,7 @@ freiamt.de
 freiberg-an.de
 freiberg.de
 freiburg.de
+freienbessingen.net
 freienorla.de
 freiensteinau.de
 freienwill.de
@@ -4312,6 +4325,7 @@ gemeinde-spiegelau.de
 gemeinde-spiegelberg.de
 gemeinde-sprakensehl.de
 gemeinde-stammham.de
+gemeinde-stapelfeld.de
 gemeinde-steinberg.com
 gemeinde-steinberg.de
 gemeinde-steinhagen.de
@@ -4342,6 +4356,7 @@ gemeinde-tespe.de
 gemeinde-teutschenthal.de
 gemeinde-thaden.de
 gemeinde-thallwitz.de
+gemeinde-thalwenden.de
 gemeinde-tiefenbach.de
 gemeinde-tolk.de
 gemeinde-tonndorf.de
@@ -4673,6 +4688,7 @@ gross-ippener.de
 gross-kreutz.de
 gross-laasch.de
 gross-meckelsen.de
+gross-miltzow.de
 gross-molzahn.de
 gross-nordende.de
 gross-pampau.de
@@ -5303,6 +5319,7 @@ hoyerswerda.de
 hude.de
 hueffelsheim.de
 hueffenhardt.de
+hueffler.net
 huefingen.de
 huegelland-taeler.de
 huegelsheim.de
@@ -5322,6 +5339,7 @@ huisheim.de
 hummelshain-schmoelln.de
 hummeltal.de
 hunderdorf.de
+hundhaupten.de
 hunding.de
 hundsangen.de
 hungen.de
@@ -5363,6 +5381,7 @@ illingen.de
 illmensee.de
 illschwang.de
 ilmenau.de
+ilmmuenster.123cms.de
 ilmtal-weinstrasse.de
 ilsfeld.de
 ilshofen.de
@@ -5483,6 +5502,7 @@ juebek.de
 juehnde.de
 juenkerath.de
 jueterbog.eu
+jugendinarbeit.de
 jugenheim-rheinhessen.de
 julbach.de
 julius-kuehn.de
@@ -5858,6 +5878,7 @@ krostitz.de
 krottelbach.de
 kruemmel-ww.de
 kruen.de
+kruezen.de
 krukow.de
 krumbach.de
 krummbek.de
@@ -6482,6 +6503,7 @@ mein-microkredit.eu
 mein-mikrokredit.com
 mein-mikrokredit.eu
 mein-mikrokredit.org
+mein-schweinschied.de
 meinborn.de
 meincomeback.de
 meinersen.de
@@ -6538,6 +6560,7 @@ messingen.de
 messkirch.de
 messstetten.de
 mestlin.de
+met4aviation.com
 meteoalarm.de
 mettlach.de
 metzels.de
@@ -7265,6 +7288,7 @@ ohlsbach.de
 ohlstadt.de
 ohmbach.com
 ohmden.de
+ohnedichkeinwir.de
 ohorn-sachsen.de
 ohrdruf.de
 ohrenbach.de
@@ -7280,6 +7304,7 @@ ollmuth.de
 olmscheid.net
 olsbruecken.de
 olzheim.de
+ombudsrad.de
 ombudsrat.de
 opfenbach.de
 oppach.de
@@ -8299,6 +8324,7 @@ schwanstetten.de
 schwarme.de
 schwarmstedt.de
 schwartbuck.de
+schwarza1175.de
 schwarzach-b-nabburg.de
 schwarzach-main.de
 schwarzach-online.de
@@ -8876,6 +8902,7 @@ stockstadt.de
 stockum-pueschen.de
 stoedtlen.de
 stoernstein.de
+stoessen-online.de
 stoetten.de
 stoettwang.de
 stollberg-erzgebirge.de
@@ -9302,6 +9329,7 @@ verbgem-unstruttal.de
 verbgem-westlicheboerde.de
 verchen.de
 verden.de
+vereintaktiv.de
 verfassungsschutz.de
 veringenstadt.de
 verkehrsminister.de
@@ -9326,6 +9354,7 @@ vg-baunach.de
 vg-berka-werra.de
 vg-berlstedt.de
 vg-birkenfeld.de
+vg-bme.de
 vg-bodenheim.de
 vg-boos.de
 vg-brahmetal.de
@@ -9854,6 +9883,7 @@ wiershop.de
 wiesau.de
 wiesbaden.de
 wiesbaum.eu
+wiesemscheider.de
 wiesenbach.de
 wiesenbach.eu
 wiesenbronn.de
@@ -9873,6 +9903,7 @@ wiesweiler.de
 wietmarschen.de
 wietze.de
 wietzendorf.de
+wiewerdenwirarbeiten.de
 wiggensbach.de
 wilburgstetten.de
 wildau.de
@@ -10058,12 +10089,14 @@ wutach.de
 wutha-farnroda.de
 wutoeschingen.de
 ww-wied.de
+wwwbund.de
 wyhl.de
 wyk.de
 x500.bund.de
 xenos-de.de
 xn--beschftigtebeteiligen-91b.de
 xn--brevrde-d1a.de
+xn--einsatzfrarbeit-6vb.de
 xn--endschtz-c6a.de
 xn--epenwhrden-icb.de
 xn--fachkrfteoffensive-qtb.de
@@ -10076,6 +10109,7 @@ xn--hohen-slzen-zhb.de
 xn--nesse-apfelstdt-dlb.de
 xn--neubrger-q4a.de
 xn--schnhausen-elbe-btb.com
+xn--sicher-selbstndig-2qb.de
 yes-we-are-open.info
 zaberfeld.de
 zachenberg.de
@@ -11660,6 +11694,7 @@ bullittcounty.org
 
 // US County (Louisiana)
 bienvilleparish.org
+stmartinparish-la.org
 
 // US County (Nebraska)
 dawsoncone.com
@@ -11667,6 +11702,12 @@ dawsoncountyne.org
 
 // US County (Ohio)
 athenscountygovernment.com
+
+// US County (Oklahoma)
+ccok.us
+
+// US County (Pennsylvania)
+countyofindiana.org
 
 // US Federal
 3riverscfc.org
@@ -11706,6 +11747,7 @@ combinedfederal.org
 coronaviruspreventionnetwork.org
 csosa.biz
 csosa.co
+csosa.com
 csosa.info
 csosa.me
 csosa.mobi
@@ -11721,6 +11763,8 @@ dcsafesurrender.org
 detroitself.org
 directihs.net
 discoverytheater.org
+dlnseo.org
+docline.org
 doi.net
 ecosystemsontheedge.org
 ellajenkins.com
@@ -11728,6 +11772,8 @@ epa.maps.arcgis.com
 epancic.org
 epaosc.org
 epolicyworks.org
+ertsupport.org
+ertvideo.org
 euusosh.org
 fatherhoodgov.info
 fed.us
@@ -11744,6 +11790,10 @@ genbank.xyz
 genomereference.org
 glnpo.net
 gov
+gratefulmed.com
+gratefulmed.info
+gratefulmed.net
+gratefulmed.org
 hapmap.org
 hcgov.us
 hearttruth.com
@@ -11756,23 +11806,37 @@ howrightnow.online
 howrightnow.org
 hudexchange.info
 hudnsphelp.info
+igm.org
 inclusiveapprenticeship.org
+informationrx.info
+informationrx.net
+informationrx.org
 jcmarketplace.com
 jcsuccess.org
 jctalentworks.com
 jobcorps.org
 joinjobcorps.com
 kcp.com
+lifeasamarine.com
 literacydirectory.org
+loansomedoc.net
+loansomedoc.org
 makersinspaces.org
 manufacturingusa.com
 mdacareers.com
 medicalbillrights.com
 medicalbillrights.net
 medicalbillrights.org
+medlars.com
+medlars.info
+medlars.org
+medlars.us
 medlineplus.com
+medlineplus.net
+medlineplus.org
 mepsdocs.org
 mepstech.com
+mesh.org
 mil
 monitor.net.co
 mughalgardens.org
@@ -11788,7 +11852,18 @@ neapmap.com
 necfuture.com
 nhlbiwgs.org
 nih.com
+nihseniorhealth.biz
+nihseniorhealth.com
+nihseniorhealth.info
+nihseniorhealth.net
+nihseniorhealth.org
+nlm.net
+nlm.org
+nlmgiftshop.com
+nlmgiftshop.info
+nlmgiftshop.net
 nmaahcstore.com
+northernnewenglandcfc.org
 oahpmdata.net
 onetcenter.org
 onslowcountycfc.org
@@ -11797,11 +11872,17 @@ oup.org
 ownyourlimits.org
 paleoglot.org
 pantex.com
+pbgc.biz
+pbgc.com
+pbgc.net
+pbgc.org
+pbgc.us
 pccds-ln.org
 pccqualitymonitoring.com
 pcorcds-ln.org
 peatworks.org
 phiresearchlab.org
+phpartners.org
 phs-nurse.org
 presidentschallenge.org
 protectivedns.net
@@ -11830,6 +11911,7 @@ searchablemuseum.com
 seecstories.com
 servicelocator.org
 sftool.ecomedes.com
+shopvcs.com
 si.edu
 sisterstudy.org
 sitenv.org
@@ -11838,6 +11920,7 @@ smithsonianchambermusic.org
 smithsoniancraft2wear.org
 smithsoniancraftshow.org
 smithsonianearthtv.com
+smithsonianscience.org
 smithsonianstudentadventures.com
 ssbgportal.net
 ssoo.us
@@ -11847,6 +11930,7 @@ thehearttruth.net
 thehearttruth.org
 thesisterstudy.org
 trainex.org
+treatmentworksforvets.org
 usajobs.com
 usajobsassess.com
 usajobsassess.us
@@ -11859,6 +11943,11 @@ useuosh.org
 uspreventiveservicestaskforce.org
 ustedquepuedehacer.org
 vaccinefinder.org
+vaitcampus.com
+vavmc.com
+vetmed.wiki
+vetmedinfo.net
+vetmedinfo.org
 war-on-pineapple.com
 waterqualitydata.us
 whatcanyoudocampaign.org
@@ -11884,6 +11973,9 @@ usagbank.com
 // US Local (Alabama)
 alexandercityonline.com
 
+// US Local (Arkansas)
+rogersarkansas.com
+
 // US Local (California)
 cityofalturas.org
 sbrda.org
@@ -11896,6 +11988,9 @@ townoffrisco.com
 // US Local (Delaware)
 townofselbyville.com
 
+// US Local (Georgia)
+middlegacfc.com
+
 // US Local (Illinois)
 hampshireil.org
 roundlakepark.us
@@ -11906,12 +12001,21 @@ ballardsvillefire.com
 
 // US Local (Louisiana)
 cityofmandeville.org
+springhillla.com
+
+// US Local (Maine)
+orlandme.org
+
+// US Local (Maryland)
+townofbladensburg.com
+townofhampstead.us
 
 // US Local (Massachusetts)
 easthamptonweb.com
 
 // US Local (Michigan)
 grosseile.com
+oscodatwp.com
 
 // US Local (Minnesota)
 eastgrandforks.net
@@ -11922,32 +12026,46 @@ florencems.com
 
 // US Local (Missouri)
 ashgrovemo.org
+cabool.org
+cityofforsythmo.com
 cityofhawkpoint.jigsy.com
 
 // US Local (New Hampshire)
 pittsfield-nh.com
+shelburnenh.com
 town-of-groton.com
 
 // US Local (New Jersey)
 capemaycity.com
+frenchtown.com
+milford-nj.us
 mpnj.com
 stone-harbor.nj.us
+unionbeach.net
 ventnorcity.org
 westcapemay.us
 
 // US Local (New York)
 brookfieldny.com
+madridny.us
+norwoodny.org
 
 // US Local (North Carolina)
 townofhopemills.com
 
 // US Local (North Dakota)
+fessendennd.com
+leedsnd.com
 marmarth.org
 michigannd.com
 townercountynd.com
 
 // US Local (Ohio)
+hebronvillage.com
 pvilletwp.com
+
+// US Local (Oregon)
+cityofyamhill.com
 
 // US Local (Pennsylvania)
 codorustownship.org
@@ -11957,6 +12075,8 @@ hallamborough.com
 jonestownpa.org
 langhornemanor.com
 ricetwp.us
+tobyhannatownship.org
+westconshohockenboro.com
 yoeborough.org
 
 // US Local (South Carolina)
@@ -11970,6 +12090,12 @@ accessportsmouthva.com
 portsvacation.com
 portsvaevents.com
 visitvirginiabeach.com
+
+// US Local (Wisconsin)
+windpointwi.us
+
+// US Local (Wyoming)
+cityofdouglaswy.com
 
 // US Native Sovereign Nation / Tribal
 rumseyrancheria.org
@@ -12055,8 +12181,14 @@ ncshiip.com
 // US State (Alaska)
 akrr.com
 
+// US State (Arkansas)
+arkansasctf.org
+
 // US State (California)
 visitcwc.com
+
+// US State (Florida)
+freshfromflorida.com
 
 // US State (Georgia)
 gasdf.org
@@ -12066,14 +12198,32 @@ paonews.net
 // US State (Idaho)
 accessidaho.org
 
+// US State (Indiana)
+ifcem.com
+
+// US State (Kentucky)
+kltprc.info
+
 // US State (Maine)
 digitalmaine.com
 
 // US State (Maryland)
 ospmd.org
 
+// US State (Mississippi)
+waterparkin.com
+
 // US State (North Carolina)
+inclusivehealth.org
+jfkadatc.net
+ncabc.com
+ncforeclosurehelp.org
 nctokyo.com
+sosnc.com
+
+// US State (Oklahoma)
+okdhslive.org
+okhotline.org
 
 // US State (Tennessee)
 tnema.org
