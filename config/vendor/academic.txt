@@ -3450,7 +3450,6 @@ lntu.edu.cn
 lnu.edu.cn
 lnu.se
 lo-niepolomice.pl
-lodz.pl
 logan.edu
 logatti.edu.br
 lon.ac.uk
@@ -4747,7 +4746,6 @@ ru.is
 ru.lv
 ru.nl
 rua.edu.kh
-rub.de
 rub.edu.bt
 rubinst.ru
 ruc.dk
@@ -4757,7 +4755,6 @@ rufa.edu.kh
 rug.ac.be
 rug.edu.sa
 rug.nl
-ruhr-uni-bochum.de
 rule.edu.kh
 rumi.ac.ma
 rums.ac.ir
@@ -5401,7 +5398,6 @@ taynguyenuni.edu.vn
 tbc2day.edu
 tbzmed.ac.ir
 tcd.ie
-tche.br
 tci.edu
 tcm.ac.uk
 tcnj.edu
@@ -5517,7 +5513,6 @@ toccoafalls.edu
 toledo.br
 tongji.edu.cn
 tonichi-kokusai-u.ac.jp
-torun.pl
 tougaloo.edu
 toulouse-bs.org
 tourism.edu.az
