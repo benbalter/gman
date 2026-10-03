@@ -123,7 +123,7 @@ RSpec.describe Gman::Importer do
 
     {
       empty: '',
-      blacklisted: 'egovlink.com',
+      denylisted: 'egovlink.com',
       invalid: 'foo.invalid',
       academic: 'harvard.edu',
       "rejex'd": 'foo.github.io'

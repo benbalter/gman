@@ -16,7 +16,7 @@ require './lib/gman'
 require 'open-uri'
 require 'csv'
 
-blacklist = %w[usagovQUASI usagovFEDgov]
+denylist = %w[usagovQUASI usagovFEDgov]
 source = 'https://raw.githubusercontent.com/GSA/govt-urls/main/1_govt_urls_full.csv'
 domains = {}
 
@@ -31,5 +31,5 @@ data.each do |domain|
   domains[group] << domain[:domain_name]
 end
 
-domains.reject! { |g, _| blacklist.include?(g) }
+domains.reject! { |g, _| denylist.include?(g) }
 Gman::Importer.new(domains).import(skip_resolve: false)

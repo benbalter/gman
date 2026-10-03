@@ -61,7 +61,7 @@ class Gman
 
     # returns an instance of our custom public suffix list
     # list behaves like PublicSuffix::List
-    # but is limited to our whitelisted domains
+    # but is limited to our allowlisted domains
     def public_suffix_list
       @public_suffix_list ||= PublicSuffix::List.parse(contents)
     end
