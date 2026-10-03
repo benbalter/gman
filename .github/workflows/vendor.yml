@@ -24,6 +24,14 @@ jobs:
       - name: Vendor
         run: script/vendor
 
+      # PRs opened by create-pull-request with the default GITHUB_TOKEN don't
+      # trigger the CI workflow, so a data change that breaks lookups (like
+      # CISA renaming its dotgov CSV headers) can merge untested. Run the
+      # specs that read the vendored data here so a breaking update fails
+      # this job instead of opening a PR.
+      - name: Test vendored data
+        run: bundle exec rspec spec/gman/identifier_spec.rb spec/gman/bin_spec.rb
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v7
         with:
