@@ -16,7 +16,7 @@ class Gman
     attr_accessor :domain_list
 
     # Known false positives from vendored lists
-    BLACKLIST = %w[
+    DENYLIST = %w[
       business.centurytel.net
       chesnee.net
       citlink.net
@@ -43,6 +43,10 @@ class Gman
       webconnections.net
       webpages.charter.net
     ].freeze
+
+    # Deprecated: use DENYLIST. Kept so existing callers don't break.
+    BLACKLIST = DENYLIST
+    deprecate_constant :BLACKLIST
 
     REGEX_CHECKS = {
       'home. regex' => /^home\./,
@@ -131,8 +135,8 @@ class Gman
     def ensure_valid(domain)
       return false if domain.empty?
 
-      if BLACKLIST.include?(domain)
-        reject(domain, 'blacklist')
+      if DENYLIST.include?(domain)
+        reject(domain, 'denylist')
       elsif !PublicSuffix.valid?("foo.#{domain}")
         reject(domain, 'invalid')
       elsif Swot.is_academic?(domain)
