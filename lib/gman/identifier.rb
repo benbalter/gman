@@ -23,10 +23,13 @@ class Gman
     end
   end
 
-  def_hash_delegator :dotgov_listing, :Agency
-  def_hash_delegator :dotgov_listing, :Organization
+  # Column names follow CISA's current-full.csv (https://github.com/cisagov/dotgov-data),
+  # which renamed its headers in 2026: "Agency" became "Organization name" and
+  # "Organization" became "Suborganization name".
+  def_hash_delegator :dotgov_listing, :'Organization name', :agency
+  def_hash_delegator :dotgov_listing, :'Suborganization name', :organization
   def_hash_delegator :dotgov_listing, :City
-  def_hash_delegator :dotgov_listing, :'Domain Type'
+  def_hash_delegator :dotgov_listing, :'Domain type'
   private :domain_type
 
   def type
@@ -67,7 +70,7 @@ class Gman
     if matches
       %w[ci town vil].include?(matches[3])
     elsif dotgov_listing
-      domain_type == 'City'
+      domain_type.to_s.start_with?('City') # includes "City - Election"
     else
       false
     end
@@ -77,7 +80,7 @@ class Gman
     if matches
       matches[3] == 'co'
     elsif dotgov_listing
-      domain_type == 'County'
+      domain_type.to_s.start_with?('County') # includes "County - Election"
     else
       false
     end
@@ -87,7 +90,7 @@ class Gman
     if matches
       matches[1] == 'state'
     elsif dotgov_listing
-      ['State/Local Govt', 'State'].include?(domain_type)
+      domain_type.to_s.start_with?('State') # "State or territory", plus " - Election"
     else
       false
     end
@@ -134,7 +137,7 @@ class Gman
 
     # Hash of lowercase domain name => dotgov listing, for constant-time lookup
     def dotgov_index
-      @dotgov_index ||= dotgov_list.to_h { |listing| [listing['Domain Name'].downcase, listing] }
+      @dotgov_index ||= dotgov_list.to_h { |listing| [listing['Domain name'].downcase, listing] }
     end
 
     private
