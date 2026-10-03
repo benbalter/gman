@@ -7,7 +7,7 @@ RSpec.describe 'Gman identifier' do
 
   it 'parses the dotgov list' do
     expect(Gman.dotgov_list).to be_a(CSV::Table)
-    expect(Gman.dotgov_list.first).to have_key('Domain Name')
+    expect(Gman.dotgov_list.first).to have_key('Domain name')
   end
 
   context 'locality domains' do
@@ -118,7 +118,7 @@ RSpec.describe 'Gman identifier' do
         end
 
         it 'knows the organization' do
-          expect(subject.organization).to eql('White House')
+          expect(subject.organization).to eql('White House Office')
         end
       end
 
