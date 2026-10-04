@@ -8,7 +8,7 @@ group :development do
   gem 'addressable', '~> 2.8'
   gem 'logger'
   gem 'mechanize', '~> 2.10'
-  gem 'parallel', '~> 1.26'
+  gem 'parallel', '~> 2.0'
   gem 'pry', '~> 0.15'
   gem 'rspec', '~> 3.13'
   gem 'rubocop', '~> 1.72'
