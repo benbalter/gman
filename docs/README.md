@@ -18,7 +18,7 @@ Or add this to your `Gemfile` before doing a `bundle install`:
 
 `gem 'gman'`
 
-Gman requires Ruby 3.2 or newer.
+Gman requires Ruby 3.3 or newer.
 
 ## Usage
 
