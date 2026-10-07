@@ -22,8 +22,6 @@ Gman requires Ruby 3.3 or newer.
 
 ## Usage
 
-### In general
-
 ### Verify email addresses
 
 ```ruby
@@ -56,7 +54,7 @@ domain.county?  #=> false
 ```ruby
 domain = Gman.new "illinois.gov"
 domain.state #=> "IL"
-domain.city  #=> "springfield"
+domain.city  #=> "Springfield"
 ```
 
 ### Get information about a .gov domain's owner
@@ -70,7 +68,7 @@ domain.agency   #=> "Executive Office of the President"
 
 ```ruby
 domain = Gman.new "whitehouse.gov" #=> #<Gman domain="whitehouse.gov" valid=true>
-domain.country.name                #=> "United States"
+domain.country.name                #=> "United States of America"
 domain.country.alpha2              #=> "US"
 domain.country.alpha3              #=> "USA"
 domain.country.currency            #=> "USD"
@@ -88,11 +86,11 @@ Gman.new("foo.gov.kp").sanctioned? #=> true
 #### Getting information about a given domain
 
 ```
-$ gman whitehouse.gov
+$ gman whitehouse.gov --no-color
 Domain  : whitehouse.gov
-Valid government domain
+Status  : Valid government domain
 Type    : federal
-Country : United States
+Country : United States of America
 State   : DC
 City    : Washington
 Agency  : Executive Office of the President
@@ -101,13 +99,14 @@ Agency  : Executive Office of the President
 The command line tool will accept any domain-like string (email, url, etc.)
 
 ```
-$ gman foo@illinois.gov
+$ gman foo@illinois.gov --no-color
 Domain  : illinois.gov
-Valid government domain
+Status  : Valid government domain
 Type    : state
-Country : United States
+Country : United States of America
 State   : IL
 City    : Springfield
+Agency  : State of Illinois
 ```
 
 #### Filter
