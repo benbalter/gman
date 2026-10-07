@@ -75,12 +75,6 @@ domain.country.currency            #=> "USD"
 domain.country.calling_code        #=> "+1"
 ```
 
-### Check if a country is on the US Sanctions list
-
-```ruby
-Gman.new("foo.gov.kp").sanctioned? #=> true
-```
-
 ### Command line
 
 #### Getting information about a given domain
