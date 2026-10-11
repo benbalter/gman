@@ -2,7 +2,7 @@
 
 class Gman
   class DomainList
-    COMMENT_REGEX = %r{//[/\s]*(.*)$}i
+    COMMENT_REGEX = %r{//[/\s]*+(.*)$}i
 
     attr_writer :path, :contents
 
